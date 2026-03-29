@@ -1,5 +1,61 @@
 [
   {
+    "headword": "ACHETER",
+    "letter": "A",
+    "fondateur1": "PAYER",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PAYER À Z DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre achète les pommes à Marie.",
+              "ea": "Pierre paye à Marie, donc Pierre a des pommes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Exemple de négation métalinguistique : « Pierre n'a pas acheté les pommes, on les lui a donné. »"
+  },
+  {
+    "headword": "AMÉLIORER",
+    "letter": "A",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE MIEUX",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE DC Y ÊTRE MIEUX",
+          "exemples": [
+            {
+              "phrase": "Il a amélioré son français.",
+              "ea": "Il a fait des efforts, donc son français est mieux."
+            },
+            {
+              "phrase": "Améliorer les conditions de travail.",
+              "ea": "On fait quelque chose, donc les conditions sont mieux."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand on fait un effort sur quelque chose, ça doit aller mieux."
+      },
+      {
+        "type": 5,
+        "texte": "« J'ai tout essayé, ça ne s'améliore pas » (X FAIRE PT Y NEG ÊTRE MIEUX) : transgression du lien normatif."
+      }
+    ]
+  },
+  {
     "headword": "ANXIEUX",
     "letter": "A",
     "fondateur1": "SE PASSER",
@@ -21,18 +77,22 @@
     "criteres": []
   },
   {
-    "headword": "AVOIR LA CHANCE",
+    "headword": "APPARAÎTRE",
     "letter": "A",
-    "fondateur1": "FAIRE",
-    "fondateur2": "AVOIR",
+    "fondateur1": "NEG ÊTRE",
+    "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
         {
-          "aspect": "X NEG FAIRE DC X AVOIR Y",
+          "aspect": "PERF (NEG X ÊTRE) PT X ÊTRE",
           "exemples": [
             {
-              "phrase": "Il a eu la chance de le rencontrer.",
-              "ea": "Il n'a pas fait d'effort, donc il a obtenu."
+              "phrase": "Une tendance est apparue.",
+              "ea": "Il n'y a pas eu cette tendance, pourtant il y a cette tendance maintenant."
+            },
+            {
+              "phrase": "Le soleil apparaît.",
+              "ea": "Le soleil n'était pas là, pourtant il est là maintenant."
             }
           ]
         }
@@ -40,6 +100,94 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "APPRENDRE",
+    "letter": "A",
+    "fondateur1": "NEG SAVOIR",
+    "fondateur2": "SAVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (NEG X SAVOIR Y) PT X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai appris que ton père est Niels Bohr.",
+              "ea": "Je ne savais pas que ton père était Niels Bohr, pourtant je le sais maintenant."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »"
+  },
+  {
+    "headword": "ATTENDRE",
+    "letter": "A",
+    "fondateur1": "DEVOIR SE PASSER",
+    "fondateur2": "RESTER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y DEVOIR SE PASSER DC X RESTER",
+          "exemples": [
+            {
+              "phrase": "Pierre attend le bus.",
+              "ea": "Le bus devrait arriver, donc Pierre reste là."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X ATTENDRE (Z FAIRE)",
+          "exemples": [
+            {
+              "phrase": "En l'attendant, je vais relire ton chapitre.",
+              "ea": "J'attends, donc je fais quelque chose."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [
+      {
+        "type": 1,
+        "texte": "« une vraie attente » (ATT-X DC REAL-Y) : peu de certitude que ça arrive, pourtant on reste longtemps."
+      }
+    ]
+  },
+  {
+    "headword": "AVOIR LA CHANCE",
+    "letter": "A",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X NEG FAIRE PT X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Il a eu la chance de le rencontrer.",
+              "ea": "Il n'a pas fait d'effort, pourtant il l'a rencontré."
+            },
+            {
+              "phrase": "Quelle chance !",
+              "ea": "Tu n'as rien fait, pourtant tu as obtenu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 5,
+        "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
+      }
+    ]
   },
   {
     "headword": "BAS",
@@ -137,6 +285,27 @@
         "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
       }
     ]
+  },
+  {
+    "headword": "DISPARAÎTRE",
+    "letter": "D",
+    "fondateur1": "ÊTRE",
+    "fondateur2": "NEG ÊTRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X ÊTRE) PT NEG X ÊTRE",
+          "exemples": [
+            {
+              "phrase": "Le soleil a disparu.",
+              "ea": "Le soleil était là, pourtant il n'est plus là maintenant."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
   },
   {
     "headword": "FACILE",
@@ -336,5 +505,27 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "VOLER",
+    "letter": "V",
+    "fondateur1": "PAYER",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X NEG PAYER À Z PT X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Il a volé les pommes.",
+              "ea": "Il n'a pas payé, pourtant il a les pommes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "VOLER et ACHETER partagent le même bloc PAYER — AVOIR : ACHETER en est l'aspect normatif (DC), VOLER en est l'aspect transgressif (PT)."
   }
 ]

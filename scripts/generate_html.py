@@ -113,6 +113,10 @@ def generate_entries(by_letter, types_criteres):
                     </div>\n'''
                 html += '</div>\n'
             
+            # Nota bene
+            if entry.get("nb"):
+                html += f'<div class="nb"><span class="nb-label">NB</span> {entry["nb"]}</div>\n'
+            
             html += '</div>\n'
     
     return html
