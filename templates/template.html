@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionnaire TBS</title>
+    <link rel="stylesheet" href="../templates/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>Dictionnaire TBS</h1>
+            <p class="subtitle">Théorie des Blocs Sémantiques</p>
+            <p class="authors">Carel &amp; Ducrot</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">{{ENTRIES_COUNT}}</span>
+                    <span class="stat-label">entrées</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{LETTERS_COUNT}}</span>
+                    <span class="stat-label">lettres</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{BLOCS_COUNT}}</span>
+                    <span class="stat-label">blocs</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="toc">
+            <h2>Table des matières</h2>
+            
+            <div class="toc-section">
+                <h3>Lettres</h3>
+                <div class="toc-letters">
+                    {{TOC_LETTERS}}
+                </div>
+            </div>
+            
+            <div class="toc-section">
+                <h3>Entrées</h3>
+                <div class="toc-words">
+                    {{TOC_WORDS}}
+                </div>
+            </div>
+        </nav>
+
+        <section class="blocs-index">
+            <h2>Index par blocs sémantiques</h2>
+            <div class="blocs-grid">
+                {{BLOCS_INDEX}}
+            </div>
+        </section>
+
+        <section class="entries">
+            <h2>Entrées</h2>
+            {{ENTRIES}}
+        </section>
+
+        <footer>
+            <p>Généré le {{DATE}}</p>
+            <p class="footer-theory">Sémantique argumentative</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,340 @@
+[
+  {
+    "headword": "ANXIEUX",
+    "letter": "A",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "S'INQUIÉTER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y SE PASSER PT X S'INQUIÉTER",
+          "exemples": [
+            {
+              "phrase": "Vous êtes anxieux.",
+              "ea": "Rien ne se passe, pourtant vous vous inquiétez."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "AVOIR LA CHANCE",
+    "letter": "A",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X NEG FAIRE DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Il a eu la chance de le rencontrer.",
+              "ea": "Il n'a pas fait d'effort, donc il a obtenu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "BAS",
+    "letter": "B",
+    "fondateur1": "POUVOIR ATTEINDRE",
+    "fondateur2": "DEVOIR FAIRE UN EFFORT",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X POUVOIR ATTEINDRE Y PT NEG X DEVOIR FAIRE UN EFFORT",
+          "exemples": [
+            {
+              "phrase": "A2 est un bas niveau de la connaissance d'une langue.",
+              "ea": "Vous pouvez atteindre le niveau A2 sans faire trop d'effort."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "BEAU",
+    "letter": "B",
+    "fondateur1": "VOIR",
+    "fondateur2": "AIMER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOIR Y DC X AIMER Y",
+          "exemples": [
+            {
+              "phrase": "Cette image est belle.",
+              "ea": "J'ai regardé cette image donc je l'ai trouvée belle."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "CHERCHER",
+    "letter": "C",
+    "fondateur1": "VOULOIR-AVOIR",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR-AVOIR Y DC X FAIRE",
+          "exemples": [
+            {
+              "phrase": "Il cherche ses clés.",
+              "ea": "Il veut avoir ses clés, donc il fait quelque chose."
+            },
+            {
+              "phrase": "Chercher un emploi.",
+              "ea": "Il veut avoir un emploi, donc il fait des démarches."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "DIFFICILE",
+    "letter": "D",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE PT X NEG AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "C'est difficile à croire.",
+              "ea": "On fait l'effort, pourtant on n'arrive pas à croire."
+            },
+            {
+              "phrase": "Un problème difficile.",
+              "ea": "On travaille dessus, pourtant on ne trouve pas la solution."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 5,
+        "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
+      }
+    ]
+  },
+  {
+    "headword": "FACILE",
+    "letter": "F",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "C'est facile à comprendre.",
+              "ea": "On fait l'effort, donc on comprend."
+            },
+            {
+              "phrase": "Un exercice facile.",
+              "ea": "On le fait, donc on réussit."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal entre faire et avoir : normalement, quand on fait, on obtient."
+      }
+    ]
+  },
+  {
+    "headword": "HORIZON",
+    "letter": "H",
+    "fondateur1": "VOIR",
+    "fondateur2": "DEVOIR ARRIVER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOIR Y DC Y DEVOIR ARRIVER",
+          "exemples": [
+            {
+              "phrase": "L'horizon s'éclaircit.",
+              "ea": "On voit quelque chose, donc cela doit arriver."
+            },
+            {
+              "phrase": "Un nouvel horizon.",
+              "ea": "On voit une possibilité, donc elle doit se réaliser."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "MOT",
+    "letter": "M",
+    "fondateur1": "AVOIR",
+    "fondateur2": "DIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X DIRE Y",
+          "exemples": [
+            {
+              "phrase": "Les mots me manquent.",
+              "ea": "Je voudrais dire, pourtant je n'ai pas de mots."
+            },
+            {
+              "phrase": "Il cherche ses mots.",
+              "ea": "Il veut dire quelque chose, donc il cherche des mots."
+            },
+            {
+              "phrase": "Le mot juste.",
+              "ea": "On a un seul mot, pourtant on dit pleinement."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X DIRE (Z FAIRE)",
+          "exemples": [
+            {
+              "phrase": "Ce ne sont que des mots.",
+              "ea": "Il a dit, pourtant il n'a pas fait."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [
+      {
+        "type": 1,
+        "texte": "« le mot juste » (ATT-X DC REAL-Y) : avoir un seul mot, pourtant dire pleinement."
+      },
+      {
+        "type": 2,
+        "texte": "« beaucoup de mots pour pas grand-chose » (REAL-X DC ATT-Y) : avoir beaucoup, donc dire peu."
+      },
+      {
+        "type": 3,
+        "texte": "MOT s'inscrit en amont de DIRE sur la carte argumentative."
+      }
+    ]
+  },
+  {
+    "headword": "OBÉIR",
+    "letter": "O",
+    "fondateur1": "DIRE",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE DC Z FAIRE",
+          "exemples": [
+            {
+              "phrase": "Il obéit à ses parents.",
+              "ea": "Ses parents disent, donc il fait."
+            },
+            {
+              "phrase": "Obéir aux ordres.",
+              "ea": "On reçoit un ordre, donc on fait."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PRUDENT",
+    "letter": "P",
+    "fondateur1": "DANGER",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "DANGER DC NEG FAIRE",
+          "exemples": [
+            {
+              "phrase": "Sois prudent !",
+              "ea": "Il y a du danger, donc ne fais pas."
+            },
+            {
+              "phrase": "Une conduite prudente.",
+              "ea": "Il y a du danger, donc on ne fait pas certaines choses."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PRÉCIS",
+    "letter": "P",
+    "fondateur1": "VISER",
+    "fondateur2": "ATTEINDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VISER Y DC X ATTEINDRE Y",
+          "exemples": [
+            {
+              "phrase": "Un geste précis.",
+              "ea": "Le geste vise quelque chose, donc il l'atteint."
+            },
+            {
+              "phrase": "Un tir précis.",
+              "ea": "Le tir vise la cible, donc il l'atteint."
+            },
+            {
+              "phrase": "Le mot précis.",
+              "ea": "En ayant ce mot, tu diras ce que tu veux."
+            }
+          ]
+        },
+        {
+          "aspect": "X VISER Y PT X NEG ATTEINDRE Y",
+          "exemples": [
+            {
+              "phrase": "Une réponse imprécise.",
+              "ea": "On visait à exprimer quelque chose, pourtant on ne l'a pas atteint."
+            },
+            {
+              "phrase": "Dire des choses imprécises.",
+              "ea": "Elle voulait dire quelque chose, pourtant elle n'a pas réussi à le transmettre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  }
+]

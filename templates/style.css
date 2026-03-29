@@ -1,0 +1,584 @@
+/* ============================================
+   DICTIONNAIRE TBS — CATALOGUE LINGUISTIQUE
+   Affirmatif, structuré, précis
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    /* Palette principale */
+    --black: #1a1a1a;
+    --white: #ffffff;
+    
+    /* Gris */
+    --gray-900: #222222;
+    --gray-700: #4a4a4a;
+    --gray-500: #7a7a7a;
+    --gray-300: #b5b5b5;
+    --gray-100: #e8e8e8;
+    --gray-50: #f5f5f5;
+    
+    /* Couleurs sémantiques — tons sourds et affirmés */
+    --aspect-bg: #e8f4f8;
+    --aspect-border: #4a90a4;
+    --aspect-text: #1a5066;
+    
+    --quasibloc-bg: #f5ede8;
+    --quasibloc-border: #a4785a;
+    --quasibloc-text: #664a33;
+    
+    --critere-bg: #f0f0f0;
+    --critere-border: #888888;
+    --critere-text: #444444;
+    
+    --bloc-bg: #f8f5e8;
+    --bloc-border: #c4a84a;
+    --bloc-text: #6a5a2a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--gray-900);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+
+.hero {
+    padding: 5rem 2rem 3.5rem;
+    text-align: center;
+    background: var(--black);
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--gray-300);
+    letter-spacing: 0.03em;
+}
+
+.hero .authors {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--gray-500);
+    margin-top: 0.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-700);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--white);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 0.25rem;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+section, .toc {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--black);
+    display: inline-block;
+}
+
+h2 .icon {
+    display: none;
+}
+
+h3 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   TABLE DES MATIÈRES
+   ============================================ */
+
+.toc {
+    background: var(--gray-50);
+    padding: 2.5rem 2rem;
+    margin: 0 -2rem;
+}
+
+.toc-section {
+    margin-bottom: 2rem;
+}
+
+.toc-section:last-child {
+    margin-bottom: 0;
+}
+
+.toc-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.toc-letters a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.15s;
+}
+
+.toc-letters a:hover {
+    background: var(--gray-700);
+}
+
+.toc-words {
+    column-count: 4;
+    column-gap: 2rem;
+}
+
+.toc-words a {
+    display: block;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: all 0.15s;
+}
+
+.toc-words a:hover {
+    color: var(--black);
+    border-bottom-color: var(--black);
+}
+
+/* ============================================
+   INDEX PAR BLOCS
+   ============================================ */
+
+.blocs-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.bloc-item {
+    padding: 1rem 1.25rem;
+    background: var(--bloc-bg);
+    border-left: 3px solid var(--bloc-border);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.bloc-item strong {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--bloc-text);
+}
+
+.bloc-item a {
+    color: var(--gray-700);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.bloc-item a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* ============================================
+   LETTRES
+   ============================================ */
+
+.letter-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 3.5rem 0 1.5rem;
+}
+
+.letter-header .letter {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--black);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.letter-header .letter-decoration {
+    flex: 1;
+    height: 2px;
+    background: var(--black);
+}
+
+/* ============================================
+   ENTRÉES
+   ============================================ */
+
+.entry {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.headword {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.5rem;
+}
+
+.fondateurs {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gray-500);
+    margin-bottom: 1.25rem;
+    padding: 0.4rem 0.75rem;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+}
+
+.fondateurs span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--gray-900);
+}
+
+.section-title {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 1.75rem 0 0.75rem;
+}
+
+/* ============================================
+   ASPECTS
+   ============================================ */
+
+.aspect {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.75rem;
+    background: var(--aspect-bg);
+    border-left: 3px solid var(--aspect-border);
+}
+
+.aspect .formula {
+    color: var(--aspect-text);
+}
+
+/* ============================================
+   QUASI-BLOCS
+   ============================================ */
+
+.quasibloc {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.75rem;
+    background: var(--quasibloc-bg);
+    border-left: 3px solid var(--quasibloc-border);
+}
+
+.quasibloc .formula {
+    color: var(--quasibloc-text);
+}
+
+/* ============================================
+   FORMULES & EXEMPLES
+   ============================================ */
+
+.formula {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.exemple {
+    padding: 0.35rem 0;
+    margin: 0;
+}
+
+.exemple .phrase {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--gray-900);
+    font-size: 1.05rem;
+}
+
+.exemple .phrase::before {
+    content: '« ';
+    color: var(--gray-500);
+}
+
+.exemple .phrase::after {
+    content: ' »';
+    color: var(--gray-500);
+}
+
+.exemple .ea {
+    display: block;
+    color: var(--gray-600);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--gray-300);
+    margin-left: 0.25rem;
+}
+
+/* ============================================
+   CRITÈRES
+   ============================================ */
+
+.criteres {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    background: var(--critere-bg);
+    border-left: 3px solid var(--critere-border);
+}
+
+.criteres::before {
+    content: 'CRITÈRES';
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--critere-text);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+}
+
+.critere {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 0.35rem 0;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gray-700);
+}
+
+.critere-type {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    background: var(--gray-700);
+    padding: 0.15rem 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--black);
+    color: var(--gray-500);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-top: 2rem;
+}
+
+.footer-theory {
+    margin-top: 0.35rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--gray-300);
+}
+
+/* ============================================
+   LÉGENDE (optionnelle)
+   ============================================ */
+
+.legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 0.75rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid;
+}
+
+.legend-color.aspect { border-color: var(--aspect-border); background: var(--aspect-bg); }
+.legend-color.quasibloc { border-color: var(--quasibloc-border); background: var(--quasibloc-bg); }
+.legend-color.critere { border-color: var(--critere-border); background: var(--critere-bg); }
+.legend-color.bloc { border-color: var(--bloc-border); background: var(--bloc-bg); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .stats {
+        gap: 1.5rem;
+    }
+    
+    .toc-words {
+        column-count: 2;
+    }
+    
+    .letter-header .letter {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .toc-words {
+        column-count: 1;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* ============================================
+   PRINT
+   ============================================ */
+
+@media print {
+    .hero {
+        background: var(--black) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .toc-letters a {
+        background: var(--black) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .letter-header .letter {
+        background: var(--black) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .entry {
+        break-inside: avoid;
+    }
+    
+    .aspect, .quasibloc, .criteres, .bloc-item {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
