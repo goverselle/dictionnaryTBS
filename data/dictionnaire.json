@@ -222,7 +222,7 @@
           "exemples": [
             {
               "phrase": "Cette image est belle.",
-              "ea": "J'ai regardé cette image donc je l'ai trouvée belle."
+              "ea": "J'ai regardé cette image, donc je l'ai aimée."
             }
           ]
         }
@@ -230,6 +230,70 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "BOUTON",
+    "letter": "B",
+    "fondateur1": "APPUYER",
+    "fondateur2": "FONCTIONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X APPUYER *Y* DC X FONCTIONNER W",
+          "exemples": [
+            {
+              "phrase": "C'est un bouton.",
+              "ea": "Si tu appuies sur ça, tu vas allumer la lampe."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "CAUSER",
+    "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "SE PASSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*X* FAIRE Y DC Y SE PASSER",
+          "exemples": [
+            {
+              "phrase": "Pierre a causé l'effondrement du marché.",
+              "ea": "Pierre a fait quelque chose, donc l'effondrement du marché s'est passé."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "CESSER",
+    "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "NEG FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X FAIRE Y) PT NEG X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre a cessé de fumer.",
+              "ea": "Pierre a fumé, pourtant Pierre ne fume plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus."
   },
   {
     "headword": "CHERCHER",
@@ -248,6 +312,122 @@
             {
               "phrase": "Chercher un emploi.",
               "ea": "Il veut avoir un emploi, donc il fait des démarches."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "COMPRENDRE",
+    "letter": "C",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z DIRE Y DC X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre a compris Marie.",
+              "ea": "Marie a dit quelque chose, donc Pierre le sait maintenant."
+            },
+            {
+              "phrase": "Je me suis réveillé et j'ai compris qu'il faisait déjà nuit, parce qu'il faisait noir.",
+              "ea": "La noirceur à l'extérieur dit qu'il est déjà nuit, donc je le sais."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Ce qui explique pourquoi les deux sont possibles : Z comprend X et Z comprend Y, c'est-à-dire comprendre quelqu'un et comprendre quelque chose."
+  },
+  {
+    "headword": "COMPULSIF",
+    "letter": "C",
+    "fondateur1": "NEG VOULOIR FAIRE",
+    "fondateur2": "NEG POUVOIR S'EMPÊCHER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X VOULOIR FAIRE Y PT NEG X POUVOIR S'EMPÊCHER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre achète compulsivement.",
+              "ea": "Pierre ne veut pas acheter, pourtant il ne peut pas s'empêcher d'acheter."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Différence avec IMPULSIF : à analyser."
+  },
+  {
+    "headword": "CONVAINCRE",
+    "letter": "C",
+    "fondateur1": "DIRE",
+    "fondateur2": "PENSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z DIRE Y À X DC X PENSER Y",
+          "exemples": [
+            {
+              "phrase": "Marie a convaincu Pierre de devenir un militant pour l'écologie.",
+              "ea": "Marie dit des choses à Pierre, du fait de quoi il pense maintenant qu'il faut militer pour l'écologie."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général."
+  },
+  {
+    "headword": "COURAGEUX",
+    "letter": "C",
+    "fondateur1": "FAIRE PEUR",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y FAIRE PEUR PT X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est courageux.",
+              "ea": "La situation fait peur, pourtant Pierre agit."
+            },
+            {
+              "phrase": "Une décision courageuse.",
+              "ea": "Cette décision fait peur, pourtant on la prend."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "DENTS",
+    "letter": "D",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR MORDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR Y DC X POUVOIR MORDRE",
+          "exemples": [
+            {
+              "phrase": "Cette fille a des dents.",
+              "ea": "Si elle a des dents, elle peut mordre."
             }
           ]
         }
@@ -298,7 +478,115 @@
           "exemples": [
             {
               "phrase": "Le soleil a disparu.",
-              "ea": "Le soleil était là, pourtant il n'est plus là maintenant."
+              "ea": "Le soleil était là, pourtant il n'est plus là."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Apparenté à PARTIR et MOURIR par la structure. PARTIR : PERF (X ÊTRE LÀ) PT NEG (X ÊTRE LÀ) — se rapporte au lieu. MOURIR : PERF (X VIVRE) PT NEG (X VIVRE) — se rapporte à la vie."
+  },
+  {
+    "headword": "DISTRAIRE",
+    "letter": "D",
+    "fondateur1": "PENSER",
+    "fondateur2": "FAIRE PENSER À AUTRE CHOSE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z PENSER Y PT X FAIRE PENSER Z À W",
+          "exemples": [
+            {
+              "phrase": "Tu me distrais.",
+              "ea": "Je pensais à quelque chose, pourtant tu m'as fait penser à autre chose."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "DONNER",
+    "letter": "D",
+    "fondateur1": "AVOIR",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X AVOIR Y) DC Z AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre donne l'objet à Paul.",
+              "ea": "Pierre a eu l'objet, de ce fait c'est Paul qui a l'objet maintenant."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Les deux fondateurs sont AVOIR : X AVOIR (passé) et Z AVOIR (présent). Le transfert de possession est au cœur du mot."
+  },
+  {
+    "headword": "DOUTER",
+    "letter": "D",
+    "fondateur1": "ÊTRE POSSIBLE",
+    "fondateur2": "NEG ÊTRE SÛR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE POSSIBLE PT X NEG ÊTRE SÛR DE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre a un doute sur l'honnêteté de Paul.",
+              "ea": "On a des raisons de penser qu'il est honnête, pourtant je ne peux pas y croire pleinement."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "DÉLICIEUX",
+    "letter": "D",
+    "fondateur1": "GOÛTER",
+    "fondateur2": "AIMER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X GOÛTER Y DC X AIMER Y",
+          "exemples": [
+            {
+              "phrase": "Ce repas est délicieux.",
+              "ea": "J'ai goûté le repas, donc je l'ai aimé."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative."
+  },
+  {
+    "headword": "EMBELLIR",
+    "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE BEAU",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE W DC Y ÊTRE BEAU",
+          "exemples": [
+            {
+              "phrase": "Il a embelli sa pièce.",
+              "ea": "Il a fait quelque chose, donc sa pièce est belle."
             }
           ]
         }
@@ -338,6 +626,89 @@
     ]
   },
   {
+    "headword": "GÉNÉREUX",
+    "letter": "G",
+    "fondateur1": "ÊTRE PRÉCIEUX",
+    "fondateur2": "DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE PRÉCIEUX PT X DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Elle a été très généreuse avec moi. Elle m'a laissé beaucoup de nourriture pour mon séjour et une voiture avec le plein de carburant.",
+              "ea": "La nourriture et une voiture avec le plein de carburant sont précieux, pourtant elle me les a laissés."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X ÊTRE GÉNÉREUX AVEC Z (X NEG VOULOIR PROFITER DE Z)",
+          "exemples": [
+            {
+              "phrase": "Elle est généreuse, elle n'attend rien en retour.",
+              "ea": "Elle est généreuse avec autrui, donc elle ne veut pas profiter de lui."
+            },
+            {
+              "phrase": "Elle est généreuse, mais elle attend quelque chose en retour.",
+              "ea": "Elle est généreuse avec autrui, pourtant elle veut profiter de lui."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": []
+  },
+  {
+    "headword": "HABITUEL",
+    "letter": "H",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE NORMAL",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC Y ÊTRE NORMAL",
+          "exemples": [
+            {
+              "phrase": "C'est habituel pour Pierre.",
+              "ea": "Pierre le fait, donc c'est normal qu'il le fasse."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "HABITUEL est moins général que NORMAL : on dit « les pluies sont normales » mais pas « les pluies sont habituelles ». On a envie de recourir à « souvent » pour le décrire, mais en décrivant l'habituel comme quelque chose qui, quand cela se fait, est normal, on obtient le même effet. SOUVENT est un opérateur argumentatif, non un adverbe de temps."
+  },
+  {
+    "headword": "HAUT",
+    "letter": "H",
+    "fondateur1": "FAIRE UN EFFORT",
+    "fondateur2": "ATTEINDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE UN EFFORT DC X ATTEINDRE Y",
+          "exemples": [
+            {
+              "phrase": "C'est du haut pilotage.",
+              "ea": "Si vous faites un effort, vous pouvez atteindre ce niveau de pilotage."
+            },
+            {
+              "phrase": "La cabane est en haut de la montagne.",
+              "ea": "Si vous marchez longtemps, vous pouvez atteindre la cabane."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Différence avec LOIN : à analyser."
+  },
+  {
     "headword": "HORIZON",
     "letter": "H",
     "fondateur1": "VOIR",
@@ -354,6 +725,262 @@
             {
               "phrase": "Un nouvel horizon.",
               "ea": "On voit une possibilité, donc elle doit se réaliser."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "IMMÉDIAT",
+    "letter": "I",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "NEG ATTENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PASSER PT PERF (NEG X ATTENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "La réponse est immédiate.",
+              "ea": "La réponse arrive, pourtant on n'a pas attendu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "IMPARFAIT",
+    "letter": "I",
+    "fondateur1": "TERMINER",
+    "fondateur2": "POUVOIR AMÉLIORER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X TERMINER Y PT X POUVOIR AMÉLIORER Y",
+          "exemples": [
+            {
+              "phrase": "Ce travail est imparfait.",
+              "ea": "On a terminé le travail, pourtant on peut l'améliorer."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "IMPÉRATIF",
+    "letter": "I",
+    "fondateur1": "DIRE",
+    "fondateur2": "DEVOIR FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE Y À Z DC Z DEVOIR FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Fermez la porte.",
+              "ea": "Je vous dis de fermer la porte, donc vous devez fermer la porte."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "INHABITUEL",
+    "letter": "I",
+    "fondateur1": "FAIRE",
+    "fondateur2": "NEG ÊTRE NORMAL",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y PT NEG Y ÊTRE NORMAL",
+          "exemples": [
+            {
+              "phrase": "C'est inhabituel pour Pierre.",
+              "ea": "Pierre le fait, pourtant ce n'est pas normal qu'il le fasse."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "INSTRUMENT",
+    "letter": "I",
+    "fondateur1": "AVOIR",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X FAIRE W",
+          "exemples": [
+            {
+              "phrase": "Le marteau est un instrument.",
+              "ea": "Si tu as un marteau, tu peux enfoncer le clou."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "INTELLIGENT",
+    "letter": "I",
+    "fondateur1": "ÊTRE DIFFICILE",
+    "fondateur2": "COMPRENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE DIFFICILE PT X COMPRENDRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est intelligent.",
+              "ea": "Même si c'est difficile, Pierre comprend."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "IRRESPONSABLE",
+    "letter": "I",
+    "fondateur1": "DEVOIR FAIRE",
+    "fondateur2": "NEG FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DEVOIR FAIRE Y PT NEG X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est une personne irresponsable.",
+              "ea": "Quelque chose doit être fait, pourtant Pierre ne le fait pas."
+            },
+            {
+              "phrase": "Il est irresponsable financièrement. Il dépense trop d'argent à jouer.",
+              "ea": "Il devrait faire attention à l'argent, pourtant il ne fait pas attention à l'argent."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "JOUET",
+    "letter": "J",
+    "fondateur1": "UTILISER",
+    "fondateur2": "JOUER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X UTILISER *Y* DC X JOUER AVEC Y",
+          "exemples": [
+            {
+              "phrase": "Cette poupée est un jouet.",
+              "ea": "Si tu l'utilises, tu joues avec."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "LANGUE",
+    "letter": "L",
+    "fondateur1": "PARTAGER",
+    "fondateur2": "COMPRENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARTAGER *Y* AVEC Z DC X COMPRENDRE Z",
+          "exemples": [
+            {
+              "phrase": "Cette danse des abeilles est en fait une langue.",
+              "ea": "Les abeilles partagent ceci, donc elles se comprennent."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "LIBRE",
+    "letter": "L",
+    "fondateur1": "VOULOIR FAIRE",
+    "fondateur2": "POUVOIR FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR FAIRE Y DC X POUVOIR FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "La chaise est libre.",
+              "ea": "Si tu veux t'asseoir sur cette chaise, tu peux le faire."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "LOUER",
+    "letter": "L",
+    "fondateur1": "PAYER",
+    "fondateur2": "PRÊTER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z PAYER À X DC X PRÊTER À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre loue un appartement.",
+              "ea": "Pierre paye au propriétaire, donc le propriétaire lui prête l'appartement."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "MONOTONE",
+    "letter": "M",
+    "fondateur1": "ÊTRE UNIFORME",
+    "fondateur2": "S'ENNUYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE UNIFORME DC X S'ENNUYER",
+          "exemples": [
+            {
+              "phrase": "Ce sermon est monotone.",
+              "ea": "Ce sermon est uniforme, donc je m'ennuie."
             }
           ]
         }
@@ -415,6 +1042,123 @@
     ]
   },
   {
+    "headword": "MÉTICULEUX",
+    "letter": "M",
+    "fondateur1": "ÊTRE DÉTAIL",
+    "fondateur2": "FAIRE ATTENTION",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE DÉTAIL PT X FAIRE ATTENTION À Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est méticuleux.",
+              "ea": "Même si c'est un détail, Pierre y fera attention."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "NORMAL",
+    "letter": "N",
+    "fondateur1": "SE PRODUIRE",
+    "fondateur2": "NEG RÉAGIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PRODUIRE PT NEG X RÉAGIR À Y",
+          "exemples": [
+            {
+              "phrase": "Cet événement est tout à fait normal.",
+              "ea": "Quand ceci se produit, personne ne réagit."
+            },
+            {
+              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
+              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
+            },
+            {
+              "phrase": "Ses résultats d'examen sont normaux.",
+              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "NOUVEAU",
+    "letter": "N",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "SE PASSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (W SE PASSER) PT Y SE PASSER",
+          "exemples": [
+            {
+              "phrase": "J'ai acheté un nouveau livre sur la linguistique.",
+              "ea": "J'avais déjà un livre sur la linguistique, pourtant j'ai acheté un autre livre sur la linguistique."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "NÉGLIGER",
+    "letter": "N",
+    "fondateur1": "ÊTRE IMPORTANT",
+    "fondateur2": "NEG FAIRE ATTENTION",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE IMPORTANT PT NEG X FAIRE ATTENTION À Y",
+          "exemples": [
+            {
+              "phrase": "Pierre néglige sa santé.",
+              "ea": "Sa santé est importante, pourtant Pierre n'y fait pas attention."
+            },
+            {
+              "phrase": "Il a négligé ce détail.",
+              "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "OBTENIR",
+    "letter": "O",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre obtient une bonne note.",
+              "ea": "Pierre a étudié, donc il a eu une bonne note."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
     "headword": "OBÉIR",
     "letter": "O",
     "fondateur1": "DIRE",
@@ -431,6 +1175,237 @@
             {
               "phrase": "Obéir aux ordres.",
               "ea": "On reçoit un ordre, donc on fait."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "OPTIMISTE",
+    "letter": "O",
+    "fondateur1": "POUVOIR ESPÉRER",
+    "fondateur2": "ESPÉRER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X POUVOIR ESPÉRER DC X ESPÉRER",
+          "exemples": [
+            {
+              "phrase": "Il faut être optimiste.",
+              "ea": "L'on peut avoir de l'espoir, donc l'on a l'espoir."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PARFAIT",
+    "letter": "P",
+    "fondateur1": "TERMINER",
+    "fondateur2": "NEG POUVOIR AMÉLIORER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X TERMINER Y DC NEG X POUVOIR AMÉLIORER Y",
+          "exemples": [
+            {
+              "phrase": "Ce travail est parfait.",
+              "ea": "On a terminé le travail, donc on ne peut pas l'améliorer."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PARTAGER",
+    "letter": "P",
+    "fondateur1": "AVOIR",
+    "fondateur2": "DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR Y DC X DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre partage son gâteau avec Marie.",
+              "ea": "Pierre a le gâteau, donc il en donne à Marie."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PAUVRE",
+    "letter": "P",
+    "fondateur1": "ÊTRE NÉCESSAIRE",
+    "fondateur2": "NEG AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE NÉCESSAIRE PT NEG X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est pauvre.",
+              "ea": "La voiture est nécessaire pour Pierre pour pouvoir se rendre au travail, pourtant il ne peut pas l'acheter."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "(NEG X AVOIR Y) DEMANDER",
+          "exemples": [
+            {
+              "phrase": "Il est pauvre, il demande de l'aide.",
+              "ea": "Il n'a pas ce qu'il lui faut, donc il demande."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PAYER",
+    "letter": "P",
+    "fondateur1": "ÊTRE ARGENT",
+    "fondateur2": "DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE ARGENT DC X DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre paye le boulanger.",
+              "ea": "C'est de l'argent, donc Pierre le donne au boulanger."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PERSUADER",
+    "letter": "P",
+    "fondateur1": "DIRE",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z DIRE Y À X DC X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Marie persuade Pierre d'aller avec elle.",
+              "ea": "Marie dit des choses à Pierre, du fait de quoi il va avec elle."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "PERSUADER est plus général que CONVAINCRE. CONVAINCRE : DIRE DC PENSER. PERSUADER : DIRE DC FAIRE."
+  },
+  {
+    "headword": "PORTE",
+    "letter": "P",
+    "fondateur1": "SÉPARER",
+    "fondateur2": "UNIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SÉPARER DE Y PT *W* UNIR X ET Y",
+          "exemples": [
+            {
+              "phrase": "La Vierge est notre porte vers le ciel.",
+              "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "POSSIBLE",
+    "letter": "P",
+    "fondateur1": "NEG ÊTRE",
+    "fondateur2": "POUVOIR ÊTRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y ÊTRE PT Y POUVOIR ÊTRE",
+          "exemples": [
+            {
+              "phrase": "Ce voyage est possible.",
+              "ea": "Tu n'as pas fait ce voyage, pourtant tu peux le faire."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE POSSIBLE (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est possible, je vais le faire.",
+              "ea": "C'est possible, donc je le fais."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PREUVE",
+    "letter": "P",
+    "fondateur1": "MONTRER",
+    "fondateur2": "SAVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X MONTRER *Y* À Z DC Z SAVOIR W",
+          "exemples": [
+            {
+              "phrase": "Cette rose est la preuve de mes sentiments.",
+              "ea": "Je vous montre la rose, donc vous savez que j'ai des sentiments pour vous."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PROUVER",
+    "letter": "P",
+    "fondateur1": "MONTRER",
+    "fondateur2": "SAVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X MONTRER Y À Z DC Z SAVOIR W",
+          "exemples": [
+            {
+              "phrase": "Pierre a prouvé qu'il n'était pas ici hier.",
+              "ea": "Pierre a montré un ticket de bus de l'autre station, donc nous savons qu'il n'était pas ici hier."
             }
           ]
         }
@@ -507,6 +1482,498 @@
     "criteres": []
   },
   {
+    "headword": "PRÉSUPPOSER",
+    "letter": "P",
+    "fondateur1": "ADMETTRE",
+    "fondateur2": "COMPRENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X ADMETTRE Z DC X COMPRENDRE W",
+          "exemples": [
+            {
+              "phrase": "Je présuppose que la personne qui participe aux travaux de recherche le fait volontairement.",
+              "ea": "Si j'admets que les personnes le font volontairement, je peux comprendre qu'ils font de la recherche."
+            },
+            {
+              "phrase": "Comprendre ce texte présuppose des connaissances en histoire.",
+              "ea": "Avoir des connaissances préalables, donc ce texte est compris."
+            },
+            {
+              "phrase": "Cette théorie présuppose l'existence de la matière noire.",
+              "ea": "Si j'admets que la matière noire existe, je peux comprendre cette théorie."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "PÉRIR",
+    "letter": "P",
+    "fondateur1": "ACCIDENT",
+    "fondateur2": "MOURIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "ACCIDENT DC X MOURIR",
+          "exemples": [
+            {
+              "phrase": "Les civils ont péri dans un raid.",
+              "ea": "Les raids sont survenus, donc les civils sont morts."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent."
+  },
+  {
+    "headword": "RESPONSABLE",
+    "letter": "R",
+    "fondateur1": "DEVOIR FAIRE",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DEVOIR FAIRE Y DC X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est une personne responsable.",
+              "ea": "Si quelque chose doit être fait, Pierre le fera."
+            },
+            {
+              "phrase": "Adeline est responsable des financements.",
+              "ea": "Adeline doit gérer les financements, donc elle va gérer les financements."
+            }
+          ]
+        },
+        {
+          "aspect": "Y ÊTRE FAUTE DC X DEVOIR RÉPONDRE DE Y",
+          "exemples": [
+            {
+              "phrase": "Tu es responsable de tes propres malheurs.",
+              "ea": "Tu es la cause de tes malheurs, donc tu dois en répondre."
+            },
+            {
+              "phrase": "Pierre est responsable de ce crime.",
+              "ea": "Le crime est une faute, donc Pierre doit en répondre."
+            },
+            {
+              "phrase": "Le tabac est responsable de nombreux cancers du poumon.",
+              "ea": "Le cancer du poumon se produit, donc le tabac doit en répondre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Deux sens : (1) être chargé de quelque chose (DEVOIR FAIRE DC FAIRE), (2) être la cause d'une faute (FAUTE DC DEVOIR RÉPONDRE)."
+  },
+  {
+    "headword": "RESSUSCITER",
+    "letter": "R",
+    "fondateur1": "MOURIR",
+    "fondateur2": "VIVRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X MOURIR) PT X VIVRE",
+          "exemples": [
+            {
+              "phrase": "Pierre a ressuscité.",
+              "ea": "Pierre a été mort, pourtant Pierre est vivant."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "RÉPONDRE",
+    "letter": "R",
+    "fondateur1": "POSER UNE QUESTION",
+    "fondateur2": "DIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z POSER UNE QUESTION À X DC X DIRE Y À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre répond à Marie.",
+              "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SACRIFIER",
+    "letter": "S",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z AVOIR BESOIN DE Y PT Z DONNER Y À X",
+          "exemples": [
+            {
+              "phrase": "Elle a sacrifié son écharpe pour toi.",
+              "ea": "Elle avait besoin de l'écharpe elle-même, pourtant elle te l'a donnée."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SE SUICIDER",
+    "letter": "S",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE MORT",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC X ÊTRE MORT",
+          "exemples": [
+            {
+              "phrase": "Marie s'est suicidée.",
+              "ea": "Marie a fait quelque chose, des suites de quoi elle est morte."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SERVIR",
+    "letter": "S",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "FAIRE POUR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z AVOIR BESOIN DE Y DC X FAIRE Y POUR Z",
+          "exemples": [
+            {
+              "phrase": "Le serveur sert les clients.",
+              "ea": "Les clients ont besoin de quelque chose, donc le serveur le fait pour eux."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SOUPÇONNER",
+    "letter": "S",
+    "fondateur1": "NEG SAVOIR",
+    "fondateur2": "PENSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X SAVOIR Y PT X PENSER Y",
+          "exemples": [
+            {
+              "phrase": "Je soupçonne Pierre d'avoir menti.",
+              "ea": "Je ne sais pas si Pierre a menti, pourtant je pense qu'il a menti."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SUCCOMBER",
+    "letter": "S",
+    "fondateur1": "SUBIR",
+    "fondateur2": "MOURIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SUBIR Y DC X MOURIR",
+          "exemples": [
+            {
+              "phrase": "Pierre a succombé à ses blessures.",
+              "ea": "Pierre a subi des blessures, donc il en est mort."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "SURVENIR",
+    "letter": "S",
+    "fondateur1": "NEG DEVOIR SE PASSER",
+    "fondateur2": "SE PASSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X DEVOIR SE PASSER PT X SE PASSER",
+          "exemples": [
+            {
+              "phrase": "Il est survenu quelque chose.",
+              "ea": "Cela ne devait pas se passer, pourtant ça s'est passé."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "TEMPS",
+    "letter": "T",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR Y DC X POUVOIR FAIRE W",
+          "exemples": [
+            {
+              "phrase": "Pierre a le temps pour préparer le dîner.",
+              "ea": "Pierre a ceci, donc il peut préparer le dîner."
+            }
+          ]
+        },
+        {
+          "aspect": "X PASSER DC X DONNER À Z",
+          "exemples": [
+            {
+              "phrase": "Laisse passer du temps, tu verras, cela ira mieux.",
+              "ea": "Le temps passe, donc il te donne quelque chose."
+            }
+          ]
+        },
+        {
+          "aspect": "X PASSER DC X PRENDRE À Z",
+          "exemples": [
+            {
+              "phrase": "Avec le temps, j'ai moins d'énergie.",
+              "ea": "Le temps passe, donc il me prend de l'énergie."
+            }
+          ]
+        },
+        {
+          "aspect": "X PASSER DC X NEG REVENIR",
+          "exemples": [
+            {
+              "phrase": "Le temps perdu ne se rattrape pas.",
+              "ea": "Le temps passe, donc il ne revient pas."
+            }
+          ]
+        },
+        {
+          "aspect": "X PASSER DC Y CHANGER",
+          "exemples": [
+            {
+              "phrase": "Les temps changent.",
+              "ea": "Le temps passe, donc les choses changent."
+            }
+          ]
+        },
+        {
+          "aspect": "X AVOIR Y DC Y DEVOIR FAIRE",
+          "exemples": [
+            {
+              "phrase": "C'est le bon moment pour agir.",
+              "ea": "On a ce moment, donc on doit agir."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X AVOIR TEMPS (X POUVOIR FAIRE W)",
+          "exemples": [
+            {
+              "phrase": "Pierre a le temps, il peut se reposer.",
+              "ea": "Pierre a du temps, donc il peut faire quelque chose."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": "PRENDRE et DONNER ont AVOIR en eux. Syntagmes usuels : prendre du temps, donner du temps, perdre le temps."
+  },
+  {
+    "headword": "TENTER",
+    "letter": "T",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "ESSAYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR AVOIR Y DC X ESSAYER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre tente sa chance.",
+              "ea": "Il est possible que Pierre gagne, donc Pierre l'essaye."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X TENTER (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il tente d'obtenir une promotion.",
+              "ea": "Il veut avoir une promotion, donc il essaye de l'obtenir."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": "Dans d'autres langues, les mêmes paires : essayer/tenter, try/attempt, пробовать/пытаться."
+  },
+  {
+    "headword": "TUER",
+    "letter": "T",
+    "fondateur1": "FAIRE",
+    "fondateur2": "MOURIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC Z MOURIR",
+          "exemples": [
+            {
+              "phrase": "Marie a tué l'espoir.",
+              "ea": "Marie a fait quelque chose, des suites de quoi l'espoir est mort."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "UTILE",
+    "letter": "U",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "UTILISER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR BESOIN Y DC X UTILISER Y",
+          "exemples": [
+            {
+              "phrase": "Ce manteau est utile en hiver.",
+              "ea": "En hiver on a besoin de se réchauffer, donc le manteau nous aide à nous réchauffer."
+            },
+            {
+              "phrase": "La voiture est utile pour Pierre.",
+              "ea": "Pierre a besoin de se déplacer loin, donc il utilise la voiture."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "Y UTILE POUR X (X ACHETER Y)",
+          "exemples": [
+            {
+              "phrase": "Cet objet est utile pour Pierre.",
+              "ea": "Pierre a besoin du marteau, donc il l'achète."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": []
+  },
+  {
+    "headword": "UTILISER",
+    "letter": "U",
+    "fondateur1": "AVOIR",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR Y DC X FAIRE W",
+          "exemples": [
+            {
+              "phrase": "Pierre utilise le marteau pour enfoncer le clou.",
+              "ea": "Pierre a un marteau, donc il enfonce le clou."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "VACANT",
+    "letter": "V",
+    "fondateur1": "NEG OCCUPER",
+    "fondateur2": "POUVOIR OCCUPER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Z OCCUPER Y DC X POUVOIR OCCUPER Y",
+          "exemples": [
+            {
+              "phrase": "Cet appartement est vacant.",
+              "ea": "Personne n'occupe cet appartement, donc tu peux l'occuper."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE."
+  },
+  {
+    "headword": "VIVRE",
+    "letter": "V",
+    "fondateur1": "ÊTRE",
+    "fondateur2": "ÊTRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X ÊTRE) DC X ÊTRE",
+          "exemples": [
+            {
+              "phrase": "Il vit à Paris.",
+              "ea": "Il a été à Paris, donc il est à Paris."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "VIVRE implique une continuité de l'être : ce qui a été continue d'être."
+  },
+  {
     "headword": "VOLER",
     "letter": "V",
     "fondateur1": "PAYER",
@@ -527,5 +1994,93 @@
     },
     "criteres": [],
     "nb": "VOLER et ACHETER partagent le même bloc PAYER — AVOIR : ACHETER en est l'aspect normatif (DC), VOLER en est l'aspect transgressif (PT)."
+  },
+  {
+    "headword": "VOLONTAIRE",
+    "letter": "V",
+    "fondateur1": "NEG DEVOIR FAIRE",
+    "fondateur2": "FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X DEVOIR FAIRE PT X FAIRE",
+          "exemples": [
+            {
+              "phrase": "Pierre est volontaire pour cette mission.",
+              "ea": "Pierre n'est pas obligé de faire cette mission, pourtant il la fait."
+            },
+            {
+              "phrase": "Un engagement volontaire.",
+              "ea": "Personne ne le force, pourtant il s'engage."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "ÉCHOUER",
+    "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "NEG AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y PT NEG X AVOIR Z",
+          "exemples": [
+            {
+              "phrase": "J'ai échoué à l'examen.",
+              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "ÉNERVER",
+    "letter": "E",
+    "fondateur1": "SE RÉPÉTER",
+    "fondateur2": "DÉRANGER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE RÉPÉTER DC Y DÉRANGER X",
+          "exemples": [
+            {
+              "phrase": "Le bruit de l'horloge m'énerve.",
+              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "ÉTONNER",
+    "letter": "E",
+    "fondateur1": "APPRENDRE",
+    "fondateur2": "NEG ATTENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X APPRENDRE Y PT PERF (X NEG ATTENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Son comportement m'étonne.",
+              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
   }
 ]
