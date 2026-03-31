@@ -56,6 +56,36 @@
     ]
   },
   {
+    "headword": "ANCIEN",
+    "letter": "A",
+    "fondateur1": "ÊTRE VIEUX",
+    "fondateur2": "VALORISER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE VIEUX DC X VALORISER Y",
+          "exemples": [
+            {
+              "phrase": "Un meuble ancien.",
+              "ea": "Ce meuble est vieux, donc on le valorise."
+            },
+            {
+              "phrase": "Les temps anciens.",
+              "ea": "Ces temps sont vieux, donc on les valorise."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qui est vieux mérite d'être valorisé."
+      }
+    ]
+  },
+  {
     "headword": "ANXIEUX",
     "letter": "A",
     "fondateur1": "SE PASSER",
@@ -124,6 +154,32 @@
     "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »"
   },
   {
+    "headword": "ASYMPTOMATIQUE",
+    "letter": "A",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "NEG SIGNES",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X ÊTRE MALADE PT NEG X AVOIR SIGNES",
+          "exemples": [
+            {
+              "phrase": "Le patient est asymptomatique.",
+              "ea": "Il est malade, pourtant il n'a pas de signes."
+            },
+            {
+              "phrase": "Une infection asymptomatique.",
+              "ea": "Il est infecté, pourtant il n'y a pas de signes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES."
+  },
+  {
     "headword": "ATTENDRE",
     "letter": "A",
     "fondateur1": "DEVOIR SE PASSER",
@@ -158,6 +214,40 @@
         "texte": "« une vraie attente » (ATT-X DC REAL-Y) : peu de certitude que ça arrive, pourtant on reste longtemps."
       }
     ]
+  },
+  {
+    "headword": "AVARE",
+    "letter": "A",
+    "fondateur1": "DEVOIR DONNER",
+    "fondateur2": "NEG DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DEVOIR DONNER Y PT X NEG DONNER Y",
+          "exemples": [
+            {
+              "phrase": "Mon mari est avare avec moi depuis notre mariage.",
+              "ea": "Il devrait me donner de l'argent, pourtant il ne m'en donne pas."
+            },
+            {
+              "phrase": "Il est très riche, mais il est avare !",
+              "ea": "Il devrait donner (car il est riche), pourtant il ne donne pas."
+            },
+            {
+              "phrase": "Notre chef est avare de compliments.",
+              "ea": "Le chef devrait nous donner des compliments, pourtant il ne nous en donne pas."
+            },
+            {
+              "phrase": "La nature est avare des joies qu'elle nous donne.",
+              "ea": "La nature devrait nous donner de la joie, pourtant elle ne nous en donne pas."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "AVARE se combine naturellement avec « avare de Y » car DONNER exige un complément d'objet. Les noms sujets de DONNER (Dieu, mère, père, gouvernement, ciel, lune) se combinent avec AVARE : « un gouvernement avare de mesures », « une lune avare de lumière ». L'hypallage « lumière avare » se comprend par transfert : c'est la source (lune, ciel) qui est avare, non la lumière. « Cadeau avare » est contradictoire : un cadeau est un don accompli, or AVARE signifie l'absence de don."
   },
   {
     "headword": "AVOIR LA CHANCE",
@@ -535,22 +625,27 @@
     "headword": "DOUTER",
     "letter": "D",
     "fondateur1": "ÊTRE POSSIBLE",
-    "fondateur2": "NEG ÊTRE SÛR",
+    "fondateur2": "NEG SAVOIR",
     "signification": {
       "interne": [
         {
-          "aspect": "Y ÊTRE POSSIBLE PT X NEG ÊTRE SÛR DE Y",
+          "aspect": "Y ÊTRE POSSIBLE PT NEG X SAVOIR Y",
           "exemples": [
             {
-              "phrase": "Pierre a un doute sur l'honnêteté de Paul.",
-              "ea": "On a des raisons de penser qu'il est honnête, pourtant je ne peux pas y croire pleinement."
+              "phrase": "Pierre doute de l'honnêteté de Paul.",
+              "ea": "L'honnêteté de Paul est possible, pourtant Pierre n'en est pas sûr."
+            },
+            {
+              "phrase": "Pierre a des doutes s'il doit acheter un appartement.",
+              "ea": "Il y a une possibilité que cet appartement soit un bon achat, pourtant Pierre n'est pas sûr."
             }
           ]
         }
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "nb": "L'incohérence de « un doute possible », « je doute possiblement » remonte à l'impossibilité de « je sais possiblement ». SAVOIR suppose la clôture de la modalité (on sait ou on ne sait pas). « Doute possible » se rencontre dans des phrases négatives (« aucun doute possible », « sans l'ombre d'un doute possible ») où POSSIBLE sert d'intensif rhétorique : on nie la possibilité même qu'un doute surgisse."
   },
   {
     "headword": "DÉLICIEUX",
@@ -575,6 +670,37 @@
     "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative."
   },
   {
+    "headword": "EFFET",
+    "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "SE PASSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC W SE PASSER",
+          "exemples": [
+            {
+              "phrase": "Ce médicament fait de l'effet.",
+              "ea": "On prend le médicament, donc quelque chose se passe."
+            },
+            {
+              "phrase": "L'effet de cette politique se fait sentir.",
+              "ea": "On applique cette politique, donc quelque chose se passe."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand on fait quelque chose, il y a des conséquences."
+      }
+    ],
+    "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas."
+  },
+  {
     "headword": "EMBELLIR",
     "letter": "E",
     "fondateur1": "FAIRE",
@@ -594,6 +720,36 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "EN BONNE SANTÉ",
+    "letter": "E",
+    "fondateur1": "NEG ÊTRE MALADE",
+    "fondateur2": "NEG SIGNES",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X ÊTRE MALADE DC NEG X AVOIR SIGNES",
+          "exemples": [
+            {
+              "phrase": "Pierre est en bonne santé.",
+              "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            },
+            {
+              "phrase": "Les résultats montrent qu'il est en bonne santé.",
+              "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ne pas être malade implique pas de signes."
+      }
+    ]
   },
   {
     "headword": "FACILE",
@@ -628,37 +784,24 @@
   {
     "headword": "GÉNÉREUX",
     "letter": "G",
-    "fondateur1": "ÊTRE PRÉCIEUX",
+    "fondateur1": "NEG DEVOIR DONNER",
     "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
-          "aspect": "Y ÊTRE PRÉCIEUX PT X DONNER Y À Z",
+          "aspect": "NEG X DEVOIR DONNER Y PT X DONNER Y À Z",
           "exemples": [
             {
-              "phrase": "Elle a été très généreuse avec moi. Elle m'a laissé beaucoup de nourriture pour mon séjour et une voiture avec le plein de carburant.",
-              "ea": "La nourriture et une voiture avec le plein de carburant sont précieux, pourtant elle me les a laissés."
+              "phrase": "Il est généreux avec ses amis.",
+              "ea": "Il n'est pas obligé de leur donner, pourtant il leur donne."
             }
           ]
         }
       ],
-      "externe": [
-        {
-          "quasibloc": "X ÊTRE GÉNÉREUX AVEC Z (X NEG VOULOIR PROFITER DE Z)",
-          "exemples": [
-            {
-              "phrase": "Elle est généreuse, elle n'attend rien en retour.",
-              "ea": "Elle est généreuse avec autrui, donc elle ne veut pas profiter de lui."
-            },
-            {
-              "phrase": "Elle est généreuse, mais elle attend quelque chose en retour.",
-              "ea": "Elle est généreuse avec autrui, pourtant elle veut profiter de lui."
-            }
-          ]
-        }
-      ]
+      "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres."
   },
   {
     "headword": "HABITUEL",
@@ -693,20 +836,24 @@
           "aspect": "X FAIRE UN EFFORT DC X ATTEINDRE Y",
           "exemples": [
             {
-              "phrase": "C'est du haut pilotage.",
-              "ea": "Si vous faites un effort, vous pouvez atteindre ce niveau de pilotage."
+              "phrase": "C6 est un haut niveau de la connaissance d'une langue.",
+              "ea": "Pour atteindre le niveau C6, il faut faire beaucoup d'effort."
             },
             {
-              "phrase": "La cabane est en haut de la montagne.",
-              "ea": "Si vous marchez longtemps, vous pouvez atteindre la cabane."
+              "phrase": "Le haut temps de la philosophie.",
+              "ea": "La philosophie évoluait, donc elle a atteint son sommet durant ce temps."
             }
           ]
         }
       ],
       "externe": []
     },
-    "criteres": [],
-    "nb": "Différence avec LOIN : à analyser."
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : pour atteindre quelque chose de haut, il faut faire un effort."
+      }
+    ]
   },
   {
     "headword": "HORIZON",
@@ -969,6 +1116,67 @@
     "criteres": []
   },
   {
+    "headword": "MAIN",
+    "letter": "M",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR FAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR Y DC X POUVOIR FAIRE",
+          "exemples": [
+            {
+              "phrase": "Quand Marie est malade, Pierre est une main : il fait toutes les tâches ménagères.",
+              "ea": "Pierre a ses mains, donc il peut faire les tâches."
+            },
+            {
+              "phrase": "J'ai besoin de ma main pour répondre à l'appel.",
+              "ea": "J'ai ma main, donc je peux répondre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : avoir une main disponible permet d'agir."
+      }
+    ],
+    "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect."
+  },
+  {
+    "headword": "MESQUIN",
+    "letter": "M",
+    "fondateur1": "NEG ÊTRE IMPORTANT",
+    "fondateur2": "PENSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y ÊTRE IMPORTANT PT X PENSER À Y",
+          "exemples": [
+            {
+              "phrase": "Il est mesquin de marchander.",
+              "ea": "Le marchandage porte sur des choses peu importantes, pourtant on y pense."
+            },
+            {
+              "phrase": "Ce qui est mesquin, c'est prétendre recevoir l'équivalent de ce qu'on donne.",
+              "ea": "L'équivalence exacte n'est pas importante, pourtant on y pense."
+            },
+            {
+              "phrase": "Il est mesquin d'aborder la question des avantages du premier ministre qui a exercé un mois.",
+              "ea": "Ces avantages ne sont pas importants, pourtant on y pense."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes."
+  },
+  {
     "headword": "MONOTONE",
     "letter": "M",
     "fondateur1": "ÊTRE UNIFORME",
@@ -1111,6 +1319,36 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "NÉCESSAIRE",
+    "letter": "N",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "DEVOIR AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR AVOIR Y DC X DEVOIR AVOIR Z",
+          "exemples": [
+            {
+              "phrase": "Tu as le temps nécessaire pour finir la tâche.",
+              "ea": "Tu veux finir la tâche, donc tu dois avoir le temps."
+            },
+            {
+              "phrase": "L'argent nécessaire pour le voyage.",
+              "ea": "Tu veux faire le voyage, donc tu dois avoir l'argent."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : vouloir quelque chose implique devoir avoir les moyens."
+      }
+    ]
   },
   {
     "headword": "NÉGLIGER",
@@ -1258,7 +1496,7 @@
           "exemples": [
             {
               "phrase": "Pierre est pauvre.",
-              "ea": "La voiture est nécessaire pour Pierre pour pouvoir se rendre au travail, pourtant il ne peut pas l'acheter."
+              "ea": "La voiture lui est nécessaire pour se rendre au travail, pourtant il ne peut pas l'acheter."
             }
           ]
         }
@@ -1268,14 +1506,15 @@
           "quasibloc": "(NEG X AVOIR Y) DEMANDER",
           "exemples": [
             {
-              "phrase": "Il est pauvre, il demande de l'aide.",
-              "ea": "Il n'a pas ce qu'il lui faut, donc il demande."
+              "phrase": "Une main pauvre.",
+              "ea": "La main n'a pas, donc elle demande."
             }
           ]
         }
       ]
     },
-    "criteres": []
+    "criteres": [],
+    "nb": "« Une main pauvre » se comprend comme la personne qui demande quelque chose. C'est le mot MAIN qui signifie une action, or dans PAUVRE l'action est dans le quasi-bloc."
   },
   {
     "headword": "PAYER",
@@ -1511,6 +1750,31 @@
     "criteres": []
   },
   {
+    "headword": "PSYCHOSOMATIQUE",
+    "letter": "P",
+    "fondateur1": "NEG ÊTRE MALADE",
+    "fondateur2": "SIGNES",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X ÊTRE MALADE PT X AVOIR SIGNES",
+          "exemples": [
+            {
+              "phrase": "Ses douleurs sont psychosomatiques.",
+              "ea": "Il n'est pas malade, pourtant il a des signes."
+            },
+            {
+              "phrase": "Un trouble psychosomatique.",
+              "ea": "Il n'est pas malade organiquement, pourtant il y a des signes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
     "headword": "PÉRIR",
     "letter": "P",
     "fondateur1": "ACCIDENT",
@@ -1531,6 +1795,36 @@
     },
     "criteres": [],
     "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent."
+  },
+  {
+    "headword": "RADIN",
+    "letter": "R",
+    "fondateur1": "NEG COÛTER",
+    "fondateur2": "NEG VOULOIR DÉPENSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y COÛTER PT NEG X VOULOIR DÉPENSER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est radin : il n'a jamais offert un café à personne sur son lieu de travail.",
+              "ea": "Le café ne coûte pas cher, pourtant Pierre ne veut pas dépenser pour l'offrir."
+            },
+            {
+              "phrase": "Pierre est radin : il refuse de dépanner des amis de quelques dizaines de centimes.",
+              "ea": "Quelques centimes ne coûtent rien, pourtant il ne veut pas les dépenser."
+            },
+            {
+              "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
+              "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes »."
   },
   {
     "headword": "RESPONSABLE",
@@ -1742,6 +2036,67 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "SYMPTOMATIQUE",
+    "letter": "S",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X ÊTRE MALADE DC X AVOIR SIGNES",
+          "exemples": [
+            {
+              "phrase": "Le patient est symptomatique.",
+              "ea": "Il est malade, donc il a des signes."
+            },
+            {
+              "phrase": "Une phase symptomatique de la maladie.",
+              "ea": "Il est malade, donc les signes apparaissent."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : être malade implique des signes."
+      }
+    ]
+  },
+  {
+    "headword": "SÛR",
+    "letter": "S",
+    "fondateur1": "ÊTRE POSSIBLE",
+    "fondateur2": "SAVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE POSSIBLE DC X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est sûr de l'honnêteté de Paul.",
+              "ea": "L'honnêteté de Paul est possible, donc Pierre le sait."
+            },
+            {
+              "phrase": "Je suis sûr qu'il viendra.",
+              "ea": "Sa venue est possible, donc je le sais."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand quelque chose est possible et qu'on a les éléments, on sait."
+      }
+    ],
+    "nb": "SÛR et DOUTER partagent le même bloc POSSIBLE — SAVOIR : SÛR en est l'aspect normatif (DC), DOUTER en est l'aspect transgressif (PT)."
   },
   {
     "headword": "TEMPS",
@@ -2040,6 +2395,33 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "ÉCONOME",
+    "letter": "E",
+    "fondateur1": "NEG AVOIR BESOIN",
+    "fondateur2": "NEG DÉPENSER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X AVOIR BESOIN DE Y DC NEG X DÉPENSER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est économe.",
+              "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
+      }
+    ],
+    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »"
   },
   {
     "headword": "ÉNERVER",
