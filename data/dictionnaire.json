@@ -109,7 +109,7 @@
   {
     "headword": "APPARAÎTRE",
     "letter": "A",
-    "fondateur1": "NEG ÊTRE",
+    "fondateur1": "ÊTRE",
     "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
@@ -134,7 +134,7 @@
   {
     "headword": "APPRENDRE",
     "letter": "A",
-    "fondateur1": "NEG SAVOIR",
+    "fondateur1": "SAVOIR",
     "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
@@ -157,7 +157,7 @@
     "headword": "ASYMPTOMATIQUE",
     "letter": "A",
     "fondateur1": "ÊTRE MALADE",
-    "fondateur2": "NEG SIGNES",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -219,7 +219,7 @@
     "headword": "AVARE",
     "letter": "A",
     "fondateur1": "DEVOIR DONNER",
-    "fondateur2": "NEG DONNER",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -367,7 +367,7 @@
     "headword": "CESSER",
     "letter": "C",
     "fondateur1": "FAIRE",
-    "fondateur2": "NEG FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -439,8 +439,8 @@
   {
     "headword": "COMPULSIF",
     "letter": "C",
-    "fondateur1": "NEG VOULOIR FAIRE",
-    "fondateur2": "NEG POUVOIR S'EMPÊCHER",
+    "fondateur1": "VOULOIR FAIRE",
+    "fondateur2": "POUVOIR S'EMPÊCHER",
     "signification": {
       "interne": [
         {
@@ -560,7 +560,7 @@
     "headword": "DISPARAÎTRE",
     "letter": "D",
     "fondateur1": "ÊTRE",
-    "fondateur2": "NEG ÊTRE",
+    "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
         {
@@ -625,7 +625,7 @@
     "headword": "DOUTER",
     "letter": "D",
     "fondateur1": "ÊTRE POSSIBLE",
-    "fondateur2": "NEG SAVOIR",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -724,8 +724,8 @@
   {
     "headword": "EN BONNE SANTÉ",
     "letter": "E",
-    "fondateur1": "NEG ÊTRE MALADE",
-    "fondateur2": "NEG SIGNES",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -784,7 +784,7 @@
   {
     "headword": "GÉNÉREUX",
     "letter": "G",
-    "fondateur1": "NEG DEVOIR DONNER",
+    "fondateur1": "DEVOIR DONNER",
     "fondateur2": "DONNER",
     "signification": {
       "interne": [
@@ -884,7 +884,7 @@
     "headword": "IMMÉDIAT",
     "letter": "I",
     "fondateur1": "SE PASSER",
-    "fondateur2": "NEG ATTENDRE",
+    "fondateur2": "ATTENDRE",
     "signification": {
       "interne": [
         {
@@ -947,7 +947,7 @@
     "headword": "INHABITUEL",
     "letter": "I",
     "fondateur1": "FAIRE",
-    "fondateur2": "NEG ÊTRE NORMAL",
+    "fondateur2": "ÊTRE NORMAL",
     "signification": {
       "interne": [
         {
@@ -1010,7 +1010,7 @@
     "headword": "IRRESPONSABLE",
     "letter": "I",
     "fondateur1": "DEVOIR FAIRE",
-    "fondateur2": "NEG FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -1149,7 +1149,7 @@
   {
     "headword": "MESQUIN",
     "letter": "M",
-    "fondateur1": "NEG ÊTRE IMPORTANT",
+    "fondateur1": "ÊTRE IMPORTANT",
     "fondateur2": "PENSER",
     "signification": {
       "interne": [
@@ -1274,7 +1274,7 @@
     "headword": "NORMAL",
     "letter": "N",
     "fondateur1": "SE PRODUIRE",
-    "fondateur2": "NEG RÉAGIR",
+    "fondateur2": "RÉAGIR",
     "signification": {
       "interne": [
         {
@@ -1354,7 +1354,7 @@
     "headword": "NÉGLIGER",
     "letter": "N",
     "fondateur1": "ÊTRE IMPORTANT",
-    "fondateur2": "NEG FAIRE ATTENTION",
+    "fondateur2": "FAIRE ATTENTION",
     "signification": {
       "interne": [
         {
@@ -1446,7 +1446,7 @@
     "headword": "PARFAIT",
     "letter": "P",
     "fondateur1": "TERMINER",
-    "fondateur2": "NEG POUVOIR AMÉLIORER",
+    "fondateur2": "POUVOIR AMÉLIORER",
     "signification": {
       "interne": [
         {
@@ -1488,7 +1488,7 @@
     "headword": "PAUVRE",
     "letter": "P",
     "fondateur1": "ÊTRE NÉCESSAIRE",
-    "fondateur2": "NEG AVOIR",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -1583,7 +1583,7 @@
   {
     "headword": "POSSIBLE",
     "letter": "P",
-    "fondateur1": "NEG ÊTRE",
+    "fondateur1": "ÊTRE",
     "fondateur2": "POUVOIR ÊTRE",
     "signification": {
       "interne": [
@@ -1752,7 +1752,7 @@
   {
     "headword": "PSYCHOSOMATIQUE",
     "letter": "P",
-    "fondateur1": "NEG ÊTRE MALADE",
+    "fondateur1": "ÊTRE MALADE",
     "fondateur2": "SIGNES",
     "signification": {
       "interne": [
@@ -1799,8 +1799,8 @@
   {
     "headword": "RADIN",
     "letter": "R",
-    "fondateur1": "NEG COÛTER",
-    "fondateur2": "NEG VOULOIR DÉPENSER",
+    "fondateur1": "COÛTER",
+    "fondateur2": "VOULOIR DÉPENSER",
     "signification": {
       "interne": [
         {
@@ -1977,7 +1977,7 @@
   {
     "headword": "SOUPÇONNER",
     "letter": "S",
-    "fondateur1": "NEG SAVOIR",
+    "fondateur1": "SAVOIR",
     "fondateur2": "PENSER",
     "signification": {
       "interne": [
@@ -2019,7 +2019,7 @@
   {
     "headword": "SURVENIR",
     "letter": "S",
-    "fondateur1": "NEG DEVOIR SE PASSER",
+    "fondateur1": "DEVOIR SE PASSER",
     "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
@@ -2287,7 +2287,7 @@
   {
     "headword": "VACANT",
     "letter": "V",
-    "fondateur1": "NEG OCCUPER",
+    "fondateur1": "OCCUPER",
     "fondateur2": "POUVOIR OCCUPER",
     "signification": {
       "interne": [
@@ -2353,7 +2353,7 @@
   {
     "headword": "VOLONTAIRE",
     "letter": "V",
-    "fondateur1": "NEG DEVOIR FAIRE",
+    "fondateur1": "DEVOIR FAIRE",
     "fondateur2": "FAIRE",
     "signification": {
       "interne": [
@@ -2379,7 +2379,7 @@
     "headword": "ÉCHOUER",
     "letter": "E",
     "fondateur1": "FAIRE",
-    "fondateur2": "NEG AVOIR",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -2399,8 +2399,8 @@
   {
     "headword": "ÉCONOME",
     "letter": "E",
-    "fondateur1": "NEG AVOIR BESOIN",
-    "fondateur2": "NEG DÉPENSER",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "DÉPENSER",
     "signification": {
       "interne": [
         {
@@ -2448,7 +2448,7 @@
     "headword": "ÉTONNER",
     "letter": "E",
     "fondateur1": "APPRENDRE",
-    "fondateur2": "NEG ATTENDRE",
+    "fondateur2": "ATTENDRE",
     "signification": {
       "interne": [
         {
