@@ -3,7 +3,13 @@
 Merge un ou plusieurs items JSON dans le dictionnaire TBS.
 
 Usage:
+    python merge_entry.py                                          # défauts
     python merge_entry.py <dictionnaire.json> <nouvelles_entrees.json>
+
+Sans argument, utilise :
+    ../data/dictionnaire.json
+    ../data/example_ajouter.json
+(résolus par rapport à l'emplacement du script).
 
 Le fichier d'entrées peut contenir :
 - Un objet JSON unique (une entrée)
@@ -44,16 +50,24 @@ def validate_entry(entry):
     return True, None
 
 
+DEFAULT_DICT = Path(__file__).resolve().parent.parent / "data" / "dictionnaire.json"
+DEFAULT_ENTRIES = Path(__file__).resolve().parent.parent / "data" / "example_ajouter.json"
+
+
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python merge_entry.py <dictionnaire.json> <nouvelles_entrees.json>")
+    if len(sys.argv) == 1:
+        dict_path = DEFAULT_DICT
+        entries_path = DEFAULT_ENTRIES
+    elif len(sys.argv) == 3:
+        dict_path = Path(sys.argv[1])
+        entries_path = Path(sys.argv[2])
+    else:
+        print("Usage: python merge_entry.py [<dictionnaire.json> <nouvelles_entrees.json>]")
         print()
-        print("Exemple:")
-        print("  python merge_entry.py data/dictionnaire.json nouvelles_entrees.json")
+        print("Sans argument, utilise les défauts :")
+        print(f"  {DEFAULT_DICT}")
+        print(f"  {DEFAULT_ENTRIES}")
         sys.exit(1)
-    
-    dict_path = Path(sys.argv[1])
-    entries_path = Path(sys.argv[2])
     
     if not dict_path.exists():
         print(f"Erreur : {dict_path} n'existe pas.")

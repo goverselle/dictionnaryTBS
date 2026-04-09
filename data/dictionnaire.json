@@ -1147,6 +1147,33 @@
     "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect."
   },
   {
+    "headword": "MASOCHISTE",
+    "letter": "M",
+    "fondateur1": "ÊTRE DOULOUREUX",
+    "fondateur2": "JOUIR",
+    "paradoxal": true,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE DOULOUREUX DC X JOUIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est un vrai masochiste.",
+              "ea": "C'est douloureux, donc il en jouit."
+            },
+            {
+              "phrase": "Elle est masochiste dans ses relations.",
+              "ea": "Ses relations sont douloureuses, donc elle en jouit."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y)."
+  },
+  {
     "headword": "MESQUIN",
     "letter": "M",
     "fondateur1": "ÊTRE IMPORTANT",
@@ -1441,6 +1468,32 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "PARANOÏAQUE",
+    "letter": "P",
+    "fondateur1": "DANGER",
+    "fondateur2": "AVOIR PEUR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG-DANGER PT AVOIR PEUR",
+          "exemples": [
+            {
+              "phrase": "Il n'y a pas de danger, pourtant il a peur.",
+              "ea": "Il n'y a pas de danger, pourtant il a peur."
+            },
+            {
+              "phrase": "Personne ne le menace, pourtant il a peur.",
+              "ea": "Personne ne le menace, pourtant il a peur."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "À la différence d'anxieux (NEG Y SE PASSER PT X S'INQUIÉTER), où la peur est sans objet, paranoïaque nie un danger spécifique : le sujet construit une menace là où il n'y en a pas. Syntaxiquement, anxieux fonctionne comme état transitoire (Il est anxieux ce matin, Elle a été anxieuse toute la journée), tandis que paranoïaque décrit un trait permanent (Il est paranoïaque ; ?Il est paranoïaque ce matin est bizarre, sauf emploi hyperbolique). Cette différence syntaxique rejoint la différence aspectuelle : anxieux décrit un état lié à un moment (il faut un moment où rien ne se passe), paranoïaque décrit un trait permanent."
   },
   {
     "headword": "PARFAIT",
@@ -1931,6 +1984,32 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "SATISFAIRE",
+    "letter": "S",
+    "fondateur1": "VOULOIR",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR Y DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Ce repas m'a satisfait.",
+              "ea": "Je voulais un bon repas, donc je l'ai eu."
+            },
+            {
+              "phrase": "Pierre a satisfait sa curiosité.",
+              "ea": "Il voulait savoir, donc il a su."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE)."
   },
   {
     "headword": "SE SUICIDER",

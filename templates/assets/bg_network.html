@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Background network</title>
+<style>
+:root {
+  --color-background-primary: transparent;
+  --color-border-secondary: rgba(17,17,17,0.2);
+  --color-border-tertiary: rgba(17,17,17,0.15);
+  --color-text-primary: #444;
+  --color-text-secondary: #666;
+  --color-text-tertiary: #999;
+  --border-radius-lg: 0;
+  --border-radius-md: 0;
+  --font-sans: 'JetBrains Mono', 'Courier New', monospace;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#container {
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+#tooltip, #panel { display: none !important; }
+</style>
+</head>
+<body>
+<div id="container" style="width: 100%; height: 700px; position: relative; overflow: hidden; border-radius: var(--border-radius-lg);">
+  <canvas id="graph"></canvas>
+  <div id="tooltip" style="position: absolute; display: none; background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; pointer-events: none; max-width: 320px; z-index: 10;"></div>
+  <div id="panel" style="position: absolute; top: 12px; right: 12px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 12px; font-size: 12px; max-width: 240px; max-height: 450px; overflow-y: auto; display: none;"></div>
+  <div style="position: absolute; bottom: 12px; right: 12px; font-size: 10px; color: var(--color-text-tertiary);">Glisser · Molette · Clic</div>
+</div>
+
+<script>
+const raw = [{"h": "ACHETER", "f1": "PAYER", "f2": "AVOIR"}, {"h": "AMÉLIORER", "f1": "FAIRE", "f2": "ÊTRE MIEUX"}, {"h": "ANCIEN", "f1": "ÊTRE VIEUX", "f2": "VALORISER"}, {"h": "ANXIEUX", "f1": "SE PASSER", "f2": "S'INQUIÉTER"}, {"h": "APPARAÎTRE", "f1": "ÊTRE", "f2": "ÊTRE"}, {"h": "APPRENDRE", "f1": "SAVOIR", "f2": "SAVOIR"}, {"h": "ASYMPTOMATIQUE", "f1": "ÊTRE MALADE", "f2": "SIGNES"}, {"h": "ATTENDRE", "f1": "DEVOIR SE PASSER", "f2": "RESTER"}, {"h": "AVARE", "f1": "DEVOIR DONNER", "f2": "DONNER"}, {"h": "AVOIR LA CHANCE", "f1": "FAIRE", "f2": "AVOIR"}, {"h": "BAS", "f1": "POUVOIR ATTEINDRE", "f2": "DEVOIR FAIRE UN EFFORT"}, {"h": "BEAU", "f1": "VOIR", "f2": "AIMER"}, {"h": "BOUTON", "f1": "APPUYER", "f2": "FONCTIONNER"}, {"h": "CAUSER", "f1": "FAIRE", "f2": "SE PASSER"}, {"h": "CESSER", "f1": "FAIRE", "f2": "FAIRE"}, {"h": "CHERCHER", "f1": "VOULOIR-AVOIR", "f2": "FAIRE"}, {"h": "COMPRENDRE", "f1": "DIRE", "f2": "SAVOIR"}, {"h": "COMPULSIF", "f1": "VOULOIR FAIRE", "f2": "POUVOIR S'EMPÊCHER"}, {"h": "CONVAINCRE", "f1": "DIRE", "f2": "PENSER"}, {"h": "COURAGEUX", "f1": "FAIRE PEUR", "f2": "FAIRE"}, {"h": "DENTS", "f1": "AVOIR", "f2": "POUVOIR MORDRE"}, {"h": "DIFFICILE", "f1": "FAIRE", "f2": "AVOIR"}, {"h": "DISPARAÎTRE", "f1": "ÊTRE", "f2": "ÊTRE"}, {"h": "DISTRAIRE", "f1": "PENSER", "f2": "FAIRE PENSER À AUTRE CHOSE"}, {"h": "DONNER", "f1": "AVOIR", "f2": "AVOIR"}, {"h": "DOUTER", "f1": "ÊTRE POSSIBLE", "f2": "SAVOIR"}, {"h": "DÉLICIEUX", "f1": "GOÛTER", "f2": "AIMER"}, {"h": "EFFET", "f1": "FAIRE", "f2": "SE PASSER"}, {"h": "EMBELLIR", "f1": "FAIRE", "f2": "ÊTRE BEAU"}, {"h": "EN BONNE SANTÉ", "f1": "ÊTRE MALADE", "f2": "SIGNES"}, {"h": "FACILE", "f1": "FAIRE", "f2": "AVOIR"}, {"h": "GÉNÉREUX", "f1": "DEVOIR DONNER", "f2": "DONNER"}, {"h": "HABITUEL", "f1": "FAIRE", "f2": "ÊTRE NORMAL"}, {"h": "HAUT", "f1": "FAIRE UN EFFORT", "f2": "ATTEINDRE"}, {"h": "HORIZON", "f1": "VOIR", "f2": "DEVOIR ARRIVER"}, {"h": "IMMÉDIAT", "f1": "SE PASSER", "f2": "ATTENDRE"}, {"h": "IMPARFAIT", "f1": "TERMINER", "f2": "POUVOIR AMÉLIORER"}, {"h": "IMPÉRATIF", "f1": "DIRE", "f2": "DEVOIR FAIRE"}, {"h": "INHABITUEL", "f1": "FAIRE", "f2": "ÊTRE NORMAL"}, {"h": "INSTRUMENT", "f1": "AVOIR", "f2": "FAIRE"}, {"h": "INTELLIGENT", "f1": "ÊTRE DIFFICILE", "f2": "COMPRENDRE"}, {"h": "IRRESPONSABLE", "f1": "DEVOIR FAIRE", "f2": "FAIRE"}, {"h": "JOUET", "f1": "UTILISER", "f2": "JOUER"}, {"h": "LANGUE", "f1": "PARTAGER", "f2": "COMPRENDRE"}, {"h": "LIBRE", "f1": "VOULOIR FAIRE", "f2": "POUVOIR FAIRE"}, {"h": "LOUER", "f1": "PAYER", "f2": "PRÊTER"}, {"h": "MAIN", "f1": "AVOIR", "f2": "POUVOIR FAIRE"}, {"h": "MESQUIN", "f1": "ÊTRE IMPORTANT", "f2": "PENSER"}, {"h": "MONOTONE", "f1": "ÊTRE UNIFORME", "f2": "S'ENNUYER"}, {"h": "MOT", "f1": "AVOIR", "f2": "DIRE"}, {"h": "MÉTICULEUX", "f1": "ÊTRE DÉTAIL", "f2": "FAIRE ATTENTION"}, {"h": "NORMAL", "f1": "SE PRODUIRE", "f2": "RÉAGIR"}, {"h": "NOUVEAU", "f1": "SE PASSER", "f2": "SE PASSER"}, {"h": "NÉCESSAIRE", "f1": "VOULOIR AVOIR", "f2": "DEVOIR AVOIR"}, {"h": "NÉGLIGER", "f1": "ÊTRE IMPORTANT", "f2": "FAIRE ATTENTION"}, {"h": "OBTENIR", "f1": "FAIRE", "f2": "AVOIR"}, {"h": "OBÉIR", "f1": "DIRE", "f2": "FAIRE"}, {"h": "OPTIMISTE", "f1": "POUVOIR ESPÉRER", "f2": "ESPÉRER"}, {"h": "PARFAIT", "f1": "TERMINER", "f2": "POUVOIR AMÉLIORER"}, {"h": "PARTAGER", "f1": "AVOIR", "f2": "DONNER"}, {"h": "PAUVRE", "f1": "ÊTRE NÉCESSAIRE", "f2": "AVOIR"}, {"h": "PAYER", "f1": "ÊTRE ARGENT", "f2": "DONNER"}, {"h": "PERSUADER", "f1": "DIRE", "f2": "FAIRE"}, {"h": "PORTE", "f1": "SÉPARER", "f2": "UNIR"}, {"h": "POSSIBLE", "f1": "ÊTRE", "f2": "POUVOIR ÊTRE"}, {"h": "PREUVE", "f1": "MONTRER", "f2": "SAVOIR"}, {"h": "PROUVER", "f1": "MONTRER", "f2": "SAVOIR"}, {"h": "PRUDENT", "f1": "DANGER", "f2": "FAIRE"}, {"h": "PRÉCIS", "f1": "VISER", "f2": "ATTEINDRE"}, {"h": "PRÉSUPPOSER", "f1": "ADMETTRE", "f2": "COMPRENDRE"}, {"h": "PSYCHOSOMATIQUE", "f1": "ÊTRE MALADE", "f2": "SIGNES"}, {"h": "PÉRIR", "f1": "ACCIDENT", "f2": "MOURIR"}, {"h": "RADIN", "f1": "COÛTER", "f2": "VOULOIR DÉPENSER"}, {"h": "RESPONSABLE", "f1": "DEVOIR FAIRE", "f2": "FAIRE"}, {"h": "RESSUSCITER", "f1": "MOURIR", "f2": "VIVRE"}, {"h": "RÉPONDRE", "f1": "POSER UNE QUESTION", "f2": "DIRE"}, {"h": "SACRIFIER", "f1": "AVOIR BESOIN", "f2": "DONNER"}, {"h": "SE SUICIDER", "f1": "FAIRE", "f2": "ÊTRE MORT"}, {"h": "SERVIR", "f1": "AVOIR BESOIN", "f2": "FAIRE POUR"}, {"h": "SOUPÇONNER", "f1": "SAVOIR", "f2": "PENSER"}, {"h": "SUCCOMBER", "f1": "SUBIR", "f2": "MOURIR"}, {"h": "SURVENIR", "f1": "DEVOIR SE PASSER", "f2": "SE PASSER"}, {"h": "SYMPTOMATIQUE", "f1": "ÊTRE MALADE", "f2": "SIGNES"}, {"h": "SÛR", "f1": "ÊTRE POSSIBLE", "f2": "SAVOIR"}, {"h": "TEMPS", "f1": "AVOIR", "f2": "POUVOIR FAIRE"}, {"h": "TENTER", "f1": "VOULOIR AVOIR", "f2": "ESSAYER"}, {"h": "TUER", "f1": "FAIRE", "f2": "MOURIR"}, {"h": "UTILE", "f1": "AVOIR BESOIN", "f2": "UTILISER"}, {"h": "UTILISER", "f1": "AVOIR", "f2": "FAIRE"}, {"h": "VACANT", "f1": "OCCUPER", "f2": "POUVOIR OCCUPER"}, {"h": "VIVRE", "f1": "ÊTRE", "f2": "ÊTRE"}, {"h": "VOLER", "f1": "PAYER", "f2": "AVOIR"}, {"h": "VOLONTAIRE", "f1": "DEVOIR FAIRE", "f2": "FAIRE"}, {"h": "ÉCHOUER", "f1": "FAIRE", "f2": "AVOIR"}, {"h": "ÉCONOME", "f1": "AVOIR BESOIN", "f2": "DÉPENSER"}, {"h": "ÉNERVER", "f1": "SE RÉPÉTER", "f2": "DÉRANGER"}, {"h": "ÉTONNER", "f1": "APPRENDRE", "f2": "ATTENDRE"}, {"h": "DÉPENSER", "f1": "", "f2": ""}, {"h": "POUVOIR ESPÉRER", "f1": "", "f2": ""}, {"h": "SUBIR", "f1": "", "f2": ""}, {"h": "POUVOIR ÊTRE", "f1": "", "f2": ""}, {"h": "PENSER", "f1": "", "f2": ""}, {"h": "APPUYER", "f1": "", "f2": ""}, {"h": "ÊTRE", "f1": "", "f2": ""}, {"h": "ESSAYER", "f1": "", "f2": ""}, {"h": "DÉRANGER", "f1": "", "f2": ""}, {"h": "ÊTRE DÉTAIL", "f1": "", "f2": ""}, {"h": "VOULOIR AVOIR", "f1": "", "f2": ""}, {"h": "FAIRE", "f1": "", "f2": ""}, {"h": "DIRE", "f1": "", "f2": ""}, {"h": "POUVOIR ATTEINDRE", "f1": "", "f2": ""}, {"h": "FAIRE POUR", "f1": "", "f2": ""}, {"h": "POUVOIR MORDRE", "f1": "", "f2": ""}, {"h": "OCCUPER", "f1": "", "f2": ""}, {"h": "ÊTRE NORMAL", "f1": "", "f2": ""}, {"h": "DEVOIR FAIRE", "f1": "", "f2": ""}, {"h": "S'INQUIÉTER", "f1": "", "f2": ""}, {"h": "RÉAGIR", "f1": "", "f2": ""}, {"h": "SAVOIR", "f1": "", "f2": ""}, {"h": "POUVOIR OCCUPER", "f1": "", "f2": ""}, {"h": "DANGER", "f1": "", "f2": ""}, {"h": "AVOIR BESOIN", "f1": "", "f2": ""}, {"h": "DEVOIR SE PASSER", "f1": "", "f2": ""}, {"h": "SE PASSER", "f1": "", "f2": ""}, {"h": "ÊTRE IMPORTANT", "f1": "", "f2": ""}, {"h": "JOUER", "f1": "", "f2": ""}, {"h": "UNIR", "f1": "", "f2": ""}, {"h": "DEVOIR FAIRE UN EFFORT", "f1": "", "f2": ""}, {"h": "RESTER", "f1": "", "f2": ""}, {"h": "DEVOIR ARRIVER", "f1": "", "f2": ""}, {"h": "ÊTRE UNIFORME", "f1": "", "f2": ""}, {"h": "S'ENNUYER", "f1": "", "f2": ""}, {"h": "VOULOIR FAIRE", "f1": "", "f2": ""}, {"h": "ÊTRE VIEUX", "f1": "", "f2": ""}, {"h": "DEVOIR AVOIR", "f1": "", "f2": ""}, {"h": "ÊTRE POSSIBLE", "f1": "", "f2": ""}, {"h": "GOÛTER", "f1": "", "f2": ""}, {"h": "ÊTRE MIEUX", "f1": "", "f2": ""}, {"h": "ÊTRE DIFFICILE", "f1": "", "f2": ""}, {"h": "COÛTER", "f1": "", "f2": ""}, {"h": "ESPÉRER", "f1": "", "f2": ""}, {"h": "FAIRE PENSER À AUTRE CHOSE", "f1": "", "f2": ""}, {"h": "DEVOIR DONNER", "f1": "", "f2": ""}, {"h": "FAIRE UN EFFORT", "f1": "", "f2": ""}, {"h": "FAIRE PEUR", "f1": "", "f2": ""}, {"h": "SE PRODUIRE", "f1": "", "f2": ""}, {"h": "ÊTRE MORT", "f1": "", "f2": ""}, {"h": "TERMINER", "f1": "", "f2": ""}, {"h": "POUVOIR S'EMPÊCHER", "f1": "", "f2": ""}, {"h": "FONCTIONNER", "f1": "", "f2": ""}, {"h": "ATTEINDRE", "f1": "", "f2": ""}, {"h": "ADMETTRE", "f1": "", "f2": ""}, {"h": "VOULOIR DÉPENSER", "f1": "", "f2": ""}, {"h": "SIGNES", "f1": "", "f2": ""}, {"h": "MONTRER", "f1": "", "f2": ""}, {"h": "ÊTRE BEAU", "f1": "", "f2": ""}, {"h": "MOURIR", "f1": "", "f2": ""}, {"h": "SE RÉPÉTER", "f1": "", "f2": ""}, {"h": "VOIR", "f1": "", "f2": ""}, {"h": "POUVOIR AMÉLIORER", "f1": "", "f2": ""}, {"h": "PRÊTER", "f1": "", "f2": ""}, {"h": "FAIRE ATTENTION", "f1": "", "f2": ""}, {"h": "AVOIR", "f1": "", "f2": ""}, {"h": "POSER UNE QUESTION", "f1": "", "f2": ""}, {"h": "POUVOIR FAIRE", "f1": "", "f2": ""}, {"h": "ACCIDENT", "f1": "", "f2": ""}, {"h": "SÉPARER", "f1": "", "f2": ""}, {"h": "ÊTRE NÉCESSAIRE", "f1": "", "f2": ""}, {"h": "VOULOIR-AVOIR", "f1": "", "f2": ""}, {"h": "AIMER", "f1": "", "f2": ""}, {"h": "ÊTRE ARGENT", "f1": "", "f2": ""}, {"h": "VALORISER", "f1": "", "f2": ""}, {"h": "VISER", "f1": "", "f2": ""}, {"h": "ÊTRE MALADE", "f1": "", "f2": ""}];
+
+const canvas = document.getElementById('graph');
+const container = document.getElementById('container');
+const tooltip = document.getElementById('tooltip');
+const panel = document.getElementById('panel');
+const ctx = canvas.getContext('2d');
+
+let width, height, cx, cy;
+let rotX = 0.0, rotY = 0.0;
+let zoom = 0.8;
+let dragging = false;
+let lastX, lastY;
+let selectedNode = null;
+
+const nodes = [];
+const edges = [];
+const nodeMap = {};
+
+function resize() {
+  width = container.clientWidth;
+  height = container.clientHeight;
+  canvas.width = width * 2;
+  canvas.height = height * 2;
+  canvas.style.width = width + 'px';
+  canvas.style.height = height + 'px';
+  ctx.setTransform(2, 0, 0, 2, 0, 0);
+  cx = width / 2;
+  cy = height / 2;
+}
+
+// Init nodes
+raw.forEach((d, i) => {
+  const node = {
+    id: i,
+    label: d.h,
+    f1: d.f1,
+    f2: d.f2,
+    x: (Math.random() - 0.5) * 200,
+    y: (Math.random() - 0.5) * 200,
+    z: (Math.random() - 0.5) * 200,
+    vx: 0, vy: 0, vz: 0
+  };
+  nodes.push(node);
+  nodeMap[d.h] = node;
+});
+
+// Build edges
+nodes.forEach(n => {
+  if (n.f1 && nodeMap[n.f1]) edges.push({ from: n.id, to: nodeMap[n.f1].id });
+  if (n.f2 && nodeMap[n.f2] && n.f2 !== n.f1) edges.push({ from: n.id, to: nodeMap[n.f2].id });
+});
+
+// Count connections
+const connectionCount = {};
+nodes.forEach(n => connectionCount[n.id] = 0);
+edges.forEach(e => { connectionCount[e.from]++; connectionCount[e.to]++; });
+
+// Force simulation - FREE in 3D space
+function simulate() {
+  const attractionK = 0.015;
+  const repulsionK = 2000;
+  const damping = 0.85;
+  const idealEdgeLength = 80;
+  
+  for (let iter = 0; iter < 250; iter++) {
+    // Repulsion between all pairs
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const dz = b.z - a.z;
+        const distSq = dx*dx + dy*dy + dz*dz + 1;
+        const dist = Math.sqrt(distSq);
+        const force = repulsionK / distSq;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        const fz = (dz / dist) * force;
+        a.vx -= fx; a.vy -= fy; a.vz -= fz;
+        b.vx += fx; b.vy += fy; b.vz += fz;
+      }
+    }
+    
+    // Attraction along edges
+    edges.forEach(e => {
+      const a = nodes[e.from], b = nodes[e.to];
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const dz = b.z - a.z;
+      const dist = Math.sqrt(dx*dx + dy*dy + dz*dz) + 1;
+      const displacement = dist - idealEdgeLength;
+      const force = attractionK * displacement;
+      const fx = (dx / dist) * force;
+      const fy = (dy / dist) * force;
+      const fz = (dz / dist) * force;
+      a.vx += fx; a.vy += fy; a.vz += fz;
+      b.vx -= fx; b.vy -= fy; b.vz -= fz;
+    });
+    
+    // Update positions - NO CONSTRAINT
+    nodes.forEach(n => {
+      n.x += n.vx;
+      n.y += n.vy;
+      n.z += n.vz;
+      n.vx *= damping;
+      n.vy *= damping;
+      n.vz *= damping;
+    });
+  }
+  
+  // Center the whole graph
+  let avgX = 0, avgY = 0, avgZ = 0;
+  nodes.forEach(n => { avgX += n.x; avgY += n.y; avgZ += n.z; });
+  avgX /= nodes.length; avgY /= nodes.length; avgZ /= nodes.length;
+  nodes.forEach(n => { n.x -= avgX; n.y -= avgY; n.z -= avgZ; });
+  
+  // Scale to fit
+  let maxDist = 0;
+  nodes.forEach(n => {
+    const d = Math.sqrt(n.x*n.x + n.y*n.y + n.z*n.z);
+    if (d > maxDist) maxDist = d;
+  });
+  const scale = 250 / (maxDist || 1);
+  nodes.forEach(n => { n.x *= scale; n.y *= scale; n.z *= scale; });
+}
+
+simulate();
+
+function rotatePoint(x, y, z) {
+  const y1 = y * Math.cos(rotX) - z * Math.sin(rotX);
+  const z1 = y * Math.sin(rotX) + z * Math.cos(rotX);
+  const x1 = x * Math.cos(rotY) + z1 * Math.sin(rotY);
+  const z2 = -x * Math.sin(rotY) + z1 * Math.cos(rotY);
+  return { x: x1, y: y1, z: z2 };
+}
+
+function project(p) {
+  const fov = 600;
+  const scale = fov / (fov + p.z) * zoom;
+  return { x: cx + p.x * scale, y: cy + p.y * scale, scale, z: p.z };
+}
+
+const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const colors = {
+  node: isDark ? '#5DCAA5' : '#1D9E75',
+  selected: isDark ? '#ED93B1' : '#D4537E',
+  connected: isDark ? '#AFA9EC' : '#7F77DD',
+  edge: isDark ? 'rgba(93,202,165,' : 'rgba(29,158,117,',
+  edgeHi: isDark ? 'rgba(237,147,177,0.8)' : 'rgba(212,83,126,0.7)',
+  text: getComputedStyle(document.documentElement).getPropertyValue('--color-text-primary')
+};
+
+function getRelated(nodeId) {
+  const fondateurs = [], children = [];
+  edges.forEach(e => {
+    if (e.from === nodeId) fondateurs.push(nodes[e.to]);
+    if (e.to === nodeId) children.push(nodes[e.from]);
+  });
+  return { fondateurs, children };
+}
+
+function draw() {
+  ctx.clearRect(0, 0, width, height);
+  
+  const projected = nodes.map(n => {
+    const rot = rotatePoint(n.x, n.y, n.z);
+    const proj = project(rot);
+    return { ...n, px: proj.x, py: proj.y, scale: proj.scale, pz: proj.z };
+  });
+  
+  let relatedIds = new Set();
+  if (selectedNode !== null) {
+    const { fondateurs, children } = getRelated(selectedNode);
+    fondateurs.forEach(f => relatedIds.add(f.id));
+    children.forEach(c => relatedIds.add(c.id));
+    relatedIds.add(selectedNode);
+  }
+  
+  // Z range for depth
+  let minZ = Infinity, maxZ = -Infinity;
+  projected.forEach(p => { minZ = Math.min(minZ, p.pz); maxZ = Math.max(maxZ, p.pz); });
+  const zRange = (maxZ - minZ) || 1;
+  
+  // Draw edges
+  edges.forEach(e => {
+    const a = projected.find(p => p.id === e.from);
+    const b = projected.find(p => p.id === e.to);
+    const isHighlighted = selectedNode !== null && (e.from === selectedNode || e.to === selectedNode);
+    
+    if (isHighlighted) {
+      ctx.strokeStyle = colors.edgeHi;
+      ctx.lineWidth = 2;
+    } else {
+      const avgZ = (a.pz + b.pz) / 2;
+      const depth = (avgZ - minZ) / zRange;
+      const alpha = selectedNode !== null ? 0.05 : (0.1 + depth * 0.2);
+      ctx.strokeStyle = colors.edge + alpha + ')';
+      ctx.lineWidth = 0.8;
+    }
+    ctx.beginPath();
+    ctx.moveTo(a.px, a.py);
+    ctx.lineTo(b.px, b.py);
+    ctx.stroke();
+  });
+  
+  // Sort by z
+  projected.sort((a, b) => a.pz - b.pz);
+  
+  // Draw nodes
+  projected.forEach(n => {
+    const depth = (n.pz - minZ) / zRange;
+    const alpha = 0.5 + depth * 0.5;
+    const conn = connectionCount[n.id];
+    const baseSize = 5 + Math.min(conn * 0.4, 7);
+    const nodeRadius = baseSize * n.scale;
+    
+    let fillColor = colors.node;
+    let showLabel = n.scale > 0.5 || conn > 3;
+    let nodeAlpha = alpha;
+    
+    if (selectedNode !== null) {
+      if (n.id === selectedNode) {
+        fillColor = colors.selected;
+        showLabel = true;
+        nodeAlpha = 1;
+      } else if (relatedIds.has(n.id)) {
+        fillColor = colors.connected;
+        showLabel = true;
+        nodeAlpha = 1;
+      } else {
+        nodeAlpha = 0.1;
+      }
+    }
+    
+    ctx.beginPath();
+    ctx.arc(n.px, n.py, nodeRadius, 0, Math.PI * 2);
+    ctx.fillStyle = fillColor;
+    ctx.globalAlpha = nodeAlpha;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    
+    if (showLabel && nodeAlpha > 0.1) {
+      const fontSize = Math.max(10, 11 * n.scale);
+      ctx.font = `500 ${fontSize}px var(--font-sans)`;
+      ctx.fillStyle = colors.text;
+      ctx.globalAlpha = nodeAlpha * 0.95;
+      ctx.textAlign = 'center';
+      ctx.fillText(n.label, n.px, n.py - nodeRadius - 4);
+      ctx.globalAlpha = 1;
+    }
+  });
+}
+
+function findNodeAt(mx, my) {
+  const projected = nodes.map(n => {
+    const rot = rotatePoint(n.x, n.y, n.z);
+    const proj = project(rot);
+    return { ...n, px: proj.x, py: proj.y };
+  });
+  let closest = null, minDist = 35;
+  projected.forEach(n => {
+    const d = Math.hypot(n.px - mx, n.py - my);
+    if (d < minDist) { minDist = d; closest = n; }
+  });
+  return closest;
+}
+
+function showPanel(node) {
+  const { fondateurs, children } = getRelated(node.id);
+  let html = `<div style="font-weight: 500; font-size: 14px; margin-bottom: 8px; color: ${colors.selected};">${node.label}</div>`;
+  if (node.f1) {
+    html += `<div style="font-size: 11px; color: var(--color-text-secondary); margin-bottom: 10px;">${node.f1}${node.f2 && node.f2 !== node.f1 ? ' — ' + node.f2 : ''}</div>`;
+  }
+  if (fondateurs.length > 0) {
+    html += `<div style="font-size: 11px; font-weight: 500; margin: 8px 0 4px;">→ Fondateurs</div>`;
+    fondateurs.forEach(f => { html += `<div style="font-size: 11px; padding: 2px 0; color: ${colors.connected};">${f.label}</div>`; });
+  }
+  if (children.length > 0) {
+    html += `<div style="font-size: 11px; font-weight: 500; margin: 10px 0 4px;">← Mots pointant vers lui (${children.length})</div>`;
+    children.slice(0, 20).forEach(c => { html += `<div style="font-size: 11px; padding: 2px 0; color: ${colors.node};">${c.label}</div>`; });
+    if (children.length > 20) html += `<div style="font-size: 10px; color: var(--color-text-tertiary);">+${children.length - 20} autres...</div>`;
+  }
+  panel.innerHTML = html;
+  panel.style.display = 'block';
+}
+
+canvas.addEventListener('mousedown', e => { dragging = true; lastX = e.clientX; lastY = e.clientY; });
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+  if (dragging) {
+    rotY += (e.clientX - lastX) * 0.006;
+    rotX += (e.clientY - lastY) * 0.006;
+    lastX = e.clientX; lastY = e.clientY;
+    draw();
+  } else if (selectedNode === null) {
+    const hovered = findNodeAt(mx, my);
+    if (hovered) {
+      const { children } = getRelated(hovered.id);
+      tooltip.innerHTML = `<div style="font-weight: 500;">${hovered.label}</div>
+        ${hovered.f1 ? `<div style="font-size: 11px; color: var(--color-text-secondary);">${hovered.f1}${hovered.f2 && hovered.f2 !== hovered.f1 ? ' — ' + hovered.f2 : ''}</div>` : ''}
+        <div style="font-size: 10px; color: var(--color-text-tertiary); margin-top: 3px;">${children.length} mots pointent vers lui</div>`;
+      tooltip.style.display = 'block';
+      tooltip.style.left = Math.min(mx + 12, width - 220) + 'px';
+      tooltip.style.top = Math.min(my + 12, height - 70) + 'px';
+      canvas.style.cursor = 'pointer';
+    } else {
+      tooltip.style.display = 'none';
+      canvas.style.cursor = 'grab';
+    }
+  }
+});
+
+canvas.addEventListener('click', e => {
+  const rect = canvas.getBoundingClientRect();
+  const clicked = findNodeAt(e.clientX - rect.left, e.clientY - rect.top);
+  if (clicked) {
+    selectedNode = selectedNode === clicked.id ? null : clicked.id;
+    if (selectedNode !== null) showPanel(clicked); else panel.style.display = 'none';
+    tooltip.style.display = 'none';
+    draw();
+  } else if (selectedNode !== null) {
+    selectedNode = null;
+    panel.style.display = 'none';
+    draw();
+  }
+});
+
+canvas.addEventListener('mouseup', () => { dragging = false; });
+canvas.addEventListener('mouseleave', () => { dragging = false; tooltip.style.display = 'none'; });
+canvas.addEventListener('wheel', e => { e.preventDefault(); zoom = Math.max(0.3, Math.min(3, zoom - e.deltaY * 0.002)); draw(); });
+
+window.addEventListener('resize', () => { resize(); draw(); });
+resize();
+draw();
+</script>
+</body>
+</html>

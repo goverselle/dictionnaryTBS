@@ -1,0 +1,27 @@
+{
+  "headword": "MASOCHISTE",
+  "letter": "M",
+  "fondateur1": "ÊTRE DOULOUREUX",
+  "fondateur2": "JOUIR",
+  "paradoxal": true,
+  "signification": {
+    "interne": [
+      {
+        "aspect": "Y ÊTRE DOULOUREUX DC X JOUIR Y",
+        "exemples": [
+          {
+            "phrase": "Pierre est un vrai masochiste.",
+            "ea": "C'est douloureux, donc il en jouit."
+          },
+          {
+            "phrase": "Elle est masochiste dans ses relations.",
+            "ea": "Ses relations sont douloureuses, donc elle en jouit."
+          }
+        ]
+      }
+    ],
+    "externe": []
+  },
+  "criteres": [],
+  "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y)."
+}

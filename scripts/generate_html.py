@@ -49,12 +49,17 @@ def generate_toc_words(sorted_entries):
     return html
 
 
-def generate_blocs_index(by_bloc):
-    html = ""
-    for fondateurs in sorted(by_bloc.keys()):
-        words = ", ".join(f'<a href="#entry-{e["headword"]}">{e["headword"]}</a>' for e in by_bloc[fondateurs])
-        html += f'<div class="bloc-item"><strong>{fondateurs}</strong> : {words}</div>\n'
-    return html
+def generate_word_network(sorted_entries):
+    """Liste de mots/paires en arrière-plan, derrière le container."""
+    tokens = []
+    for entry in sorted_entries:
+        tokens.append(entry["headword"])
+        f1 = entry.get("fondateur1", "").strip()
+        f2 = entry.get("fondateur2", "").strip()
+        if f1 and f2:
+            tokens.append(f"{f1}→{f2}")
+    # Répété plusieurs fois pour bien remplir la zone visible.
+    return "  ·  ".join(tokens * 6)
 
 
 def generate_entries(by_letter, types_criteres):
@@ -70,9 +75,10 @@ def generate_entries(by_letter, types_criteres):
         
         for entry in by_letter[letter]:
             headword = entry["headword"]
+            paradox_badge = ' <span class="paradox-badge" title="Mot paradoxal">⇄</span>' if entry.get("paradoxal") else ""
             html += f'''
             <div class="entry" id="entry-{headword}">
-                <div class="headword">{headword}</div>
+                <div class="headword">{headword}{paradox_badge}</div>
                 <div class="fondateurs">Termes fondateurs : <span>{entry["fondateur1"]} — {entry["fondateur2"]}</span></div>
             '''
             
@@ -148,8 +154,9 @@ def generate_html(entries, types_criteres, template):
     html = html.replace("{{LETTERS_COUNT}}", str(len(by_letter)))
     html = html.replace("{{BLOCS_COUNT}}", str(len(by_bloc)))
     html = html.replace("{{TOC_LETTERS}}", generate_toc_letters(by_letter))
+    html = html.replace("{{STICKY_ALPHABET}}", generate_toc_letters(by_letter))
     html = html.replace("{{TOC_WORDS}}", generate_toc_words(sorted_entries))
-    html = html.replace("{{BLOCS_INDEX}}", generate_blocs_index(by_bloc))
+    html = html.replace("{{WORD_NETWORK}}", generate_word_network(sorted_entries))
     html = html.replace("{{ENTRIES}}", generate_entries(by_letter, types_criteres))
     html = html.replace("{{DATE}}", datetime.now().strftime("%d/%m/%Y à %H:%M"))
     

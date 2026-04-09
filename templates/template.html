@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../templates/style.css">
 </head>
 <body>
+    <div class="word-network" aria-hidden="true">{{WORD_NETWORK}}</div>
+    <nav class="sticky-alphabet" aria-label="Alphabet">{{STICKY_ALPHABET}}</nav>
+    <div class="scroll-trail" aria-hidden="true"></div>
     <div class="container">
         <header class="hero">
             <h1>Dictionnaire TBS</h1>
@@ -46,13 +49,6 @@
             </div>
         </nav>
 
-        <section class="blocs-index">
-            <h2>Index par blocs sémantiques</h2>
-            <div class="blocs-grid">
-                {{BLOCS_INDEX}}
-            </div>
-        </section>
-
         <section class="entries">
             <h2>Entrées</h2>
             {{ENTRIES}}
@@ -63,5 +59,94 @@
             <p class="footer-theory">Sémantique argumentative</p>
         </footer>
     </div>
+
+    <script>
+    (function () {
+        var trail = document.querySelector('.scroll-trail');
+        if (!trail || !('IntersectionObserver' in window)) return;
+
+        function addToTrail(text, kind, href) {
+            var item = document.createElement('a');
+            item.className = 'trail-item' + (kind ? ' trail-item--' + kind : '');
+            item.textContent = text;
+            if (href) item.href = href;
+            trail.prepend(item);
+            while (trail.children.length > 60) {
+                trail.removeChild(trail.lastChild);
+            }
+            setTimeout(function () { item.remove(); }, 18000);
+        }
+
+        var lastY = window.scrollY;
+        var direction = 'down';
+        window.addEventListener('scroll', function () {
+            var y = window.scrollY;
+            if (y === lastY) return;
+            direction = y > lastY ? 'down' : 'up';
+            lastY = y;
+        }, { passive: true });
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) return;
+                var rect = entry.boundingClientRect;
+                var leavingTop = rect.top < 0;
+                var leavingBottom = rect.top > (window.innerHeight || document.documentElement.clientHeight);
+                // Scroll vers le bas : on capture les éléments qui sortent par le haut.
+                // Scroll vers le haut : on capture les éléments qui sortent par le bas.
+                if (!(direction === 'down' && leavingTop) && !(direction === 'up' && leavingBottom)) return;
+                var el = entry.target;
+                var headword = el.querySelector('.headword');
+                var letter = el.querySelector('.letter');
+                if (headword) {
+                    var text = headword.firstChild ? headword.firstChild.textContent.trim() : headword.textContent.trim();
+                    addToTrail(text, 'word', el.id ? '#' + el.id : null);
+                } else if (letter) {
+                    addToTrail(letter.textContent.trim(), 'letter', el.id ? '#' + el.id : null);
+                }
+            });
+        }, { threshold: 0 });
+
+        document.querySelectorAll('.entry, .letter-header').forEach(function (el) {
+            observer.observe(el);
+        });
+
+        // ----- Entrée active : la plus proche d'une ligne de visée près du haut -----
+        var allEntries = Array.prototype.slice.call(document.querySelectorAll('.entry'));
+        var activeEntry = null;
+        var ticking = false;
+
+        function updateActive() {
+            ticking = false;
+            var triggerY = (window.innerHeight || document.documentElement.clientHeight) * 0.28;
+            var best = null;
+            var bestDistance = Infinity;
+            for (var i = 0; i < allEntries.length; i++) {
+                var rect = allEntries[i].getBoundingClientRect();
+                if (rect.bottom < 0 || rect.top > window.innerHeight) continue;
+                var dist = Math.abs(rect.top - triggerY);
+                if (dist < bestDistance) {
+                    bestDistance = dist;
+                    best = allEntries[i];
+                }
+            }
+            if (best !== activeEntry) {
+                if (activeEntry) activeEntry.classList.remove('entry--active');
+                if (best) best.classList.add('entry--active');
+                activeEntry = best;
+            }
+        }
+
+        function requestUpdate() {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(updateActive);
+        }
+
+        window.addEventListener('scroll', requestUpdate, { passive: true });
+        window.addEventListener('resize', requestUpdate, { passive: true });
+        updateActive();
+    })();
+    </script>
 </body>
 </html>
