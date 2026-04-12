@@ -7,145 +7,384 @@
     <link rel="stylesheet" href="../templates/style.css">
 </head>
 <body>
-    <div class="word-network" aria-hidden="true">{{WORD_NETWORK}}</div>
-    <nav class="sticky-alphabet" aria-label="Alphabet">{{STICKY_ALPHABET}}</nav>
-    <div class="scroll-trail" aria-hidden="true"></div>
-    <div class="container">
-        <header class="hero">
-            <h1>Dictionnaire TBS</h1>
-            <p class="subtitle">Théorie des Blocs Sémantiques</p>
-            <p class="authors">Carel &amp; Ducrot</p>
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-number">{{ENTRIES_COUNT}}</span>
-                    <span class="stat-label">entrées</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">{{LETTERS_COUNT}}</span>
-                    <span class="stat-label">lettres</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">{{BLOCS_COUNT}}</span>
-                    <span class="stat-label">blocs</span>
+    <div class="app">
+        <span class="corner corner--tr"></span>
+        <span class="corner corner--bl"></span>
+        <!-- SIDEBAR GAUCHE -->
+        <aside class="sidebar">
+            <div class="sb-header">
+                <h1>Dictionnaire TBS</h1>
+                <p class="sb-subtitle">Théorie des Blocs Sémantiques</p>
+                <p class="sb-authors">Carel &amp; Ducrot</p>
+                <div class="sb-stats">
+                    <span>{{ENTRIES_COUNT}} entrées</span>
+                    <span>{{LETTERS_COUNT}} lettres</span>
+                    <span>{{BLOCS_COUNT}} blocs</span>
                 </div>
             </div>
-        </header>
 
-        <nav class="toc">
-            <h2>Table des matières</h2>
-            
-            <div class="toc-section">
-                <h3>Lettres</h3>
-                <div class="toc-letters">
-                    {{TOC_LETTERS}}
-                </div>
+            <div class="sb-filters">
+                <button class="filter-btn" data-filter="normatif">DC</button>
+                <button class="filter-btn" data-filter="transgressif">PT</button>
+                <button class="filter-btn" data-filter="paradoxal">Paradoxal</button>
             </div>
-            
-            <div class="toc-section">
-                <h3>Entrées</h3>
-                <div class="toc-words">
-                    {{TOC_WORDS}}
-                </div>
-            </div>
-        </nav>
 
-        <section class="entries">
-            <h2>Entrées</h2>
+            <div class="sb-search">
+                <input type="text" id="search-input" placeholder="Chercher un mot..." autocomplete="off" spellcheck="false">
+            </div>
+
+            <div class="sb-alphabet">
+                {{SIDEBAR_LETTERS}}
+            </div>
+
+            <div class="sb-list" id="sidebar-list">
+                {{SIDEBAR}}
+            </div>
+        </aside>
+
+        <!-- PANNEAU PRINCIPAL -->
+        <main class="content" id="content">
+            <div class="welcome" id="welcome">
+                <div class="welcome-inner">
+                    <p class="welcome-title">Dictionnaire TBS</p>
+                    <p class="welcome-sub">Sélectionnez un mot dans la liste.</p>
+                    <p class="welcome-hint">{{ENTRIES_COUNT}} entrées · {{BLOCS_COUNT}} blocs sémantiques</p>
+                </div>
+            </div>
             {{ENTRIES}}
-        </section>
+        </main>
+    </div>
 
-        <footer>
-            <p>Généré le {{DATE}}</p>
-            <p class="footer-theory">Sémantique argumentative</p>
-        </footer>
+    <div class="zoom-bar">
+        <button class="btn-pill btn-pill--dim" id="zoom-out">A−</button>
+        <button class="btn-pill btn-pill--mint" id="zoom-in">A+</button>
+    </div>
+
+    <footer class="app-footer">
+        <span>Généré le {{DATE}}</span>
+        <span>Sémantique argumentative</span>
+    </footer>
+
+    <!-- MODAL ÉDITION -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="modal-title" id="modal-title">Modifier</span>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <div class="form-row">
+                    <label>Headword</label>
+                    <input type="text" id="ed-headword" readonly>
+                </div>
+                <div class="form-row form-row--half">
+                    <div>
+                        <label>Lettre</label>
+                        <input type="text" id="ed-letter">
+                    </div>
+                    <div>
+                        <label>Paradoxal</label>
+                        <select id="ed-paradoxal">
+                            <option value="false">Non</option>
+                            <option value="true">Oui</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row form-row--half">
+                    <div>
+                        <label>Fondateur 1</label>
+                        <input type="text" id="ed-f1">
+                    </div>
+                    <div>
+                        <label>Fondateur 2</label>
+                        <input type="text" id="ed-f2">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-section-head">
+                        <label>Signification interne (aspects)</label>
+                        <button class="btn-sm" id="add-aspect">+ Aspect</button>
+                    </div>
+                    <div id="ed-interne"></div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-section-head">
+                        <label>Signification externe (quasi-blocs)</label>
+                        <button class="btn-sm" id="add-quasi">+ Quasi-bloc</button>
+                    </div>
+                    <div id="ed-externe"></div>
+                </div>
+
+                <div class="form-row">
+                    <label>Nota bene</label>
+                    <textarea id="ed-nb" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-pill btn-pill--dim" id="modal-cancel">Annuler</button>
+                <button class="btn-pill btn-pill--mint" id="modal-save">Sauvegarder</button>
+            </div>
+        </div>
     </div>
 
     <script>
+    var entriesData = {{ENTRIES_JSON}};
+    </script>
+
+    <script>
     (function () {
-        var trail = document.querySelector('.scroll-trail');
-        if (!trail || !('IntersectionObserver' in window)) return;
+        var entries = document.querySelectorAll('.entry');
+        var letterHeaders = document.querySelectorAll('.letter-header');
+        var sidebarWords = document.querySelectorAll('.sb-word');
+        var welcome = document.getElementById('welcome');
+        var content = document.getElementById('content');
+        var searchInput = document.getElementById('search-input');
+        var active = null;
 
-        function addToTrail(text, kind, href) {
-            var item = document.createElement('a');
-            item.className = 'trail-item' + (kind ? ' trail-item--' + kind : '');
-            item.textContent = text;
-            if (href) item.href = href;
-            trail.prepend(item);
-            while (trail.children.length > 60) {
-                trail.removeChild(trail.lastChild);
-            }
-            setTimeout(function () { item.remove(); }, 18000);
-        }
+        // Masquer tout au départ
+        entries.forEach(function (e) { e.style.display = 'none'; });
+        letterHeaders.forEach(function (e) { e.style.display = 'none'; });
 
-        var lastY = window.scrollY;
-        var direction = 'down';
-        window.addEventListener('scroll', function () {
-            var y = window.scrollY;
-            if (y === lastY) return;
-            direction = y > lastY ? 'down' : 'up';
-            lastY = y;
-        }, { passive: true });
-
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) return;
-                var rect = entry.boundingClientRect;
-                var leavingTop = rect.top < 0;
-                var leavingBottom = rect.top > (window.innerHeight || document.documentElement.clientHeight);
-                // Scroll vers le bas : on capture les éléments qui sortent par le haut.
-                // Scroll vers le haut : on capture les éléments qui sortent par le bas.
-                if (!(direction === 'down' && leavingTop) && !(direction === 'up' && leavingBottom)) return;
-                var el = entry.target;
-                var headword = el.querySelector('.headword');
-                var letter = el.querySelector('.letter');
-                if (headword) {
-                    var text = headword.firstChild ? headword.firstChild.textContent.trim() : headword.textContent.trim();
-                    addToTrail(text, 'word', el.id ? '#' + el.id : null);
-                } else if (letter) {
-                    addToTrail(letter.textContent.trim(), 'letter', el.id ? '#' + el.id : null);
-                }
+        // Clic sur un mot
+        sidebarWords.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                var hw = this.dataset.entry;
+                showEntry(hw, this);
             });
-        }, { threshold: 0 });
-
-        document.querySelectorAll('.entry, .letter-header').forEach(function (el) {
-            observer.observe(el);
         });
 
-        // ----- Entrée active : la plus proche d'une ligne de visée près du haut -----
-        var allEntries = Array.prototype.slice.call(document.querySelectorAll('.entry'));
-        var activeEntry = null;
-        var ticking = false;
+        function showEntry(hw, sidebarItem) {
+            entries.forEach(function (e) { e.style.display = 'none'; });
+            letterHeaders.forEach(function (e) { e.style.display = 'none'; });
+            welcome.style.display = 'none';
 
-        function updateActive() {
-            ticking = false;
-            var triggerY = (window.innerHeight || document.documentElement.clientHeight) * 0.28;
-            var best = null;
-            var bestDistance = Infinity;
-            for (var i = 0; i < allEntries.length; i++) {
-                var rect = allEntries[i].getBoundingClientRect();
-                if (rect.bottom < 0 || rect.top > window.innerHeight) continue;
-                var dist = Math.abs(rect.top - triggerY);
-                if (dist < bestDistance) {
-                    bestDistance = dist;
-                    best = allEntries[i];
+            var target = document.getElementById('entry-' + hw);
+            if (target) {
+                target.style.display = 'block';
+                content.scrollTop = 0;
+            }
+
+            if (active) active.classList.remove('sb-word--active');
+            if (sidebarItem) sidebarItem.classList.add('sb-word--active');
+            active = sidebarItem;
+        }
+
+        // Recherche filtrée (utilise applyFilters qui combine recherche + filtre)
+        searchInput.addEventListener('input', function () {
+            applyFilters();
+        });
+
+        // Scroll sidebar vers lettre
+        document.querySelectorAll('.sb-alphabet a').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                var letter = this.textContent.trim();
+                var group = document.querySelector('.sb-group[data-letter="' + letter + '"]');
+                if (group) group.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Filtres DC / PT / paradoxal — un seul à la fois, re-clic = désactiver
+        var filterBtns = document.querySelectorAll('.filter-btn');
+
+        filterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var wasActive = this.classList.contains('filter-btn--active');
+                filterBtns.forEach(function (b) { b.classList.remove('filter-btn--active'); });
+                if (!wasActive) this.classList.add('filter-btn--active');
+                applyFilters();
+            });
+        });
+
+        function applyFilters() {
+            var query = searchInput.value.trim().toUpperCase();
+            var activeBtn = document.querySelector('.filter-btn--active');
+            var filter = activeBtn ? activeBtn.dataset.filter : null;
+            sidebarWords.forEach(function (item) {
+                var name = item.dataset.entry;
+                var matchSearch = (query === '' || name.indexOf(query) !== -1);
+                var matchFilter = !filter || item.dataset[filter] === 'true';
+                item.style.display = (matchSearch && matchFilter) ? '' : 'none';
+            });
+            document.querySelectorAll('.sb-group').forEach(function (g) {
+                var visible = g.querySelectorAll('.sb-word:not([style*="display: none"])');
+                g.style.display = visible.length > 0 ? '' : 'none';
+            });
+        }
+
+        // Zoom A+ / A−
+        var rootSize = 18;
+        document.getElementById('zoom-in').addEventListener('click', function () {
+            rootSize = Math.min(rootSize + 2, 28);
+            document.documentElement.style.fontSize = rootSize + 'px';
+        });
+        document.getElementById('zoom-out').addEventListener('click', function () {
+            rootSize = Math.max(rootSize - 2, 12);
+            document.documentElement.style.fontSize = rootSize + 'px';
+        });
+
+        // Clavier : flèches pour naviguer
+        document.addEventListener('keydown', function (e) {
+            if (e.target === searchInput) return;
+            var all = Array.prototype.slice.call(document.querySelectorAll('.sb-word:not([style*="display: none"])'));
+            if (all.length === 0) return;
+            var idx = active ? all.indexOf(active) : -1;
+            if (e.key === 'ArrowDown') { e.preventDefault(); idx = Math.min(idx + 1, all.length - 1); }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); idx = Math.max(idx - 1, 0); }
+            else return;
+            var next = all[idx];
+            if (next) {
+                showEntry(next.dataset.entry, next);
+                next.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+        // ===== MODAL ÉDITION =====
+        var overlay = document.getElementById('modal-overlay');
+        var currentEditHw = null;
+
+        function openModal(hw) {
+            var d = entriesData[hw];
+            if (!d) return;
+            currentEditHw = hw;
+            document.getElementById('modal-title').textContent = 'Modifier — ' + hw;
+            document.getElementById('ed-headword').value = d.headword || '';
+            document.getElementById('ed-letter').value = d.letter || '';
+            document.getElementById('ed-paradoxal').value = d.paradoxal ? 'true' : 'false';
+            document.getElementById('ed-f1').value = d.fondateur1 || '';
+            document.getElementById('ed-f2').value = d.fondateur2 || '';
+            document.getElementById('ed-nb').value = d.nb || '';
+            renderBlocks('ed-interne', d.signification && d.signification.interne || [], 'aspect');
+            renderBlocks('ed-externe', d.signification && d.signification.externe || [], 'quasibloc');
+            overlay.classList.add('modal-overlay--open');
+        }
+
+        function renderBlocks(containerId, blocks, key) {
+            var c = document.getElementById(containerId);
+            c.innerHTML = '';
+            blocks.forEach(function (b) { c.appendChild(makeBlockEl(key, b)); });
+        }
+
+        function makeBlockEl(key, block) {
+            var div = document.createElement('div');
+            div.className = 'form-block';
+            var formula = block[key] || '';
+            var html = '<div class="form-row"><label>' + (key === 'aspect' ? 'Aspect' : 'Quasi-bloc') + '</label>'
+                + '<input type="text" class="block-formula" value="' + escAttr(formula) + '"></div>';
+            html += '<div class="block-examples">';
+            (block.exemples || []).forEach(function (ex) {
+                html += '<div class="form-example">'
+                    + '<input type="text" class="ex-phrase" placeholder="Phrase" value="' + escAttr(ex.phrase || '') + '">'
+                    + '<input type="text" class="ex-ea" placeholder="EA" value="' + escAttr(ex.ea || '') + '">'
+                    + '<button class="btn-x" title="Supprimer">&times;</button></div>';
+            });
+            html += '</div><button class="btn-sm btn-add-ex">+ Exemple</button>'
+                + '<button class="btn-sm btn-rm-block" style="margin-left:0.5rem;color:#cc3333;">Supprimer bloc</button>';
+            div.innerHTML = html;
+            div.querySelector('.btn-add-ex').addEventListener('click', function () {
+                var exDiv = document.createElement('div');
+                exDiv.className = 'form-example';
+                exDiv.innerHTML = '<input type="text" class="ex-phrase" placeholder="Phrase">'
+                    + '<input type="text" class="ex-ea" placeholder="EA">'
+                    + '<button class="btn-x" title="Supprimer">&times;</button>';
+                exDiv.querySelector('.btn-x').addEventListener('click', function () { exDiv.remove(); });
+                div.querySelector('.block-examples').appendChild(exDiv);
+            });
+            div.querySelector('.btn-rm-block').addEventListener('click', function () { div.remove(); });
+            div.querySelectorAll('.btn-x').forEach(function (btn) {
+                btn.addEventListener('click', function () { btn.parentElement.remove(); });
+            });
+            return div;
+        }
+
+        function escAttr(s) { return s.replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+
+        function collectBlocks(containerId, key) {
+            var blocks = [];
+            document.getElementById(containerId).querySelectorAll('.form-block').forEach(function (div) {
+                var formula = div.querySelector('.block-formula').value.trim();
+                var exemples = [];
+                div.querySelectorAll('.form-example').forEach(function (exDiv) {
+                    var ph = exDiv.querySelector('.ex-phrase').value.trim();
+                    var ea = exDiv.querySelector('.ex-ea').value.trim();
+                    if (ph || ea) exemples.push({ phrase: ph, ea: ea });
+                });
+                var obj = { exemples: exemples };
+                obj[key] = formula;
+                blocks.push(obj);
+            });
+            return blocks;
+        }
+
+        document.getElementById('add-aspect').addEventListener('click', function () {
+            var c = document.getElementById('ed-interne');
+            c.appendChild(makeBlockEl('aspect', { aspect: '', exemples: [{ phrase: '', ea: '' }] }));
+        });
+        document.getElementById('add-quasi').addEventListener('click', function () {
+            var c = document.getElementById('ed-externe');
+            c.appendChild(makeBlockEl('quasibloc', { quasibloc: '', exemples: [{ phrase: '', ea: '' }] }));
+        });
+
+        document.getElementById('modal-save').addEventListener('click', function () {
+            var entry = {
+                headword: document.getElementById('ed-headword').value.trim(),
+                letter: document.getElementById('ed-letter').value.trim().toUpperCase(),
+                fondateur1: document.getElementById('ed-f1').value.trim(),
+                fondateur2: document.getElementById('ed-f2').value.trim(),
+                signification: {
+                    interne: collectBlocks('ed-interne', 'aspect'),
+                    externe: collectBlocks('ed-externe', 'quasibloc')
                 }
-            }
-            if (best !== activeEntry) {
-                if (activeEntry) activeEntry.classList.remove('entry--active');
-                if (best) best.classList.add('entry--active');
-                activeEntry = best;
-            }
-        }
+            };
+            if (document.getElementById('ed-paradoxal').value === 'true') entry.paradoxal = true;
+            var nb = document.getElementById('ed-nb').value.trim();
+            if (nb) entry.nb = nb;
 
-        function requestUpdate() {
-            if (ticking) return;
-            ticking = true;
-            window.requestAnimationFrame(updateActive);
-        }
+            var saveBtn = document.getElementById('modal-save');
+            saveBtn.textContent = 'Enregistrement...';
+            saveBtn.disabled = true;
 
-        window.addEventListener('scroll', requestUpdate, { passive: true });
-        window.addEventListener('resize', requestUpdate, { passive: true });
-        updateActive();
+            fetch('/api/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(entry)
+            })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                if (data.ok) {
+                    overlay.classList.remove('modal-overlay--open');
+                    location.reload();
+                } else {
+                    alert('Erreur : ' + (data.error || 'inconnue'));
+                    saveBtn.textContent = 'Sauvegarder';
+                    saveBtn.disabled = false;
+                }
+            })
+            .catch(function () {
+                // Fallback : télécharger le fichier si pas de serveur
+                var blob = new Blob([JSON.stringify(entry, null, 2)], { type: 'application/json' });
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = entry.headword.toLowerCase().replace(/\s+/g, '_') + '.json';
+                a.click();
+                URL.revokeObjectURL(url);
+                overlay.classList.remove('modal-overlay--open');
+                saveBtn.textContent = 'Sauvegarder';
+                saveBtn.disabled = false;
+            });
+        });
+
+        document.getElementById('modal-close').addEventListener('click', function () { overlay.classList.remove('modal-overlay--open'); });
+        document.getElementById('modal-cancel').addEventListener('click', function () { overlay.classList.remove('modal-overlay--open'); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) overlay.classList.remove('modal-overlay--open'); });
+
+        document.addEventListener('click', function (e) {
+            var btn = e.target.closest('.btn-edit');
+            if (btn) openModal(btn.dataset.hw);
+        });
     })();
     </script>
 </body>

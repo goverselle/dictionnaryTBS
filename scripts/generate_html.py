@@ -9,8 +9,23 @@ Produit : output/dictionnaire_tbs.html
 """
 
 import json
+import re
 from pathlib import Path
 from datetime import datetime
+
+
+def colorize_formula(text):
+    """Colore X/Z en rouge, Y/W en vert, DC/PT/NEG en gras."""
+    def _repl(m):
+        v = m.group(0)
+        if v in ('X', 'Z'):
+            return f'<span class="var-xz">{v}</span>'
+        if v in ('Y', 'W'):
+            return f'<span class="var-yw">{v}</span>'
+        if v in ('DC', 'PT', 'NEG'):
+            return f'<span class="conn">{v}</span>'
+        return v
+    return re.sub(r'\b(DC|PT|NEG|[XYZW])\b', _repl, text)
 
 # Chemins
 ROOT_DIR = Path(__file__).parent.parent
@@ -50,16 +65,50 @@ def generate_toc_words(sorted_entries):
 
 
 def generate_word_network(sorted_entries):
-    """Liste de mots/paires en arrière-plan, derrière le container."""
     tokens = []
     for entry in sorted_entries:
         tokens.append(entry["headword"])
-        f1 = entry.get("fondateur1", "").strip()
-        f2 = entry.get("fondateur2", "").strip()
-        if f1 and f2:
-            tokens.append(f"{f1}→{f2}")
-    # Répété plusieurs fois pour bien remplir la zone visible.
     return "  ·  ".join(tokens * 6)
+
+
+def _entry_tags(entry):
+    """Détermine les tags d'un mot : paradoxal, normatif (DC), transgressif (PT)."""
+    is_paradoxal = bool(entry.get("paradoxal"))
+    aspects = []
+    for item in entry.get("signification", {}).get("interne", []):
+        aspects.append(item.get("aspect", ""))
+    for item in entry.get("signification", {}).get("externe", []):
+        aspects.append(item.get("quasibloc", ""))
+    joined = " ".join(aspects)
+    has_dc = bool(re.search(r'\bDC\b', joined))
+    has_pt = bool(re.search(r'\bPT\b', joined))
+    return is_paradoxal, has_dc, has_pt
+
+
+def generate_sidebar(by_letter):
+    """Liste cliquable des mots, groupés par lettre, pour le panneau gauche."""
+    html = ""
+    for letter in sorted(by_letter.keys()):
+        html += f'<div class="sb-group" data-letter="{letter}">\n'
+        html += f'  <div class="sb-letter">{letter}</div>\n'
+        for entry in by_letter[letter]:
+            hw = entry["headword"]
+            f1 = entry.get("fondateur1", "")
+            f2 = entry.get("fondateur2", "")
+            hint = f"{f1} — {f2}" if f1 and f2 else ""
+            is_paradoxal, has_dc, has_pt = _entry_tags(entry)
+            paradox = ' <span class="sb-paradox">⇄</span>' if is_paradoxal else ""
+            html += (
+                f'  <a class="sb-word" data-entry="{hw}"'
+                f' data-paradoxal="{str(is_paradoxal).lower()}"'
+                f' data-normatif="{str(has_dc).lower()}"'
+                f' data-transgressif="{str(has_pt).lower()}">'
+                f'<span class="sb-word-name">{hw}{paradox}</span>'
+                f'<span class="sb-word-hint">{hint}</span>'
+                f'</a>\n'
+            )
+        html += '</div>\n'
+    return html
 
 
 def generate_entries(by_letter, types_criteres):
@@ -78,6 +127,9 @@ def generate_entries(by_letter, types_criteres):
             paradox_badge = ' <span class="paradox-badge" title="Mot paradoxal">⇄</span>' if entry.get("paradoxal") else ""
             html += f'''
             <div class="entry" id="entry-{headword}">
+                <div class="entry-toolbar">
+                    <button class="btn-edit" data-hw="{headword}">Modifier</button>
+                </div>
                 <div class="headword">{headword}{paradox_badge}</div>
                 <div class="fondateurs">Termes fondateurs : <span>{entry["fondateur1"]} — {entry["fondateur2"]}</span></div>
             '''
@@ -87,7 +139,7 @@ def generate_entries(by_letter, types_criteres):
                 html += '<div class="section-title">Signification interne (aspects)</div>\n'
                 for item in entry["signification"]["interne"]:
                     html += '<div class="aspect">\n'
-                    html += f'<div class="formula">{item["aspect"]}</div>\n'
+                    html += f'<div class="formula">{colorize_formula(item["aspect"])}</div>\n'
                     for ex in item["exemples"]:
                         html += f'''<div class="exemple">
                             <span class="phrase">{ex["phrase"]}</span>
@@ -100,7 +152,7 @@ def generate_entries(by_letter, types_criteres):
                 html += '<div class="section-title">Signification externe (quasi-blocs)</div>\n'
                 for item in entry["signification"]["externe"]:
                     html += '<div class="quasibloc">\n'
-                    html += f'<div class="formula">{item["quasibloc"]}</div>\n'
+                    html += f'<div class="formula">{colorize_formula(item["quasibloc"])}</div>\n'
                     for ex in item["exemples"]:
                         html += f'''<div class="exemple">
                             <span class="phrase">{ex["phrase"]}</span>
@@ -153,11 +205,12 @@ def generate_html(entries, types_criteres, template):
     html = html.replace("{{ENTRIES_COUNT}}", str(len(entries)))
     html = html.replace("{{LETTERS_COUNT}}", str(len(by_letter)))
     html = html.replace("{{BLOCS_COUNT}}", str(len(by_bloc)))
-    html = html.replace("{{TOC_LETTERS}}", generate_toc_letters(by_letter))
-    html = html.replace("{{STICKY_ALPHABET}}", generate_toc_letters(by_letter))
-    html = html.replace("{{TOC_WORDS}}", generate_toc_words(sorted_entries))
-    html = html.replace("{{WORD_NETWORK}}", generate_word_network(sorted_entries))
+    html = html.replace("{{SIDEBAR}}", generate_sidebar(by_letter))
+    html = html.replace("{{SIDEBAR_LETTERS}}", generate_toc_letters(by_letter))
     html = html.replace("{{ENTRIES}}", generate_entries(by_letter, types_criteres))
+    html = html.replace("{{ENTRIES_JSON}}", json.dumps(
+        {e["headword"]: e for e in sorted_entries}, ensure_ascii=False
+    ))
     html = html.replace("{{DATE}}", datetime.now().strftime("%d/%m/%Y à %H:%M"))
     
     return html

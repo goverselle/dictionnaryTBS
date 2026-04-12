@@ -7,7 +7,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X PAYER À Z DC X AVOIR Y",
+          "aspect": "*X* PAYER À Z DC *X* AVOIR Y",
           "exemples": [
             {
               "phrase": "Pierre achète les pommes à Marie.",
@@ -322,6 +322,28 @@
     "criteres": []
   },
   {
+    "headword": "BON MARCHÉ",
+    "letter": "B",
+    "fondateur1": "COÛTER",
+    "fondateur2": "ÊTRE BEAUCOUP",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*Y* COÛTER W PT NEG W ÊTRE BEAUCOUP",
+          "exemples": [
+            {
+              "phrase": "Ces pommes sont bon marché.",
+              "ea": "Ces pommes coûtent un certain prix, pourtant ce n'est pas beaucoup."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP."
+  },
+  {
     "headword": "BOUTON",
     "letter": "B",
     "fondateur1": "APPUYER",
@@ -384,6 +406,28 @@
     },
     "criteres": [],
     "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus."
+  },
+  {
+    "headword": "CHER",
+    "letter": "C",
+    "fondateur1": "COÛTER",
+    "fondateur2": "ÊTRE BEAUCOUP",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*Y* COÛTER W DC W ÊTRE BEAUCOUP",
+          "exemples": [
+            {
+              "phrase": "Ce manteau est cher.",
+              "ea": "Ce manteau coûte un certain prix, donc c'est beaucoup."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP."
   },
   {
     "headword": "CHERCHER",
@@ -506,6 +550,28 @@
     "criteres": []
   },
   {
+    "headword": "COÛTER",
+    "letter": "C",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "DEVOIR PAYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR AVOIR *Y* DC X DEVOIR PAYER W",
+          "exemples": [
+            {
+              "phrase": "Ce manteau coûte 200 euros.",
+              "ea": "Tu veux avoir ce manteau, donc tu dois payer 200 euros."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
     "headword": "DENTS",
     "letter": "D",
     "fondateur1": "AVOIR",
@@ -525,6 +591,28 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "DETTE",
+    "letter": "D",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DONNER *Y* À Z DC Z DEVOIR RENDRE *Y* À X",
+          "exemples": [
+            {
+              "phrase": "Pierre a une dette envers Marie.",
+              "ea": "Marie a donné quelque chose à Pierre, donc Pierre doit le rendre à Marie."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "DETTE a le même aspect que PRÊTER et EMPRUNTER, différencié par l'application : X (prêteur), Z (emprunteur), Y (dette)."
   },
   {
     "headword": "DIFFICILE",
@@ -670,6 +758,28 @@
     "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative."
   },
   {
+    "headword": "DÉPENSER",
+    "letter": "D",
+    "fondateur1": "AVOIR ARGENT",
+    "fondateur2": "ACHETER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*X* AVOIR ARGENT DC *X* ACHETER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre dépense beaucoup.",
+              "ea": "Pierre a de l'argent, donc il achète."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
     "headword": "EFFET",
     "letter": "E",
     "fondateur1": "FAIRE",
@@ -720,6 +830,28 @@
       "externe": []
     },
     "criteres": []
+  },
+  {
+    "headword": "EMPRUNTER",
+    "letter": "E",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DONNER Y À *Z* DC *Z* DEVOIR RENDRE Y À X",
+          "exemples": [
+            {
+              "phrase": "Marie emprunte le vélo de Pierre.",
+              "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application."
   },
   {
     "headword": "EN BONNE SANTÉ",
@@ -780,6 +912,54 @@
         "texte": "Lien doxal entre faire et avoir : normalement, quand on fait, on obtient."
       }
     ]
+  },
+  {
+    "headword": "GENRER",
+    "letter": "G",
+    "fondateur1": "IDENTIFIER",
+    "fondateur2": "DIRE",
+    "paradoxal": false,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X IDENTIFIER Z COMME Y DC X DIRE Y",
+          "exemples": [
+            {
+              "phrase": "Tout le monde a fait l'effort de me genrer correctement.",
+              "ea": "Ils m'ont identifié comme homme, donc ils ont dit « il »."
+            },
+            {
+              "phrase": "Il préférait qu'on le genre au masculin.",
+              "ea": "Il veut qu'on l'identifie comme homme, donc qu'on dise « il »."
+            },
+            {
+              "phrase": "La personne va se genrer naturellement dans la conversation.",
+              "ea": "Elle s'identifie comme femme, donc elle dit « elle » en parlant d'elle-même."
+            },
+            {
+              "phrase": "Je vais en toute logique genrer au masculin un individu à la barbe fournie.",
+              "ea": "Je l'identifie comme homme, donc je dis « il »."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X GENRER Z (CORRESPONDRE)",
+          "exemples": [
+            {
+              "phrase": "Elle l'a genré correctement.",
+              "ea": "Elle l'a genré d'une certaine façon, donc cette façon correspond à son identité."
+            },
+            {
+              "phrase": "Sa mère continue de le mégenrer.",
+              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": []
   },
   {
     "headword": "GÉNÉREUX",
@@ -1277,6 +1457,37 @@
     ]
   },
   {
+    "headword": "MÉGENRER",
+    "letter": "M",
+    "fondateur1": "GENRER",
+    "fondateur2": "CORRESPONDRE",
+    "paradoxal": false,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X GENRER Z DE Y PT Y NEG CORRESPONDRE À Z",
+          "exemples": [
+            {
+              "phrase": "Sa mère continue de le mégenrer.",
+              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
+            },
+            {
+              "phrase": "Je passe mon temps à me demander si je dois reprendre les gens quand ils me mégenrent.",
+              "ea": "Les gens me genrent d'une certaine façon, pourtant elle ne correspond pas à ce que je suis."
+            },
+            {
+              "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
+              "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
     "headword": "MÉTICULEUX",
     "letter": "M",
     "fondateur1": "ÊTRE DÉTAIL",
@@ -1686,6 +1897,28 @@
     "criteres": []
   },
   {
+    "headword": "PRIX",
+    "letter": "P",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "DEVOIR PAYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR AVOIR Y DC X DEVOIR PAYER *W*",
+          "exemples": [
+            {
+              "phrase": "Le prix de ce manteau est 200 euros.",
+              "ea": "Tu veux avoir ce manteau, donc tu dois payer 200 euros."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "PRIX et COÛTER ont le même aspect différencié par l'application : Y (ce qui coûte), W (le prix)."
+  },
+  {
     "headword": "PROUVER",
     "letter": "P",
     "fondateur1": "MONTRER",
@@ -1803,6 +2036,28 @@
     "criteres": []
   },
   {
+    "headword": "PRÊTER",
+    "letter": "P",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*X* DONNER Y À Z DC Z DEVOIR RENDRE Y À *X*",
+          "exemples": [
+            {
+              "phrase": "Pierre prête son vélo à Marie.",
+              "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application."
+  },
+  {
     "headword": "PSYCHOSOMATIQUE",
     "letter": "P",
     "fondateur1": "ÊTRE MALADE",
@@ -1878,6 +2133,28 @@
     },
     "criteres": [],
     "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes »."
+  },
+  {
+    "headword": "REMBOURSER",
+    "letter": "R",
+    "fondateur1": "DETTE",
+    "fondateur2": "PAYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*Z* AVOIR DETTE DC *Z* PAYER",
+          "exemples": [
+            {
+              "phrase": "Pierre rembourse Marie.",
+              "ea": "Pierre a une dette envers Marie, donc Pierre paye."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
   },
   {
     "headword": "RESPONSABLE",
@@ -1956,6 +2233,36 @@
             {
               "phrase": "Pierre répond à Marie.",
               "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": []
+  },
+  {
+    "headword": "RÉSILIENCE",
+    "letter": "R",
+    "fondateur1": "ÊTRE TRAUMATIQUE",
+    "fondateur2": "SE RELEVER",
+    "paradoxal": false,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE TRAUMATIQUE PT X SE RELEVER",
+          "exemples": [
+            {
+              "phrase": "Elle a fait preuve d'une grande résilience après son accident.",
+              "ea": "L'accident était traumatique, pourtant elle s'est relevée."
+            },
+            {
+              "phrase": "La résilience de ce peuple est admirable.",
+              "ea": "Ce que ce peuple a vécu était traumatique, pourtant il s'est relevé."
+            },
+            {
+              "phrase": "C'est sa résilience qui lui a permis de rebondir.",
+              "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
             }
           ]
         }
@@ -2386,6 +2693,28 @@
     "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE."
   },
   {
+    "headword": "VENDRE",
+    "letter": "V",
+    "fondateur1": "PAYER",
+    "fondateur2": "DONNER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z PAYER À *X* DC *X* DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Marie vend des pommes à Pierre.",
+              "ea": "Pierre paye à Marie, donc Marie donne les pommes à Pierre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
     "headword": "VIVRE",
     "letter": "V",
     "fondateur1": "ÊTRE",
@@ -2411,15 +2740,15 @@
     "headword": "VOLER",
     "letter": "V",
     "fondateur1": "PAYER",
-    "fondateur2": "AVOIR",
+    "fondateur2": "PRENDRE",
     "signification": {
       "interne": [
         {
-          "aspect": "X NEG PAYER À Z PT X AVOIR Y",
+          "aspect": "X NEG PAYER À Z PT X PRENDRE Y",
           "exemples": [
             {
               "phrase": "Il a volé les pommes.",
-              "ea": "Il n'a pas payé, pourtant il a les pommes."
+              "ea": "Il n'a pas payé, pourtant il a pris les pommes."
             }
           ]
         }
@@ -2427,7 +2756,7 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "VOLER et ACHETER partagent le même bloc PAYER — AVOIR : ACHETER en est l'aspect normatif (DC), VOLER en est l'aspect transgressif (PT)."
+    "nb": ""
   },
   {
     "headword": "VOLONTAIRE",
@@ -2501,6 +2830,28 @@
       }
     ],
     "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »"
+  },
+  {
+    "headword": "ÉCONOMISER",
+    "letter": "E",
+    "fondateur1": "DÉPENSER",
+    "fondateur2": "AVOIR ARGENT",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
+          "exemples": [
+            {
+              "phrase": "Pierre économise pour les vacances.",
+              "ea": "Pierre ne dépense pas, donc il a de l'argent."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
   },
   {
     "headword": "ÉNERVER",
