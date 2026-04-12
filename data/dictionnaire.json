@@ -4,6 +4,7 @@
     "letter": "A",
     "fondateur1": "PAYER",
     "fondateur2": "AVOIR",
+    "template_syntaxique": "X ACHETER Y À Z",
     "signification": {
       "interne": [
         {
@@ -53,7 +54,8 @@
         "type": 5,
         "texte": "« J'ai tout essayé, ça ne s'améliore pas » (X FAIRE PT Y NEG ÊTRE MIEUX) : transgression du lien normatif."
       }
-    ]
+    ],
+    "template_syntaxique": "X AMÉLIORER Y"
   },
   {
     "headword": "ANCIEN",
@@ -63,15 +65,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y ÊTRE VIEUX DC X VALORISER Y",
+          "aspect": "Y ÊTRE VIEUX PT X VALORISER Y",
           "exemples": [
             {
               "phrase": "Un meuble ancien.",
-              "ea": "Ce meuble est vieux, donc on le valorise."
+              "ea": "Ce meuble est vieux, pourtant on le valorise."
             },
             {
               "phrase": "Les temps anciens.",
-              "ea": "Ces temps sont vieux, donc on les valorise."
+              "ea": "Ces temps sont vieux, pourtant on les valorise."
             }
           ]
         }
@@ -80,31 +82,34 @@
     },
     "criteres": [
       {
-        "type": 4,
-        "texte": "Lien doxal : ce qui est vieux mérite d'être valorisé."
+        "type": 5,
+        "texte": "Aspect transgressif : la doxa veut qu'on ne valorise pas ce qui est vieux, pourtant ANCIEN valorise."
       }
-    ]
+    ],
+    "template_syntaxique": "Y ÊTRE ANCIEN"
   },
   {
     "headword": "ANXIEUX",
     "letter": "A",
-    "fondateur1": "SE PASSER",
+    "fondateur1": "ÊTRE GRAVE",
     "fondateur2": "S'INQUIÉTER",
+    "square_value": 2,
     "signification": {
       "interne": [
         {
-          "aspect": "NEG Y SE PASSER PT X S'INQUIÉTER",
+          "aspect": "NEG Y ÊTRE GRAVE PT X S'INQUIÉTER DE Y",
           "exemples": [
             {
               "phrase": "Vous êtes anxieux.",
-              "ea": "Rien ne se passe, pourtant vous vous inquiétez."
+              "ea": "Ce n'est pas grave, pourtant vous vous en inquiétez."
             }
           ]
         }
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE ANXIEUX"
   },
   {
     "headword": "APPARAÎTRE",
@@ -129,7 +134,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X APPARAÎTRE"
   },
   {
     "headword": "APPRENDRE",
@@ -151,7 +157,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »"
+    "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »",
+    "template_syntaxique": "X APPRENDRE Y"
   },
   {
     "headword": "ASYMPTOMATIQUE",
@@ -177,7 +184,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES."
+    "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES.",
+    "template_syntaxique": "X ÊTRE ASYMPTOMATIQUE"
   },
   {
     "headword": "ATTENDRE",
@@ -213,13 +221,15 @@
         "type": 1,
         "texte": "« une vraie attente » (ATT-X DC REAL-Y) : peu de certitude que ça arrive, pourtant on reste longtemps."
       }
-    ]
+    ],
+    "template_syntaxique": "X ATTENDRE Y"
   },
   {
     "headword": "AVARE",
     "letter": "A",
     "fondateur1": "DEVOIR DONNER",
     "fondateur2": "DONNER",
+    "square_value": 1,
     "signification": {
       "interne": [
         {
@@ -247,7 +257,35 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "AVARE se combine naturellement avec « avare de Y » car DONNER exige un complément d'objet. Les noms sujets de DONNER (Dieu, mère, père, gouvernement, ciel, lune) se combinent avec AVARE : « un gouvernement avare de mesures », « une lune avare de lumière ». L'hypallage « lumière avare » se comprend par transfert : c'est la source (lune, ciel) qui est avare, non la lumière. « Cadeau avare » est contradictoire : un cadeau est un don accompli, or AVARE signifie l'absence de don."
+    "nb": "AVARE se combine naturellement avec « avare de Y » car DONNER exige un complément d'objet. Les noms sujets de DONNER (Dieu, mère, père, gouvernement, ciel, lune) se combinent avec AVARE : « un gouvernement avare de mesures », « une lune avare de lumière ». L'hypallage « lumière avare » se comprend par transfert : c'est la source (lune, ciel) qui est avare, non la lumière. « Cadeau avare » est contradictoire : un cadeau est un don accompli, or AVARE signifie l'absence de don.",
+    "template_syntaxique": "X ÊTRE AVARE DE Y AVEC Z"
+  },
+  {
+    "headword": "AVOIR",
+    "letter": "A",
+    "fondateur1": null,
+    "fondateur2": null,
+    "template_syntaxique": "X AVOIR Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X AVOIR Y (X POUVOIR FAIRE)",
+          "exemples": [
+            {
+              "phrase": "Pierre a un marteau, donc il peut enfoncer le clou.",
+              "ea": "Pierre a un marteau, donc il peut faire quelque chose."
+            },
+            {
+              "phrase": "Pierre a un marteau, pourtant il ne peut pas enfoncer le clou.",
+              "ea": "Pierre a un marteau, pourtant il ne peut pas faire quelque chose."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "AVOIR LA CHANCE",
@@ -277,7 +315,8 @@
         "type": 5,
         "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
       }
-    ]
+    ],
+    "template_syntaxique": "X AVOIR LA CHANCE DE Y"
   },
   {
     "headword": "BAS",
@@ -298,7 +337,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE BAS"
   },
   {
     "headword": "BEAU",
@@ -319,7 +359,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE BEAU"
   },
   {
     "headword": "BON MARCHÉ",
@@ -341,7 +382,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP."
+    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP.",
+    "template_syntaxique": "Y ÊTRE BON MARCHÉ"
   },
   {
     "headword": "BOUTON",
@@ -362,7 +404,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UN BOUTON"
   },
   {
     "headword": "CAUSER",
@@ -383,7 +426,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X CAUSER Y"
   },
   {
     "headword": "CESSER",
@@ -405,7 +449,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus."
+    "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus.",
+    "template_syntaxique": "X CESSER DE Y"
   },
   {
     "headword": "CHER",
@@ -427,7 +472,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP."
+    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP.",
+    "template_syntaxique": "Y ÊTRE CHER"
   },
   {
     "headword": "CHERCHER",
@@ -452,7 +498,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X CHERCHER Y"
   },
   {
     "headword": "COMPRENDRE",
@@ -478,7 +525,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Ce qui explique pourquoi les deux sont possibles : Z comprend X et Z comprend Y, c'est-à-dire comprendre quelqu'un et comprendre quelque chose."
+    "nb": "Ce qui explique pourquoi les deux sont possibles : Z comprend X et Z comprend Y, c'est-à-dire comprendre quelqu'un et comprendre quelque chose.",
+    "template_syntaxique": "X COMPRENDRE Y"
   },
   {
     "headword": "COMPULSIF",
@@ -500,7 +548,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Différence avec IMPULSIF : à analyser."
+    "nb": "Différence avec IMPULSIF : à analyser.",
+    "template_syntaxique": "X ÊTRE COMPULSIF"
   },
   {
     "headword": "CONVAINCRE",
@@ -522,7 +571,41 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général."
+    "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général.",
+    "template_syntaxique": "Z CONVAINCRE X DE Y"
+  },
+  {
+    "headword": "COOL",
+    "letter": "C",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 4,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y ÊTRE GRAVE DC NEG X S'INQUIÉTER DE Y",
+          "exemples": [
+            {
+              "phrase": "Sois cool.",
+              "ea": "Ce n'est pas grave, donc ne t'en inquiète pas."
+            },
+            {
+              "phrase": "Il est cool.",
+              "ea": "Rien n'est grave pour lui, donc il ne s'en inquiète pas."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : si ce n'est pas grave, on ne s'inquiète pas."
+      }
+    ],
+    "template_syntaxique": "X ÊTRE COOL",
+    "nb": "Anglicisme. COOL est le converse d'ANXIEUX dans le carré argumentatif du bloc ÊTRE GRAVE — S'INQUIÉTER."
   },
   {
     "headword": "COURAGEUX",
@@ -547,7 +630,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE COURAGEUX"
   },
   {
     "headword": "COÛTER",
@@ -569,7 +653,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "Y COÛTER W"
   },
   {
     "headword": "DENTS",
@@ -590,7 +675,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X AVOIR DES DENTS"
   },
   {
     "headword": "DETTE",
@@ -612,7 +698,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "DETTE a le même aspect que PRÊTER et EMPRUNTER, différencié par l'application : X (prêteur), Z (emprunteur), Y (dette)."
+    "nb": "DETTE a le même aspect que PRÊTER et EMPRUNTER, différencié par l'application : X (prêteur), Z (emprunteur), Y (dette).",
+    "template_syntaxique": "Z AVOIR UNE DETTE ENVERS X"
   },
   {
     "headword": "DIFFICILE",
@@ -642,7 +729,8 @@
         "type": 5,
         "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
       }
-    ]
+    ],
+    "template_syntaxique": "Y ÊTRE DIFFICILE"
   },
   {
     "headword": "DISPARAÎTRE",
@@ -664,7 +752,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Apparenté à PARTIR et MOURIR par la structure. PARTIR : PERF (X ÊTRE LÀ) PT NEG (X ÊTRE LÀ) — se rapporte au lieu. MOURIR : PERF (X VIVRE) PT NEG (X VIVRE) — se rapporte à la vie."
+    "nb": "Apparenté à PARTIR et MOURIR par la structure. PARTIR : PERF (X ÊTRE LÀ) PT NEG (X ÊTRE LÀ) — se rapporte au lieu. MOURIR : PERF (X VIVRE) PT NEG (X VIVRE) — se rapporte à la vie.",
+    "template_syntaxique": "X DISPARAÎTRE"
   },
   {
     "headword": "DISTRAIRE",
@@ -685,7 +774,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X DISTRAIRE Z"
   },
   {
     "headword": "DONNER",
@@ -707,7 +797,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Les deux fondateurs sont AVOIR : X AVOIR (passé) et Z AVOIR (présent). Le transfert de possession est au cœur du mot."
+    "nb": "Les deux fondateurs sont AVOIR : X AVOIR (passé) et Z AVOIR (présent). Le transfert de possession est au cœur du mot.",
+    "template_syntaxique": "X DONNER Y À Z"
   },
   {
     "headword": "DOUTER",
@@ -733,7 +824,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "L'incohérence de « un doute possible », « je doute possiblement » remonte à l'impossibilité de « je sais possiblement ». SAVOIR suppose la clôture de la modalité (on sait ou on ne sait pas). « Doute possible » se rencontre dans des phrases négatives (« aucun doute possible », « sans l'ombre d'un doute possible ») où POSSIBLE sert d'intensif rhétorique : on nie la possibilité même qu'un doute surgisse."
+    "nb": "L'incohérence de « un doute possible », « je doute possiblement » remonte à l'impossibilité de « je sais possiblement ». SAVOIR suppose la clôture de la modalité (on sait ou on ne sait pas). « Doute possible » se rencontre dans des phrases négatives (« aucun doute possible », « sans l'ombre d'un doute possible ») où POSSIBLE sert d'intensif rhétorique : on nie la possibilité même qu'un doute surgisse.",
+    "template_syntaxique": "X DOUTER DE Y"
   },
   {
     "headword": "DÉLICIEUX",
@@ -755,7 +847,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative."
+    "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative.",
+    "template_syntaxique": "Y ÊTRE DÉLICIEUX"
   },
   {
     "headword": "DÉPENSER",
@@ -777,7 +870,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "X DÉPENSER"
   },
   {
     "headword": "EFFET",
@@ -808,7 +902,8 @@
         "texte": "Lien doxal : quand on fait quelque chose, il y a des conséquences."
       }
     ],
-    "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas."
+    "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas.",
+    "template_syntaxique": "Y AVOIR UN EFFET"
   },
   {
     "headword": "EMBELLIR",
@@ -829,7 +924,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X EMBELLIR Y"
   },
   {
     "headword": "EMPRUNTER",
@@ -851,7 +947,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application."
+    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
+    "template_syntaxique": "Z EMPRUNTER Y À X"
   },
   {
     "headword": "EN BONNE SANTÉ",
@@ -881,7 +978,8 @@
         "type": 4,
         "texte": "Lien doxal : ne pas être malade implique pas de signes."
       }
-    ]
+    ],
+    "template_syntaxique": "X ÊTRE EN BONNE SANTÉ"
   },
   {
     "headword": "FACILE",
@@ -911,7 +1009,8 @@
         "type": 4,
         "texte": "Lien doxal entre faire et avoir : normalement, quand on fait, on obtient."
       }
-    ]
+    ],
+    "template_syntaxique": "Y ÊTRE FACILE"
   },
   {
     "headword": "GENRER",
@@ -959,7 +1058,8 @@
         }
       ]
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X GENRER Z"
   },
   {
     "headword": "GÉNÉREUX",
@@ -981,7 +1081,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres."
+    "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
+    "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z"
   },
   {
     "headword": "HABITUEL",
@@ -1003,7 +1104,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "HABITUEL est moins général que NORMAL : on dit « les pluies sont normales » mais pas « les pluies sont habituelles ». On a envie de recourir à « souvent » pour le décrire, mais en décrivant l'habituel comme quelque chose qui, quand cela se fait, est normal, on obtient le même effet. SOUVENT est un opérateur argumentatif, non un adverbe de temps."
+    "nb": "HABITUEL est moins général que NORMAL : on dit « les pluies sont normales » mais pas « les pluies sont habituelles ». On a envie de recourir à « souvent » pour le décrire, mais en décrivant l'habituel comme quelque chose qui, quand cela se fait, est normal, on obtient le même effet. SOUVENT est un opérateur argumentatif, non un adverbe de temps.",
+    "template_syntaxique": "Y ÊTRE HABITUEL POUR X"
   },
   {
     "headword": "HAUT",
@@ -1033,7 +1135,8 @@
         "type": 4,
         "texte": "Lien doxal : pour atteindre quelque chose de haut, il faut faire un effort."
       }
-    ]
+    ],
+    "template_syntaxique": "Y ÊTRE HAUT"
   },
   {
     "headword": "HORIZON",
@@ -1058,7 +1161,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE À L'HORIZON"
   },
   {
     "headword": "IMMÉDIAT",
@@ -1079,7 +1183,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE IMMÉDIAT"
   },
   {
     "headword": "IMPARFAIT",
@@ -1100,7 +1205,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE IMPARFAIT"
   },
   {
     "headword": "IMPÉRATIF",
@@ -1121,7 +1227,32 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE IMPÉRATIF"
+  },
+  {
+    "headword": "INCONSCIENT",
+    "letter": "I",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 1,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE GRAVE PT NEG X S'INQUIÉTER DE Y",
+          "exemples": [
+            {
+              "phrase": "Il est inconscient du danger.",
+              "ea": "C'est grave, pourtant il ne s'en inquiète pas."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE INCONSCIENT",
+    "nb": "INCONSCIENT est le converse de COOL et le transposé d'ANXIEUX dans le carré du bloc ÊTRE GRAVE — S'INQUIÉTER."
   },
   {
     "headword": "INHABITUEL",
@@ -1142,7 +1273,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE INHABITUEL POUR X"
   },
   {
     "headword": "INSTRUMENT",
@@ -1163,7 +1295,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UN INSTRUMENT"
   },
   {
     "headword": "INTELLIGENT",
@@ -1184,7 +1317,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE INTELLIGENT"
   },
   {
     "headword": "IRRESPONSABLE",
@@ -1209,7 +1343,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE IRRESPONSABLE"
   },
   {
     "headword": "JOUET",
@@ -1230,7 +1365,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UN JOUET"
   },
   {
     "headword": "LANGUE",
@@ -1251,7 +1387,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UNE LANGUE"
   },
   {
     "headword": "LIBRE",
@@ -1272,7 +1409,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE LIBRE"
   },
   {
     "headword": "LOUER",
@@ -1293,7 +1431,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Z LOUER Y À X"
   },
   {
     "headword": "MAIN",
@@ -1324,7 +1463,8 @@
         "texte": "Lien doxal : avoir une main disponible permet d'agir."
       }
     ],
-    "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect."
+    "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect.",
+    "template_syntaxique": "X AVOIR UNE MAIN"
   },
   {
     "headword": "MASOCHISTE",
@@ -1351,7 +1491,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y)."
+    "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y).",
+    "template_syntaxique": "X ÊTRE MASOCHISTE"
   },
   {
     "headword": "MESQUIN",
@@ -1381,7 +1522,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes."
+    "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes.",
+    "template_syntaxique": "X ÊTRE MESQUIN"
   },
   {
     "headword": "MONOTONE",
@@ -1402,7 +1544,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE MONOTONE"
   },
   {
     "headword": "MOT",
@@ -1454,7 +1597,8 @@
         "type": 3,
         "texte": "MOT s'inscrit en amont de DIRE sur la carte argumentative."
       }
-    ]
+    ],
+    "template_syntaxique": "X AVOIR LE MOT Y"
   },
   {
     "headword": "MÉGENRER",
@@ -1485,7 +1629,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "X MÉGENRER Z"
   },
   {
     "headword": "MÉTICULEUX",
@@ -1506,7 +1651,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE MÉTICULEUX"
   },
   {
     "headword": "NORMAL",
@@ -1535,7 +1681,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE NORMAL"
   },
   {
     "headword": "NOUVEAU",
@@ -1556,7 +1703,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE NOUVEAU"
   },
   {
     "headword": "NÉCESSAIRE",
@@ -1586,7 +1734,8 @@
         "type": 4,
         "texte": "Lien doxal : vouloir quelque chose implique devoir avoir les moyens."
       }
-    ]
+    ],
+    "template_syntaxique": "Z ÊTRE NÉCESSAIRE POUR Y"
   },
   {
     "headword": "NÉGLIGER",
@@ -1611,7 +1760,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X NÉGLIGER Y"
   },
   {
     "headword": "OBTENIR",
@@ -1632,7 +1782,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X OBTENIR Y"
   },
   {
     "headword": "OBÉIR",
@@ -1657,7 +1808,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Z OBÉIR À X"
   },
   {
     "headword": "OPTIMISTE",
@@ -1678,7 +1830,36 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE OPTIMISTE"
+  },
+  {
+    "headword": "OUBLIER",
+    "letter": "O",
+    "fondateur1": "SAVOIR",
+    "fondateur2": "SAVOIR",
+    "square_value": 1,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X SAVOIR Y) PT NEG X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai oublié son nom.",
+              "ea": "Je savais son nom, pourtant je ne le sais plus."
+            },
+            {
+              "phrase": "Pierre a oublié la réunion.",
+              "ea": "Pierre savait qu'il y avait une réunion, pourtant il ne le sait plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X OUBLIER Y",
+    "nb": "OUBLIER est le transposé d'APPRENDRE dans le carré du bloc SAVOIR — SAVOIR : APPRENDRE = PERF (NEG X SAVOIR Y) PT X SAVOIR Y ; OUBLIER = PERF (X SAVOIR Y) PT NEG X SAVOIR Y."
   },
   {
     "headword": "PARANOÏAQUE",
@@ -1704,7 +1885,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "À la différence d'anxieux (NEG Y SE PASSER PT X S'INQUIÉTER), où la peur est sans objet, paranoïaque nie un danger spécifique : le sujet construit une menace là où il n'y en a pas. Syntaxiquement, anxieux fonctionne comme état transitoire (Il est anxieux ce matin, Elle a été anxieuse toute la journée), tandis que paranoïaque décrit un trait permanent (Il est paranoïaque ; ?Il est paranoïaque ce matin est bizarre, sauf emploi hyperbolique). Cette différence syntaxique rejoint la différence aspectuelle : anxieux décrit un état lié à un moment (il faut un moment où rien ne se passe), paranoïaque décrit un trait permanent."
+    "nb": "À la différence d'anxieux (NEG Y SE PASSER PT X S'INQUIÉTER), où la peur est sans objet, paranoïaque nie un danger spécifique : le sujet construit une menace là où il n'y en a pas. Syntaxiquement, anxieux fonctionne comme état transitoire (Il est anxieux ce matin, Elle a été anxieuse toute la journée), tandis que paranoïaque décrit un trait permanent (Il est paranoïaque ; ?Il est paranoïaque ce matin est bizarre, sauf emploi hyperbolique). Cette différence syntaxique rejoint la différence aspectuelle : anxieux décrit un état lié à un moment (il faut un moment où rien ne se passe), paranoïaque décrit un trait permanent.",
+    "template_syntaxique": "X ÊTRE PARANOÏAQUE"
   },
   {
     "headword": "PARFAIT",
@@ -1725,7 +1907,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE PARFAIT"
   },
   {
     "headword": "PARTAGER",
@@ -1746,7 +1929,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X PARTAGER Y AVEC Z"
   },
   {
     "headword": "PAUVRE",
@@ -1778,7 +1962,8 @@
       ]
     },
     "criteres": [],
-    "nb": "« Une main pauvre » se comprend comme la personne qui demande quelque chose. C'est le mot MAIN qui signifie une action, or dans PAUVRE l'action est dans le quasi-bloc."
+    "nb": "« Une main pauvre » se comprend comme la personne qui demande quelque chose. C'est le mot MAIN qui signifie une action, or dans PAUVRE l'action est dans le quasi-bloc.",
+    "template_syntaxique": "X ÊTRE PAUVRE"
   },
   {
     "headword": "PAYER",
@@ -1799,7 +1984,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X PAYER Y À Z"
   },
   {
     "headword": "PERSUADER",
@@ -1821,7 +2007,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "PERSUADER est plus général que CONVAINCRE. CONVAINCRE : DIRE DC PENSER. PERSUADER : DIRE DC FAIRE."
+    "nb": "PERSUADER est plus général que CONVAINCRE. CONVAINCRE : DIRE DC PENSER. PERSUADER : DIRE DC FAIRE.",
+    "template_syntaxique": "Z PERSUADER X DE Y"
   },
   {
     "headword": "PORTE",
@@ -1842,38 +2029,62 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UNE PORTE"
   },
   {
     "headword": "POSSIBLE",
     "letter": "P",
-    "fondateur1": "ÊTRE",
-    "fondateur2": "POUVOIR ÊTRE",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "POUVOIR SE PASSER",
+    "template_syntaxique": "*Y* ÊTRE POSSIBLE",
     "signification": {
       "interne": [
         {
-          "aspect": "NEG Y ÊTRE PT Y POUVOIR ÊTRE",
+          "aspect": "NEG *Y* SE PASSER PT *Y* POUVOIR SE PASSER",
           "exemples": [
             {
-              "phrase": "Ce voyage est possible.",
-              "ea": "Tu n'as pas fait ce voyage, pourtant tu peux le faire."
+              "phrase": "C'est possible qu'il vienne.",
+              "ea": "Il n'est pas venu, pourtant il peut venir."
+            },
+            {
+              "phrase": "Un accident est possible ici.",
+              "ea": "Il n'y a pas eu d'accident, pourtant un accident peut se produire."
             }
           ]
         }
       ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
+    "headword": "POUVOIR",
+    "letter": "P",
+    "fondateur1": null,
+    "fondateur2": null,
+    "template_syntaxique": "X POUVOIR Y",
+    "signification": {
+      "interne": [],
       "externe": [
         {
-          "quasibloc": "Y ÊTRE POSSIBLE (X FAIRE Y)",
+          "quasibloc": "X POUVOIR Y (X DEVOIR Y)",
           "exemples": [
             {
-              "phrase": "C'est possible, je vais le faire.",
-              "ea": "C'est possible, donc je le fais."
+              "phrase": "Il peut conduire, donc il doit conduire.",
+              "ea": "Il peut faire quelque chose, donc il doit le faire."
+            },
+            {
+              "phrase": "Il peut conduire, pourtant il ne doit pas conduire.",
+              "ea": "Il peut faire quelque chose, pourtant il ne doit pas le faire."
             }
           ]
         }
       ]
     },
-    "criteres": []
+    "criteres": [],
+    "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "PREUVE",
@@ -1894,7 +2105,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE LA PREUVE DE W"
   },
   {
     "headword": "PRIX",
@@ -1916,7 +2128,56 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "PRIX et COÛTER ont le même aspect différencié par l'application : Y (ce qui coûte), W (le prix)."
+    "nb": "PRIX et COÛTER ont le même aspect différencié par l'application : Y (ce qui coûte), W (le prix).",
+    "template_syntaxique": "W ÊTRE LE PRIX DE Y"
+  },
+  {
+    "headword": "PROBABLE",
+    "letter": "P",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "DEVOIR SE PASSER",
+    "template_syntaxique": "*Y* ÊTRE PROBABLE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG *Y* SE PASSER PT *Y* DEVOIR SE PASSER",
+          "exemples": [
+            {
+              "phrase": "C'est probable qu'il vienne.",
+              "ea": "Il n'est pas venu, pourtant il devrait venir."
+            },
+            {
+              "phrase": "Une crise est probable.",
+              "ea": "La crise n'a pas eu lieu, pourtant elle devrait avoir lieu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Échelle argumentative : « c'est possible, voire probable » fonctionne, jamais l'inverse. PROBABLE est argumentativement plus fort que POSSIBLE. La différence structurelle POUVOIR vs DEVOIR explique cette échelle."
+      },
+      {
+        "type": 4,
+        "texte": "Test avec mais : « c'est possible mais pas probable » fonctionne. « C'est probable mais pas possible » est contradictoire. DEVOIR présuppose POUVOIR."
+      },
+      {
+        "type": 4,
+        "texte": "Test avec seulement : « c'est seulement possible » sous-entend « pas encore probable ». « C'est seulement probable » est étrange. Seulement marque le degré inférieur."
+      },
+      {
+        "type": 4,
+        "texte": "Gradabilité : « très probable » est naturel, « très possible » est rare. DEVOIR est gradable, POUVOIR est plus binaire."
+      },
+      {
+        "type": 4,
+        "texte": "Enchaînement discursif : « c'est probable, donc prépare-toi » oriente vers l'action (DEVOIR FAIRE). « C'est possible, donc fais attention » oriente vers la précaution (POUVOIR SE PASSER)."
+      }
+    ],
+    "nb": "POSSIBLE et PROBABLE se ressemblent mais ne partagent pas le même bloc. Ils diffèrent par POUVOIR vs DEVOIR. Le quasi-bloc POUVOIR(DEVOIR) prédit leur relation scalaire."
   },
   {
     "headword": "PROUVER",
@@ -1937,7 +2198,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X PROUVER W À Z"
   },
   {
     "headword": "PRUDENT",
@@ -1962,7 +2224,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE PRUDENT"
   },
   {
     "headword": "PRÉCIS",
@@ -2004,7 +2267,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE PRÉCIS"
   },
   {
     "headword": "PRÉSUPPOSER",
@@ -2033,7 +2297,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "W PRÉSUPPOSER Z"
   },
   {
     "headword": "PRÊTER",
@@ -2055,7 +2320,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application."
+    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
+    "template_syntaxique": "X PRÊTER Y À Z"
   },
   {
     "headword": "PSYCHOSOMATIQUE",
@@ -2080,7 +2346,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE PSYCHOSOMATIQUE"
   },
   {
     "headword": "PÉRIR",
@@ -2102,7 +2369,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent."
+    "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent.",
+    "template_syntaxique": "X PÉRIR"
   },
   {
     "headword": "RADIN",
@@ -2132,7 +2400,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes »."
+    "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes ».",
+    "template_syntaxique": "X ÊTRE RADIN"
   },
   {
     "headword": "REMBOURSER",
@@ -2147,6 +2416,30 @@
             {
               "phrase": "Pierre rembourse Marie.",
               "ea": "Pierre a une dette envers Marie, donc Pierre paye."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "",
+    "template_syntaxique": "Z REMBOURSER X"
+  },
+  {
+    "headword": "RENDRE",
+    "letter": "R",
+    "fondateur1": "DONNER",
+    "fondateur2": "DONNER",
+    "template_syntaxique": "X RENDRE Y À Z",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF(Z DONNER Y À *X*) DC *X* DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre rend le vélo à Marie.",
+              "ea": "Marie avait donné le vélo à Pierre, donc Pierre donne le vélo à Marie."
             }
           ]
         }
@@ -2197,7 +2490,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Deux sens : (1) être chargé de quelque chose (DEVOIR FAIRE DC FAIRE), (2) être la cause d'une faute (FAUTE DC DEVOIR RÉPONDRE)."
+    "nb": "Deux sens : (1) être chargé de quelque chose (DEVOIR FAIRE DC FAIRE), (2) être la cause d'une faute (FAUTE DC DEVOIR RÉPONDRE).",
+    "template_syntaxique": "X ÊTRE RESPONSABLE DE Y"
   },
   {
     "headword": "RESSUSCITER",
@@ -2218,7 +2512,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X RESSUSCITER"
   },
   {
     "headword": "RÉPONDRE",
@@ -2239,7 +2534,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X RÉPONDRE À Z"
   },
   {
     "headword": "RÉSILIENCE",
@@ -2269,7 +2565,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X AVOIR DE LA RÉSILIENCE"
   },
   {
     "headword": "SACRIFIER",
@@ -2290,7 +2587,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Z SACRIFIER Y POUR X"
   },
   {
     "headword": "SATISFAIRE",
@@ -2316,7 +2614,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE)."
+    "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE).",
+    "template_syntaxique": "Y SATISFAIRE X"
   },
   {
     "headword": "SE SUICIDER",
@@ -2337,7 +2636,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X SE SUICIDER"
   },
   {
     "headword": "SERVIR",
@@ -2358,7 +2658,37 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X SERVIR Z"
+  },
+  {
+    "headword": "SOUCIEUX",
+    "letter": "S",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 3,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE GRAVE DC X S'INQUIÉTER DE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est soucieux de la situation.",
+              "ea": "La situation est grave, donc Pierre s'en inquiète."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qui est grave suscite l'inquiétude."
+      }
+    ],
+    "template_syntaxique": "X ÊTRE SOUCIEUX DE Y",
+    "nb": "SOUCIEUX est la doxa du bloc ÊTRE GRAVE — S'INQUIÉTER : coin (1) du carré, face à ANXIEUX (3), COOL (2) et INCONSCIENT (4)."
   },
   {
     "headword": "SOUPÇONNER",
@@ -2379,7 +2709,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X SOUPÇONNER Y"
   },
   {
     "headword": "SUCCOMBER",
@@ -2400,7 +2731,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X SUCCOMBER À Y"
   },
   {
     "headword": "SURVENIR",
@@ -2421,7 +2753,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X SURVENIR"
   },
   {
     "headword": "SYMPTOMATIQUE",
@@ -2451,7 +2784,8 @@
         "type": 4,
         "texte": "Lien doxal : être malade implique des signes."
       }
-    ]
+    ],
+    "template_syntaxique": "X ÊTRE SYMPTOMATIQUE"
   },
   {
     "headword": "SÛR",
@@ -2482,7 +2816,8 @@
         "texte": "Lien doxal : quand quelque chose est possible et qu'on a les éléments, on sait."
       }
     ],
-    "nb": "SÛR et DOUTER partagent le même bloc POSSIBLE — SAVOIR : SÛR en est l'aspect normatif (DC), DOUTER en est l'aspect transgressif (PT)."
+    "nb": "SÛR et DOUTER partagent le même bloc POSSIBLE — SAVOIR : SÛR en est l'aspect normatif (DC), DOUTER en est l'aspect transgressif (PT).",
+    "template_syntaxique": "X ÊTRE SÛR DE Y"
   },
   {
     "headword": "TEMPS",
@@ -2559,7 +2894,8 @@
       ]
     },
     "criteres": [],
-    "nb": "PRENDRE et DONNER ont AVOIR en eux. Syntagmes usuels : prendre du temps, donner du temps, perdre le temps."
+    "nb": "PRENDRE et DONNER ont AVOIR en eux. Syntagmes usuels : prendre du temps, donner du temps, perdre le temps.",
+    "template_syntaxique": "X AVOIR DU TEMPS"
   },
   {
     "headword": "TENTER",
@@ -2591,7 +2927,36 @@
       ]
     },
     "criteres": [],
-    "nb": "Dans d'autres langues, les mêmes paires : essayer/tenter, try/attempt, пробовать/пытаться."
+    "nb": "Dans d'autres langues, les mêmes paires : essayer/tenter, try/attempt, пробовать/пытаться.",
+    "template_syntaxique": "X TENTER Y"
+  },
+  {
+    "headword": "TRAÎNER",
+    "letter": "T",
+    "fondateur1": "DEVOIR SE PASSER",
+    "fondateur2": "RESTER",
+    "square_value": 2,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Y DEVOIR SE PASSER PT X RESTER",
+          "exemples": [
+            {
+              "phrase": "Pierre traîne au café.",
+              "ea": "Rien ne doit se passer, pourtant Pierre reste là."
+            },
+            {
+              "phrase": "Ne traîne pas en route.",
+              "ea": "Rien ne devrait t'y retenir, pourtant tu restes."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X TRAÎNER",
+    "nb": "TRAÎNER partage le bloc DEVOIR SE PASSER — RESTER avec ATTENDRE : ATTENDRE est le normatif (quelque chose doit se passer, donc on reste) ; TRAÎNER est le transposé (rien ne doit se passer, pourtant on reste)."
   },
   {
     "headword": "TUER",
@@ -2612,7 +2977,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X TUER Z"
   },
   {
     "headword": "UTILE",
@@ -2647,7 +3013,8 @@
         }
       ]
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÊTRE UTILE À X"
   },
   {
     "headword": "UTILISER",
@@ -2668,7 +3035,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X UTILISER Y"
   },
   {
     "headword": "VACANT",
@@ -2690,7 +3058,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE."
+    "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE.",
+    "template_syntaxique": "Y ÊTRE VACANT"
   },
   {
     "headword": "VENDRE",
@@ -2712,7 +3081,36 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "X VENDRE Y À Z"
+  },
+  {
+    "headword": "VIEILLOT",
+    "letter": "V",
+    "fondateur1": "ÊTRE VIEUX",
+    "fondateur2": "VALORISER",
+    "square_value": 3,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE VIEUX DC NEG X VALORISER Y",
+          "exemples": [
+            {
+              "phrase": "Un style vieillot.",
+              "ea": "C'est vieux, donc on ne le valorise pas."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qui est vieux n'est pas valorisé."
+      }
+    ],
+    "template_syntaxique": "Y ÊTRE VIEILLOT"
   },
   {
     "headword": "VIVRE",
@@ -2734,7 +3132,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "VIVRE implique une continuité de l'être : ce qui a été continue d'être."
+    "nb": "VIVRE implique une continuité de l'être : ce qui a été continue d'être.",
+    "template_syntaxique": "X VIVRE"
   },
   {
     "headword": "VOLER",
@@ -2756,7 +3155,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "X VOLER Y À Z"
   },
   {
     "headword": "VOLONTAIRE",
@@ -2781,7 +3181,35 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE VOLONTAIRE"
+  },
+  {
+    "headword": "VOULOIR",
+    "letter": "V",
+    "fondateur1": null,
+    "fondateur2": null,
+    "template_syntaxique": "X VOULOIR Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X VOULOIR Y (X FAIRE W)",
+          "exemples": [
+            {
+              "phrase": "Pierre veut une pomme, donc il va en acheter.",
+              "ea": "Pierre veut une pomme, donc il fait quelque chose pour l'avoir."
+            },
+            {
+              "phrase": "Pierre veut une pomme, pourtant il ne fait rien pour l'avoir.",
+              "ea": "Pierre veut une pomme, pourtant il ne fait rien."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "ÉCHOUER",
@@ -2802,7 +3230,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "X ÉCHOUER À Z"
   },
   {
     "headword": "ÉCONOME",
@@ -2829,7 +3258,8 @@
         "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
       }
     ],
-    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »"
+    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
+    "template_syntaxique": "X ÊTRE ÉCONOME"
   },
   {
     "headword": "ÉCONOMISER",
@@ -2851,7 +3281,8 @@
       "externe": []
     },
     "criteres": [],
-    "nb": ""
+    "nb": "",
+    "template_syntaxique": "X ÉCONOMISER"
   },
   {
     "headword": "ÉNERVER",
@@ -2872,7 +3303,8 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÉNERVER X"
   },
   {
     "headword": "ÉTONNER",
@@ -2893,6 +3325,7 @@
       ],
       "externe": []
     },
-    "criteres": []
+    "criteres": [],
+    "template_syntaxique": "Y ÉTONNER X"
   }
 ]

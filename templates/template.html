@@ -14,12 +14,8 @@
         <aside class="sidebar">
             <div class="sb-header">
                 <h1>Dictionnaire TBS</h1>
-                <p class="sb-subtitle">Théorie des Blocs Sémantiques</p>
-                <p class="sb-authors">Carel &amp; Ducrot</p>
                 <div class="sb-stats">
                     <span>{{ENTRIES_COUNT}} entrées</span>
-                    <span>{{LETTERS_COUNT}} lettres</span>
-                    <span>{{BLOCS_COUNT}} blocs</span>
                 </div>
             </div>
 
@@ -39,6 +35,7 @@
 
             <div class="sb-list" id="sidebar-list">
                 {{SIDEBAR}}
+                <div class="sb-separator" id="sb-separator">fondateur</div>
             </div>
         </aside>
 
@@ -64,6 +61,75 @@
         <span>Généré le {{DATE}}</span>
         <span>Sémantique argumentative</span>
     </footer>
+
+    <!-- MODAL RÉFÉRENCE CARRÉ -->
+    <div class="modal-overlay" id="carre-ref-overlay">
+        <div class="modal modal--carre-ref">
+            <div class="modal-header">
+                <span class="modal-title">Carré argumentatif — layout de référence</span>
+                <button class="modal-close" id="carre-ref-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="carre-ref-note">
+                    D'après <strong>Marion Carel, <em>Parler</em></strong> (Pontes Editores,
+                    Campinas, 2023), p. 47-49.
+                </p>
+
+                <div class="carre-ref-grid">
+                    <div class="carre-ref-cell">
+                        <div class="carre-ref-formula">utile PT neg achat</div>
+                        <div class="carre-ref-word">→ AVARE</div>
+                    </div>
+                    <div class="carre-ref-cell">
+                        <div class="carre-ref-formula">neg utile PT achat</div>
+                        <div class="carre-ref-word">→ DÉPENSIER</div>
+                    </div>
+                    <div class="carre-ref-cell">
+                        <div class="carre-ref-formula">utile DC achat</div>
+                        <div class="carre-ref-word">→ pas avare</div>
+                    </div>
+                    <div class="carre-ref-cell">
+                        <div class="carre-ref-formula">neg utile DC neg achat</div>
+                        <div class="carre-ref-word">→ ÉCONOME</div>
+                    </div>
+                </div>
+
+                <ul class="carre-ref-rules">
+                    <li><strong>PT en haut</strong>, DC en bas — les transgressifs au-dessus des normatifs.</li>
+                    <li><strong>Colonnes = converses</strong> (gauche : A positif / droite : NEG A).</li>
+                    <li><strong>Diagonales = transposés</strong> (nouveau choix de <em>Parler</em>, différent du carré d'Aristote).</li>
+                </ul>
+
+                <blockquote class="carre-ref-quote">
+                    « Les aspects en colonnes sont ici converses de sorte qu'en diagonale on
+                    trouve des aspects transposés. Auparavant, je mettais en colonne les
+                    aspects transposés et en diagonale les converses de sorte que le tableau
+                    ressemblait au carré d'Aristote. J'ai changé l'ordre des aspects car il
+                    permet de mieux représenter le paradoxe. »
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-pill btn-pill--dim" id="carre-ref-dismiss">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL JSON BRUT -->
+    <div class="modal-overlay" id="json-overlay">
+        <div class="modal modal--json">
+            <div class="modal-header">
+                <span class="modal-title" id="json-title">Données brutes</span>
+                <button class="modal-close" id="json-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <pre class="json-view" id="json-view"></pre>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-pill btn-pill--mint" id="json-copy">Copier</button>
+                <button class="btn-pill btn-pill--dim" id="json-dismiss">Fermer</button>
+            </div>
+        </div>
+    </div>
 
     <!-- MODAL ÉDITION -->
     <div class="modal-overlay" id="modal-overlay">
@@ -99,6 +165,10 @@
                         <label>Fondateur 2</label>
                         <input type="text" id="ed-f2">
                     </div>
+                </div>
+                <div class="form-row">
+                    <label>Template syntaxique (ex : X ACHETER Y À Z)</label>
+                    <input type="text" id="ed-template-syntaxique" placeholder="X VERBE Y À Z">
                 </div>
 
                 <div class="form-section">
@@ -156,7 +226,7 @@
             });
         });
 
-        function showEntry(hw, sidebarItem) {
+        function showEntry(hw, sidebarItem, push) {
             entries.forEach(function (e) { e.style.display = 'none'; });
             letterHeaders.forEach(function (e) { e.style.display = 'none'; });
             welcome.style.display = 'none';
@@ -167,9 +237,42 @@
                 content.scrollTop = 0;
             }
 
+            if (!sidebarItem) {
+                sidebarItem = document.querySelector('.sb-word[data-entry="' + hw + '"]');
+            }
             if (active) active.classList.remove('sb-word--active');
             if (sidebarItem) sidebarItem.classList.add('sb-word--active');
             active = sidebarItem;
+
+            if (push !== false) {
+                var hash = '#' + encodeURIComponent(hw);
+                if (location.hash !== hash) {
+                    history.pushState({ hw: hw }, '', hash);
+                }
+            }
+        }
+
+        window.addEventListener('popstate', function (e) {
+            var hw = (e.state && e.state.hw) ||
+                     (location.hash ? decodeURIComponent(location.hash.slice(1)) : '');
+            if (hw && document.getElementById('entry-' + hw)) {
+                showEntry(hw, null, false);
+            } else {
+                entries.forEach(function (en) { en.style.display = 'none'; });
+                letterHeaders.forEach(function (en) { en.style.display = 'none'; });
+                welcome.style.display = '';
+                if (active) active.classList.remove('sb-word--active');
+                active = null;
+            }
+        });
+
+        // Au chargement : ouvrir l'entrée correspondant au hash s'il y en a un
+        if (location.hash) {
+            var initialHw = decodeURIComponent(location.hash.slice(1));
+            if (document.getElementById('entry-' + initialHw)) {
+                showEntry(initialHw, null, false);
+                history.replaceState({ hw: initialHw }, '', location.hash);
+            }
         }
 
         // Recherche filtrée (utilise applyFilters qui combine recherche + filtre)
@@ -203,15 +306,38 @@
             var query = searchInput.value.trim().toUpperCase();
             var activeBtn = document.querySelector('.filter-btn--active');
             var filter = activeBtn ? activeBtn.dataset.filter : null;
+            var list = document.getElementById('sidebar-list');
+            var searching = query !== '';
+            var hasHw = false;
+            var hasFond = false;
+
             sidebarWords.forEach(function (item) {
                 var name = item.dataset.entry;
-                var matchSearch = (query === '' || name.indexOf(query) !== -1);
+                var fonds = (item.dataset.fondateurs || '').toUpperCase();
+                var matchHw = searching && name.indexOf(query) !== -1;
+                var matchFond = searching && !matchHw && fonds.indexOf(query) !== -1;
                 var matchFilter = !filter || item.dataset[filter] === 'true';
-                item.style.display = (matchSearch && matchFilter) ? '' : 'none';
+                var matchSearch = !searching || matchHw || matchFond;
+                var visible = matchSearch && matchFilter;
+
+                item.classList.toggle('match-hw', !!matchHw && visible);
+                item.classList.toggle('match-fond', !!matchFond && visible);
+                item.style.display = visible ? '' : 'none';
+
+                if (visible && matchHw) hasHw = true;
+                if (visible && matchFond) hasFond = true;
             });
+
+            list.classList.toggle('sb-list--searching', searching);
+            list.classList.toggle('has-both-matches', searching && hasHw && hasFond);
+
             document.querySelectorAll('.sb-group').forEach(function (g) {
-                var visible = g.querySelectorAll('.sb-word:not([style*="display: none"])');
-                g.style.display = visible.length > 0 ? '' : 'none';
+                if (searching) {
+                    g.style.display = '';
+                } else {
+                    var visible = g.querySelectorAll('.sb-word:not([style*="display: none"])');
+                    g.style.display = visible.length > 0 ? '' : 'none';
+                }
             });
         }
 
@@ -255,6 +381,7 @@
             document.getElementById('ed-paradoxal').value = d.paradoxal ? 'true' : 'false';
             document.getElementById('ed-f1').value = d.fondateur1 || '';
             document.getElementById('ed-f2').value = d.fondateur2 || '';
+            document.getElementById('ed-template-syntaxique').value = d.template_syntaxique || '';
             document.getElementById('ed-nb').value = d.nb || '';
             renderBlocks('ed-interne', d.signification && d.signification.interne || [], 'aspect');
             renderBlocks('ed-externe', d.signification && d.signification.externe || [], 'quasibloc');
@@ -339,6 +466,8 @@
                 }
             };
             if (document.getElementById('ed-paradoxal').value === 'true') entry.paradoxal = true;
+            var tmpl = document.getElementById('ed-template-syntaxique').value.trim();
+            if (tmpl) entry.template_syntaxique = tmpl;
             var nb = document.getElementById('ed-nb').value.trim();
             if (nb) entry.nb = nb;
 
@@ -384,7 +513,84 @@
         document.addEventListener('click', function (e) {
             var btn = e.target.closest('.btn-edit');
             if (btn) openModal(btn.dataset.hw);
+            var rawBtn = e.target.closest('.btn-raw');
+            if (rawBtn) openJsonModal(rawBtn.dataset.hw);
+            var infoBtn = e.target.closest('.btn-carre-info');
+            if (infoBtn) {
+                document.getElementById('carre-ref-overlay').classList.add('modal-overlay--open');
+                return;
+            }
+            var node = e.target.closest('.tree-label--entry, .carre-word');
+            if (node && node.dataset.entry) {
+                var hw = node.dataset.entry;
+                var sbItem = document.querySelector('.sb-word[data-entry="' + hw + '"]');
+                showEntry(hw, sbItem);
+                if (sbItem) sbItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
         });
+
+        // Fermeture modale référence carré
+        var carreRefOverlay = document.getElementById('carre-ref-overlay');
+        document.getElementById('carre-ref-close').addEventListener('click', function () {
+            carreRefOverlay.classList.remove('modal-overlay--open');
+        });
+        document.getElementById('carre-ref-dismiss').addEventListener('click', function () {
+            carreRefOverlay.classList.remove('modal-overlay--open');
+        });
+        carreRefOverlay.addEventListener('click', function (e) {
+            if (e.target === carreRefOverlay) carreRefOverlay.classList.remove('modal-overlay--open');
+        });
+
+        // ===== MODAL JSON BRUT =====
+        var jsonOverlay = document.getElementById('json-overlay');
+        var jsonView = document.getElementById('json-view');
+        var jsonTitle = document.getElementById('json-title');
+
+        function openJsonModal(hw) {
+            var d = entriesData[hw];
+            if (!d) return;
+            jsonTitle.textContent = 'Données brutes — ' + hw;
+            jsonView.textContent = JSON.stringify(d, null, 2);
+            jsonOverlay.classList.add('modal-overlay--open');
+        }
+
+        function closeJsonModal() {
+            jsonOverlay.classList.remove('modal-overlay--open');
+        }
+
+        document.getElementById('json-close').addEventListener('click', closeJsonModal);
+        document.getElementById('json-dismiss').addEventListener('click', closeJsonModal);
+        jsonOverlay.addEventListener('click', function (e) {
+            if (e.target === jsonOverlay) closeJsonModal();
+        });
+
+        document.getElementById('json-copy').addEventListener('click', function () {
+            var btn = this;
+            var text = jsonView.textContent;
+            var done = function () {
+                var old = btn.textContent;
+                btn.textContent = 'Copié ✓';
+                setTimeout(function () { btn.textContent = old; }, 1200);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(done, function () {
+                    fallbackCopy(text); done();
+                });
+            } else {
+                fallbackCopy(text); done();
+            }
+        });
+
+        function fallbackCopy(text) {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.top = '-1000px';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(ta);
+        }
     })();
     </script>
 </body>

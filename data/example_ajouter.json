@@ -1,22 +1,27 @@
 {
-  "headword": "ÉCONOMISER",
-  "letter": "E",
-  "fondateur1": "DÉPENSER",
-  "fondateur2": "AVOIR ARGENT",
+  "headword": "VOULOIR",
+  "letter": "V",
+  "fondateur1": null,
+  "fondateur2": null,
+  "template_syntaxique": "X VOULOIR Y",
   "signification": {
-    "interne": [
+    "interne": [],
+    "externe": [
       {
-        "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
+        "quasibloc": "X VOULOIR Y (X FAIRE W)",
         "exemples": [
           {
-            "phrase": "Pierre économise pour les vacances.",
-            "ea": "Pierre ne dépense pas, donc il a de l'argent."
+            "phrase": "Pierre veut une pomme, donc il va en acheter.",
+            "ea": "Pierre veut une pomme, donc il fait quelque chose pour l'avoir."
+          },
+          {
+            "phrase": "Pierre veut une pomme, pourtant il ne fait rien pour l'avoir.",
+            "ea": "Pierre veut une pomme, pourtant il ne fait rien."
           }
         ]
       }
-    ],
-    "externe": []
+    ]
   },
   "criteres": [],
-  "nb": ""
+  "nb": "Primitif sémantique. Non décomposable."
 }
