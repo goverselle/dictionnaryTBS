@@ -114,6 +114,22 @@
         </div>
     </div>
 
+    <!-- MODAL RÉSEAU -->
+    <div class="modal-overlay" id="net-overlay">
+        <div class="modal modal--net" id="net-modal">
+            <div class="modal-header">
+                <span class="modal-title" id="net-title">Réseau</span>
+                <div class="modal-header-actions">
+                    <button class="modal-icon-btn" id="net-fullscreen" title="Plein écran">⛶</button>
+                    <button class="modal-close" id="net-close">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body modal-body--no-pad">
+                <iframe id="net-frame" src="" style="width: 100%; height: 78vh; border: 0;"></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL JSON BRUT -->
     <div class="modal-overlay" id="json-overlay">
         <div class="modal modal--json">
@@ -515,6 +531,8 @@
             if (btn) openModal(btn.dataset.hw);
             var rawBtn = e.target.closest('.btn-raw');
             if (rawBtn) openJsonModal(rawBtn.dataset.hw);
+            var netBtn = e.target.closest('.btn-net');
+            if (netBtn) openNetModal(netBtn.dataset.hw);
             var infoBtn = e.target.closest('.btn-carre-info');
             if (infoBtn) {
                 document.getElementById('carre-ref-overlay').classList.add('modal-overlay--open');
@@ -539,6 +557,44 @@
         });
         carreRefOverlay.addEventListener('click', function (e) {
             if (e.target === carreRefOverlay) carreRefOverlay.classList.remove('modal-overlay--open');
+        });
+
+        // ===== MODAL RÉSEAU =====
+        var netOverlay = document.getElementById('net-overlay');
+        var netFrame = document.getElementById('net-frame');
+        var netTitle = document.getElementById('net-title');
+
+        var netModal = document.getElementById('net-modal');
+        var netFsBtn = document.getElementById('net-fullscreen');
+
+        function openNetModal(hw) {
+            netTitle.textContent = 'Réseau — ' + hw;
+            netFrame.src = 'tbs_free_network_v2.html?hw=' + encodeURIComponent(hw);
+            netOverlay.classList.add('modal-overlay--open');
+        }
+        function closeNetModal() {
+            if (document.fullscreenElement) document.exitFullscreen();
+            netModal.classList.remove('modal--fullscreen');
+            netOverlay.classList.remove('modal-overlay--open');
+            netFrame.src = '';
+        }
+        document.getElementById('net-close').addEventListener('click', closeNetModal);
+        netOverlay.addEventListener('click', function (e) {
+            if (e.target === netOverlay) closeNetModal();
+        });
+        netFsBtn.addEventListener('click', function () {
+            if (!document.fullscreenElement) {
+                netModal.classList.add('modal--fullscreen');
+                if (netModal.requestFullscreen) {
+                    netModal.requestFullscreen().catch(function () {});
+                }
+            } else {
+                document.exitFullscreen();
+                netModal.classList.remove('modal--fullscreen');
+            }
+        });
+        document.addEventListener('fullscreenchange', function () {
+            if (!document.fullscreenElement) netModal.classList.remove('modal--fullscreen');
         });
 
         // ===== MODAL JSON BRUT =====

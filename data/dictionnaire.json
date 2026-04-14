@@ -233,7 +233,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X DEVOIR DONNER Y PT X NEG DONNER Y",
+          "aspect": "X DEVOIR DONNER Y À Z PT X NEG DONNER Y À Z",
           "exemples": [
             {
               "phrase": "Mon mari est avare avec moi depuis notre mariage.",
@@ -281,11 +281,96 @@
               "ea": "Pierre a un marteau, pourtant il ne peut pas faire quelque chose."
             }
           ]
+        },
+        {
+          "quasibloc": "X NEG AVOIR Y (X VOULOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre n'a pas de voiture, donc il veut en avoir une.",
+              "ea": "Ne pas avoir présuppose vouloir avoir."
+            },
+            {
+              "phrase": "Pierre n'a pas de voiture, pourtant il n'en veut pas.",
+              "ea": "Ne pas avoir, pourtant ne pas vouloir avoir."
+            }
+          ]
         }
       ]
     },
     "criteres": [],
     "nb": "Primitif sémantique. Non décomposable."
+  },
+  {
+    "headword": "AVOIR BEAUCOUP",
+    "letter": "A",
+    "fondateur1": "AVOIR",
+    "fondateur2": "BEAUCOUP",
+    "template_syntaxique": "X AVOIR BEAUCOUP Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X AVOIR BEAUCOUP Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Elle a beaucoup de pommes, donc elle a des pommes.",
+              "ea": "Avoir beaucoup présuppose avoir au moins un."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X AVOIR BEAUCOUP Y (X DEVOIR DONNER Y)",
+          "exemples": [
+            {
+              "phrase": "Elle a beaucoup de pommes, donc elle devrait en donner.",
+              "ea": "Elle a beaucoup, donc elle doit donner."
+            },
+            {
+              "phrase": "Il a beaucoup de pommes, pourtant il n'en donne pas.",
+              "ea": "Il a beaucoup, pourtant il ne donne pas."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": ""
+  },
+  {
+    "headword": "AVOIR PEU",
+    "letter": "A",
+    "fondateur1": "AVOIR",
+    "fondateur2": "PEU",
+    "template_syntaxique": "X AVOIR PEU Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X AVOIR PEU Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il a peu de pommes, donc il a des pommes.",
+              "ea": "Avoir peu présuppose avoir au moins un."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X AVOIR PEU Y (X NEG DEVOIR DONNER Y)",
+          "exemples": [
+            {
+              "phrase": "Il a peu de pommes, donc il ne doit pas en donner.",
+              "ea": "Il a peu, donc il n'a pas à donner."
+            },
+            {
+              "phrase": "Il a peu de pommes, pourtant il en donne.",
+              "ea": "Il a peu, pourtant il en donne quand même."
+            }
+          ]
+        }
+      ]
+    },
+    "criteres": [],
+    "nb": "AVOIR PEU est le converse d'AVOIR BEAUCOUP dans le bloc AVOIR — (DEVOIR DONNER)."
   },
   {
     "headword": "AVOIR LA CHANCE",
@@ -472,7 +557,7 @@
       "externe": []
     },
     "criteres": [],
-    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP.",
+    "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP. La règle « ce qui coûte ne se donne pas » est portée par COÛTER (quasi-bloc externe), dont CHER hérite par décomposition.",
     "template_syntaxique": "Y ÊTRE CHER"
   },
   {
@@ -500,6 +585,34 @@
     },
     "criteres": [],
     "template_syntaxique": "X CHERCHER Y"
+  },
+  {
+    "headword": "COMMENCER",
+    "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "FAIRE",
+    "square_value": 2,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (NEG X FAIRE Y) PT X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre a commencé à fumer.",
+              "ea": "Pierre ne fumait pas, pourtant il fume maintenant."
+            },
+            {
+              "phrase": "Il commence ses études.",
+              "ea": "Il ne faisait pas d'études, pourtant il en fait maintenant."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X COMMENCER À Y",
+    "nb": "COMMENCER partage le bloc FAIRE — FAIRE avec CESSER et CONTINUER. C'est le transposé de CESSER et le converse de CONTINUER."
   },
   {
     "headword": "COMPRENDRE",
@@ -550,6 +663,39 @@
     "criteres": [],
     "nb": "Différence avec IMPULSIF : à analyser.",
     "template_syntaxique": "X ÊTRE COMPULSIF"
+  },
+  {
+    "headword": "CONTINUER",
+    "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "FAIRE",
+    "square_value": 3,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X FAIRE Y) DC X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Pierre continue de fumer.",
+              "ea": "Pierre a fumé, donc Pierre fume encore."
+            },
+            {
+              "phrase": "Il continue ses études.",
+              "ea": "Il a fait ses études, donc il les fait encore."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qu'on a fait, on continue de le faire."
+      }
+    ],
+    "template_syntaxique": "X CONTINUER DE Y",
+    "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y)."
   },
   {
     "headword": "CONVAINCRE",
@@ -650,11 +796,25 @@
           ]
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "Y COÛTER W (Z NEG DEVOIR DONNER Y)",
+          "exemples": [
+            {
+              "phrase": "La voiture coûte 20000 euros, donc on n'est pas obligé de la donner.",
+              "ea": "Ce qui coûte ne se donne pas gratuitement."
+            },
+            {
+              "phrase": "La voiture coûte cher, pourtant Marie la donne.",
+              "ea": "Elle coûte, pourtant elle la donne — générosité."
+            }
+          ]
+        }
+      ]
     },
     "criteres": [],
-    "nb": "",
-    "template_syntaxique": "Y COÛTER W"
+    "nb": "Le quasi-bloc externe code le corollaire pragmatique : ce qui coûte n'est pas à donner gratuitement. Base de la nuance GÉNÉREUX (donne malgré le coût). CHER et BON MARCHÉ héritent de cette règle via la décomposition du bloc COÛTER — ÊTRE BEAUCOUP.",
+    "template_syntaxique": "Y COÛTER W à X"
   },
   {
     "headword": "DENTS",
@@ -1069,7 +1229,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "NEG X DEVOIR DONNER Y PT X DONNER Y À Z",
+          "aspect": "NEG X DEVOIR DONNER Y À Z PT X DONNER Y À Z",
           "exemples": [
             {
               "phrase": "Il est généreux avec ses amis.",
@@ -1083,6 +1243,33 @@
     "criteres": [],
     "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
     "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z"
+  },
+  {
+    "headword": "GRATUIT",
+    "letter": "G",
+    "fondateur1": "COÛTER",
+    "fondateur2": "DEVOIR PAYER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG *Y* COÛTER DC NEG X DEVOIR PAYER",
+          "exemples": [
+            {
+              "phrase": "L'entrée au musée est gratuite aujourd'hui.",
+              "ea": "L'entrée ne coûte rien, donc tu n'as pas à payer."
+            },
+            {
+              "phrase": "Ce livre est gratuit.",
+              "ea": "Le livre ne coûte rien, donc tu n'as pas à payer."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "nb": "GRATUIT est la converse de COÛTER : aspect nié des deux côtés (NEG … DC NEG …). L'application porte sur l'objet Y, comme pour COÛTER.",
+    "template_syntaxique": "Y ÊTRE GRATUIT"
   },
   {
     "headword": "HABITUEL",
@@ -1167,16 +1354,16 @@
   {
     "headword": "IMMÉDIAT",
     "letter": "I",
-    "fondateur1": "SE PASSER",
-    "fondateur2": "ATTENDRE",
+    "fondateur1": "ATTENDRE",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
-          "aspect": "Y SE PASSER PT PERF (NEG X ATTENDRE Y)",
+          "aspect": "NEG X ATTENDRE Y PT Y SE PASSER",
           "exemples": [
             {
               "phrase": "La réponse est immédiate.",
-              "ea": "La réponse arrive, pourtant on n'a pas attendu."
+              "ea": "On n'a pas attendu, pourtant la réponse arrive."
             }
           ]
         }
@@ -1411,6 +1598,34 @@
     },
     "criteres": [],
     "template_syntaxique": "Y ÊTRE LIBRE"
+  },
+  {
+    "headword": "LIRE DANS LES PENSÉES",
+    "letter": "L",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
+    "square_value": 2,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Z DIRE Y PT X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Marie lit dans les pensées de Pierre.",
+              "ea": "Pierre n'a rien dit, pourtant Marie sait ce qu'il pense."
+            },
+            {
+              "phrase": "Tu lis dans mes pensées.",
+              "ea": "Je n'ai rien dit, pourtant tu sais ce que je pense."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X LIRE DANS LES PENSÉES DE Z",
+    "nb": "LIRE DANS LES PENSÉES est le transposé de COMPRENDRE dans le bloc DIRE — SAVOIR : rien n'a été dit, pourtant X sait."
   },
   {
     "headword": "LOUER",
@@ -1709,32 +1924,43 @@
   {
     "headword": "NÉCESSAIRE",
     "letter": "N",
-    "fondateur1": "VOULOIR AVOIR",
+    "fondateur1": "AVOIR BESOIN",
     "fondateur2": "DEVOIR AVOIR",
     "signification": {
       "interne": [
         {
-          "aspect": "X VOULOIR AVOIR Y DC X DEVOIR AVOIR Z",
+          "aspect": "X AVOIR BESOIN Y DC X DEVOIR AVOIR Z",
           "exemples": [
             {
               "phrase": "Tu as le temps nécessaire pour finir la tâche.",
-              "ea": "Tu veux finir la tâche, donc tu dois avoir le temps."
+              "ea": "Tu as besoin de finir la tâche, donc tu dois avoir le temps."
             },
             {
               "phrase": "L'argent nécessaire pour le voyage.",
-              "ea": "Tu veux faire le voyage, donc tu dois avoir l'argent."
+              "ea": "Tu as besoin de faire le voyage, donc tu dois avoir l'argent."
             }
           ]
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE NÉCESSAIRE (Y ÊTRE BON MARCHÉ)",
+          "exemples": [
+            {
+              "phrase": "Le pain est nécessaire, donc il est bon marché.",
+              "ea": "Ce qui est nécessaire doit être accessible à tous, donc est bon marché."
+            }
+          ]
+        }
+      ]
     },
     "criteres": [
       {
         "type": 4,
-        "texte": "Lien doxal : vouloir quelque chose implique devoir avoir les moyens."
+        "texte": "Lien doxal : avoir besoin de quelque chose implique devoir avoir les moyens."
       }
     ],
+    "nb": "Quasi-bloc externe doxal : ce qui est nécessaire ne coûte pas beaucoup (NEG Z COÛTER BEAUCOUP). C'est le chaînon manquant pour l'échelle PAUVRE/CHER/GRATUIT : si X NEG POUVOIR AVOIR le nécessaire — et que le nécessaire NEG COÛTER BEAUCOUP —, alors a fortiori NEG POUVOIR AVOIR ce qui COÛTE BEAUCOUP (CHER). GRATUIT (NEG COÛTER) reste en dessous du nécessaire, donc non bloqué. Échelle : GRATUIT < NÉCESSAIRE/BON MARCHÉ < CHER.",
     "template_syntaxique": "Z ÊTRE NÉCESSAIRE POUR Y"
   },
   {
@@ -1933,6 +2159,39 @@
     "template_syntaxique": "X PARTAGER Y AVEC Z"
   },
   {
+    "headword": "PASSER SOUS SILENCE",
+    "letter": "P",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
+    "square_value": 4,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG Z DIRE Y DC NEG X SAVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Le journaliste a passé sous silence cette affaire.",
+              "ea": "Le journaliste n'en a pas parlé, donc on ne le sait pas."
+            },
+            {
+              "phrase": "Il passe sous silence ses échecs.",
+              "ea": "Il n'en parle pas, donc personne ne les connaît."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal contrapositif : si on ne dit pas, on ne sait pas."
+      }
+    ],
+    "template_syntaxique": "X PASSER SOUS SILENCE Y",
+    "nb": "PASSER SOUS SILENCE est le réciproque de COMPRENDRE dans le bloc DIRE — SAVOIR : c'est la doxa contrapositive (NEG A DC NEG B). Face à LIRE DANS LES PENSÉES (converse)."
+  },
+  {
     "headword": "PAUVRE",
     "letter": "P",
     "fondateur1": "ÊTRE NÉCESSAIRE",
@@ -2080,11 +2339,47 @@
               "ea": "Il peut faire quelque chose, pourtant il ne doit pas le faire."
             }
           ]
+        },
+        {
+          "quasibloc": "X POUVOIR Y (X VOULOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre peut donner sa pomme, donc il veut la donner.",
+              "ea": "Il peut faire quelque chose, donc il veut le faire."
+            },
+            {
+              "phrase": "Pierre peut donner sa pomme, pourtant il ne veut pas la donner.",
+              "ea": "Il peut faire quelque chose, pourtant il ne veut pas le faire."
+            }
+          ]
         }
       ]
     },
     "criteres": [],
     "nb": "Primitif sémantique. Non décomposable."
+  },
+  {
+    "headword": "PRENDRE",
+    "letter": "P",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre prend la pomme.",
+              "ea": "Pierre fait quelque chose, donc Pierre a la pomme."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X PRENDRE Y",
+    "nb": "FACILE et PRENDRE partagent le même aspect (X FAIRE DC X AVOIR Y) mais diffèrent par l'application : FACILE porte l'accent sur Y (l'objet est aisé à obtenir), PRENDRE sur X (l'agent s'empare). Cette parenté se voit dans les locutions du type « il suffit de prendre » : il n'y a qu'à faire le geste pour l'avoir."
   },
   {
     "headword": "PREUVE",
@@ -2616,6 +2911,33 @@
     "criteres": [],
     "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE).",
     "template_syntaxique": "Y SATISFAIRE X"
+  },
+  {
+    "headword": "SATISFAIT",
+    "letter": "S",
+    "fondateur1": "VOULOIR",
+    "fondateur2": "AVOIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR Y DC X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est satisfait.",
+              "ea": "Pierre voulait quelque chose, donc il l'a."
+            },
+            {
+              "phrase": "Marie est satisfaite de son repas.",
+              "ea": "Elle voulait un bon repas, donc elle l'a eu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "criteres": [],
+    "template_syntaxique": "X ÊTRE SATISFAIT",
+    "nb": "Forme adjectivale de SATISFAIRE : caractérise un sujet dont le désir est comblé."
   },
   {
     "headword": "SE SUICIDER",

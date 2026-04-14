@@ -1,27 +1,27 @@
 {
-  "headword": "VOULOIR",
-  "letter": "V",
-  "fondateur1": null,
-  "fondateur2": null,
-  "template_syntaxique": "X VOULOIR Y",
+  "headword": "AVOIR BEAUCOUP",
+  "letter": "A",
+  "fondateur1": "AVOIR",
+  "fondateur2": "BEAUCOUP",
+  "template_syntaxique": "X AVOIR BEAUCOUP Y",
   "signification": {
     "interne": [],
     "externe": [
       {
-        "quasibloc": "X VOULOIR Y (X FAIRE W)",
+        "quasibloc": "X AVOIR BEAUCOUP Y (X DEVOIR DONNER Y)",
         "exemples": [
           {
-            "phrase": "Pierre veut une pomme, donc il va en acheter.",
-            "ea": "Pierre veut une pomme, donc il fait quelque chose pour l'avoir."
+            "phrase": "Elle a beaucoup de pommes, donc elle devrait en donner.",
+            "ea": "Elle a beaucoup, donc elle doit donner."
           },
           {
-            "phrase": "Pierre veut une pomme, pourtant il ne fait rien pour l'avoir.",
-            "ea": "Pierre veut une pomme, pourtant il ne fait rien."
+            "phrase": "Il a beaucoup de pommes, pourtant il n'en donne pas.",
+            "ea": "Il a beaucoup, pourtant il ne donne pas."
           }
         ]
       }
     ]
   },
   "criteres": [],
-  "nb": "Primitif sémantique. Non décomposable."
+  "nb": ""
 }

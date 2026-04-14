@@ -1,0 +1,485 @@
+# Tests du chatbot TBS
+#
+# Format :
+#   # …              commentaire
+#   @scenario: nom   début d'un scénario
+#   :reset / :debug  commande meta envoyée au bot
+#   > …              input utilisateur
+#   = …              sous-chaîne attendue dans la réponse au dernier `>`
+#   ≠ …              sous-chaîne interdite dans la réponse au dernier `>`
+#
+# Pour chaque scénario, un bloc commentaire explique l'intention et
+# la chaîne de raisonnement que le bot doit suivre pour répondre.
+
+
+# ──────────────────────────────────────────────────────────────
+# Possession directe : l'utilisateur dit « X a Y » et le bot
+# stocke un fait AVOIR direct (cas spécial d'avoir dans
+# _register_statement). La question retourne le fait stocké via
+# search_latest. Le deuxième locuteur (Pierre) n'a jamais été
+# mentionné avec une pomme → « aucune information ».
+@scenario: possession directe
+:reset
+> Marie a une pomme.
+> Marie a une pomme ?
+= Oui
+= Marie a la pomme
+> Pierre a une pomme ?
+= aucune information
+
+
+# ──────────────────────────────────────────────────────────────
+# Achat : l'activation d'ACHETER décompose l'aspect
+# `X PAYER À Z DC X AVOIR Y` et stocke Marie AVOIR pomme. Le fait
+# est interrogeable directement. L'activation propage aussi vers
+# PAYER (activation récursive), donc la question sur PAYER
+# retourne oui.
+@scenario: achat et paiement dérivé
+:reset
+> Marie a acheté une pomme.
+> Marie a une pomme ?
+= Oui
+> Marie a payé ?
+= Oui
+
+
+# ──────────────────────────────────────────────────────────────
+# Don : l'aspect de DONNER est `PERF (X AVOIR Y) DC Z AVOIR Y`.
+# Le PERF sur seg1 est ignoré (état passé) ; le seg2 ajoute
+# Pierre AVOIR pomme. La règle de transfert détecte le pattern
+# PERF(AVOIR) + AVOIR sur deux sujets différents et ajoute
+# Marie NEG AVOIR pomme. Combiné à la règle d'unicité, Marie
+# perd la pomme. Pierre l'obtient.
+@scenario: don transfère la possession
+:reset
+> Marie a donné une pomme à Pierre.
+> Pierre a une pomme ?
+= Oui
+= Pierre a la pomme
+> Marie a une pomme ?
+= Non
+
+
+# ──────────────────────────────────────────────────────────────
+# Vol + chaîne via PRENDRE : VOLER a pour aspect
+# `X NEG PAYER À Z PT X PRENDRE Y`. L'activation propage vers
+# PRENDRE dont l'aspect est `X FAIRE DC X AVOIR Y`, ajoutant
+# Pierre AVOIR pomme. La règle d'unicité retire la pomme de
+# Marie (elle l'avait avant via ACHETER).
+@scenario: vol via prendre
+:reset
+> Marie a acheté une voiture.
+> Pierre a volé sa voiture.
+> Marie a une voiture ?
+= Non
+> Pierre a une voiture ?
+= Oui
+
+
+# ──────────────────────────────────────────────────────────────
+# Résolution de pronoms par genre (base de prénoms intégrée).
+# « Elle » → dernier sujet féminin (Anne). « Il » → dernier
+# masculin (Pierre). Les entités sont enregistrées à l'extraction
+# SVO avec genre deviné par prenom_gender().
+@scenario: pronoms il / elle
+:reset
+> Anne a acheté un livre.
+> Elle a un livre ?
+= Oui
+= Anne
+> Marie a acheté un vélo.
+> Pierre a emprunté le vélo.
+> Il a le vélo ?
+= Oui
+= Pierre
+> Elle a un vélo ?
+= Non
+
+
+# ──────────────────────────────────────────────────────────────
+# Possessif « sa » : la méthode `_noun_phrase` détecte le
+# déterminant possessif (son/sa/ses) et unifie avec le même nom
+# déjà mentionné dans les faits. « sa voiture » → on cherche
+# « voiture » dans la base et on l'utilise tel quel, ce qui
+# permet à la règle d'unicité de matcher sur le même objet.
+@scenario: possessif unifie
+:reset
+> Marie a acheté une voiture.
+> Pierre a volé sa voiture.
+> Pierre a la voiture ?
+= Oui
+> Marie a la voiture ?
+= Non
+
+
+# ──────────────────────────────────────────────────────────────
+# Wh- questions : le parser détecte « qui » en nsubj comme
+# wh_slot=subject et « à qui » en obl avec case=à comme
+# wh_slot=recipient. `_answer_wh` cherche tous les faits matchant
+# en wildcard sur le slot demandé, en respectant l'écrasement
+# temporel (search_all garde le dernier statut par triplet).
+@scenario: wh- subject et recipient
+:reset
+> Marie a donné une pomme à Pierre.
+> Qui a donné la pomme ?
+= Marie
+> À qui Marie a donné la pomme ?
+= Pierre
+> Qui a la pomme ?
+= Pierre
+
+
+# ──────────────────────────────────────────────────────────────
+# Modale pouvoir + possession : spaCy parse « Marie peut vendre »
+# avec peut=ROOT(pouvoir), vendre=xcomp. Le modal est détecté,
+# verb_node devient vendre, et `_answer_modal_pouvoir` vérifie
+# via le prover que Marie AVOIR pomme (en utilisant le
+# quasi-bloc externe de AVOIR : X AVOIR Y (X POUVOIR FAIRE)).
+# Aucune disposition négative sur DONNER → « oui » sans nuance.
+@scenario: modal pouvoir sans disposition
+:reset
+> Marie a une pomme.
+> Marie peut donner la pomme à Pierre ?
+= Oui
+= Marie peut
+≠ voudra probablement pas
+
+
+# ──────────────────────────────────────────────────────────────
+# Modale pouvoir + disposition négative : AVARE a pour aspect
+# `X DEVOIR DONNER Y À Z PT X NEG DONNER Y À Z` qui stocke
+# Pierre NEG DONNER (obj=None) comme disposition générique.
+# Le modal handler appelle le prover sur (DONNER, Pierre, pomme,
+# negated=True). Le fallback dispositionnel (obj=None) trouve le
+# fait NEG DONNER de Pierre et retourne True. Le bot nuance alors.
+@scenario: avare refuse de donner
+:reset
+> Pierre est avare.
+> Pierre a une pomme.
+> Pierre peut donner la pomme à Marie ?
+= Oui
+= peut donner
+= ne le voudra probablement pas
+
+
+# ──────────────────────────────────────────────────────────────
+# Cognition : APPRENDRE a pour aspect
+# `PERF (NEG X SAVOIR Y) PT X SAVOIR Y` qui stocke Marie SAVOIR
+# prix après normalisation (PERF ignoré, seg2 ajouté).
+# OUBLIER a pour aspect `PERF (X SAVOIR Y) PT NEG X SAVOIR Y`
+# qui stocke Marie NEG SAVOIR prix (écrase le précédent par
+# ordre d'ajout).
+@scenario: apprendre puis oublier
+:reset
+> Marie a appris le prix.
+> Marie sait le prix ?
+= Oui
+> Marie a oublié le prix.
+> Marie sait le prix ?
+= Non
+
+
+# ──────────────────────────────────────────────────────────────
+# Oubli + justification : « Marie a oublié le mot » active
+# OUBLIER dont l'aspect est `PERF (X SAVOIR Y) PT NEG X SAVOIR Y`.
+# Le fait dérivé `Marie NEG SAVOIR mot` est stocké avec
+# source=OUBLIER. Quand on demande « Marie sait le mot ? »,
+# search_latest trouve ce fait (NEG), et _append_because remonte
+# via la chaîne de sources au fait top-level `Marie OUBLIER mot`.
+# L'explication est conjuguée au passé composé.
+@scenario: oubli avec justification
+:reset
+> Marie a oublié le mot.
+> Marie sait le mot ?
+= Non
+= ne sait pas
+= parce que
+= Marie a oublié
+
+
+# ──────────────────────────────────────────────────────────────
+# Adjectif dispositionnel + action future : rien n'est décomposé
+# au moment où on dit « Marie est avare » — seule la phrase
+# lexicale `Marie AVARE` est stockée. Quand on demande « Marie
+# donnera la pomme ? », le prover relit dynamiquement l'aspect
+# d'AVARE (`X DEVOIR DONNER Y À Z PT X NEG DONNER Y À Z`) depuis
+# la phrase lexicale et voit que DONNER apparaît dans le segment
+# transgressif avec NEG. Il en déduit que Marie ne donnera pas.
+# Cela teste aussi que le prover n'utilise PAS l'aspect de
+# PARTAGER comme règle globale (qui donnerait faussement « oui »).
+# Le bot ajoute « parce que … » car le prover a noté
+# `_last_reason = Fact(Marie AVARE)` et `_append_because`
+# traduit ce fait en phrase naturelle.
+@scenario: avare prédit ne pas donner avec justification
+:reset
+> Marie est avare.
+> Marie a une pomme.
+> Marie donnera la pomme à Pierre ?
+= Non
+= ne donne pas
+= parce que
+= Marie est avare
+
+
+# ──────────────────────────────────────────────────────────────
+# Modale `devoir` + verbe composé : PRÊTER stocke
+# `Pierre DEVOIR RENDRE pomme Paul` en tant que prédicat composé
+# (extract_predicates accumule les non-variables consécutives).
+# Quand l'utilisateur demande « Pierre doit rendre ? », spaCy
+# donne modal=devoir + verb=rendre. `_answer` reconstruit alors
+# le prédicat composé `DEVOIR RENDRE` et interroge avec lui.
+# Le fallback de lemmatisation rattrape « prête » → « prêter »
+# (spaCy mislemmatise en « prêt » sinon).
+@scenario: devoir rendre après prêt
+:reset
+> Paul prête la pomme à Pierre.
+> Pierre doit rendre la pomme ?
+= Oui
+= doit rendre
+
+
+# ──────────────────────────────────────────────────────────────
+# Explication top-level : la réponse à « Marie a la poire ? »
+# est justifiée par le fait racine ACHETER (pas par le segment
+# opposé PAYER de l'aspect). C'est la convention la plus
+# naturelle : le mot le plus haut dans la chaîne contient
+# implicitement toutes les sous-conséquences. Les verbes
+# d'action sont conjugués au passé composé pour un rendu
+# naturel en contexte d'explication.
+@scenario: explication top-level achat
+:reset
+> Marie a acheté une poire.
+> Marie a une poire ?
+= parce que
+= Marie a acheté
+> Marie a payé ?
+= parce que
+= Marie a acheté
+
+
+# ──────────────────────────────────────────────────────────────
+# Remontée de chaîne de sources : « Pierre a volé la voiture »
+# active VOLER qui propage vers PRENDRE. Le fait dérivé
+# Pierre AVOIR voiture a source=PRENDRE, mais PRENDRE lui-même
+# vient de VOLER. `_find_ultimate_cause` remonte la chaîne
+# jusqu'à atteindre le fait racine Pierre VOLER voiture,
+# utilisé comme justification (« parce que Pierre a volé la
+# voiture »). Sans cette remontée, on aurait un fait
+# intermédiaire PRENDRE qui est moins informatif.
+@scenario: remontée de chaîne de sources
+:reset
+> Marie a acheté une voiture.
+> Pierre a volé la voiture.
+> Marie a la voiture ?
+= Non
+= parce que
+= Pierre a volé
+> Pierre a la voiture ?
+= Oui
+= parce que
+= Pierre a volé
+
+
+# ──────────────────────────────────────────────────────────────
+# Verbe inconnu du dictionnaire : spaCy identifie « mange » comme
+# VERB mais MANGER n'est pas une entrée TBS. Le bot ne stocke
+# rien et signale simplement que le mot est inconnu.
+@scenario: verbe inconnu signalé sans stockage
+:reset
+> Pierre mange une pomme.
+= inconnu
+= manger
+
+
+# ──────────────────────────────────────────────────────────────
+# Généralisation lexicale restreinte aux verbes connus : les
+# adjectifs parlent en termes abstraits (FAIRE), et le prover
+# accepte toute action concrète du dictionnaire comme preuve de
+# FAIRE(sujet). Les verbes inconnus, eux, ne sont pas stockés.
+@scenario: généralisation vers FAIRE (verbe connu)
+:reset
+> Marie a acheté une voiture.
+> Marie fait quelque chose ?
+= Oui
+= Marie fait
+
+
+# ──────────────────────────────────────────────────────────────
+# Présupposition lexicale : « avoir beaucoup de X » implique
+# « avoir X » (au moins un). C'est codé comme un quasi-bloc dans
+# l'entrée AVOIR BEAUCOUP : `X AVOIR BEAUCOUP Y (X AVOIR Y)`.
+# Le prover lit ce quasi-bloc comme une règle doxale et dérive
+# Marie AVOIR pomme à partir de Marie AVOIR BEAUCOUP pomme.
+# Le rendu utilise une phrase spéciale « a beaucoup de pommes »
+# pour les prédicats composés AVOIR + quantifieur.
+@scenario: présupposition avoir beaucoup
+:reset
+> Marie a beaucoup de pommes.
+> Marie peut donner des pommes à Pierre ?
+= Oui
+> Marie a des pommes ?
+= Oui
+= parce que
+= Marie a beaucoup de pommes
+
+
+# ──────────────────────────────────────────────────────────────
+# PAUVRE via NÉCESSAIRE + NEG ACHETER : l'aspect de PAUVRE est
+# `Y ÊTRE NÉCESSAIRE PT NEG X AVOIR Y`. Les deux segments sont
+# satisfaits en croisant deux faits :
+#   · NÉCESSAIRE activé sur la voiture depuis « est nécessaire »
+#   · Pierre NEG ACHETER voiture → propage Pierre NEG AVOIR voiture
+#     (décomposition négative de l'aspect d'ACHETER)
+# Le binding cohérent Y=voiture lie les deux segments, score 2/2.
+@scenario: pauvre via nécessaire et neg acheter
+:reset
+> La voiture est nécessaire pour Pierre.
+> Pierre ne peut pas acheter une voiture.
+> Pierre est comment ?
+= PAUVRE
+= Pierre est pauvre
+
+
+# ──────────────────────────────────────────────────────────────
+# GÉNÉREUX via COÛTER : donner quelque chose qui coûte cher est
+# une transgression du pattern doxal « ce qui coûte ne se donne
+# pas ». Le quasi-bloc externe de COÛTER, `Y COÛTER W (Z NEG
+# DEVOIR DONNER Y)`, code cette inférence pragmatique. Combiné
+# au fait `Marie DONNER voiture Pierre`, les deux segments de
+# l'aspect de GÉNÉREUX (NEG DEVOIR DONNER + DONNER) sont
+# satisfaits via une binding cohérente des variables.
+# L'idiome « coûte cher » est reconnu par le parser comme une
+# instanciation de CHER (puis de son aspect COÛTER — BEAUCOUP).
+@scenario: généreux via coûter cher
+:reset
+> Marie donne la voiture à Pierre.
+> La voiture coûte cher.
+> Comment est Marie ?
+= GÉNÉREUX
+= généreux
+
+
+# ──────────────────────────────────────────────────────────────
+# Grand parcours multi-étapes — teste la plupart des mécanismes
+# ensemble : désir vs possession, négation explicite, achat,
+# vol + règle d'unicité, modal pouvoir avec et sans possession,
+# prêt + devoir rendre, wh- final.
+@scenario: parcours complet voiture
+:reset
+> Pierre veut acheter une voiture.
+> Pierre a une voiture ?
+= aucune information
+> Pierre n'a pas de voiture.
+> Pierre a une voiture ?
+= Non
+> Pierre a acheté une voiture.
+> Pierre a une voiture ?
+= Oui
+= Pierre a acheté
+> Paul vole la voiture de Pierre.
+> Paul a une voiture ?
+= Oui
+= Paul a volé
+> Pierre a une voiture ?
+= Non
+= Paul a volé
+> Pierre peut donner sa voiture à Marie ?
+= Non
+= ne peut pas
+> Paul peut donner la voiture à Marie ?
+= Oui
+> Paul prête la voiture à Marie.
+> Marie a une voiture ?
+= Oui
+= Paul a prêté
+> Marie doit rendre la voiture ?
+= Oui
+= Paul a prêté
+> Marie a acheté la voiture à Paul.
+> Qui a la voiture ?
+= Marie
+
+
+# ──────────────────────────────────────────────────────────────
+# Distinction vouloir acheter / avoir : « Pierre veut acheter
+# une voiture » stocke Pierre VOULOIR ACHETER voiture (+ dérivés)
+# mais PAS Pierre AVOIR voiture — le désir ne confère pas
+# l'objet. La question sur la possession répond « aucune info ».
+# Puis une négation explicite « Pierre n'a pas de voiture » est
+# stockée comme fait négatif. Enfin « Pierre a acheté » active
+# ACHETER, qui stocke la possession réelle et écrase la
+# négation précédente par écrasement temporel.
+@scenario: vouloir acheter n'est pas avoir
+:reset
+> Pierre veut acheter une voiture.
+> Pierre a une voiture ?
+= aucune information
+> Pierre n'a pas de voiture.
+> Pierre a une voiture ?
+= Non
+= Pierre n'a pas
+> Pierre a acheté une voiture.
+> Pierre a une voiture ?
+= Oui
+= parce que
+= Pierre a acheté
+
+
+# ──────────────────────────────────────────────────────────────
+# « Comment est Pierre ? » après « Pierre veut acheter + achète »
+# active plusieurs adjectifs :
+#   · SATISFAIT (X VOULOIR Y DC X AVOIR Y) — désir comblé
+#   · LIBRE (X VOULOIR FAIRE Y DC X POUVOIR FAIRE Y) — rien n'empêche
+# Le parseur stocke Pierre VOULOIR ACHETER voiture (composé), qui
+# matche VOULOIR FAIRE par généralisation ACHETER → FAIRE (FAIRE
+# étant la proforme des verbes d'action). Les deux candidats sont
+# légitimes en français.
+@scenario: Pierre satisfait après vouloir et acheter
+:reset
+> Pierre veut acheter une voiture.
+> Pierre achète une voiture.
+> Comment est Pierre ?
+= SATISFAIT
+= satisfait
+
+
+# ──────────────────────────────────────────────────────────────
+# Matching inverse : « Marie est comment ? » est une question
+# ouverte qui active le moteur de caractérisation. Le bot itère
+# les entrées adjectivales du dictionnaire et, pour chaque
+# aspect, calcule combien de ses segments sont dérivables des
+# faits stockés pour Marie. Ici :
+#   · « beaucoup de pommes » → prédicat composé AVOIR BEAUCOUP
+#   · le quasi-bloc externe `X AVOIR BEAUCOUP Y (X DEVOIR DONNER Y)`
+#     permet au prover de dériver Marie DEVOIR DONNER pomme
+#   · « Marie ne donne pas de pommes » stocke Marie NEG DONNER
+#   · AVARE (X DEVOIR DONNER Y À Z PT X NEG DONNER Y À Z) a ses
+#     deux segments satisfaits → score 2/2 → gagnant
+# Le bot répond à voix haute en listant les candidats puis
+# conclut par le mot retenu.
+@scenario: comment est marie par matching inverse
+:reset
+> Marie a beaucoup de pommes.
+> Marie ne donne pas de pommes.
+> Marie est comment ?
+= AVARE
+= 2/2
+= Marie est avare
+
+
+# ──────────────────────────────────────────────────────────────
+# Chaîne multi-transferts : vente = PAYER + DONNER en
+# composition. L'activation de VENDRE propage vers DONNER qui
+# déclenche la règle de transfert + unicité. Après la chaîne,
+# seule la dernière personne du cycle possède l'objet.
+@scenario: chaîne de transferts
+:reset
+> Pierre a acheté un livre.
+> Pierre a vendu le livre à Marie.
+> Marie a donné le livre à Paul.
+> Qui a le livre ?
+= Paul
+> Pierre a le livre ?
+= Non
+> Marie a le livre ?
+= Non

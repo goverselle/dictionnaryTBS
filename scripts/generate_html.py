@@ -156,6 +156,11 @@ def _parse_aspect(aspect):
         s = s.strip()
         if s.startswith("NEG "):
             return True, s[4:].strip()
+        # Cas « X NEG VERBE ... » (NEG entre variable et verbe) : équivalent logique à
+        # « NEG X VERBE ... ». On extrait le bit NEG et on garde le segment sans NEG.
+        m = re.match(r"^([XYZW])\s+NEG\s+(.*)$", s)
+        if m:
+            return True, f"{m.group(1)} {m.group(2)}".strip()
         return False, s
 
     neg1, seg1 = _strip_neg(left)
@@ -190,11 +195,14 @@ def _simplify_negation(formula):
 
 
 def _normalize_aspect_for_match(aspect):
-    """Normalise un aspect pour comparaison entre entrées : supprime astérisques et espaces multiples."""
+    """Normalise un aspect pour comparaison entre entrées : supprime astérisques, espaces
+    multiples, et convertit « X NEG VERBE » en « NEG X VERBE » pour équivalence logique."""
     if not aspect:
         return ""
     s = aspect.replace("*", "")
     s = re.sub(r"\s+", " ", s).strip().upper()
+    # NEG après variable → NEG avant variable
+    s = re.sub(r"\b([XYZW])\s+NEG\s+", r"NEG \1 ", s)
     return s
 
 
@@ -459,6 +467,7 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                 <div class="entry-toolbar">
                     <button class="btn-edit" data-hw="{headword}">Modifier</button>
                     <button class="btn-raw" data-hw="{headword}">{{ }} JSON</button>
+                    <button class="btn-net" data-hw="{headword}">◉ Réseau</button>
                 </div>
                 <div class="headword">{headword}{paradox_badge}</div>
                 <div class="fondateurs">Termes fondateurs : <span>{entry["fondateur1"]} — {entry["fondateur2"]}</span></div>
@@ -561,19 +570,62 @@ def generate_html(entries, types_criteres, template):
     return html
 
 
+NETWORK_PATH = OUTPUT_DIR / "tbs_free_network_v2.html"
+
+
+def update_network_data(entries):
+    """Met à jour le fragment tbs_free_network_v2.html avec les nœuds courants.
+    Remplace uniquement la ligne `const raw = [...];` ; le reste du HTML est préservé."""
+    if not NETWORK_PATH.exists():
+        return False
+
+    nodes = []
+    seen = set()
+    for e in sorted(entries, key=lambda x: x["headword"]):
+        hw = e["headword"]
+        nodes.append({
+            "h": hw,
+            "f1": e.get("fondateur1", "") or "",
+            "f2": e.get("fondateur2", "") or "",
+        })
+        seen.add(hw)
+
+    leaf_seen = set()
+    for e in entries:
+        for f in (e.get("fondateur1", ""), e.get("fondateur2", "")):
+            if f and f not in seen and f not in leaf_seen:
+                nodes.append({"h": f, "f1": "", "f2": ""})
+                leaf_seen.add(f)
+
+    raw_js = "const raw = " + json.dumps(nodes, ensure_ascii=False) + ";"
+    html = NETWORK_PATH.read_text(encoding="utf-8")
+    html_new, n = re.subn(r"const raw = \[.*?\];", raw_js, html, count=1, flags=re.DOTALL)
+    if n == 0:
+        return False
+    # Assure la présence d'une balise meta charset UTF-8 en tête du fragment
+    # (sinon le navigateur peut interpréter les accents en windows-1252).
+    if '<meta charset' not in html_new[:200]:
+        html_new = '<meta charset="UTF-8">\n' + html_new
+    NETWORK_PATH.write_text(html_new, encoding="utf-8")
+    return True
+
+
 def main():
     # Créer le dossier output s'il n'existe pas
     OUTPUT_DIR.mkdir(exist_ok=True)
-    
+
     entries, types_criteres, template = load_data()
     print(f"Chargé : {len(entries)} entrées")
-    
+
     html = generate_html(entries, types_criteres, template)
-    
+
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(html)
-    
+
     print(f"✓ Généré : {OUTPUT_PATH}")
+
+    if update_network_data(entries):
+        print(f"✓ Mis à jour : {NETWORK_PATH}")
 
 
 if __name__ == "__main__":
