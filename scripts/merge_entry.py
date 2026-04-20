@@ -20,8 +20,16 @@ Sinon, il est ajouté.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from chat import parse_aspect, extract_predicates, ROLE_VARS  # noqa: E402
+from extract_quasiblocs import (                                # noqa: E402
+    build_quasibloc, collect_predicates, normalize_qb_key,
+    create_stub,
+)
 
 
 def load_json(path):
@@ -52,6 +60,49 @@ def validate_entry(entry):
 
 DEFAULT_DICT = Path(__file__).resolve().parent.parent / "data" / "dictionnaire.json"
 DEFAULT_ENTRIES = Path(__file__).resolve().parent.parent / "data" / "example_ajouter.json"
+
+
+def _extract_quasiblocs(dictionnaire, new_entries):
+    """Pour chaque entrée ajoutée/mise à jour, extrait les quasi-blocs
+    de ses aspects internes et les dispatche dans les ``externe`` des
+    mots cités. Crée un stub si le mot cité n'existe pas encore.
+
+    Retourne le nombre de quasi-blocs effectivement ajoutés."""
+    by_hw = {e["headword"]: e for e in dictionnaire}
+
+    # Clés de dédup : qb déjà présents dans chaque entrée.
+    existing = {}
+    for hw, entry in by_hw.items():
+        ext = entry.get("signification", {}).get("externe", []) or []
+        existing[hw] = {normalize_qb_key(item.get("quasibloc", "")) for item in ext}
+
+    qb_count = 0
+    for entry in new_entries:
+        hw = entry.get("headword", "").upper()
+        asp_list = entry.get("signification", {}).get("interne", []) or []
+        for item in asp_list:
+            raw = item.get("aspect", "")
+            parsed = parse_aspect(raw)
+            if not parsed:
+                continue
+            qb = build_quasibloc(parsed, raw)
+            exemples = item.get("exemples", []) or []
+            preds = collect_predicates(parsed)
+            for p in preds:
+                if p not in by_hw:
+                    stub = create_stub(p)
+                    by_hw[p] = stub
+                    dictionnaire.append(stub)
+                    existing[p] = set()
+                    print(f"  + {p} (stub créé pour quasi-bloc)")
+                k = normalize_qb_key(qb)
+                if k in existing[p]:
+                    continue
+                existing[p].add(k)
+                qb_item = {"quasibloc": qb, "exemples": exemples}
+                by_hw[p]["signification"].setdefault("externe", []).append(qb_item)
+                qb_count += 1
+    return qb_count
 
 
 def main():
@@ -119,9 +170,11 @@ def main():
     print()
     
     if added > 0 or updated > 0:
+        # Extraction automatique des quasi-blocs pour les entrées touchées.
+        qb_added = _extract_quasiblocs(dictionnaire, new_data)
         save_json(dict_path, dictionnaire)
         print(f"Sauvegardé : {dict_path}")
-        print(f"Résumé : {added} ajouté(s), {updated} mis à jour, {errors} erreur(s)")
+        print(f"Résumé : {added} ajouté(s), {updated} mis à jour, {errors} erreur(s), {qb_added} qb dispatché(s)")
         print(f"Total : {len(dictionnaire)} entrées")
     else:
         print("Aucune modification.")

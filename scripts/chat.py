@@ -299,6 +299,21 @@ class TBSChat:
         # dérivation réussie de ``_prove``. Utilisé pour générer des
         # explications « parce que … ».
         self._last_reason: Optional[Fact] = None
+        # Dernier match d'aspect adjectival réussi : (hw, parsed_aspect, binding).
+        # Permet à _append_because de produire une justification composite
+        # « parce que Y est cher et X a Y ».
+        self._last_adj_aspect = None
+        # Snapshot de la dernière réponse, pour répondre à « Pourquoi ? »
+        # en rejouant l'explication sans ré-interroger le prover.
+        self._last_answer_text: Optional[str] = None
+        self._last_answer_reason: Optional[Fact] = None
+        self._last_answer_adj_aspect = None
+        self._last_answer_q: Optional[tuple] = None  # (pred, subj, obj)
+        # Lexique DELAF chargé paresseusement via la lib `inflecteur`.
+        # ``None`` tant que pas tenté, ``False`` si l'import / chargement
+        # a échoué, sinon un DataFrame pandas indexé par forme fléchie.
+        self._delaf_df = None
+        self._fem_cache: Dict[str, str] = {}
         print(f"Prêt. {len(self.entries)} mots chargés.\n")
 
     # -----------------------------------------------------------------
@@ -378,6 +393,7 @@ class TBSChat:
                 "wh_slot": None,
                 "quantifier": None,
                 "is_comment_question": True,
+                "amods": [],
             }
 
         root = None
@@ -510,6 +526,31 @@ class TBSChat:
                     else:
                         recipient_text = self._span_text(child)
 
+        # Adjectifs épithètes (amod) sur les noms : « une voiture chère »
+        # produit un fait supplémentaire ``CHER(voiture)``. On collecte
+        # les paires (texte_noyau_nominal, headword_adjectif) pour toutes
+        # les têtes nominales de la phrase (sujet, objet, recipient).
+        amods: List[tuple] = []
+        amod_roots = []
+        for child in verb_node.children:
+            if child.dep_ in {"obj", "obl:arg", "obl", "obl:mod"}:
+                amod_roots.append(child)
+        for child in subj_anchor.children:
+            if child.dep_ in {"nsubj", "nsubj:pass"}:
+                amod_roots.append(child)
+        for noun_tok in amod_roots:
+            if noun_tok.pos_ == "PROPN":
+                continue
+            for c in noun_tok.children:
+                if c.dep_ != "amod" or c.pos_ != "ADJ":
+                    continue
+                adj_lemma = c.lemma_.lower()
+                adj_hw = self.lemma2hw.get(adj_lemma) or (
+                    adj_lemma.upper() if adj_lemma.upper() in self.entries else None
+                )
+                if adj_hw:
+                    amods.append((noun_tok.lemma_, adj_hw))
+
         # Négation
         neg = any(c.dep_ == "advmod" and c.lemma_.lower() in {"ne", "pas", "plus"} for c in subj_anchor.children)
 
@@ -553,6 +594,7 @@ class TBSChat:
             "wh_slot": wh_slot,
             "quantifier": quantifier,
             "is_comment_question": is_comment_question,
+            "amods": amods,
         }
 
     def _span_text(self, tok):
@@ -1130,6 +1172,24 @@ class TBSChat:
                         return True
                     break
 
+        # 1d. Backward chaining sur l'aspect interne d'un adjectif
+        # headword. Ex. RICHE a pour aspect ``Y ÊTRE CHER PT X AVOIR Y``.
+        # Pour prouver ``RICHE(Pierre)`` sans fait direct, on cherche un
+        # binding (Y = un objet connu) tel que ``CHER(Y)`` ET
+        # ``AVOIR(Pierre, Y)`` soient tous les deux prouvables via le
+        # prover récursif. Si un tel binding existe, l'aspect est
+        # satisfait et RICHE(Pierre) est vrai.
+        if subject and not negated and pred in self.entries and self._is_adjectival(pred):
+            entry = self.entries[pred]
+            for item in entry.get("signification", {}).get("interne", []):
+                parsed_aspect = parse_aspect(item.get("aspect", ""))
+                if not parsed_aspect:
+                    continue
+                binding = self._find_aspect_binding(parsed_aspect, subject, "X")
+                if binding is not None:
+                    self._last_adj_aspect = (pred, parsed_aspect, binding)
+                    return True
+
         # 2. Quasi-blocs externes de toutes les entrées. Les quasi-blocs
         # (`A (B)`) sont des ponts argumentatifs entre prédicats : ils
         # s'appliquent comme règles doxales générales, indépendamment
@@ -1304,6 +1364,14 @@ class TBSChat:
         if text.startswith(":"):
             return self._meta(text)
 
+        # « Pourquoi ? » de suivi : retrouve et rejoue l'explication de
+        # la dernière réponse, en construisant le « parce que … » à
+        # partir du fait-raison stocké si la réponse précédente ne le
+        # contenait pas déjà.
+        stripped = text.rstrip("?!. ").lower()
+        if stripped in {"pourquoi", "pourquoi donc", "pourquoi ça"}:
+            return self._explain_last()
+
         doc = self.nlp(text)
 
         # Détecter la présence d'une question ouverte « Comment est X ? »
@@ -1380,6 +1448,14 @@ class TBSChat:
         Retourne ``None`` pour un ``OK.`` muet, ou un message si le
         mot est inconnu du dictionnaire TBS."""
         hw = svo["headword"]
+        # Adjectifs épithètes attachés aux noms de la phrase : ils sont
+        # indépendants du verbe principal et doivent toujours être
+        # enregistrés, quel que soit le chemin suivi ci-dessous (AVOIR
+        # rapide, idiome COÛTER, composé VOULOIR, etc.). Ex. « Pierre a
+        # une voiture chère » → fait supplémentaire ``CHER(voiture)``.
+        for noun_text, adj_hw in svo.get("amods") or []:
+            self.activate(adj_hw, {"X": noun_text, "Y": noun_text})
+
         # Cas particulier : verbe "avoir" simple sans quantifieur
         if (svo["verb_lemma"] == "avoir"
                 and svo.get("object")
@@ -1507,6 +1583,11 @@ class TBSChat:
         elif hw and hw in self.entries:
             pred = hw
         else:
+            # Mot absent du dictionnaire et non trivial. On le signale
+            # explicitement plutôt que de répondre « aucune information »,
+            # qui laisserait penser que le bot a compris la question.
+            if verb_lemma and verb_lemma not in self.VERB_TO_PREDICATE:
+                return f"Je ne connais pas le mot « {verb_lemma} »."
             pred = verb_lemma.upper() if verb_lemma else None
 
         # Modaux hors pouvoir : reconstruire un prédicat composé
@@ -1539,17 +1620,23 @@ class TBSChat:
         # Prover dynamique : toute la logique (lookup direct, dérivation
         # d'aspect, transfert, unicité, disposition) vit dans ``_prove``.
         self._last_reason = None
+        self._last_adj_aspect = None
         pos_result = self._prove(pred, subject=subj, obj=obj, negated=False)
         if pos_result is True:
             mock = Fact(order=0, predicate=pred, subject=subj, obj=obj, neg=False)
             base = self._format_answer(pred, mock, subj, obj)
-            return self._append_because(base, self._last_reason, pred, subj, obj)
+            answer = self._append_because(base, self._last_reason, pred, subj, obj)
+            self._snapshot_answer(answer, pred, subj, obj)
+            return answer
         self._last_reason = None
+        self._last_adj_aspect = None
         neg_result = self._prove(pred, subject=subj, obj=obj, negated=True)
         if neg_result is True:
             mock = Fact(order=0, predicate=pred, subject=subj, obj=obj, neg=True)
             base = self._format_answer(pred, mock, subj, obj)
-            return self._append_because(base, self._last_reason, pred, subj, obj)
+            answer = self._append_because(base, self._last_reason, pred, subj, obj)
+            self._snapshot_answer(answer, pred, subj, obj)
+            return answer
 
         if obj:
             return f"Je n'ai aucune information sur {subj} et {obj}."
@@ -1667,6 +1754,54 @@ class TBSChat:
         self._CONJ_CACHE[pred] = result
         return result
 
+    def _snapshot_answer(self, answer_text: str, pred: str,
+                         subj: Optional[str], obj: Optional[str]) -> None:
+        """Fige l'état nécessaire pour répondre à un « Pourquoi ? »
+        de suivi : le texte rendu, le fait-raison et le match d'aspect."""
+        self._last_answer_text = answer_text
+        self._last_answer_reason = self._last_reason
+        self._last_answer_adj_aspect = self._last_adj_aspect
+        self._last_answer_q = (pred, subj, obj)
+
+    def _explain_last(self) -> str:
+        """Construit une réponse à « Pourquoi ? » à partir du snapshot
+        de la dernière question. Si la réponse précédente contenait
+        déjà « parce que », la retourne telle quelle. Sinon, tente de
+        recomposer la justification depuis le fait-raison stocké."""
+        if not self._last_answer_text:
+            return "Je ne sais pas à quoi tu fais référence."
+        if "parce qu" in self._last_answer_text:
+            return self._last_answer_text
+        # Reconstruction à partir du match d'aspect adjectival, si présent.
+        pred, subj, obj = self._last_answer_q or (None, None, None)
+        if self._last_answer_adj_aspect is not None:
+            _hw, parsed_aspect, binding = self._last_answer_adj_aspect
+            phrase = self._render_aspect_binding(
+                parsed_aspect, binding, queried_subj=subj
+            )
+            if phrase:
+                base = self._last_answer_text.rstrip(".")
+                conj = "parce qu'" if phrase[:1].lower() in self.VOWELS else "parce que "
+                return f"{base} {conj}{phrase}."
+        # Sinon, rendre le fait-raison en proposition causale — sauf si
+        # la raison est tautologique (fait directement asserté par
+        # l'utilisateur, même pred/subj/obj que la question).
+        reason = self._last_answer_reason
+        if reason is not None:
+            is_tautology = (
+                reason.predicate == pred
+                and (reason.subject or "").lower() == (subj or "").lower()
+                and (reason.obj or None) == (obj or None)
+            )
+            if not is_tautology:
+                phrase = self._reason_phrase(reason)
+                if phrase:
+                    base = self._last_answer_text.rstrip(".")
+                    conj = "parce qu'" if phrase[:1].lower() in self.VOWELS else "parce que "
+                    return f"{base} {conj}{phrase}."
+        base = self._last_answer_text.rstrip(".")
+        return f"{base} parce que tu me l'as dit."
+
     def _append_because(self, answer: str, reason_fact: Optional[Fact],
                         queried_pred: str, queried_subj: Optional[str],
                         queried_obj: Optional[str]) -> str:
@@ -1677,6 +1812,20 @@ class TBSChat:
         qui contient implicitement toutes les sous-conséquences de son
         aspect. Plus naturel que de citer un sous-prédicat.
         """
+        # Cas prioritaire : match d'aspect adjectival. La justification
+        # doit citer les deux prémisses de l'aspect (ex. RICHE =
+        # « la voiture est chère et Pierre a la voiture »), pas juste un
+        # fait isolé.
+        if self._last_adj_aspect is not None:
+            hw, parsed_aspect, binding = self._last_adj_aspect
+            phrase = self._render_aspect_binding(
+                parsed_aspect, binding, queried_subj=queried_subj
+            )
+            if phrase:
+                if answer.endswith("."):
+                    answer = answer[:-1]
+                conj = "parce qu'" if phrase[:1].lower() in self.VOWELS else "parce que "
+                return f"{answer} {conj}{phrase}."
         if reason_fact is None:
             return answer
 
@@ -1789,6 +1938,131 @@ class TBSChat:
             return " et ".join(phrases)
         return None
 
+    def _render_aspect_binding(self, parsed_aspect, binding,
+                               queried_subj: Optional[str] = None) -> str:
+        """Rend un aspect instancié en une proposition française.
+
+        Détection du motif ``(Y ÊTRE ADJ) + (X AVOIR Y)`` : quand une
+        même variable Y apparaît comme sujet d'un adjectif et comme
+        objet d'un AVOIR, on replie les deux clauses en une seule où
+        l'adjectif devient épithète du groupe nominal :
+          ``voiture ÊTRE CHER + Pierre AVOIR voiture`` → « Pierre a une
+          voiture chère ». Si le possesseur correspond au sujet de la
+          question, il est remplacé par « il » / « elle ».
+
+        À défaut de pattern repérable, on retombe sur une conjonction
+        « … et … » de toutes les prémisses rendues atomiquement.
+        """
+        n1, seg1, _conn, n2, seg2 = parsed_aspect
+        all_atoms = []
+        for preds, seg_neg in (
+            (extract_predicates(seg1), n1),
+            (extract_predicates(seg2), n2),
+        ):
+            for (p, sv, ov, rv, perf) in preds:
+                if perf:
+                    continue
+                all_atoms.append((p, sv, ov, rv, seg_neg))
+
+        # Motif possession + qualification : AVOIR(X, Y) + ADJ(Y)
+        avoir_atom = None
+        adj_atom = None
+        for atom in all_atoms:
+            p, sv, ov, _rv, seg_neg = atom
+            if seg_neg:
+                continue
+            if p == "AVOIR" and sv and ov:
+                avoir_atom = atom
+            elif ov is None and sv and self._is_adjectival(p):
+                adj_atom = atom
+        if avoir_atom and adj_atom:
+            _p_av, sv_av, ov_av, _rv_av, _n_av = avoir_atom
+            p_adj, sv_adj, _ov_adj, _rv_adj, _n_adj = adj_atom
+            if ov_av == sv_adj:  # même variable Y
+                poss = binding.get(sv_av)
+                noun = binding.get(ov_av)
+                if poss and noun:
+                    if queried_subj and poss.lower() == queried_subj.lower():
+                        poss_form = self._subject_pronoun(poss)
+                    else:
+                        poss_form = poss
+                    adj_form = self._agree_adjective(p_adj.lower(), noun)
+                    article = self._indefinite_article(noun)
+                    return f"{poss_form} a {article}{noun} {adj_form}"
+
+        # Fallback : conjonction des prémisses.
+        phrases = []
+        for (p, sv, ov, rv, seg_neg) in all_atoms:
+            s = binding.get(sv) if sv else None
+            o = binding.get(ov) if ov else None
+            r = binding.get(rv) if rv else None
+            if not s:
+                continue
+            mock = Fact(
+                order=0, predicate=p, subject=s,
+                obj=o, recipient=r, neg=seg_neg,
+            )
+            ph = self._reason_phrase(mock)
+            if ph:
+                phrases.append(ph)
+        return " et ".join(phrases)
+
+    def _subject_pronoun(self, name: str) -> str:
+        """Retourne « il » / « elle » pour une entité animée connue, ou
+        le nom tel quel si le genre n'est pas déterminé."""
+        entity = self.entities.get(name.lower()) if name else None
+        if entity and entity.gender == "masc":
+            return "il"
+        if entity and entity.gender == "fem":
+            return "elle"
+        return name
+
+    def _indefinite_article(self, noun: str) -> str:
+        """Renvoie « un  » / « une  » selon le genre connu de l'entité."""
+        entity = self.entities.get(noun.lower()) if noun else None
+        if entity and entity.gender == "fem":
+            return "une "
+        return "un "
+
+    def _agree_adjective(self, adj: str, noun: str) -> str:
+        """Accord féminin d'un adjectif via le lexique DELAF (inflecteur).
+
+        La première invocation charge paresseusement le dictionnaire
+        DELAF. Les résultats sont mis en cache dans ``_fem_cache``.
+        Fallback minimal (+e) si inflecteur n'est pas disponible ou si
+        le lemme est absent du lexique — suffisant pour traverser les
+        tests sans bloquer sur un adjectif inconnu du Delaf.
+        """
+        entity = self.entities.get(noun.lower()) if noun else None
+        if not entity or entity.gender != "fem":
+            return adj
+        if " " in adj:
+            return adj
+        if adj in self._fem_cache:
+            return self._fem_cache[adj]
+        if self._delaf_df is None:
+            try:
+                from inflecteur import inflecteur
+                inf = inflecteur()
+                inf.load_dict()
+                self._delaf_df = inf.dico_transformer
+            except Exception:
+                self._delaf_df = False
+        fem = None
+        if self._delaf_df is not False and self._delaf_df is not None:
+            df = self._delaf_df
+            rows = df[
+                (df["lemma"] == adj)
+                & (df["gram"] == "Adjectif")
+                & (df["forme"] == "fs")
+            ]
+            if len(rows) > 0:
+                fem = rows.index[0]
+        if fem is None:
+            fem = adj if adj.endswith("e") else adj + "e"
+        self._fem_cache[adj] = fem
+        return fem
+
     def _reason_phrase(self, fact: Optional[Fact]) -> str:
         """Transforme un fait-source en proposition « parce que … ».
         Les verbes d'action sont conjugués au passé composé pour un
@@ -1887,6 +2161,12 @@ class TBSChat:
             if fact.neg:
                 return f"Non, {subj} n'est pas {obj or 'cela'}."
             return f"Oui, {subj} est {obj or 'cela'}."
+        # Adjectif headword (template « X ÊTRE ADJ ») : recoller la copule.
+        entry = self.entries.get(pred)
+        if entry and "ÊTRE" in (entry.get("template_syntaxique") or ""):
+            if fact.neg:
+                return f"Non, {subj} n'est pas {pred.lower()}."
+            return f"Oui, {subj} est {pred.lower()}."
         verb_fr = self._verb_in_fr(pred)
         if fact.neg:
             elision = "n'" if verb_fr and verb_fr[0].lower() in self.VOWELS else "ne "
@@ -1947,6 +2227,44 @@ class TBSChat:
             noms = ", ".join(c[1].lower() for c in candidates)
             lines.append(f"{subject} est {noms}.")
         return "\n".join(lines)
+
+    def _find_aspect_binding(self, parsed_aspect, subject: str,
+                             adj_subject_var: str = "X"):
+        """Retourne le premier binding complet pour lequel l'aspect est
+        satisfait (tous les segments non-PERF prouvés). Utilisé pour le
+        backward chaining adjectif : si un binding existe, l'adjectif
+        headword est vrai pour ``subject``. Retourne ``None`` sinon."""
+        n1, seg1, conn, n2, seg2 = parsed_aspect
+        preds1 = extract_predicates(seg1)
+        preds2 = extract_predicates(seg2)
+        total = sum(1 for (_, _, _, _, perf) in preds1 + preds2 if not perf)
+        if total == 0:
+            return None
+        candidate_bindings = self._candidate_bindings(
+            subject, adj_subject_var, preds1, preds2, n1, n2
+        )
+        for binding in candidate_bindings:
+            matched = 0
+            ok = True
+            for preds, seg_neg in ((preds1, n1), (preds2, n2)):
+                for (p, sv, ov, rv, perf) in preds:
+                    if perf:
+                        continue
+                    s = binding.get(sv) if sv else None
+                    o = binding.get(ov) if ov else None
+                    if not s:
+                        ok = False
+                        break
+                    result = self._prove(p, subject=s, obj=o, negated=seg_neg)
+                    if result is not True:
+                        ok = False
+                        break
+                    matched += 1
+                if not ok:
+                    break
+            if ok and matched == total:
+                return binding
+        return None
 
     def _score_aspect_match(self, parsed_aspect, subject: str,
                             adj_subject_var: str = "X"):

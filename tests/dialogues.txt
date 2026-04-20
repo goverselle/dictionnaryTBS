@@ -483,3 +483,20 @@
 = Non
 > Marie a le livre ?
 = Non
+
+
+# ──────────────────────────────────────────────────────────────
+# RICHE via adjectif épithète : le parser doit extraire deux
+# faits d'une seule phrase (`Pierre AVOIR voiture` et
+# `voiture CHER`). Le prover ouvre ensuite l'aspect de RICHE
+# `Y ÊTRE CHER PT X AVOIR Y`, trouve le binding Y=voiture qui
+# satisfait les deux segments, et conclut. La justification
+# replie le motif (Y ÊTRE ADJ) + (X AVOIR Y) en une seule
+# proposition avec pronom sujet et adjectif accordé.
+@scenario: riche via voiture chère épithète
+:reset
+> Pierre a une voiture chère.
+> Pierre est riche ?
+= Oui
+= Pierre est riche
+= parce qu'il a une voiture chère
