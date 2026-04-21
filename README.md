@@ -2,6 +2,8 @@
 
 Dictionnaire basé sur la **Théorie des Blocs Sémantiques** (Carel & Ducrot).
 
+**Consultable en ligne : https://goverselle.github.io/dictionnaryTBS/**
+
 ---
 
 ## Structure du projet
@@ -24,7 +26,27 @@ dictionaryTBS/
 ├── output/                     ← Fichiers générés
 │   └── dictionnaire_tbs.html   ← Site généré
 │
+├── docs/                       ← GitHub Pages (auto-généré)
+│   ├── index.html
+│   ├── style.css
+│   └── tbs_free_network_v2.html
+│
 └── README.md
+```
+
+---
+
+## Déploiement
+
+Le site est hébergé sur **GitHub Pages** et servi depuis le dossier `docs/`.
+
+Après toute modification du dictionnaire :
+
+```bash
+python scripts/generate_html.py   # régénère output/ et docs/
+git add -A
+git commit -m "mise à jour"
+git push origin main              # le site se met à jour automatiquement
 ```
 
 ---
@@ -37,7 +59,7 @@ dictionaryTBS/
 python scripts/generate_html.py
 ```
 
-→ Crée `output/dictionnaire_tbs.html`
+→ Crée `output/dictionnaire_tbs.html` et met à jour `docs/` pour GitHub Pages.
 
 ### Ajouter une nouvelle entrée
 
@@ -54,16 +76,26 @@ python scripts/merge_entry.py chemin/vers/mot.json
 
 ## Structure d'une entrée
 
+Les fondateurs et critères sont rattachés à chaque aspect interne individuellement.
+
 ```json
 {
   "headword": "MOT",
   "letter": "M",
-  "fondateur1": "AVOIR",
-  "fondateur2": "DIRE",
+  "template_syntaxique": "X DIRE Y",
   "signification": {
     "interne": [
       {
         "aspect": "X AVOIR *Y* DC X DIRE Y",
+        "fondateur1": "AVOIR",
+        "fondateur2": "DIRE",
+        "criteres": [
+          {
+            "type": 1,
+            "texte": "« le mot juste » (ATT-X DC REAL-Y)"
+          }
+        ],
+        "square_value": null,
         "exemples": [
           {
             "phrase": "Les mots me manquent.",
@@ -83,13 +115,7 @@ python scripts/merge_entry.py chemin/vers/mot.json
         ]
       }
     ]
-  },
-  "criteres": [
-    {
-      "type": 1,
-      "texte": "« le mot juste » (ATT-X DC REAL-Y)"
-    }
-  ]
+  }
 }
 ```
 
@@ -98,17 +124,18 @@ python scripts/merge_entry.py chemin/vers/mot.json
 | Champ | Description |
 |-------|-------------|
 | `headword` | Mot-vedette (majuscules) |
-| `letter` | Lettre initiale |
-| `fondateur1` | Premier terme fondateur |
-| `fondateur2` | Second terme fondateur |
+| `letter` | Lettre initiale (sans accent) |
 | `signification.interne` | Liste d'aspects |
 | `signification.externe` | Liste de quasi-blocs |
 
-### Champs optionnels
+### Champs par aspect interne
 
 | Champ | Description |
 |-------|-------------|
+| `fondateur1` | Premier terme fondateur |
+| `fondateur2` | Second terme fondateur |
 | `criteres` | Liste de critères de validation |
+| `square_value` | Position dans le carré argumentatif (1-4) |
 
 ---
 
@@ -122,27 +149,6 @@ python scripts/merge_entry.py chemin/vers/mot.json
 | 4 | doxalité | Aspect normatif (DC) |
 | 5 | transgressif | Aspect transgressif (PT) |
 | 6 | gradualité | Critère HGDC |
-
----
-
-## Code couleur
-
-| Élément | Signification |
-|---------|---------------|
-| 🔵 Bleu | Aspect (signification interne) |
-| 🟤 Ocre | Quasi-bloc (signification externe) |
-| ⚫ Gris | Critère |
-| 🟡 Or | Bloc sémantique |
-
----
-
-## Personnalisation
-
-| Fichier | Rôle |
-|---------|------|
-| `templates/style.css` | Couleurs, typographie, mise en page |
-| `templates/template.html` | Structure HTML |
-| `data/types_criteres.json` | Ajouter des types de critères |
 
 ---
 
