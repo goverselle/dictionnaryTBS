@@ -54,17 +54,16 @@
 
     .sidebar {
         width: 100%;
-        max-height: 0;
+        height: 0;
         overflow: hidden;
         border-right: none;
         border-bottom: none;
-        transition: max-height 0.3s ease;
         flex-shrink: unset;
         display: block;
     }
 
     .sidebar.sb--open {
-        max-height: 60vh;
+        height: calc(100vh - 2.5rem);
         overflow-y: auto;
         border-bottom: 2px solid #2a7a2a;
     }
@@ -120,9 +119,10 @@
 
     .content {
         display: block;
-        overflow: visible;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         padding: 1rem;
-        min-height: 60vh;
+        height: calc(100vh - 2.5rem);
     }
 
     .welcome {
