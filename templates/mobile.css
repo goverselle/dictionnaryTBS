@@ -5,21 +5,22 @@
 @media (max-width: 800px) {
 
     html, body {
-        height: auto;
-        overflow: auto;
+        height: 100%;
+        overflow: hidden;
         font-size: 16px;
+        -webkit-text-size-adjust: 100%;
     }
 
     .app {
-        display: block;
-        height: auto;
-        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         margin: 0;
         border: none;
         border-radius: 0;
         outline: none;
         box-shadow: none;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .corner { display: none; }
@@ -64,7 +65,8 @@
 
     .sidebar.sb--open {
         height: calc(100vh - 2.5rem);
-        overflow-y: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         border-bottom: 2px solid #2a7a2a;
     }
 
@@ -118,11 +120,10 @@
     /* ===== CONTENU PRINCIPAL ===== */
 
     .content {
-        display: block;
-        overflow-y: auto;
+        flex: 1;
+        overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         padding: 1rem;
-        height: calc(100vh - 2.5rem);
     }
 
     .welcome {
