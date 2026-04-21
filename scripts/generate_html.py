@@ -543,7 +543,6 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
             html += f'''
             <div class="entry" id="entry-{headword}">
                 <div class="entry-toolbar">
-                    <button class="btn-edit" data-hw="{headword}">Modifier</button>
                     <button class="btn-raw" data-hw="{headword}">{{ }} JSON</button>
                     <button class="btn-net" data-hw="{headword}">◉ Réseau</button>
                 </div>
@@ -751,6 +750,20 @@ def main():
 
     if update_network_data(entries):
         print(f"✓ Mis à jour : {NETWORK_PATH}")
+
+    # Copier dans docs/ pour GitHub Pages
+    import shutil
+    docs_dir = ROOT_DIR / "docs"
+    docs_dir.mkdir(exist_ok=True)
+    shutil.copy2(OUTPUT_PATH, docs_dir / "index.html")
+    # Corriger le chemin CSS pour docs/
+    idx = (docs_dir / "index.html").read_text(encoding="utf-8")
+    idx = idx.replace("../templates/style.css", "style.css")
+    (docs_dir / "index.html").write_text(idx, encoding="utf-8")
+    shutil.copy2(TEMPLATES_DIR / "style.css", docs_dir / "style.css")
+    if NETWORK_PATH.exists():
+        shutil.copy2(NETWORK_PATH, docs_dir / "tbs_free_network_v2.html")
+    print(f"✓ docs/ mis à jour pour GitHub Pages")
 
 
 if __name__ == "__main__":
