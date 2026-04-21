@@ -1466,66 +1466,6 @@ html, body {
     display: none;
 }
 
-/* ======================== RESPONSIVE ======================== */
-
-@media (max-width: 800px) {
-    .app {
-        flex-direction: column;
-        height: 100vh;
-        margin: 0;
-        border-radius: 0;
-        border: none;
-        outline: none;
-        box-shadow: none;
-    }
-    .corner { display: none; }
-    .sb-toggle {
-        display: block;
-        width: 100%;
-        padding: 0.6rem;
-        font-family: inherit;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        background: #2a7a2a;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
-    .sidebar {
-        width: 100%;
-        max-height: 0;
-        min-height: 0;
-        border-right: none;
-        border-bottom: 2px solid #2a7a2a;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-    .sidebar.sb--open {
-        max-height: 55vh;
-        overflow-y: auto;
-    }
-    .sb-header { padding: 0.8rem 1rem 0.6rem; }
-    .sb-header h1 { font-size: 0.75rem; }
-    .content {
-        flex: 1;
-        padding: 1rem 1rem;
-        overflow-y: auto;
-    }
-    .headword { font-size: 1.1rem; }
-    .formula { font-size: 0.72rem; }
-    .aspect, .quasibloc { padding: 0.6rem 0.7rem; }
-    .section-title { font-size: 0.55rem; margin: 1.2rem 0 0.6rem; }
-    .carre-argumentatif { font-size: 0.6rem; }
-    .carre-formula { font-size: 0.6rem; }
-    .entry-toolbar { float: none; margin-bottom: 0.5rem; }
-    .app-footer { display: none; }
-    .zoom-bar { bottom: 10px; right: 10px; }
-    .btn-pill { padding: 8px 16px; font-size: 14px; }
-    .welcome-title { font-size: 1.1rem; }
-}
-
 /* ======================== PRINT ======================== */
 
 @media print {

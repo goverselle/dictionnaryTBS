@@ -1,0 +1,341 @@
+/* ============================================
+   DICTIONNAIRE TBS — MOBILE (max-width: 800px)
+   ============================================ */
+
+@media (max-width: 800px) {
+
+    html, body {
+        height: auto;
+        overflow: auto;
+        font-size: 16px;
+    }
+
+    .app {
+        display: block;
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .corner { display: none; }
+    .app-footer { display: none; }
+
+    /* ===== TOGGLE MENU ===== */
+
+    .sb-toggle {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-family: inherit;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        background: #2a7a2a;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .sb-toggle:active {
+        background: #1d5e1d;
+    }
+
+    /* ===== SIDEBAR ===== */
+
+    .sidebar {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        border-right: none;
+        border-bottom: none;
+        transition: max-height 0.3s ease;
+        flex-shrink: unset;
+        display: block;
+    }
+
+    .sidebar.sb--open {
+        max-height: 60vh;
+        overflow-y: auto;
+        border-bottom: 2px solid #2a7a2a;
+    }
+
+    .sb-header {
+        padding: 0.6rem 0.8rem 0.5rem;
+    }
+
+    .sb-header h1 {
+        font-size: 0.7rem;
+    }
+
+    .sb-stats {
+        margin-top: 0.4rem;
+    }
+
+    .sb-filters {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .sb-search {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .sb-search input {
+        font-size: 16px; /* empêche le zoom auto sur iOS */
+        padding: 0.6rem;
+    }
+
+    .sb-alphabet {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .sb-alphabet a {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .sb-word {
+        padding: 0.5rem 0.8rem 0.5rem 1.2rem;
+    }
+
+    .sb-word-name {
+        font-size: 0.8rem;
+    }
+
+    .sb-word-hint {
+        font-size: 0.65rem;
+    }
+
+    /* ===== CONTENU PRINCIPAL ===== */
+
+    .content {
+        display: block;
+        overflow: visible;
+        padding: 1rem;
+        min-height: 60vh;
+    }
+
+    .welcome {
+        height: 40vh;
+    }
+
+    .welcome-title {
+        font-size: 1rem;
+    }
+
+    .welcome-sub {
+        font-size: 0.75rem;
+    }
+
+    .welcome-hint {
+        font-size: 0.6rem;
+    }
+
+    /* ===== ENTRÉES ===== */
+
+    .entry-toolbar {
+        float: none;
+        display: flex;
+        gap: 0.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .btn-raw, .btn-net {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .headword {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .fondateurs {
+        font-size: 0.65rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .template-syntaxique {
+        font-size: 0.65rem;
+        margin: 0.3rem 0 0.75rem;
+    }
+
+    .section-title {
+        font-size: 0.55rem;
+        margin: 1rem 0 0.5rem;
+        padding: 0.4rem 0.6rem 0.4rem 0.8rem;
+    }
+
+    .section-title::before {
+        width: 0.3rem;
+        height: 0.3rem;
+        margin-right: 0.4rem;
+    }
+
+    /* ===== ASPECTS & QUASI-BLOCS ===== */
+
+    .aspect-group {
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+    }
+
+    .aspect-num, .qb-num {
+        font-size: 0.55rem;
+        padding: 0.1rem 0.4rem;
+    }
+
+    .aspect, .quasibloc {
+        padding: 0.6rem 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .formula {
+        font-size: 0.7rem;
+        word-break: break-word;
+    }
+
+    .exemple .phrase {
+        font-size: 0.7rem;
+    }
+
+    .exemple .ea {
+        font-size: 0.65rem;
+    }
+
+    /* ===== CRITÈRES ===== */
+
+    .criteres {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .critere {
+        font-size: 0.65rem;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .critere-type {
+        font-size: 0.55rem;
+        align-self: flex-start;
+    }
+
+    /* ===== FONDATEUR DE ===== */
+
+    .fondateur-de {
+        gap: 0.3rem;
+    }
+
+    .fondateur-de .tree-label--entry {
+        font-size: 0.6rem;
+    }
+
+    /* ===== COLLAPSIBLES ===== */
+
+    .collapsible {
+        margin-top: 0.5rem;
+    }
+
+    .collapsible-toggle {
+        font-size: 0.58rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .collapsible-toggle::before {
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 0.65rem;
+    }
+
+    /* ===== CARRÉ ARGUMENTATIF ===== */
+
+    .carre-argumentatif {
+        font-size: 0.6rem;
+    }
+
+    .carre-cell {
+        padding: 0.6rem 0.5rem;
+        min-height: 4rem;
+    }
+
+    .carre-formula {
+        font-size: 0.58rem;
+        margin-top: 0.6rem;
+    }
+
+    .carre-num {
+        font-size: 0.5rem;
+    }
+
+    .carre-entry-mark {
+        font-size: 0.55rem;
+    }
+
+    .carre-words {
+        font-size: 0.55rem;
+    }
+
+    /* ===== ARBRE DE DÉCOMPOSITION ===== */
+
+    .decomp-tree {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tree .tree-label {
+        font-size: 0.58rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    /* ===== QUASI-BLOC SOURCE ===== */
+
+    .qb-source {
+        font-size: 0.55rem;
+    }
+
+    /* ===== NB ===== */
+
+    .nb {
+        font-size: 0.65rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    /* ===== ZOOM ===== */
+
+    .zoom-bar {
+        bottom: 8px;
+        right: 8px;
+        padding: 6px 8px;
+    }
+
+    .btn-pill {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* ===== MODALES ===== */
+
+    .modal {
+        width: 95vw;
+        max-height: 90vh;
+        font-size: 12px;
+    }
+
+    .modal-body {
+        padding: 12px;
+    }
+
+    .modal--net {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}

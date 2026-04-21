@@ -759,8 +759,10 @@ def main():
     # Corriger le chemin CSS pour docs/
     idx = (docs_dir / "index.html").read_text(encoding="utf-8")
     idx = idx.replace("../templates/style.css", "style.css")
+    idx = idx.replace("../templates/mobile.css", "mobile.css")
     (docs_dir / "index.html").write_text(idx, encoding="utf-8")
     shutil.copy2(TEMPLATES_DIR / "style.css", docs_dir / "style.css")
+    shutil.copy2(TEMPLATES_DIR / "mobile.css", docs_dir / "mobile.css")
     if NETWORK_PATH.exists():
         shutil.copy2(NETWORK_PATH, docs_dir / "tbs_free_network_v2.html")
     print(f"✓ docs/ mis à jour pour GitHub Pages")
