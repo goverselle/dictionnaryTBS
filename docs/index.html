@@ -10,8 +10,11 @@
     <div class="app">
         <span class="corner corner--tr"></span>
         <span class="corner corner--bl"></span>
+        <!-- BOUTON MENU MOBILE -->
+        <button class="sb-toggle" id="sb-toggle">&#9776; Menu</button>
+
         <!-- SIDEBAR GAUCHE -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sb-header">
                 <h1>Dictionnaire TBS</h1>
                 <div class="sb-stats">
@@ -7637,7 +7640,7 @@
     </div>
 
     <footer class="app-footer">
-        <span>Généré le 21/04/2026 à 19:41</span>
+        <span>Généré le 21/04/2026 à 19:48</span>
         <span>Sémantique argumentative</span>
     </footer>
 
@@ -7825,6 +7828,13 @@
         var welcome = document.getElementById('welcome');
         var content = document.getElementById('content');
         var searchInput = document.getElementById('search-input');
+        var sbToggle = document.getElementById('sb-toggle');
+        var sidebar = document.getElementById('sidebar');
+
+        sbToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('sb--open');
+            sbToggle.textContent = sidebar.classList.contains('sb--open') ? '\u2715 Fermer' : '\u2630 Menu';
+        });
         var active = null;
 
         // Masquer tout au départ
@@ -7844,6 +7854,8 @@
             entries.forEach(function (e) { e.style.display = 'none'; });
             letterHeaders.forEach(function (e) { e.style.display = 'none'; });
             welcome.style.display = 'none';
+            sidebar.classList.remove('sb--open');
+            sbToggle.textContent = '\u2630 Menu';
 
             var target = document.getElementById('entry-' + hw);
             if (target) {
