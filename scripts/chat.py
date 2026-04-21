@@ -2498,14 +2498,21 @@ class TBSChat:
         parsed_src = self._first_aspect(hw)
         if not src or not parsed_src:
             return None
-        f1, f2 = src.get("fondateur1"), src.get("fondateur2")
+        src_aspects = src.get("signification", {}).get("interne", [])
+        if not src_aspects:
+            return None
+        f1 = src_aspects[0].get("fondateur1", "")
+        f2 = src_aspects[0].get("fondateur2", "")
         if not (f1 and f2):
             return None
         opposite = "DC" if parsed_src[2] == "PT" else "PT"
         for hw2, entry in self.entries.items():
             if hw2 == hw:
                 continue
-            if entry.get("fondateur1") != f1 or entry.get("fondateur2") != f2:
+            asp2 = entry.get("signification", {}).get("interne", [])
+            if not asp2:
+                continue
+            if asp2[0].get("fondateur1") != f1 or asp2[0].get("fondateur2") != f2:
                 continue
             parsed = self._first_aspect(hw2)
             if parsed and parsed[2] == opposite:

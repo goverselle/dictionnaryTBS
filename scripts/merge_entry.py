@@ -22,6 +22,7 @@ Sinon, il est ajouté.
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -47,7 +48,7 @@ def save_json(path, data):
 
 def validate_entry(entry):
     """Vérifie que l'entrée a les champs requis."""
-    required = ["headword", "letter", "fondateur1", "fondateur2", "signification"]
+    required = ["headword", "letter", "signification"]
     for field in required:
         if field not in entry:
             return False, f"champ manquant : {field}"
@@ -150,6 +151,11 @@ def main():
     for entry in new_data:
         hw = entry.get("headword", "???").upper()
         entry["headword"] = hw
+        letter = entry.get("letter", "")
+        entry["letter"] = ''.join(
+            c for c in unicodedata.normalize('NFD', letter)
+            if unicodedata.category(c) != 'Mn'
+        )
         
         valid, err = validate_entry(entry)
         if not valid:

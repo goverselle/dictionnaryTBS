@@ -62,6 +62,35 @@
         <span>Sémantique argumentative</span>
     </footer>
 
+    <!-- MODAL DÉCOMPOSITION -->
+    <div class="modal-overlay" id="decomp-ref-overlay">
+        <div class="modal modal--carre-ref">
+            <div class="modal-header">
+                <span class="modal-title">Décomposition en fondateurs — note</span>
+                <button class="modal-close" id="decomp-ref-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="carre-ref-note">
+                    L'arbre de décomposition est une <strong>approximation</strong>.
+                </p>
+                <p class="carre-ref-note">
+                    Certains mots possèdent plusieurs aspects internes, chacun avec des
+                    fondateurs différents. La décomposition récursive ne prend en compte
+                    que le <strong>premier aspect</strong> de chaque sous-mot pour construire
+                    l'arbre.
+                </p>
+                <p class="carre-ref-note">
+                    Cependant, la plupart des mots abstraits de ce dictionnaire n'ayant
+                    qu'un seul aspect interne, cette représentation reste utile pour
+                    visualiser les relations entre les termes.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-pill btn-pill--dim" id="decomp-ref-dismiss">Fermer</button>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL RÉFÉRENCE CARRÉ -->
     <div class="modal-overlay" id="carre-ref-overlay">
         <div class="modal modal--carre-ref">
@@ -170,16 +199,6 @@
                             <option value="false">Non</option>
                             <option value="true">Oui</option>
                         </select>
-                    </div>
-                </div>
-                <div class="form-row form-row--half">
-                    <div>
-                        <label>Fondateur 1</label>
-                        <input type="text" id="ed-f1">
-                    </div>
-                    <div>
-                        <label>Fondateur 2</label>
-                        <input type="text" id="ed-f2">
                     </div>
                 </div>
                 <div class="form-row">
@@ -395,8 +414,6 @@
             document.getElementById('ed-headword').value = d.headword || '';
             document.getElementById('ed-letter').value = d.letter || '';
             document.getElementById('ed-paradoxal').value = d.paradoxal ? 'true' : 'false';
-            document.getElementById('ed-f1').value = d.fondateur1 || '';
-            document.getElementById('ed-f2').value = d.fondateur2 || '';
             document.getElementById('ed-template-syntaxique').value = d.template_syntaxique || '';
             document.getElementById('ed-nb').value = d.nb || '';
             renderBlocks('ed-interne', d.signification && d.signification.interne || [], 'aspect');
@@ -414,7 +431,16 @@
             var div = document.createElement('div');
             div.className = 'form-block';
             var formula = block[key] || '';
-            var html = '<div class="form-row"><label>' + (key === 'aspect' ? 'Aspect' : 'Quasi-bloc') + '</label>'
+            var html = '';
+            if (key === 'aspect') {
+                html += '<div class="form-row form-row--half">'
+                    + '<div><label>Fondateur 1</label>'
+                    + '<input type="text" class="block-f1" value="' + escAttr(block.fondateur1 || '') + '"></div>'
+                    + '<div><label>Fondateur 2</label>'
+                    + '<input type="text" class="block-f2" value="' + escAttr(block.fondateur2 || '') + '"></div>'
+                    + '</div>';
+            }
+            html += '<div class="form-row"><label>' + (key === 'aspect' ? 'Aspect' : 'Quasi-bloc') + '</label>'
                 + '<input type="text" class="block-formula" value="' + escAttr(formula) + '"></div>';
             html += '<div class="block-examples">';
             (block.exemples || []).forEach(function (ex) {
@@ -456,6 +482,14 @@
                 });
                 var obj = { exemples: exemples };
                 obj[key] = formula;
+                if (key === 'aspect') {
+                    var f1El = div.querySelector('.block-f1');
+                    var f2El = div.querySelector('.block-f2');
+                    obj.fondateur1 = f1El ? f1El.value.trim() : '';
+                    obj.fondateur2 = f2El ? f2El.value.trim() : '';
+                    obj.criteres = [];
+                    obj.square_value = null;
+                }
                 blocks.push(obj);
             });
             return blocks;
@@ -474,8 +508,6 @@
             var entry = {
                 headword: document.getElementById('ed-headword').value.trim(),
                 letter: document.getElementById('ed-letter').value.trim().toUpperCase(),
-                fondateur1: document.getElementById('ed-f1').value.trim(),
-                fondateur2: document.getElementById('ed-f2').value.trim(),
                 signification: {
                     interne: collectBlocks('ed-interne', 'aspect'),
                     externe: collectBlocks('ed-externe', 'quasibloc')
@@ -538,6 +570,11 @@
                 document.getElementById('carre-ref-overlay').classList.add('modal-overlay--open');
                 return;
             }
+            var decompBtn = e.target.closest('.btn-decomp-info');
+            if (decompBtn) {
+                document.getElementById('decomp-ref-overlay').classList.add('modal-overlay--open');
+                return;
+            }
             var node = e.target.closest('.tree-label--entry, .carre-word');
             if (node && node.dataset.entry) {
                 var hw = node.dataset.entry;
@@ -557,6 +594,18 @@
         });
         carreRefOverlay.addEventListener('click', function (e) {
             if (e.target === carreRefOverlay) carreRefOverlay.classList.remove('modal-overlay--open');
+        });
+
+        // Fermeture modale décomposition
+        var decompRefOverlay = document.getElementById('decomp-ref-overlay');
+        document.getElementById('decomp-ref-close').addEventListener('click', function () {
+            decompRefOverlay.classList.remove('modal-overlay--open');
+        });
+        document.getElementById('decomp-ref-dismiss').addEventListener('click', function () {
+            decompRefOverlay.classList.remove('modal-overlay--open');
+        });
+        decompRefOverlay.addEventListener('click', function (e) {
+            if (e.target === decompRefOverlay) decompRefOverlay.classList.remove('modal-overlay--open');
         });
 
         // ===== MODAL RÉSEAU =====

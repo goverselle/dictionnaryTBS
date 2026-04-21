@@ -199,11 +199,8 @@ def create_stub(headword: str) -> dict:
     return {
         "headword": headword,
         "letter": first_letter(headword),
-        "fondateur1": "",
-        "fondateur2": "",
         "template_syntaxique": "",
         "signification": {"interne": [], "externe": []},
-        "criteres": [],
     }
 
 
@@ -296,5 +293,8 @@ def main(apply: bool) -> int:
 
 
 if __name__ == "__main__":
-    apply = "--apply" in sys.argv
-    sys.exit(main(apply))
+    print("ATTENTION : ce script bulk est désactivé.")
+    print("Les quasi-blocs sont générés automatiquement par merge_entry.py")
+    print("lors de l'ajout/modification d'une entrée individuelle.")
+    print("Relancer ce script en bulk écraserait les corrections manuelles.")
+    sys.exit(1)

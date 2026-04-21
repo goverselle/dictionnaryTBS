@@ -484,7 +484,7 @@ html, body {
     display: block;
     font-size: 0.7rem;
     color: var(--fg-dim);
-    margin: -0.75rem 0 1.25rem;
+    margin: 0.5rem 0 1.25rem;
     padding: 0.3rem 0.6rem;
     border-left: 2px solid #888;
     background: #f6f6f2;
@@ -833,6 +833,151 @@ html, body {
     color: var(--fg-dim);
     font-style: italic;
     line-height: 1.55;
+}
+
+.collapsible {
+    margin-top: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f6f6f2;
+}
+
+.collapsible-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    transition: background 0.12s, color 0.12s;
+}
+
+.collapsible-toggle:hover {
+    background: #eee;
+    color: #333;
+}
+
+.collapsible-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.collapsible-toggle::before {
+    content: '▸';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 0.75rem;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    flex-shrink: 0;
+    transition: all 0.15s;
+}
+
+.collapsible-toggle:hover::before {
+    background: var(--mint);
+    border-color: var(--mint);
+    color: #111;
+}
+
+.collapsible[open] > .collapsible-toggle::before {
+    content: '▾';
+}
+
+.collapsible[open] > .collapsible-toggle {
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible > .carre-argumentatif,
+.collapsible > .decomp-tree {
+    margin: 0.5rem;
+}
+
+.qb-source {
+    margin-top: 0.5rem;
+    padding-top: 0.4rem;
+    border-top: 1px dotted #ccc;
+    font-size: 0.6rem;
+    color: var(--fg-dim);
+}
+
+.qb-source .tree-label--entry {
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+}
+
+.qb-source .tree-label--entry:hover {
+    background: #e8e4d3;
+    border-color: #333;
+}
+
+.fondateur-de {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.5rem 0;
+}
+
+.fondateur-de .tree-label--entry {
+    font-size: 0.65rem;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+}
+
+.fondateur-de .tree-label--entry:hover {
+    background: #e8e4d3;
+    border-color: #333;
+}
+
+.aspect-num, .qb-num {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #fff;
+    padding: 0.15rem 0.55rem;
+    margin-bottom: 0.5rem;
+}
+
+.aspect-num {
+    background: #4a7ab5;
+}
+
+.qb-num {
+    background: #5a8a5a;
+}
+
+.aspect-group {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fcfcfa;
+}
+
+.aspect-group .fondateurs {
+    margin-bottom: 0.75rem;
+}
+
+.aspect-group .criteres {
+    margin-top: 0.75rem;
+}
+
+.aspect-group .section-title {
+    margin-top: 1rem;
+}
+
+.aspect-group .decomp-tree {
+    margin-bottom: 0;
 }
 
 .aspect, .quasibloc {

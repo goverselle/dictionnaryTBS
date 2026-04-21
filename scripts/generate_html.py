@@ -85,6 +85,24 @@ def _entry_tags(entry):
     return is_paradoxal, has_dc, has_pt
 
 
+def _entry_fondateurs(entry):
+    """Extrait (fondateur1, fondateur2) depuis le premier aspect interne."""
+    aspects = entry.get("signification", {}).get("interne", [])
+    if aspects:
+        return aspects[0].get("fondateur1", ""), aspects[0].get("fondateur2", "")
+    return "", ""
+
+
+def _all_fondateur_pairs(entry):
+    """Retourne toutes les paires (f1, f2) distinctes des aspects internes."""
+    pairs = []
+    for asp in entry.get("signification", {}).get("interne", []):
+        f1, f2 = asp.get("fondateur1", ""), asp.get("fondateur2", "")
+        if (f1, f2) not in pairs:
+            pairs.append((f1, f2))
+    return pairs
+
+
 def generate_sidebar(by_letter):
     """Liste cliquable des mots, groupés par lettre, pour le panneau gauche."""
     html = ""
@@ -93,8 +111,7 @@ def generate_sidebar(by_letter):
         html += f'  <div class="sb-letter">{letter}</div>\n'
         for entry in by_letter[letter]:
             hw = entry["headword"]
-            f1 = entry.get("fondateur1", "")
-            f2 = entry.get("fondateur2", "")
+            f1, f2 = _entry_fondateurs(entry)
             hint = f"{f1} — {f2}" if f1 and f2 else ""
             is_paradoxal, has_dc, has_pt = _entry_tags(entry)
             paradox = ' <span class="sb-paradox">⇄</span>' if is_paradoxal else ""
@@ -114,7 +131,12 @@ def generate_sidebar(by_letter):
 
 
 def _build_decomp_map(entries):
-    return {e["headword"]: (e["fondateur1"], e["fondateur2"]) for e in entries}
+    m = {}
+    for e in entries:
+        f1, f2 = _entry_fondateurs(e)
+        if f1 or f2:
+            m[e["headword"]] = (f1, f2)
+    return m
 
 
 _ASPECT_PREFIX_RE = re.compile(r'^\s*(PERF\s*\(\s*)?(NEG\s+)?(.*?)(\s*\))?\s*$')
@@ -319,12 +341,16 @@ FR_STOP_WORDS = {
 
 def _split_primitive(word):
     """Découpe une primitive composée en tokens sémantiques (DEVOIR RENDRE → [DEVOIR, RENDRE]).
-    Les verbes pronominaux (SE …, S'…) et les compositions avec ÊTRE restent un seul token."""
+    Les verbes pronominaux (SE …, S'…) et les compositions avec ÊTRE restent un seul token.
+    Gère aussi les modaux devant un pronominal (DEVOIR SE PASSER → [DEVOIR, SE PASSER])."""
     stripped = word.strip()
     if stripped.startswith("SE ") or stripped.startswith("S'"):
         return [stripped]
     if stripped.startswith("ÊTRE ") or stripped == "ÊTRE":
         return [stripped]
+    m = re.match(r"^(\w+)\s+(SE\s+.+|S'.+)$", stripped)
+    if m:
+        return [m.group(1), m.group(2)]
     tokens = [t for t in stripped.split() if t.upper() not in FR_STOP_WORDS]
     return tokens
 
@@ -375,13 +401,12 @@ def _render_decomp_node(word, decomp_map, op_map, visited, depth, max_depth=6):
     return label
 
 
-def _render_carre(entry, aspect_index):
-    """Rend le carré argumentatif pour l'aspect interne principal de l'entrée."""
-    asp_list = entry.get("signification", {}).get("interne", [])
-    if not asp_list:
+def _render_carre(entry, aspect_item, aspect_index):
+    """Rend le carré argumentatif pour un aspect interne donné."""
+    aspect = aspect_item.get("aspect", "")
+    if not aspect:
         return ""
-    aspect = asp_list[0].get("aspect", "")
-    square_value = entry.get("square_value")
+    square_value = aspect_item.get("square_value")
     carre = _compute_carre(aspect, square_value=square_value)
     if not carre:
         return ""
@@ -424,31 +449,84 @@ def _render_carre(entry, aspect_index):
         _cell("corner4", 1) + _cell("corner3", 2) +
         _cell("corner1", 3) + _cell("corner2", 4)
     )
-    return (
-        '<div class="section-title">Carré argumentatif'
-        '<button class="section-info btn-carre-info" '
-        'title="Rappel du layout (Carel, Parler 2023)">?</button>'
-        '</div>\n'
-        f'<div class="carre-argumentatif">{grid}</div>\n'
-    )
+    return f'<div class="carre-argumentatif">{grid}</div>\n'
 
 
-def _render_decomp_tree(entry, decomp_map, op_map):
-    f1, f2 = entry["fondateur1"], entry["fondateur2"]
+def _render_decomp_tree(entry, aspect_item, decomp_map, op_map):
+    f1 = aspect_item.get("fondateur1", "")
+    f2 = aspect_item.get("fondateur2", "")
 
     def _decomposable(w):
         return bool(w) and (w in decomp_map or len(_split_primitive(w)) >= 2)
 
     if not _decomposable(f1) and not _decomposable(f2):
         return ""
-    inner = _render_decomp_node(entry["headword"], decomp_map, op_map, set(), 0)
-    return (
-        '<div class="section-title">Décomposition en fondateurs</div>\n'
-        f'<div class="decomp-tree tree"><ul><li>{inner}</li></ul></div>\n'
-    )
+    temp_map = dict(decomp_map)
+    temp_map[entry["headword"]] = (f1, f2)
+    inner = _render_decomp_node(entry["headword"], temp_map, op_map, set(), 0)
+    return f'<div class="decomp-tree tree"><ul><li>{inner}</li></ul></div>\n'
 
 
-def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index):
+PREFIXES_COMPOSÉS = {"DEVOIR", "POUVOIR", "VOULOIR", "ÊTRE", "AVOIR"}
+
+
+def _build_fondateur_index(entries):
+    """Index inversé : mot → liste de headwords dont il est fondateur.
+    Gère aussi les fondateurs composés (POUVOIR AMÉLIORER → AMÉLIORER,
+    ÊTRE ARGENT → ARGENT, AVOIR ARGENT → ARGENT)."""
+    idx = {}
+    for e in entries:
+        hw = e["headword"]
+        for asp in e.get("signification", {}).get("interne", []):
+            for key in ("fondateur1", "fondateur2"):
+                f = asp.get(key, "").strip()
+                if f:
+                    idx.setdefault(f, []).append(hw)
+                    parts = f.split()
+                    if len(parts) >= 2 and parts[0] in PREFIXES_COMPOSÉS:
+                        base = " ".join(parts[1:])
+                        idx.setdefault(base, []).append(hw)
+    for f in idx:
+        idx[f] = sorted(set(idx[f]))
+    return idx
+
+
+def _build_qb_source_index(entries):
+    """Index : quasi-bloc normalisé → liste de headwords dont l'aspect interne le lexicalise.
+    Pour chaque qb L (R), on cherche les aspects L DC R, L PT R, L DC flip(R), L PT flip(R)."""
+    aspect_to_hw = {}
+    for e in entries:
+        for asp in e.get("signification", {}).get("interne", []):
+            key = _normalize_aspect_for_match(asp.get("aspect", ""))
+            if key:
+                aspect_to_hw.setdefault(key, []).append(e["headword"])
+
+    idx = {}
+    for e in entries:
+        for qb_item in e.get("signification", {}).get("externe", []):
+            qb = qb_item.get("quasibloc", "")
+            m = re.match(r'^(.*?)\s*\((.*)\)\s*$', qb)
+            if not m:
+                continue
+            left, right = m.group(1).strip(), m.group(2).strip()
+            if right.startswith("NEG "):
+                flipped = right[4:]
+            else:
+                flipped = "NEG " + right
+            sources = set()
+            for conn in ("DC", "PT"):
+                for r in (right, flipped):
+                    candidate = f"{left} {conn} {r}"
+                    key = _normalize_aspect_for_match(candidate)
+                    for hw in aspect_to_hw.get(key, []):
+                        sources.add(hw)
+            if sources:
+                qb_norm = re.sub(r"\s+", " ", qb).strip().lower()
+                idx[(e["headword"], qb_norm)] = sorted(sources)
+    return idx
+
+
+def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index, fondateur_index, qb_source_index):
     html = ""
 
     for letter in sorted(by_letter.keys()):
@@ -470,7 +548,6 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                     <button class="btn-net" data-hw="{headword}">◉ Réseau</button>
                 </div>
                 <div class="headword">{headword}{paradox_badge}</div>
-                <div class="fondateurs">Termes fondateurs : <span>{entry["fondateur1"]} — {entry["fondateur2"]}</span></div>
             '''
             if entry.get("template_syntaxique"):
                 html += (
@@ -479,11 +556,27 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                     f'{colorize_formula(entry["template_syntaxique"])}'
                     f'</span></div>\n'
                 )
-            # Signification interne
+            # Fondateur de
+            children = fondateur_index.get(headword, [])
+            if children:
+                links = " · ".join(
+                    f'<span class="tree-label tree-label--entry" data-entry="{w}">{w}</span>'
+                    for w in children
+                )
+                html += '<div class="section-title">Fondateur de</div>\n'
+                html += f'<div class="fondateur-de">{links}</div>\n'
+
+            # Signification interne — chaque aspect avec ses fondateurs, critères, carré, arbre
             if entry["signification"]["interne"]:
                 html += '<div class="section-title">Signification interne (aspects)</div>\n'
-                for item in entry["signification"]["interne"]:
+                for asp_idx, item in enumerate(entry["signification"]["interne"], 1):
+                    f1 = item.get("fondateur1", "")
+                    f2 = item.get("fondateur2", "")
+                    html += '<div class="aspect-group">\n'
+                    html += f'<div class="aspect-num">Aspect {asp_idx}</div>\n'
                     html += '<div class="aspect">\n'
+                    if f1 and f2:
+                        html += f'<div class="fondateurs">Termes fondateurs : <span>{f1} — {f2}</span></div>\n'
                     html += f'<div class="formula">{colorize_formula(item["aspect"])}</div>\n'
                     for ex in item["exemples"]:
                         html += f'''<div class="exemple">
@@ -491,11 +584,47 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                             <span class="ea">{ex["ea"]}</span>
                         </div>\n'''
                     html += '</div>\n'
-            
+                    # Critères de cet aspect
+                    if item.get("criteres"):
+                        html += '<div class="criteres">\n'
+                        for c in item["criteres"]:
+                            type_name = types_criteres.get(str(c["type"]), f"type {c['type']}")
+                            html += f'''<div class="critere">
+                                <span class="critere-type">{type_name}</span>
+                                <span>{c["texte"]}</span>
+                            </div>\n'''
+                        html += '</div>\n'
+                    # Carré argumentatif de cet aspect
+                    carre_html = _render_carre(entry, item, aspect_index)
+                    if carre_html:
+                        html += '<details class="collapsible">\n'
+                        html += (
+                            '<summary class="collapsible-toggle">Carré argumentatif'
+                            '<button class="section-info btn-carre-info" '
+                            'title="Rappel du layout (Carel, Parler 2023)">?</button>'
+                            '</summary>\n'
+                        )
+                        html += carre_html
+                        html += '</details>\n'
+                    # Décomposition en fondateurs de cet aspect
+                    decomp_html = _render_decomp_tree(entry, item, decomp_map, op_map)
+                    if decomp_html:
+                        html += '<details class="collapsible">\n'
+                        html += (
+                            '<summary class="collapsible-toggle">Décomposition en fondateurs'
+                            '<button class="section-info btn-decomp-info" '
+                            'title="Approximation">?</button>'
+                            '</summary>\n'
+                        )
+                        html += decomp_html
+                        html += '</details>\n'
+                    html += '</div>\n'
+
             # Signification externe
             if entry["signification"]["externe"]:
                 html += '<div class="section-title">Signification externe (quasi-blocs)</div>\n'
-                for item in entry["signification"]["externe"]:
+                for qb_idx, item in enumerate(entry["signification"]["externe"], 1):
+                    html += f'<div class="qb-num">Quasi-bloc {qb_idx}</div>\n'
                     html += '<div class="quasibloc">\n'
                     html += f'<div class="formula">{colorize_formula(item["quasibloc"])}</div>\n'
                     for ex in item["exemples"]:
@@ -503,28 +632,19 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                             <span class="phrase">{ex["phrase"]}</span>
                             <span class="ea">{ex["ea"]}</span>
                         </div>\n'''
+                    qb_norm = re.sub(r"\s+", " ", item["quasibloc"]).strip().lower()
+                    sources = qb_source_index.get((headword, qb_norm), [])
+                    if sources:
+                        links = " · ".join(
+                            f'<span class="tree-label tree-label--entry" data-entry="{w}">{w}</span>'
+                            for w in sources
+                        )
+                        html += f'<div class="qb-source">Lexicalisé par : {links}</div>\n'
                     html += '</div>\n'
-            
-            # Critères
-            if entry.get("criteres"):
-                html += '<div class="criteres">\n'
-                for c in entry["criteres"]:
-                    type_name = types_criteres.get(str(c["type"]), f"type {c['type']}")
-                    html += f'''<div class="critere">
-                        <span class="critere-type">{type_name}</span>
-                        <span>{c["texte"]}</span>
-                    </div>\n'''
-                html += '</div>\n'
-            
+
             # Nota bene
             if entry.get("nb"):
                 html += f'<div class="nb"><span class="nb-label">NB</span> {entry["nb"]}</div>\n'
-
-            # Carré argumentatif
-            html += _render_carre(entry, aspect_index)
-
-            # Décomposition en fondateurs (tout en bas)
-            html += _render_decomp_tree(entry, decomp_map, op_map)
 
             html += '</div>\n'
     
@@ -543,13 +663,14 @@ def generate_html(entries, types_criteres, template):
             by_letter[letter] = []
         by_letter[letter].append(entry)
     
-    # Grouper par bloc
+    # Grouper par bloc (paires de fondateurs uniques)
     by_bloc = {}
     for entry in sorted_entries:
-        fondateurs = f"{entry['fondateur1']} — {entry['fondateur2']}"
-        if fondateurs not in by_bloc:
-            by_bloc[fondateurs] = []
-        by_bloc[fondateurs].append(entry)
+        for f1, f2 in _all_fondateur_pairs(entry):
+            fondateurs = f"{f1} — {f2}"
+            if fondateurs not in by_bloc:
+                by_bloc[fondateurs] = []
+            by_bloc[fondateurs].append(entry)
     
     # Remplacements
     html = template
@@ -561,7 +682,9 @@ def generate_html(entries, types_criteres, template):
     decomp_map = _build_decomp_map(entries)
     op_map = _build_operator_map(entries)
     aspect_index = _build_aspect_index(entries)
-    html = html.replace("{{ENTRIES}}", generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index))
+    fondateur_index = _build_fondateur_index(sorted_entries)
+    qb_source_index = _build_qb_source_index(sorted_entries)
+    html = html.replace("{{ENTRIES}}", generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index, fondateur_index, qb_source_index))
     html = html.replace("{{ENTRIES_JSON}}", json.dumps(
         {e["headword"]: e for e in sorted_entries}, ensure_ascii=False
     ))
@@ -583,19 +706,21 @@ def update_network_data(entries):
     seen = set()
     for e in sorted(entries, key=lambda x: x["headword"]):
         hw = e["headword"]
+        f1, f2 = _entry_fondateurs(e)
         nodes.append({
             "h": hw,
-            "f1": e.get("fondateur1", "") or "",
-            "f2": e.get("fondateur2", "") or "",
+            "f1": f1,
+            "f2": f2,
         })
         seen.add(hw)
 
     leaf_seen = set()
     for e in entries:
-        for f in (e.get("fondateur1", ""), e.get("fondateur2", "")):
-            if f and f not in seen and f not in leaf_seen:
-                nodes.append({"h": f, "f1": "", "f2": ""})
-                leaf_seen.add(f)
+        for f1, f2 in _all_fondateur_pairs(e):
+            for f in (f1, f2):
+                if f and f not in seen and f not in leaf_seen:
+                    nodes.append({"h": f, "f1": "", "f2": ""})
+                    leaf_seen.add(f)
 
     raw_js = "const raw = " + json.dumps(nodes, ensure_ascii=False) + ";"
     html = NETWORK_PATH.read_text(encoding="utf-8")

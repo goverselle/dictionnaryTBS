@@ -12,6 +12,24 @@ from collections import Counter
 
 DICT_PATH = Path(__file__).resolve().parent.parent / "data" / "dictionnaire.json"
 
+
+def _entry_fondateurs(entry):
+    aspects = entry.get("signification", {}).get("interne", [])
+    if aspects:
+        return aspects[0].get("fondateur1", ""), aspects[0].get("fondateur2", "")
+    return "", ""
+
+
+def _all_fondateur_pairs(entry):
+    pairs = []
+    for asp in entry.get("signification", {}).get("interne", []):
+        f1, f2 = asp.get("fondateur1", ""), asp.get("fondateur2", "")
+        if f1 or f2:
+            if (f1, f2) not in pairs:
+                pairs.append((f1, f2))
+    return pairs
+
+
 def main():
     with open(DICT_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -19,23 +37,19 @@ def main():
     entries = {e["headword"]: e for e in data}
     headwords = set(entries.keys())
 
-    # Primitifs = entrées dont fondateur1 et fondateur2 sont vides
     primitifs = set()
     for e in data:
-        f1 = e.get("fondateur1", "").strip()
-        f2 = e.get("fondateur2", "").strip()
-        if not f1 and not f2:
+        pairs = _all_fondateur_pairs(e)
+        if not pairs:
             primitifs.add(e["headword"])
 
-    # Orphelins = fondateurs pas dans le dictionnaire
     orphans = Counter()
     for e in data:
-        for f in ("fondateur1", "fondateur2"):
-            v = e.get(f, "").strip()
-            if v and v not in headwords:
-                orphans[v] += 1
+        for f1, f2 in _all_fondateur_pairs(e):
+            for f in (f1, f2):
+                if f and f not in headwords:
+                    orphans[f] += 1
 
-    # Profondeur : combien de niveaux de décomposition avant un primitif ou orphelin ?
     def depth(hw, visited=None):
         if visited is None:
             visited = set()
@@ -43,17 +57,16 @@ def main():
             return 0
         visited.add(hw)
         e = entries[hw]
-        f1 = e.get("fondateur1", "").strip()
-        f2 = e.get("fondateur2", "").strip()
+        f1, f2 = _entry_fondateurs(e)
         if not f1 and not f2:
-            return 0  # primitif
+            return 0
         d1 = depth(f1, visited.copy()) if f1 else 0
         d2 = depth(f2, visited.copy()) if f2 else 0
         return 1 + max(d1, d2)
 
     print(f"=== AUDIT DU GRAPHE TBS ===\n")
     print(f"Entrées totales :      {len(data)}")
-    print(f"Primitifs (f1=f2='') : {len(primitifs)}")
+    print(f"Primitifs (sans fondateurs) : {len(primitifs)}")
     if primitifs:
         print(f"  → {', '.join(sorted(primitifs))}")
     print(f"Orphelins :            {len(orphans)}")
@@ -65,7 +78,8 @@ def main():
     depths = {}
     for hw in headwords:
         e = entries[hw]
-        if e.get("fondateur1", "").strip():
+        f1, _ = _entry_fondateurs(e)
+        if f1:
             depths[hw] = depth(hw)
     for d in sorted(set(depths.values())):
         words = [hw for hw, dd in depths.items() if dd == d]
@@ -73,10 +87,9 @@ def main():
         if len(words) <= 10:
             print(f"    → {', '.join(sorted(words))}")
 
-    # Suggestions
     print(f"\n=== À FAIRE ===")
     print(f"1. Marquer ~{min(10, len(orphans))} fondateurs fréquents comme PRIMITIFS")
-    print(f"   (ajouter des entrées avec fondateur1=fondateur2='' )")
+    print(f"   (ajouter des entrées sans fondateurs)")
     print(f"   Candidats : ÊTRE, AVOIR, FAIRE, DIRE, SAVOIR, VOIR, AIMER")
     print(f"2. Décomposer les {len(orphans)} orphelins restants")
     print(f"   (les plus urgents : ceux à fréquence ≥ 3)")

@@ -2,10 +2,25 @@
   {
     "headword": "ACCIDENT",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG Y ÊTRE ACCIDENT (X MOURIR DE Y)",
+          "exemples": [
+            {
+              "phrase": "Il est mort de mort naturelle.",
+              "ea": "Ce n'était pas un accident, pourtant il en est mort."
+            },
+            {
+              "phrase": "Elle s'est éteinte paisiblement.",
+              "ea": "Rien ne lui est survenu de violent, pourtant elle est morte."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE ACCIDENT (X MOURIR DE Y)",
           "exemples": [
@@ -29,11 +44,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ACHETER",
     "letter": "A",
+    "fondateur1": "PAYER",
+    "fondateur2": "AVOIR",
     "template_syntaxique": "X ACHETER Y À Z",
     "signification": {
       "interne": [
@@ -44,11 +62,7 @@
               "phrase": "Pierre achète les pommes à Marie.",
               "ea": "Pierre paye à Marie, donc Pierre a des pommes."
             }
-          ],
-          "fondateur1": "PAYER",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -63,11 +77,14 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Exemple de négation métalinguistique : « Pierre n'a pas acheté les pommes, on les lui a donné. »"
   },
   {
     "headword": "AIMER",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -91,11 +108,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "AMÉLIORER",
     "letter": "A",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE MIEUX",
     "signification": {
       "interne": [
         {
@@ -109,20 +129,7 @@
               "phrase": "Améliorer les conditions de travail.",
               "ea": "On fait quelque chose, donc les conditions sont mieux."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE MIEUX",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : si on fait quelque chose, généralement c'est pour que ça aille mieux."
-            },
-            {
-              "type": 5,
-              "texte": "« J'ai tout essayé, ça ne s'améliore pas » (X FAIRE PT Y NEG ÊTRE MIEUX) : transgression du lien normatif."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -137,11 +144,23 @@
         }
       ]
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : si on fait quelque chose, généralement c'est pour que ça aille mieux."
+      },
+      {
+        "type": 5,
+        "texte": "« J'ai tout essayé, ça ne s'améliore pas » (X FAIRE PT Y NEG ÊTRE MIEUX) : transgression du lien normatif."
+      }
+    ],
     "template_syntaxique": "X AMÉLIORER Y"
   },
   {
     "headword": "ANCIEN",
     "letter": "A",
+    "fondateur1": "ÊTRE VIEUX",
+    "fondateur2": "VALORISER",
     "signification": {
       "interne": [
         {
@@ -155,25 +174,25 @@
               "phrase": "Les temps anciens.",
               "ea": "Ces temps sont vieux, pourtant on les valorise."
             }
-          ],
-          "fondateur1": "ÊTRE VIEUX",
-          "fondateur2": "VALORISER",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Aspect transgressif : la doxa veut qu'on ne valorise pas ce qui est vieux, pourtant ANCIEN valorise."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 5,
+        "texte": "Aspect transgressif : la doxa veut qu'on ne valorise pas ce qui est vieux, pourtant ANCIEN valorise."
+      }
+    ],
     "template_syntaxique": "Y ÊTRE ANCIEN"
   },
   {
     "headword": "ANXIEUX",
     "letter": "A",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 2,
     "signification": {
       "interne": [
         {
@@ -183,20 +202,19 @@
               "phrase": "Vous êtes anxieux.",
               "ea": "Ce n'est pas grave, pourtant vous vous en inquiétez."
             }
-          ],
-          "fondateur1": "ÊTRE GRAVE",
-          "fondateur2": "S'INQUIÉTER",
-          "criteres": [],
-          "square_value": 2
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE ANXIEUX"
   },
   {
     "headword": "APPARAÎTRE",
     "letter": "A",
+    "fondateur1": "ÊTRE",
+    "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
         {
@@ -210,20 +228,19 @@
               "phrase": "Le soleil apparaît.",
               "ea": "Le soleil n'était pas là, pourtant il est là maintenant."
             }
-          ],
-          "fondateur1": "ÊTRE",
-          "fondateur2": "ÊTRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X APPARAÎTRE"
   },
   {
     "headword": "APPRENDRE",
     "letter": "A",
+    "fondateur1": "SAVOIR",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -233,14 +250,19 @@
               "phrase": "J'ai appris que ton père est Niels Bohr.",
               "ea": "Je ne savais pas que ton père était Niels Bohr, pourtant je le sais maintenant."
             }
-          ],
-          "fondateur1": "SAVOIR",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "X APPRENDRE Y (PERF (NEG X ATTENDRE Y))",
+          "exemples": [
+            {
+              "phrase": "Son comportement m'étonne.",
+              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
+            }
+          ]
+        },
         {
           "quasibloc": "X APPRENDRE Y (PERF (X ATTENDRE Y))",
           "exemples": [
@@ -252,12 +274,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »",
     "template_syntaxique": "X APPRENDRE Y"
   },
   {
     "headword": "APPUYER",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -272,11 +297,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ARGENT",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -291,11 +319,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ARRIVER",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -314,11 +345,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ASYMPTOMATIQUE",
     "letter": "A",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -332,25 +366,33 @@
               "phrase": "Une infection asymptomatique.",
               "ea": "Il est infecté, pourtant il n'y a pas de signes."
             }
-          ],
-          "fondateur1": "ÊTRE MALADE",
-          "fondateur2": "SIGNES",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES.",
     "template_syntaxique": "X ÊTRE ASYMPTOMATIQUE"
   },
   {
     "headword": "ATTEINDRE",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X POUVOIR ATTEINDRE Y (NEG X DEVOIR FAIRE UN EFFORT)",
+          "exemples": [
+            {
+              "phrase": "A2 est un bas niveau de la connaissance d'une langue.",
+              "ea": "Vous pouvez atteindre le niveau A2 sans faire trop d'effort."
+            }
+          ]
+        },
         {
           "quasibloc": "X FAIRE UN EFFORT (X ATTEINDRE Y)",
           "exemples": [
@@ -382,6 +424,19 @@
           ]
         },
         {
+          "quasibloc": "X VISER Y (NEG X ATTEINDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Une réponse imprécise.",
+              "ea": "On visait à exprimer quelque chose, pourtant on ne l'a pas atteint."
+            },
+            {
+              "phrase": "Dire des choses imprécises.",
+              "ea": "Elle voulait dire quelque chose, pourtant elle n'a pas réussi à le transmettre."
+            }
+          ]
+        },
+        {
           "quasibloc": "X POUVOIR ATTEINDRE Y (X DEVOIR FAIRE UN EFFORT)",
           "exemples": [
             {
@@ -391,11 +446,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ATTENDRE",
     "letter": "A",
+    "fondateur1": "DEVOIR SE PASSER",
+    "fondateur2": "RESTER",
     "signification": {
       "interne": [
         {
@@ -405,19 +463,19 @@
               "phrase": "Pierre attend le bus.",
               "ea": "Le bus devrait arriver, donc Pierre reste là."
             }
-          ],
-          "fondateur1": "DEVOIR SE PASSER",
-          "fondateur2": "RESTER",
-          "criteres": [
-            {
-              "type": 1,
-              "texte": "« une vraie attente » (ATT-X DC REAL-Y) : peu de certitude que ça arrive, pourtant on reste longtemps."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "NEG X ATTENDRE Y (Y SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "La réponse est immédiate.",
+              "ea": "On n'a pas attendu, pourtant la réponse arrive."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG X ATTENDRE Y (NEG Y SE PASSER)",
           "exemples": [
@@ -429,11 +487,20 @@
         }
       ]
     },
+    "criteres": [
+      {
+        "type": 1,
+        "texte": "« une vraie attente » (ATT-X DC REAL-Y) : peu de certitude que ça arrive, pourtant on reste longtemps."
+      }
+    ],
     "template_syntaxique": "X ATTENDRE Y"
   },
   {
     "headword": "AVARE",
     "letter": "A",
+    "fondateur1": "DEVOIR DONNER",
+    "fondateur2": "DONNER",
+    "square_value": 1,
     "signification": {
       "interne": [
         {
@@ -455,21 +522,20 @@
               "phrase": "La nature est avare des joies qu'elle nous donne.",
               "ea": "La nature devrait nous donner de la joie, pourtant elle ne nous en donne pas."
             }
-          ],
-          "fondateur1": "DEVOIR DONNER",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": 1
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "AVARE se combine naturellement avec « avare de Y » car DONNER exige un complément d'objet. Les noms sujets de DONNER (Dieu, mère, père, gouvernement, ciel, lune) se combinent avec AVARE : « un gouvernement avare de mesures », « une lune avare de lumière ». L'hypallage « lumière avare » se comprend par transfert : c'est la source (lune, ciel) qui est avare, non la lumière. « Cadeau avare » est contradictoire : un cadeau est un don accompli, or AVARE signifie l'absence de don.",
     "template_syntaxique": "X ÊTRE AVARE DE Y AVEC Z"
   },
   {
     "headword": "AVOIR",
     "letter": "A",
+    "fondateur1": null,
+    "fondateur2": null,
     "template_syntaxique": "X AVOIR Y",
     "signification": {
       "interne": [],
@@ -480,6 +546,19 @@
             {
               "phrase": "Pierre achète les pommes à Marie.",
               "ea": "Pierre paye à Marie, donc Pierre a des pommes."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X FAIRE (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il a eu la chance de le rencontrer.",
+              "ea": "Il n'a pas fait d'effort, pourtant il l'a rencontré."
+            },
+            {
+              "phrase": "Quelle chance !",
+              "ea": "Tu n'as rien fait, pourtant tu as obtenu."
             }
           ]
         },
@@ -515,11 +594,33 @@
           ]
         },
         {
+          "quasibloc": "X FAIRE (NEG X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "C'est difficile à croire.",
+              "ea": "On fait l'effort, pourtant on n'arrive pas à croire."
+            },
+            {
+              "phrase": "Un problème difficile.",
+              "ea": "On travaille dessus, pourtant on ne trouve pas la solution."
+            }
+          ]
+        },
+        {
           "quasibloc": "PERF (X AVOIR Y) (Z AVOIR Y)",
           "exemples": [
             {
               "phrase": "Pierre donne l'objet à Paul.",
               "ea": "Pierre a eu l'objet, de ce fait c'est Paul qui a l'objet maintenant."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X FAIRE Y (NEG X AVOIR Z)",
+          "exemples": [
+            {
+              "phrase": "J'ai échoué à l'examen.",
+              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
             }
           ]
         },
@@ -603,6 +704,28 @@
             {
               "phrase": "Pierre partage son gâteau avec Marie.",
               "ea": "Pierre a le gâteau, donc il en donne à Marie."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE NÉCESSAIRE (NEG X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est pauvre.",
+              "ea": "La voiture lui est nécessaire pour se rendre au travail, pourtant il ne peut pas l'acheter."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE CHER (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est riche.",
+              "ea": "La voiture est chère, pourtant Pierre l'a."
+            },
+            {
+              "phrase": "Un pays riche.",
+              "ea": "Ces ressources coûtent cher, pourtant le pays les a."
             }
           ]
         },
@@ -692,11 +815,14 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "AVOIR ARGENT",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -720,21 +846,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "AVOIR BEAUCOUP",
     "letter": "A",
+    "fondateur1": "AVOIR",
+    "fondateur2": "BEAUCOUP",
     "template_syntaxique": "X AVOIR BEAUCOUP Y",
     "signification": {
       "interne": [],
       "externe": []
     },
+    "criteres": [],
     "nb": ""
   },
   {
     "headword": "AVOIR BESOIN",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -758,6 +890,15 @@
             {
               "phrase": "L'argent nécessaire pour le voyage.",
               "ea": "Tu as besoin de faire le voyage, donc tu dois avoir l'argent."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Z AVOIR BESOIN DE Y (Z DONNER Y À X)",
+          "exemples": [
+            {
+              "phrase": "Elle a sacrifié son écharpe pour toi.",
+              "ea": "Elle avait besoin de l'écharpe elle-même, pourtant elle te l'a donnée."
             }
           ]
         },
@@ -793,11 +934,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "AVOIR DETTE",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -812,11 +956,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "AVOIR LA CHANCE",
     "letter": "A",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -830,39 +977,54 @@
               "phrase": "Quelle chance !",
               "ea": "Tu n'as rien fait, pourtant tu as obtenu."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 5,
+        "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
+      }
+    ],
     "template_syntaxique": "X AVOIR LA CHANCE DE Y"
   },
   {
     "headword": "AVOIR PEU",
     "letter": "A",
+    "fondateur1": "AVOIR",
+    "fondateur2": "PEU",
     "template_syntaxique": "X AVOIR PEU Y",
     "signification": {
       "interne": [],
       "externe": []
     },
+    "criteres": [],
     "nb": "AVOIR PEU est le converse d'AVOIR BEAUCOUP dans le bloc AVOIR — (DEVOIR DONNER)."
   },
   {
     "headword": "AVOIR PEUR",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG DANGER (AVOIR PEUR)",
+          "exemples": [
+            {
+              "phrase": "Il n'y a pas de danger, pourtant il a peur.",
+              "ea": "Il n'y a pas de danger, pourtant il a peur."
+            },
+            {
+              "phrase": "Personne ne le menace, pourtant il a peur.",
+              "ea": "Personne ne le menace, pourtant il a peur."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG DANGER (NEG AVOIR PEUR)",
           "exemples": [
@@ -877,15 +1039,31 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "AVOIR SIGNES",
     "letter": "A",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X ÊTRE MALADE (NEG X AVOIR SIGNES)",
+          "exemples": [
+            {
+              "phrase": "Le patient est asymptomatique.",
+              "ea": "Il est malade, pourtant il n'a pas de signes."
+            },
+            {
+              "phrase": "Une infection asymptomatique.",
+              "ea": "Il est infecté, pourtant il n'y a pas de signes."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG X ÊTRE MALADE (NEG X AVOIR SIGNES)",
           "exemples": [
@@ -896,6 +1074,19 @@
             {
               "phrase": "Les résultats montrent qu'il est en bonne santé.",
               "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X ÊTRE MALADE (X AVOIR SIGNES)",
+          "exemples": [
+            {
+              "phrase": "Ses douleurs sont psychosomatiques.",
+              "ea": "Il n'est pas malade, pourtant il a des signes."
+            },
+            {
+              "phrase": "Un trouble psychosomatique.",
+              "ea": "Il n'est pas malade organiquement, pourtant il y a des signes."
             }
           ]
         },
@@ -913,11 +1104,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "BAS",
     "letter": "B",
+    "fondateur1": "POUVOIR ATTEINDRE",
+    "fondateur2": "DEVOIR FAIRE UN EFFORT",
     "signification": {
       "interne": [
         {
@@ -927,20 +1121,19 @@
               "phrase": "A2 est un bas niveau de la connaissance d'une langue.",
               "ea": "Vous pouvez atteindre le niveau A2 sans faire trop d'effort."
             }
-          ],
-          "fondateur1": "POUVOIR ATTEINDRE",
-          "fondateur2": "DEVOIR FAIRE UN EFFORT",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE BAS"
   },
   {
     "headword": "BEAU",
     "letter": "B",
+    "fondateur1": "VOIR",
+    "fondateur2": "AIMER",
     "signification": {
       "interne": [
         {
@@ -950,11 +1143,7 @@
               "phrase": "Cette image est belle.",
               "ea": "J'ai regardé cette image, donc je l'ai aimée."
             }
-          ],
-          "fondateur1": "VOIR",
-          "fondateur2": "AIMER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -969,15 +1158,27 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE BEAU"
   },
   {
     "headword": "BEAUCOUP",
     "letter": "B",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y COÛTER W (NEG W ÊTRE BEAUCOUP)",
+          "exemples": [
+            {
+              "phrase": "Ces pommes sont bon marché.",
+              "ea": "Ces pommes coûtent un certain prix, pourtant ce n'est pas beaucoup."
+            }
+          ]
+        },
         {
           "quasibloc": "Y COÛTER W (W ÊTRE BEAUCOUP)",
           "exemples": [
@@ -988,11 +1189,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "BON MARCHÉ",
     "letter": "B",
+    "fondateur1": "COÛTER",
+    "fondateur2": "ÊTRE BEAUCOUP",
     "signification": {
       "interne": [
         {
@@ -1002,21 +1206,20 @@
               "phrase": "Ces pommes sont bon marché.",
               "ea": "Ces pommes coûtent un certain prix, pourtant ce n'est pas beaucoup."
             }
-          ],
-          "fondateur1": "COÛTER",
-          "fondateur2": "ÊTRE BEAUCOUP",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP.",
     "template_syntaxique": "Y ÊTRE BON MARCHÉ"
   },
   {
     "headword": "BOUTON",
     "letter": "B",
+    "fondateur1": "APPUYER",
+    "fondateur2": "FONCTIONNER",
     "signification": {
       "interne": [
         {
@@ -1026,20 +1229,19 @@
               "phrase": "C'est un bouton.",
               "ea": "Si tu appuies sur ça, tu vas allumer la lampe."
             }
-          ],
-          "fondateur1": "APPUYER",
-          "fondateur2": "FONCTIONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UN BOUTON"
   },
   {
     "headword": "CAUSER",
     "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
@@ -1049,20 +1251,19 @@
               "phrase": "Pierre a causé l'effondrement du marché.",
               "ea": "Pierre a fait quelque chose, donc l'effondrement du marché s'est passé."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "SE PASSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X CAUSER Y"
   },
   {
     "headword": "CESSER",
     "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -1072,21 +1273,20 @@
               "phrase": "Pierre a cessé de fumer.",
               "ea": "Pierre a fumé, pourtant Pierre ne fume plus."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus.",
     "template_syntaxique": "X CESSER DE Y"
   },
   {
     "headword": "CHANGER",
     "letter": "C",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -1101,11 +1301,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "CHER",
     "letter": "C",
+    "fondateur1": "COÛTER",
+    "fondateur2": "ÊTRE BEAUCOUP",
     "signification": {
       "interne": [
         {
@@ -1115,14 +1318,23 @@
               "phrase": "Ce manteau est cher.",
               "ea": "Ce manteau coûte un certain prix, donc c'est beaucoup."
             }
-          ],
-          "fondateur1": "COÛTER",
-          "fondateur2": "ÊTRE BEAUCOUP",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE CHER (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est riche.",
+              "ea": "La voiture est chère, pourtant Pierre l'a."
+            },
+            {
+              "phrase": "Un pays riche.",
+              "ea": "Ces ressources coûtent cher, pourtant le pays les a."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE CHER (NEG X AVOIR Y)",
           "exemples": [
@@ -1138,12 +1350,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP. La règle « ce qui coûte ne se donne pas » est portée par COÛTER (quasi-bloc externe), dont CHER hérite par décomposition.",
     "template_syntaxique": "Y ÊTRE CHER"
   },
   {
     "headword": "CHERCHER",
     "letter": "C",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -1157,20 +1372,20 @@
               "phrase": "Chercher un emploi.",
               "ea": "Il veut avoir un emploi, donc il fait des démarches."
             }
-          ],
-          "fondateur1": "VOULOIR AVOIR",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X CHERCHER Y"
   },
   {
     "headword": "COMMENCER",
     "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "FAIRE",
+    "square_value": 2,
     "signification": {
       "interne": [
         {
@@ -1184,21 +1399,20 @@
               "phrase": "Il commence ses études.",
               "ea": "Il ne faisait pas d'études, pourtant il en fait maintenant."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": 2
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X COMMENCER À Y",
     "nb": "COMMENCER partage le bloc FAIRE — FAIRE avec CESSER et CONTINUER. C'est le transposé de CESSER et le converse de CONTINUER."
   },
   {
     "headword": "COMPRENDRE",
     "letter": "C",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -1212,20 +1426,42 @@
               "phrase": "Je me suis réveillé et j'ai compris qu'il faisait déjà nuit, parce qu'il faisait noir.",
               "ea": "La noirceur à l'extérieur dit qu'il est déjà nuit, donc je le sais."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE DIFFICILE (X COMPRENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est intelligent.",
+              "ea": "Même si c'est difficile, Pierre comprend."
+            }
+          ]
+        },
         {
           "quasibloc": "X PARTAGER Y AVEC Z (X COMPRENDRE Z)",
           "exemples": [
             {
               "phrase": "Cette danse des abeilles est en fait une langue.",
               "ea": "Les abeilles partagent ceci, donc elles se comprennent."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X ADMETTRE Z (X COMPRENDRE W)",
+          "exemples": [
+            {
+              "phrase": "Je présuppose que la personne qui participe aux travaux de recherche le fait volontairement.",
+              "ea": "Si j'admets que les personnes le font volontairement, je peux comprendre qu'ils font de la recherche."
+            },
+            {
+              "phrase": "Comprendre ce texte présuppose des connaissances en histoire.",
+              "ea": "Avoir des connaissances préalables, donc ce texte est compris."
+            },
+            {
+              "phrase": "Cette théorie présuppose l'existence de la matière noire.",
+              "ea": "Si j'admets que la matière noire existe, je peux comprendre cette théorie."
             }
           ]
         },
@@ -1240,12 +1476,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Ce qui explique pourquoi les deux sont possibles : Z comprend X et Z comprend Y, c'est-à-dire comprendre quelqu'un et comprendre quelque chose.",
     "template_syntaxique": "X COMPRENDRE Y"
   },
   {
     "headword": "COMPULSIF",
     "letter": "C",
+    "fondateur1": "VOULOIR FAIRE",
+    "fondateur2": "POUVOIR S'EMPÊCHER",
     "signification": {
       "interne": [
         {
@@ -1255,21 +1494,21 @@
               "phrase": "Pierre achète compulsivement.",
               "ea": "Pierre ne veut pas acheter, pourtant il ne peut pas s'empêcher d'acheter."
             }
-          ],
-          "fondateur1": "VOULOIR FAIRE",
-          "fondateur2": "POUVOIR S'EMPÊCHER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Différence avec IMPULSIF : à analyser.",
     "template_syntaxique": "X ÊTRE COMPULSIF"
   },
   {
     "headword": "CONTINUER",
     "letter": "C",
+    "fondateur1": "FAIRE",
+    "fondateur2": "FAIRE",
+    "square_value": 3,
     "signification": {
       "interne": [
         {
@@ -1283,26 +1522,25 @@
               "phrase": "Il continue ses études.",
               "ea": "Il a fait ses études, donc il les fait encore."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : ce qu'on a fait, on continue de le faire."
-            }
-          ],
-          "square_value": 3
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qu'on a fait, on continue de le faire."
+      }
+    ],
     "template_syntaxique": "X CONTINUER DE Y",
     "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y)."
   },
   {
     "headword": "CONVAINCRE",
     "letter": "C",
+    "fondateur1": "DIRE",
+    "fondateur2": "PENSER",
     "signification": {
       "interne": [
         {
@@ -1312,21 +1550,21 @@
               "phrase": "Marie a convaincu Pierre de devenir un militant pour l'écologie.",
               "ea": "Marie dit des choses à Pierre, du fait de quoi il pense maintenant qu'il faut militer pour l'écologie."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "PENSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général.",
     "template_syntaxique": "Z CONVAINCRE X DE Y"
   },
   {
     "headword": "COOL",
     "letter": "C",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 4,
     "signification": {
       "interne": [
         {
@@ -1340,30 +1578,46 @@
               "phrase": "Il est cool.",
               "ea": "Rien n'est grave pour lui, donc il ne s'en inquiète pas."
             }
-          ],
-          "fondateur1": "ÊTRE GRAVE",
-          "fondateur2": "S'INQUIÉTER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : si ce n'est pas grave, on ne s'inquiète pas."
-            }
-          ],
-          "square_value": 4
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : si ce n'est pas grave, on ne s'inquiète pas."
+      }
+    ],
     "template_syntaxique": "X ÊTRE COOL",
     "nb": "Anglicisme. COOL est le converse d'ANXIEUX dans le carré argumentatif du bloc ÊTRE GRAVE — S'INQUIÉTER."
   },
   {
     "headword": "CORRESPONDRE",
     "letter": "C",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X GENRER Z DE Y (NEG Y CORRESPONDRE À Z)",
+          "exemples": [
+            {
+              "phrase": "Sa mère continue de le mégenrer.",
+              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
+            },
+            {
+              "phrase": "Je passe mon temps à me demander si je dois reprendre les gens quand ils me mégenrent.",
+              "ea": "Les gens me genrent d'une certaine façon, pourtant elle ne correspond pas à ce que je suis."
+            },
+            {
+              "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
+              "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
+            }
+          ]
+        },
         {
           "quasibloc": "X GENRER Z DE Y (Y CORRESPONDRE À Z)",
           "exemples": [
@@ -1382,11 +1636,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "COURAGEUX",
     "letter": "C",
+    "fondateur1": "FAIRE PEUR",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -1400,20 +1657,19 @@
               "phrase": "Une décision courageuse.",
               "ea": "Cette décision fait peur, pourtant on la prend."
             }
-          ],
-          "fondateur1": "FAIRE PEUR",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE COURAGEUX"
   },
   {
     "headword": "COÛTER",
     "letter": "C",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "DEVOIR PAYER",
     "signification": {
       "interne": [
         {
@@ -1423,14 +1679,19 @@
               "phrase": "Ce manteau coûte 200 euros.",
               "ea": "Tu veux avoir ce manteau, donc tu dois payer 200 euros."
             }
-          ],
-          "fondateur1": "VOULOIR AVOIR",
-          "fondateur2": "DEVOIR PAYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y COÛTER W (NEG W ÊTRE BEAUCOUP)",
+          "exemples": [
+            {
+              "phrase": "Ces pommes sont bon marché.",
+              "ea": "Ces pommes coûtent un certain prix, pourtant ce n'est pas beaucoup."
+            }
+          ]
+        },
         {
           "quasibloc": "Y COÛTER W (W ÊTRE BEAUCOUP)",
           "exemples": [
@@ -1454,6 +1715,23 @@
           ]
         },
         {
+          "quasibloc": "NEG Y COÛTER (NEG X VOULOIR DÉPENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est radin : il n'a jamais offert un café à personne sur son lieu de travail.",
+              "ea": "Le café ne coûte pas cher, pourtant Pierre ne veut pas dépenser pour l'offrir."
+            },
+            {
+              "phrase": "Pierre est radin : il refuse de dépanner des amis de quelques dizaines de centimes.",
+              "ea": "Quelques centimes ne coûtent rien, pourtant il ne veut pas les dépenser."
+            },
+            {
+              "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
+              "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
+            }
+          ]
+        },
+        {
           "quasibloc": "NEG Y COÛTER (X VOULOIR DÉPENSER Y)",
           "exemples": [
             {
@@ -1472,16 +1750,32 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Le quasi-bloc externe code le corollaire pragmatique : ce qui coûte n'est pas à donner gratuitement. Base de la nuance GÉNÉREUX (donne malgré le coût). CHER et BON MARCHÉ héritent de cette règle via la décomposition du bloc COÛTER — ÊTRE BEAUCOUP.",
     "template_syntaxique": "Y COÛTER W à X"
   },
   {
     "headword": "DANGER",
     "letter": "D",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG DANGER (AVOIR PEUR)",
+          "exemples": [
+            {
+              "phrase": "Il n'y a pas de danger, pourtant il a peur.",
+              "ea": "Il n'y a pas de danger, pourtant il a peur."
+            },
+            {
+              "phrase": "Personne ne le menace, pourtant il a peur.",
+              "ea": "Personne ne le menace, pourtant il a peur."
+            }
+          ]
+        },
         {
           "quasibloc": "DANGER (NEG FAIRE)",
           "exemples": [
@@ -1509,11 +1803,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "DENTS",
     "letter": "D",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR MORDRE",
     "signification": {
       "interne": [
         {
@@ -1523,20 +1820,19 @@
               "phrase": "Cette fille a des dents.",
               "ea": "Si elle a des dents, elle peut mordre."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "POUVOIR MORDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X AVOIR DES DENTS"
   },
   {
     "headword": "DETTE",
     "letter": "D",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
     "signification": {
       "interne": [
         {
@@ -1546,21 +1842,20 @@
               "phrase": "Pierre a une dette envers Marie.",
               "ea": "Marie a donné quelque chose à Pierre, donc Pierre doit le rendre à Marie."
             }
-          ],
-          "fondateur1": "DONNER",
-          "fondateur2": "DEVOIR RENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "DETTE a le même aspect que PRÊTER et EMPRUNTER, différencié par l'application : X (prêteur), Z (emprunteur), Y (dette).",
     "template_syntaxique": "Z AVOIR UNE DETTE ENVERS X"
   },
   {
     "headword": "DIFFICILE",
     "letter": "D",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -1574,19 +1869,19 @@
               "phrase": "Un problème difficile.",
               "ea": "On travaille dessus, pourtant on ne trouve pas la solution."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE DIFFICILE (X COMPRENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est intelligent.",
+              "ea": "Même si c'est difficile, Pierre comprend."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE DIFFICILE (NEG X COMPRENDRE Y)",
           "exemples": [
@@ -1598,11 +1893,19 @@
         }
       ]
     },
+    "criteres": [
+      {
+        "type": 5,
+        "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
+      }
+    ],
     "template_syntaxique": "Y ÊTRE DIFFICILE"
   },
   {
     "headword": "DIRE",
     "letter": "D",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -1656,6 +1959,19 @@
             {
               "phrase": "Fermez la porte.",
               "ea": "Je vous dis de fermer la porte, donc vous devez fermer la porte."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Z DIRE Y (X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Marie lit dans les pensées de Pierre.",
+              "ea": "Pierre n'a rien dit, pourtant Marie sait ce qu'il pense."
+            },
+            {
+              "phrase": "Tu lis dans mes pensées.",
+              "ea": "Je n'ai rien dit, pourtant tu sais ce que je pense."
             }
           ]
         },
@@ -1721,11 +2037,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "DISPARAÎTRE",
     "letter": "D",
+    "fondateur1": "ÊTRE",
+    "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
         {
@@ -1735,21 +2054,20 @@
               "phrase": "Le soleil a disparu.",
               "ea": "Le soleil était là, pourtant il n'est plus là."
             }
-          ],
-          "fondateur1": "ÊTRE",
-          "fondateur2": "ÊTRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Apparenté à PARTIR et MOURIR par la structure. PARTIR : PERF (X ÊTRE LÀ) PT NEG (X ÊTRE LÀ) — se rapporte au lieu. MOURIR : PERF (X VIVRE) PT NEG (X VIVRE) — se rapporte à la vie.",
     "template_syntaxique": "X DISPARAÎTRE"
   },
   {
     "headword": "DISTRAIRE",
     "letter": "D",
+    "fondateur1": "PENSER",
+    "fondateur2": "FAIRE PENSER À AUTRE CHOSE",
     "signification": {
       "interne": [
         {
@@ -1759,20 +2077,19 @@
               "phrase": "Tu me distrais.",
               "ea": "Je pensais à quelque chose, pourtant tu m'as fait penser à autre chose."
             }
-          ],
-          "fondateur1": "PENSER",
-          "fondateur2": "FAIRE PENSER À AUTRE CHOSE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X DISTRAIRE Z"
   },
   {
     "headword": "DONNER",
     "letter": "D",
+    "fondateur1": "AVOIR",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -1782,20 +2099,46 @@
               "phrase": "Pierre donne l'objet à Paul.",
               "ea": "Pierre a eu l'objet, de ce fait c'est Paul qui a l'objet maintenant."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "X DEVOIR DONNER Y À Z (NEG X DONNER Y À Z)",
+          "exemples": [
+            {
+              "phrase": "Mon mari est avare avec moi depuis notre mariage.",
+              "ea": "Il devrait me donner de l'argent, pourtant il ne m'en donne pas."
+            },
+            {
+              "phrase": "Il est très riche, mais il est avare !",
+              "ea": "Il devrait donner (car il est riche), pourtant il ne donne pas."
+            },
+            {
+              "phrase": "Notre chef est avare de compliments.",
+              "ea": "Le chef devrait nous donner des compliments, pourtant il ne nous en donne pas."
+            },
+            {
+              "phrase": "La nature est avare des joies qu'elle nous donne.",
+              "ea": "La nature devrait nous donner de la joie, pourtant elle ne nous en donne pas."
+            }
+          ]
+        },
         {
           "quasibloc": "X DONNER Y À Z (Z DEVOIR RENDRE Y À X)",
           "exemples": [
             {
               "phrase": "Pierre a une dette envers Marie.",
               "ea": "Marie a donné quelque chose à Pierre, donc Pierre doit le rendre à Marie."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X DEVOIR DONNER Y À Z (X DONNER Y À Z)",
+          "exemples": [
+            {
+              "phrase": "Il est généreux avec ses amis.",
+              "ea": "Il n'est pas obligé de leur donner, pourtant il leur donne."
             }
           ]
         },
@@ -1823,6 +2166,15 @@
             {
               "phrase": "Pierre rend le vélo à Marie.",
               "ea": "Marie avait donné le vélo à Pierre, donc Pierre donne le vélo à Marie."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Z AVOIR BESOIN DE Y (Z DONNER Y À X)",
+          "exemples": [
+            {
+              "phrase": "Elle a sacrifié son écharpe pour toi.",
+              "ea": "Elle avait besoin de l'écharpe elle-même, pourtant elle te l'a donnée."
             }
           ]
         },
@@ -1885,12 +2237,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Les deux fondateurs sont AVOIR : X AVOIR (passé) et Z AVOIR (présent). Le transfert de possession est au cœur du mot.",
     "template_syntaxique": "X DONNER Y À Z"
   },
   {
     "headword": "DOULOUREUX",
     "letter": "D",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -1909,11 +2264,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "DOUTER",
     "letter": "D",
+    "fondateur1": "ÊTRE POSSIBLE",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -1927,21 +2285,20 @@
               "phrase": "Pierre a des doutes s'il doit acheter un appartement.",
               "ea": "Il y a une possibilité que cet appartement soit un bon achat, pourtant Pierre n'est pas sûr."
             }
-          ],
-          "fondateur1": "ÊTRE POSSIBLE",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "L'incohérence de « un doute possible », « je doute possiblement » remonte à l'impossibilité de « je sais possiblement ». SAVOIR suppose la clôture de la modalité (on sait ou on ne sait pas). « Doute possible » se rencontre dans des phrases négatives (« aucun doute possible », « sans l'ombre d'un doute possible ») où POSSIBLE sert d'intensif rhétorique : on nie la possibilité même qu'un doute surgisse.",
     "template_syntaxique": "X DOUTER DE Y"
   },
   {
     "headword": "DÉLICIEUX",
     "letter": "D",
+    "fondateur1": "GOÛTER",
+    "fondateur2": "AIMER",
     "signification": {
       "interne": [
         {
@@ -1951,21 +2308,20 @@
               "phrase": "Ce repas est délicieux.",
               "ea": "J'ai goûté le repas, donc je l'ai aimé."
             }
-          ],
-          "fondateur1": "GOÛTER",
-          "fondateur2": "AIMER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative.",
     "template_syntaxique": "Y ÊTRE DÉLICIEUX"
   },
   {
     "headword": "DÉPENSER",
     "letter": "D",
+    "fondateur1": "AVOIR ARGENT",
+    "fondateur2": "ACHETER",
     "signification": {
       "interne": [
         {
@@ -1975,11 +2331,7 @@
               "phrase": "Pierre dépense beaucoup.",
               "ea": "Pierre a de l'argent, donc il achète."
             }
-          ],
-          "fondateur1": "AVOIR ARGENT",
-          "fondateur2": "ACHETER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -2002,6 +2354,23 @@
           ]
         },
         {
+          "quasibloc": "NEG Y COÛTER (NEG X VOULOIR DÉPENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est radin : il n'a jamais offert un café à personne sur son lieu de travail.",
+              "ea": "Le café ne coûte pas cher, pourtant Pierre ne veut pas dépenser pour l'offrir."
+            },
+            {
+              "phrase": "Pierre est radin : il refuse de dépanner des amis de quelques dizaines de centimes.",
+              "ea": "Quelques centimes ne coûtent rien, pourtant il ne veut pas les dépenser."
+            },
+            {
+              "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
+              "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
+            }
+          ]
+        },
+        {
           "quasibloc": "NEG Y COÛTER (X VOULOIR DÉPENSER Y)",
           "exemples": [
             {
@@ -2020,12 +2389,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "X DÉPENSER"
   },
   {
     "headword": "DÉRANGER",
     "letter": "D",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2040,15 +2412,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "DÉTAIL",
     "letter": "D",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE DÉTAIL (X FAIRE ATTENTION À Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est méticuleux.",
+              "ea": "Même si c'est un détail, Pierre y fera attention."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE DÉTAIL (NEG X FAIRE ATTENTION À Y)",
           "exemples": [
@@ -2059,11 +2443,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "EFFET",
     "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
@@ -2077,26 +2464,25 @@
               "phrase": "L'effet de cette politique se fait sentir.",
               "ea": "On applique cette politique, donc quelque chose se passe."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "SE PASSER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : quand on fait quelque chose, il y a des conséquences."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand on fait quelque chose, il y a des conséquences."
+      }
+    ],
     "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas.",
     "template_syntaxique": "Y AVOIR UN EFFET"
   },
   {
     "headword": "EMBELLIR",
     "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE BEAU",
     "signification": {
       "interne": [
         {
@@ -2106,20 +2492,19 @@
               "phrase": "Il a embelli sa pièce.",
               "ea": "Il a fait quelque chose, donc sa pièce est belle."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE BEAU",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X EMBELLIR Y"
   },
   {
     "headword": "EMPRUNTER",
     "letter": "E",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
     "signification": {
       "interne": [
         {
@@ -2129,21 +2514,20 @@
               "phrase": "Marie emprunte le vélo de Pierre.",
               "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
             }
-          ],
-          "fondateur1": "DONNER",
-          "fondateur2": "DEVOIR RENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
     "template_syntaxique": "Z EMPRUNTER Y À X"
   },
   {
     "headword": "EN BONNE SANTÉ",
     "letter": "E",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -2157,25 +2541,24 @@
               "phrase": "Les résultats montrent qu'il est en bonne santé.",
               "ea": "Il n'est pas malade, donc il n'a pas de signes."
             }
-          ],
-          "fondateur1": "ÊTRE MALADE",
-          "fondateur2": "SIGNES",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : ne pas être malade implique pas de signes."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ne pas être malade implique pas de signes."
+      }
+    ],
     "template_syntaxique": "X ÊTRE EN BONNE SANTÉ"
   },
   {
     "headword": "ESPÉRER",
     "letter": "E",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2190,11 +2573,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ESSAYER",
     "letter": "E",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2209,11 +2595,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "ÉCHOUER",
     "letter": "E",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -2223,20 +2612,19 @@
               "phrase": "J'ai échoué à l'examen.",
               "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÉCHOUER À Z"
   },
   {
     "headword": "ÉCONOME",
     "letter": "E",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "DÉPENSER",
     "signification": {
       "interne": [
         {
@@ -2246,26 +2634,25 @@
               "phrase": "Pierre est économe.",
               "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DÉPENSER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
+      }
+    ],
     "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
     "template_syntaxique": "X ÊTRE ÉCONOME"
   },
   {
     "headword": "ÉCONOMISER",
     "letter": "E",
+    "fondateur1": "DÉPENSER",
+    "fondateur2": "AVOIR ARGENT",
     "signification": {
       "interne": [
         {
@@ -2275,21 +2662,20 @@
               "phrase": "Pierre économise pour les vacances.",
               "ea": "Pierre ne dépense pas, donc il a de l'argent."
             }
-          ],
-          "fondateur1": "DÉPENSER",
-          "fondateur2": "AVOIR ARGENT",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "X ÉCONOMISER"
   },
   {
     "headword": "ÉNERVER",
     "letter": "E",
+    "fondateur1": "SE RÉPÉTER",
+    "fondateur2": "DÉRANGER",
     "signification": {
       "interne": [
         {
@@ -2299,20 +2685,19 @@
               "phrase": "Le bruit de l'horloge m'énerve.",
               "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
             }
-          ],
-          "fondateur1": "SE RÉPÉTER",
-          "fondateur2": "DÉRANGER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÉNERVER X"
   },
   {
     "headword": "ÉTONNER",
     "letter": "E",
+    "fondateur1": "APPRENDRE",
+    "fondateur2": "ATTENDRE",
     "signification": {
       "interne": [
         {
@@ -2322,20 +2707,19 @@
               "phrase": "Son comportement m'étonne.",
               "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
             }
-          ],
-          "fondateur1": "APPRENDRE",
-          "fondateur2": "ATTENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÉTONNER X"
   },
   {
     "headword": "FACILE",
     "letter": "F",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -2349,25 +2733,24 @@
               "phrase": "Un exercice facile.",
               "ea": "On le fait, donc on réussit."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal entre faire et avoir : normalement, quand on fait, on obtient."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal entre faire et avoir : normalement, quand on fait, on obtient."
+      }
+    ],
     "template_syntaxique": "Y ÊTRE FACILE"
   },
   {
     "headword": "FAIRE",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2386,11 +2769,33 @@
           ]
         },
         {
+          "quasibloc": "NEG X FAIRE (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il a eu la chance de le rencontrer.",
+              "ea": "Il n'a pas fait d'effort, pourtant il l'a rencontré."
+            },
+            {
+              "phrase": "Quelle chance !",
+              "ea": "Tu n'as rien fait, pourtant tu as obtenu."
+            }
+          ]
+        },
+        {
           "quasibloc": "X FAIRE Y (Y SE PASSER)",
           "exemples": [
             {
               "phrase": "Pierre a causé l'effondrement du marché.",
               "ea": "Pierre a fait quelque chose, donc l'effondrement du marché s'est passé."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (X FAIRE Y) (NEG X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre a cessé de fumer.",
+              "ea": "Pierre a fumé, pourtant Pierre ne fume plus."
             }
           ]
         },
@@ -2408,6 +2813,28 @@
           ]
         },
         {
+          "quasibloc": "PERF (NEG X FAIRE Y) (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre a commencé à fumer.",
+              "ea": "Pierre ne fumait pas, pourtant il fume maintenant."
+            },
+            {
+              "phrase": "Il commence ses études.",
+              "ea": "Il ne faisait pas d'études, pourtant il en fait maintenant."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X VOULOIR FAIRE Y (NEG X POUVOIR S'EMPÊCHER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre achète compulsivement.",
+              "ea": "Pierre ne veut pas acheter, pourtant il ne peut pas s'empêcher d'acheter."
+            }
+          ]
+        },
+        {
           "quasibloc": "PERF (X FAIRE Y) (X FAIRE Y)",
           "exemples": [
             {
@@ -2417,6 +2844,32 @@
             {
               "phrase": "Il continue ses études.",
               "ea": "Il a fait ses études, donc il les fait encore."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y FAIRE PEUR (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est courageux.",
+              "ea": "La situation fait peur, pourtant Pierre agit."
+            },
+            {
+              "phrase": "Une décision courageuse.",
+              "ea": "Cette décision fait peur, pourtant on la prend."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X FAIRE (NEG X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "C'est difficile à croire.",
+              "ea": "On fait l'effort, pourtant on n'arrive pas à croire."
+            },
+            {
+              "phrase": "Un problème difficile.",
+              "ea": "On travaille dessus, pourtant on ne trouve pas la solution."
             }
           ]
         },
@@ -2439,6 +2892,15 @@
             {
               "phrase": "Il a embelli sa pièce.",
               "ea": "Il a fait quelque chose, donc sa pièce est belle."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X FAIRE Y (NEG X AVOIR Z)",
+          "exemples": [
+            {
+              "phrase": "J'ai échoué à l'examen.",
+              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
             }
           ]
         },
@@ -2474,11 +2936,33 @@
           ]
         },
         {
+          "quasibloc": "X FAIRE Y (NEG Y ÊTRE NORMAL)",
+          "exemples": [
+            {
+              "phrase": "C'est inhabituel pour Pierre.",
+              "ea": "Pierre le fait, pourtant ce n'est pas normal qu'il le fasse."
+            }
+          ]
+        },
+        {
           "quasibloc": "X AVOIR Y (X FAIRE W)",
           "exemples": [
             {
               "phrase": "Le marteau est un instrument.",
               "ea": "Si tu as un marteau, tu peux enfoncer le clou."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X DEVOIR FAIRE Y (NEG X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est une personne irresponsable.",
+              "ea": "Quelque chose doit être fait, pourtant Pierre ne le fait pas."
+            },
+            {
+              "phrase": "Il est irresponsable financièrement. Il dépense trop d'argent à jouer.",
+              "ea": "Il devrait faire attention à l'argent, pourtant il ne fait pas attention à l'argent."
             }
           ]
         },
@@ -2607,6 +3091,19 @@
           ]
         },
         {
+          "quasibloc": "NEG X DEVOIR FAIRE (X FAIRE)",
+          "exemples": [
+            {
+              "phrase": "Pierre est volontaire pour cette mission.",
+              "ea": "Pierre n'est pas obligé de faire cette mission, pourtant il la fait."
+            },
+            {
+              "phrase": "Un engagement volontaire.",
+              "ea": "Personne ne le force, pourtant il s'engage."
+            }
+          ]
+        },
+        {
           "quasibloc": "NEG X FAIRE (NEG X AVOIR Y)",
           "exemples": [
             {
@@ -2677,15 +3174,40 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FAIRE ATTENTION",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE DÉTAIL (X FAIRE ATTENTION À Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est méticuleux.",
+              "ea": "Même si c'est un détail, Pierre y fera attention."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE IMPORTANT (NEG X FAIRE ATTENTION À Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre néglige sa santé.",
+              "ea": "Sa santé est importante, pourtant Pierre n'y fait pas attention."
+            },
+            {
+              "phrase": "Il a négligé ce détail.",
+              "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE DÉTAIL (NEG X FAIRE ATTENTION À Y)",
           "exemples": [
@@ -2709,15 +3231,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FAIRE PENSER",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Z PENSER Y (X FAIRE PENSER Z À W)",
+          "exemples": [
+            {
+              "phrase": "Tu me distrais.",
+              "ea": "Je pensais à quelque chose, pourtant tu m'as fait penser à autre chose."
+            }
+          ]
+        },
         {
           "quasibloc": "Z PENSER Y (NEG X FAIRE PENSER Z À W)",
           "exemples": [
@@ -2728,15 +3262,31 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FAIRE PEUR",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y FAIRE PEUR (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est courageux.",
+              "ea": "La situation fait peur, pourtant Pierre agit."
+            },
+            {
+              "phrase": "Une décision courageuse.",
+              "ea": "Cette décision fait peur, pourtant on la prend."
+            }
+          ]
+        },
         {
           "quasibloc": "Y FAIRE PEUR (NEG X FAIRE Y)",
           "exemples": [
@@ -2751,15 +3301,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FAIRE UN EFFORT",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X POUVOIR ATTEINDRE Y (NEG X DEVOIR FAIRE UN EFFORT)",
+          "exemples": [
+            {
+              "phrase": "A2 est un bas niveau de la connaissance d'une langue.",
+              "ea": "Vous pouvez atteindre le niveau A2 sans faire trop d'effort."
+            }
+          ]
+        },
         {
           "quasibloc": "X FAIRE UN EFFORT (X ATTEINDRE Y)",
           "exemples": [
@@ -2783,11 +3345,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FAUTE",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2810,11 +3375,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "FONCTIONNER",
     "letter": "F",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2829,11 +3397,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "GENRER",
     "letter": "G",
+    "fondateur1": "IDENTIFIER",
+    "fondateur2": "DIRE",
     "paradoxal": false,
     "signification": {
       "interne": [
@@ -2856,14 +3427,27 @@
               "phrase": "Je vais en toute logique genrer au masculin un individu à la barbe fournie.",
               "ea": "Je l'identifie comme homme, donc je dis « il »."
             }
-          ],
-          "fondateur1": "IDENTIFIER",
-          "fondateur2": "DIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "X GENRER Z DE Y (NEG Y CORRESPONDRE À Z)",
+          "exemples": [
+            {
+              "phrase": "Sa mère continue de le mégenrer.",
+              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
+            },
+            {
+              "phrase": "Je passe mon temps à me demander si je dois reprendre les gens quand ils me mégenrent.",
+              "ea": "Les gens me genrent d'une certaine façon, pourtant elle ne correspond pas à ce que je suis."
+            },
+            {
+              "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
+              "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
+            }
+          ]
+        },
         {
           "quasibloc": "X GENRER Z DE Y (Y CORRESPONDRE À Z)",
           "exemples": [
@@ -2883,11 +3467,14 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X GENRER Z"
   },
   {
     "headword": "GOÛTER",
     "letter": "G",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -2902,11 +3489,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "GRATUIT",
     "letter": "G",
+    "fondateur1": "COÛTER",
+    "fondateur2": "DEVOIR PAYER",
     "signification": {
       "interne": [
         {
@@ -2920,25 +3510,33 @@
               "phrase": "Ce livre est gratuit.",
               "ea": "Le livre ne coûte rien, donc tu n'as pas à payer."
             }
-          ],
-          "fondateur1": "COÛTER",
-          "fondateur2": "DEVOIR PAYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "GRATUIT est la converse de COÛTER : aspect nié des deux côtés (NEG … DC NEG …). L'application porte sur l'objet Y, comme pour COÛTER.",
     "template_syntaxique": "Y ÊTRE GRATUIT"
   },
   {
     "headword": "GRAVE",
     "letter": "G",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG Y ÊTRE GRAVE (X S'INQUIÉTER DE Y)",
+          "exemples": [
+            {
+              "phrase": "Vous êtes anxieux.",
+              "ea": "Ce n'est pas grave, pourtant vous vous en inquiétez."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG Y ÊTRE GRAVE (NEG X S'INQUIÉTER DE Y)",
           "exemples": [
@@ -2953,6 +3551,15 @@
           ]
         },
         {
+          "quasibloc": "Y ÊTRE GRAVE (NEG X S'INQUIÉTER DE Y)",
+          "exemples": [
+            {
+              "phrase": "Il est inconscient du danger.",
+              "ea": "C'est grave, pourtant il ne s'en inquiète pas."
+            }
+          ]
+        },
+        {
           "quasibloc": "Y ÊTRE GRAVE (X S'INQUIÉTER DE Y)",
           "exemples": [
             {
@@ -2962,11 +3569,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "GÉNÉREUX",
     "letter": "G",
+    "fondateur1": "DEVOIR DONNER",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -2976,21 +3586,20 @@
               "phrase": "Il est généreux avec ses amis.",
               "ea": "Il n'est pas obligé de leur donner, pourtant il leur donne."
             }
-          ],
-          "fondateur1": "DEVOIR DONNER",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
     "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z"
   },
   {
     "headword": "HABITUEL",
     "letter": "H",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE NORMAL",
     "signification": {
       "interne": [
         {
@@ -3000,21 +3609,20 @@
               "phrase": "C'est habituel pour Pierre.",
               "ea": "Pierre le fait, donc c'est normal qu'il le fasse."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE NORMAL",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "HABITUEL est moins général que NORMAL : on dit « les pluies sont normales » mais pas « les pluies sont habituelles ». On a envie de recourir à « souvent » pour le décrire, mais en décrivant l'habituel comme quelque chose qui, quand cela se fait, est normal, on obtient le même effet. SOUVENT est un opérateur argumentatif, non un adverbe de temps.",
     "template_syntaxique": "Y ÊTRE HABITUEL POUR X"
   },
   {
     "headword": "HAUT",
     "letter": "H",
+    "fondateur1": "FAIRE UN EFFORT",
+    "fondateur2": "ATTEINDRE",
     "signification": {
       "interne": [
         {
@@ -3028,25 +3636,24 @@
               "phrase": "Le haut temps de la philosophie.",
               "ea": "La philosophie évoluait, donc elle a atteint son sommet durant ce temps."
             }
-          ],
-          "fondateur1": "FAIRE UN EFFORT",
-          "fondateur2": "ATTEINDRE",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : pour atteindre quelque chose de haut, il faut faire un effort."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : pour atteindre quelque chose de haut, il faut faire un effort."
+      }
+    ],
     "template_syntaxique": "Y ÊTRE HAUT"
   },
   {
     "headword": "HORIZON",
     "letter": "H",
+    "fondateur1": "VOIR",
+    "fondateur2": "DEVOIR ARRIVER",
     "signification": {
       "interne": [
         {
@@ -3060,20 +3667,19 @@
               "phrase": "Un nouvel horizon.",
               "ea": "On voit une possibilité, donc elle doit se réaliser."
             }
-          ],
-          "fondateur1": "VOIR",
-          "fondateur2": "DEVOIR ARRIVER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE À L'HORIZON"
   },
   {
     "headword": "IDENTIFIER",
     "letter": "I",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3100,11 +3706,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "IMMÉDIAT",
     "letter": "I",
+    "fondateur1": "ATTENDRE",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
@@ -3114,20 +3723,19 @@
               "phrase": "La réponse est immédiate.",
               "ea": "On n'a pas attendu, pourtant la réponse arrive."
             }
-          ],
-          "fondateur1": "ATTENDRE",
-          "fondateur2": "SE PASSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE IMMÉDIAT"
   },
   {
     "headword": "IMPARFAIT",
     "letter": "I",
+    "fondateur1": "TERMINER",
+    "fondateur2": "POUVOIR AMÉLIORER",
     "signification": {
       "interne": [
         {
@@ -3137,24 +3745,53 @@
               "phrase": "Ce travail est imparfait.",
               "ea": "On a terminé le travail, pourtant on peut l'améliorer."
             }
-          ],
-          "fondateur1": "TERMINER",
-          "fondateur2": "POUVOIR AMÉLIORER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE IMPARFAIT"
   },
   {
     "headword": "IMPORTANT",
     "letter": "I",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG Y ÊTRE IMPORTANT (X PENSER À Y)",
+          "exemples": [
+            {
+              "phrase": "Il est mesquin de marchander.",
+              "ea": "Le marchandage porte sur des choses peu importantes, pourtant on y pense."
+            },
+            {
+              "phrase": "Ce qui est mesquin, c'est prétendre recevoir l'équivalent de ce qu'on donne.",
+              "ea": "L'équivalence exacte n'est pas importante, pourtant on y pense."
+            },
+            {
+              "phrase": "Il est mesquin d'aborder la question des avantages du premier ministre qui a exercé un mois.",
+              "ea": "Ces avantages ne sont pas importants, pourtant on y pense."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE IMPORTANT (NEG X FAIRE ATTENTION À Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre néglige sa santé.",
+              "ea": "Sa santé est importante, pourtant Pierre n'y fait pas attention."
+            },
+            {
+              "phrase": "Il a négligé ce détail.",
+              "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG Y ÊTRE IMPORTANT (NEG X PENSER À Y)",
           "exemples": [
@@ -3186,11 +3823,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "IMPÉRATIF",
     "letter": "I",
+    "fondateur1": "DIRE",
+    "fondateur2": "DEVOIR FAIRE",
     "signification": {
       "interne": [
         {
@@ -3200,20 +3840,20 @@
               "phrase": "Fermez la porte.",
               "ea": "Je vous dis de fermer la porte, donc vous devez fermer la porte."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "DEVOIR FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE IMPÉRATIF"
   },
   {
     "headword": "INCONSCIENT",
     "letter": "I",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 1,
     "signification": {
       "interne": [
         {
@@ -3223,21 +3863,20 @@
               "phrase": "Il est inconscient du danger.",
               "ea": "C'est grave, pourtant il ne s'en inquiète pas."
             }
-          ],
-          "fondateur1": "ÊTRE GRAVE",
-          "fondateur2": "S'INQUIÉTER",
-          "criteres": [],
-          "square_value": 1
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE INCONSCIENT",
     "nb": "INCONSCIENT est le converse de COOL et le transposé d'ANXIEUX dans le carré du bloc ÊTRE GRAVE — S'INQUIÉTER."
   },
   {
     "headword": "INHABITUEL",
     "letter": "I",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE NORMAL",
     "signification": {
       "interne": [
         {
@@ -3247,20 +3886,19 @@
               "phrase": "C'est inhabituel pour Pierre.",
               "ea": "Pierre le fait, pourtant ce n'est pas normal qu'il le fasse."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE NORMAL",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE INHABITUEL POUR X"
   },
   {
     "headword": "INSTRUMENT",
     "letter": "I",
+    "fondateur1": "AVOIR",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -3270,20 +3908,19 @@
               "phrase": "Le marteau est un instrument.",
               "ea": "Si tu as un marteau, tu peux enfoncer le clou."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UN INSTRUMENT"
   },
   {
     "headword": "INTELLIGENT",
     "letter": "I",
+    "fondateur1": "ÊTRE DIFFICILE",
+    "fondateur2": "COMPRENDRE",
     "signification": {
       "interne": [
         {
@@ -3293,20 +3930,19 @@
               "phrase": "Pierre est intelligent.",
               "ea": "Même si c'est difficile, Pierre comprend."
             }
-          ],
-          "fondateur1": "ÊTRE DIFFICILE",
-          "fondateur2": "COMPRENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE INTELLIGENT"
   },
   {
     "headword": "IRRESPONSABLE",
     "letter": "I",
+    "fondateur1": "DEVOIR FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -3320,20 +3956,19 @@
               "phrase": "Il est irresponsable financièrement. Il dépense trop d'argent à jouer.",
               "ea": "Il devrait faire attention à l'argent, pourtant il ne fait pas attention à l'argent."
             }
-          ],
-          "fondateur1": "DEVOIR FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE IRRESPONSABLE"
   },
   {
     "headword": "JOUER",
     "letter": "J",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3348,11 +3983,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "JOUET",
     "letter": "J",
+    "fondateur1": "UTILISER",
+    "fondateur2": "JOUER",
     "signification": {
       "interne": [
         {
@@ -3362,20 +4000,19 @@
               "phrase": "Cette poupée est un jouet.",
               "ea": "Si tu l'utilises, tu joues avec."
             }
-          ],
-          "fondateur1": "UTILISER",
-          "fondateur2": "JOUER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UN JOUET"
   },
   {
     "headword": "JOUIR",
     "letter": "J",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3394,11 +4031,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "LANGUE",
     "letter": "L",
+    "fondateur1": "PARTAGER",
+    "fondateur2": "COMPRENDRE",
     "signification": {
       "interne": [
         {
@@ -3408,20 +4048,19 @@
               "phrase": "Cette danse des abeilles est en fait une langue.",
               "ea": "Les abeilles partagent ceci, donc elles se comprennent."
             }
-          ],
-          "fondateur1": "PARTAGER",
-          "fondateur2": "COMPRENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UNE LANGUE"
   },
   {
     "headword": "LIBRE",
     "letter": "L",
+    "fondateur1": "VOULOIR FAIRE",
+    "fondateur2": "POUVOIR FAIRE",
     "signification": {
       "interne": [
         {
@@ -3431,20 +4070,20 @@
               "phrase": "La chaise est libre.",
               "ea": "Si tu veux t'asseoir sur cette chaise, tu peux le faire."
             }
-          ],
-          "fondateur1": "VOULOIR FAIRE",
-          "fondateur2": "POUVOIR FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE LIBRE"
   },
   {
     "headword": "LIRE DANS LES PENSÉES",
     "letter": "L",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
+    "square_value": 2,
     "signification": {
       "interne": [
         {
@@ -3458,21 +4097,20 @@
               "phrase": "Tu lis dans mes pensées.",
               "ea": "Je n'ai rien dit, pourtant tu sais ce que je pense."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": 2
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X LIRE DANS LES PENSÉES DE Z",
     "nb": "LIRE DANS LES PENSÉES est le transposé de COMPRENDRE dans le bloc DIRE — SAVOIR : rien n'a été dit, pourtant X sait."
   },
   {
     "headword": "LOUER",
     "letter": "L",
+    "fondateur1": "PAYER",
+    "fondateur2": "PRÊTER",
     "signification": {
       "interne": [
         {
@@ -3482,20 +4120,19 @@
               "phrase": "Pierre loue un appartement.",
               "ea": "Pierre paye au propriétaire, donc le propriétaire lui prête l'appartement."
             }
-          ],
-          "fondateur1": "PAYER",
-          "fondateur2": "PRÊTER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Z LOUER Y À X"
   },
   {
     "headword": "MAIN",
     "letter": "M",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR FAIRE",
     "signification": {
       "interne": [
         {
@@ -3509,30 +4146,42 @@
               "phrase": "J'ai besoin de ma main pour répondre à l'appel.",
               "ea": "J'ai ma main, donc je peux répondre."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "POUVOIR FAIRE",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : avoir une main disponible permet d'agir."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : avoir une main disponible permet d'agir."
+      }
+    ],
     "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect.",
     "template_syntaxique": "X AVOIR UNE MAIN"
   },
   {
     "headword": "MALADE",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X ÊTRE MALADE (NEG X AVOIR SIGNES)",
+          "exemples": [
+            {
+              "phrase": "Le patient est asymptomatique.",
+              "ea": "Il est malade, pourtant il n'a pas de signes."
+            },
+            {
+              "phrase": "Une infection asymptomatique.",
+              "ea": "Il est infecté, pourtant il n'y a pas de signes."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG X ÊTRE MALADE (NEG X AVOIR SIGNES)",
           "exemples": [
@@ -3543,6 +4192,19 @@
             {
               "phrase": "Les résultats montrent qu'il est en bonne santé.",
               "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X ÊTRE MALADE (X AVOIR SIGNES)",
+          "exemples": [
+            {
+              "phrase": "Ses douleurs sont psychosomatiques.",
+              "ea": "Il n'est pas malade, pourtant il a des signes."
+            },
+            {
+              "phrase": "Un trouble psychosomatique.",
+              "ea": "Il n'est pas malade organiquement, pourtant il y a des signes."
             }
           ]
         },
@@ -3560,11 +4222,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MASOCHISTE",
     "letter": "M",
+    "fondateur1": "ÊTRE DOULOUREUX",
+    "fondateur2": "JOUIR",
     "paradoxal": true,
     "signification": {
       "interne": [
@@ -3579,21 +4244,20 @@
               "phrase": "Elle est masochiste dans ses relations.",
               "ea": "Ses relations sont douloureuses, donc elle en jouit."
             }
-          ],
-          "fondateur1": "ÊTRE DOULOUREUX",
-          "fondateur2": "JOUIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y).",
     "template_syntaxique": "X ÊTRE MASOCHISTE"
   },
   {
     "headword": "MESQUIN",
     "letter": "M",
+    "fondateur1": "ÊTRE IMPORTANT",
+    "fondateur2": "PENSER",
     "signification": {
       "interne": [
         {
@@ -3611,21 +4275,20 @@
               "phrase": "Il est mesquin d'aborder la question des avantages du premier ministre qui a exercé un mois.",
               "ea": "Ces avantages ne sont pas importants, pourtant on y pense."
             }
-          ],
-          "fondateur1": "ÊTRE IMPORTANT",
-          "fondateur2": "PENSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes.",
     "template_syntaxique": "X ÊTRE MESQUIN"
   },
   {
     "headword": "MIEUX",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3644,11 +4307,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MONOTONE",
     "letter": "M",
+    "fondateur1": "ÊTRE UNIFORME",
+    "fondateur2": "S'ENNUYER",
     "signification": {
       "interne": [
         {
@@ -3658,20 +4324,19 @@
               "phrase": "Ce sermon est monotone.",
               "ea": "Ce sermon est uniforme, donc je m'ennuie."
             }
-          ],
-          "fondateur1": "ÊTRE UNIFORME",
-          "fondateur2": "S'ENNUYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE MONOTONE"
   },
   {
     "headword": "MONTRER",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3686,11 +4351,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MORDRE",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3705,11 +4373,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MORT",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -3724,11 +4395,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MORT NATURELLE",
     "letter": "M",
+    "fondateur1": "ACCIDENT",
+    "fondateur2": "MOURIR",
     "template_syntaxique": "X MOURIR DE MORT NATURELLE",
     "signification": {
       "interne": [
@@ -3743,20 +4417,19 @@
               "phrase": "Elle s'est éteinte paisiblement.",
               "ea": "Rien ne lui est survenu de violent, pourtant elle est morte."
             }
-          ],
-          "fondateur1": "ACCIDENT",
-          "fondateur2": "MOURIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Transgressif du bloc ACCIDENT — MOURIR. Même bloc que PÉRIR mais aspect PT : la mort survient sans accident (vieillesse, maladie)."
   },
   {
     "headword": "MOT",
     "letter": "M",
+    "fondateur1": "AVOIR",
+    "fondateur2": "DIRE",
     "signification": {
       "interne": [
         {
@@ -3774,43 +4447,64 @@
               "phrase": "Le mot juste.",
               "ea": "On a un seul mot, pourtant on dit pleinement."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "DIRE",
-          "criteres": [
-            {
-              "type": 1,
-              "texte": "« le mot juste » (ATT-X DC REAL-Y) : avoir un seul mot, pourtant dire pleinement."
-            },
-            {
-              "type": 2,
-              "texte": "« beaucoup de mots pour pas grand-chose » (REAL-X DC ATT-Y) : avoir beaucoup, donc dire peu."
-            },
-            {
-              "type": 3,
-              "texte": "MOT s'inscrit en amont de DIRE sur la carte argumentative."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 1,
+        "texte": "« le mot juste » (ATT-X DC REAL-Y) : avoir un seul mot, pourtant dire pleinement."
+      },
+      {
+        "type": 2,
+        "texte": "« beaucoup de mots pour pas grand-chose » (REAL-X DC ATT-Y) : avoir beaucoup, donc dire peu."
+      },
+      {
+        "type": 3,
+        "texte": "MOT s'inscrit en amont de DIRE sur la carte argumentative."
+      }
+    ],
     "template_syntaxique": "X AVOIR LE MOT Y"
   },
   {
     "headword": "MOURIR",
     "letter": "M",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG Y ÊTRE ACCIDENT (X MOURIR DE Y)",
+          "exemples": [
+            {
+              "phrase": "Il est mort de mort naturelle.",
+              "ea": "Ce n'était pas un accident, pourtant il en est mort."
+            },
+            {
+              "phrase": "Elle s'est éteinte paisiblement.",
+              "ea": "Rien ne lui est survenu de violent, pourtant elle est morte."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE ACCIDENT (X MOURIR DE Y)",
           "exemples": [
             {
               "phrase": "Les civils ont péri dans un raid.",
               "ea": "Les raids sont survenus, donc les civils sont morts."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (X MOURIR) (X VIVRE)",
+          "exemples": [
+            {
+              "phrase": "Pierre a ressuscité.",
+              "ea": "Pierre a été mort, pourtant Pierre est vivant."
             }
           ]
         },
@@ -3855,11 +4549,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "MÉGENRER",
     "letter": "M",
+    "fondateur1": "GENRER",
+    "fondateur2": "CORRESPONDRE",
     "paradoxal": false,
     "signification": {
       "interne": [
@@ -3878,21 +4575,20 @@
               "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
               "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
             }
-          ],
-          "fondateur1": "GENRER",
-          "fondateur2": "CORRESPONDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "X MÉGENRER Z"
   },
   {
     "headword": "MÉTICULEUX",
     "letter": "M",
+    "fondateur1": "ÊTRE DÉTAIL",
+    "fondateur2": "FAIRE ATTENTION",
     "signification": {
       "interne": [
         {
@@ -3902,20 +4598,19 @@
               "phrase": "Pierre est méticuleux.",
               "ea": "Même si c'est un détail, Pierre y fera attention."
             }
-          ],
-          "fondateur1": "ÊTRE DÉTAIL",
-          "fondateur2": "FAIRE ATTENTION",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE MÉTICULEUX"
   },
   {
     "headword": "NORMAL",
     "letter": "N",
+    "fondateur1": "SE PRODUIRE",
+    "fondateur2": "RÉAGIR",
     "signification": {
       "interne": [
         {
@@ -3933,11 +4628,7 @@
               "phrase": "Ses résultats d'examen sont normaux.",
               "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
             }
-          ],
-          "fondateur1": "SE PRODUIRE",
-          "fondateur2": "RÉAGIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -3949,14 +4640,26 @@
               "ea": "Pierre le fait, donc c'est normal qu'il le fasse."
             }
           ]
+        },
+        {
+          "quasibloc": "X FAIRE Y (NEG Y ÊTRE NORMAL)",
+          "exemples": [
+            {
+              "phrase": "C'est inhabituel pour Pierre.",
+              "ea": "Pierre le fait, pourtant ce n'est pas normal qu'il le fasse."
+            }
+          ]
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE NORMAL"
   },
   {
     "headword": "NOUVEAU",
     "letter": "N",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
@@ -3966,20 +4669,19 @@
               "phrase": "J'ai acheté un nouveau livre sur la linguistique.",
               "ea": "J'avais déjà un livre sur la linguistique, pourtant j'ai acheté un autre livre sur la linguistique."
             }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "SE PASSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE NOUVEAU"
   },
   {
     "headword": "NÉCESSAIRE",
     "letter": "N",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "DEVOIR AVOIR",
     "signification": {
       "interne": [
         {
@@ -3993,19 +4695,19 @@
               "phrase": "L'argent nécessaire pour le voyage.",
               "ea": "Tu as besoin de faire le voyage, donc tu dois avoir l'argent."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DEVOIR AVOIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : avoir besoin de quelque chose implique devoir avoir les moyens."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE NÉCESSAIRE (NEG X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est pauvre.",
+              "ea": "La voiture lui est nécessaire pour se rendre au travail, pourtant il ne peut pas l'acheter."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE NÉCESSAIRE (X AVOIR Y)",
           "exemples": [
@@ -4017,12 +4719,20 @@
         }
       ]
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : avoir besoin de quelque chose implique devoir avoir les moyens."
+      }
+    ],
     "nb": "Quasi-bloc externe doxal : ce qui est nécessaire ne coûte pas beaucoup (NEG Z COÛTER BEAUCOUP). C'est le chaînon manquant pour l'échelle PAUVRE/CHER/GRATUIT : si X NEG POUVOIR AVOIR le nécessaire — et que le nécessaire NEG COÛTER BEAUCOUP —, alors a fortiori NEG POUVOIR AVOIR ce qui COÛTE BEAUCOUP (CHER). GRATUIT (NEG COÛTER) reste en dessous du nécessaire, donc non bloqué. Échelle : GRATUIT < NÉCESSAIRE/BON MARCHÉ < CHER.",
     "template_syntaxique": "Z ÊTRE NÉCESSAIRE POUR Y"
   },
   {
     "headword": "NÉGLIGER",
     "letter": "N",
+    "fondateur1": "ÊTRE IMPORTANT",
+    "fondateur2": "FAIRE ATTENTION",
     "signification": {
       "interne": [
         {
@@ -4036,20 +4746,19 @@
               "phrase": "Il a négligé ce détail.",
               "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
             }
-          ],
-          "fondateur1": "ÊTRE IMPORTANT",
-          "fondateur2": "FAIRE ATTENTION",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X NÉGLIGER Y"
   },
   {
     "headword": "OBTENIR",
     "letter": "O",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -4059,20 +4768,19 @@
               "phrase": "Pierre obtient une bonne note.",
               "ea": "Pierre a étudié, donc il a eu une bonne note."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X OBTENIR Y"
   },
   {
     "headword": "OBÉIR",
     "letter": "O",
+    "fondateur1": "DIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -4086,20 +4794,19 @@
               "phrase": "Obéir aux ordres.",
               "ea": "On reçoit un ordre, donc on fait."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Z OBÉIR À X"
   },
   {
     "headword": "OCCUPER",
     "letter": "O",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -4114,11 +4821,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "OPTIMISTE",
     "letter": "O",
+    "fondateur1": "POUVOIR ESPÉRER",
+    "fondateur2": "ESPÉRER",
     "signification": {
       "interne": [
         {
@@ -4128,20 +4838,20 @@
               "phrase": "Il faut être optimiste.",
               "ea": "L'on peut avoir de l'espoir, donc l'on a l'espoir."
             }
-          ],
-          "fondateur1": "POUVOIR ESPÉRER",
-          "fondateur2": "ESPÉRER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE OPTIMISTE"
   },
   {
     "headword": "OUBLIER",
     "letter": "O",
+    "fondateur1": "SAVOIR",
+    "fondateur2": "SAVOIR",
+    "square_value": 1,
     "signification": {
       "interne": [
         {
@@ -4155,21 +4865,20 @@
               "phrase": "Pierre a oublié la réunion.",
               "ea": "Pierre savait qu'il y avait une réunion, pourtant il ne le sait plus."
             }
-          ],
-          "fondateur1": "SAVOIR",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": 1
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X OUBLIER Y",
     "nb": "OUBLIER est le transposé d'APPRENDRE dans le carré du bloc SAVOIR — SAVOIR : APPRENDRE = PERF (NEG X SAVOIR Y) PT X SAVOIR Y ; OUBLIER = PERF (X SAVOIR Y) PT NEG X SAVOIR Y."
   },
   {
     "headword": "PARANOÏAQUE",
     "letter": "P",
+    "fondateur1": "DANGER",
+    "fondateur2": "AVOIR PEUR",
     "signification": {
       "interne": [
         {
@@ -4183,21 +4892,20 @@
               "phrase": "Personne ne le menace, pourtant il a peur.",
               "ea": "Personne ne le menace, pourtant il a peur."
             }
-          ],
-          "fondateur1": "DANGER",
-          "fondateur2": "AVOIR PEUR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "À la différence d'anxieux (NEG Y SE PASSER PT X S'INQUIÉTER), où la peur est sans objet, paranoïaque nie un danger spécifique : le sujet construit une menace là où il n'y en a pas. Syntaxiquement, anxieux fonctionne comme état transitoire (Il est anxieux ce matin, Elle a été anxieuse toute la journée), tandis que paranoïaque décrit un trait permanent (Il est paranoïaque ; ?Il est paranoïaque ce matin est bizarre, sauf emploi hyperbolique). Cette différence syntaxique rejoint la différence aspectuelle : anxieux décrit un état lié à un moment (il faut un moment où rien ne se passe), paranoïaque décrit un trait permanent.",
     "template_syntaxique": "X ÊTRE PARANOÏAQUE"
   },
   {
     "headword": "PARFAIT",
     "letter": "P",
+    "fondateur1": "TERMINER",
+    "fondateur2": "POUVOIR AMÉLIORER",
     "signification": {
       "interne": [
         {
@@ -4207,20 +4915,19 @@
               "phrase": "Ce travail est parfait.",
               "ea": "On a terminé le travail, donc on ne peut pas l'améliorer."
             }
-          ],
-          "fondateur1": "TERMINER",
-          "fondateur2": "POUVOIR AMÉLIORER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE PARFAIT"
   },
   {
     "headword": "PARTAGER",
     "letter": "P",
+    "fondateur1": "AVOIR",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -4230,11 +4937,7 @@
               "phrase": "Pierre partage son gâteau avec Marie.",
               "ea": "Pierre a le gâteau, donc il en donne à Marie."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -4249,11 +4952,14 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X PARTAGER Y AVEC Z"
   },
   {
     "headword": "PASSER",
     "letter": "P",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -4295,11 +5001,15 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "PASSER SOUS SILENCE",
     "letter": "P",
+    "fondateur1": "DIRE",
+    "fondateur2": "SAVOIR",
+    "square_value": 4,
     "signification": {
       "interne": [
         {
@@ -4313,26 +5023,25 @@
               "phrase": "Il passe sous silence ses échecs.",
               "ea": "Il n'en parle pas, donc personne ne les connaît."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "SAVOIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal contrapositif : si on ne dit pas, on ne sait pas."
-            }
-          ],
-          "square_value": 4
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal contrapositif : si on ne dit pas, on ne sait pas."
+      }
+    ],
     "template_syntaxique": "X PASSER SOUS SILENCE Y",
     "nb": "PASSER SOUS SILENCE est le réciproque de COMPRENDRE dans le bloc DIRE — SAVOIR : c'est la doxa contrapositive (NEG A DC NEG B). Face à LIRE DANS LES PENSÉES (converse)."
   },
   {
     "headword": "PAUVRE",
     "letter": "P",
+    "fondateur1": "ÊTRE NÉCESSAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -4342,21 +5051,20 @@
               "phrase": "Pierre est pauvre.",
               "ea": "La voiture lui est nécessaire pour se rendre au travail, pourtant il ne peut pas l'acheter."
             }
-          ],
-          "fondateur1": "ÊTRE NÉCESSAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "« Une main pauvre » se comprend comme la personne qui demande quelque chose. C'est le mot MAIN qui signifie une action, or dans PAUVRE l'action est dans le quasi-bloc.",
     "template_syntaxique": "X ÊTRE PAUVRE"
   },
   {
     "headword": "PAYER",
     "letter": "P",
+    "fondateur1": "ÊTRE ARGENT",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -4366,11 +5074,7 @@
               "phrase": "Pierre paye le boulanger.",
               "ea": "C'est de l'argent, donc Pierre le donne au boulanger."
             }
-          ],
-          "fondateur1": "ÊTRE ARGENT",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -4433,6 +5137,15 @@
           ]
         },
         {
+          "quasibloc": "NEG X PAYER À Z (X PRENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Il a volé les pommes.",
+              "ea": "Il n'a pas payé, pourtant il a pris les pommes."
+            }
+          ]
+        },
+        {
           "quasibloc": "NEG X PAYER À Z (NEG X PRENDRE Y)",
           "exemples": [
             {
@@ -4443,11 +5156,14 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X PAYER Y À Z"
   },
   {
     "headword": "PENSER",
     "letter": "P",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -4458,6 +5174,41 @@
             {
               "phrase": "Marie a convaincu Pierre de devenir un militant pour l'écologie.",
               "ea": "Marie dit des choses à Pierre, du fait de quoi il pense maintenant qu'il faut militer pour l'écologie."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Z PENSER Y (X FAIRE PENSER Z À W)",
+          "exemples": [
+            {
+              "phrase": "Tu me distrais.",
+              "ea": "Je pensais à quelque chose, pourtant tu m'as fait penser à autre chose."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y ÊTRE IMPORTANT (X PENSER À Y)",
+          "exemples": [
+            {
+              "phrase": "Il est mesquin de marchander.",
+              "ea": "Le marchandage porte sur des choses peu importantes, pourtant on y pense."
+            },
+            {
+              "phrase": "Ce qui est mesquin, c'est prétendre recevoir l'équivalent de ce qu'on donne.",
+              "ea": "L'équivalence exacte n'est pas importante, pourtant on y pense."
+            },
+            {
+              "phrase": "Il est mesquin d'aborder la question des avantages du premier ministre qui a exercé un mois.",
+              "ea": "Ces avantages ne sont pas importants, pourtant on y pense."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X SAVOIR Y (X PENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Je soupçonne Pierre d'avoir menti.",
+              "ea": "Je ne sais pas si Pierre a menti, pourtant je pense qu'il a menti."
             }
           ]
         },
@@ -4497,11 +5248,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "PERSUADER",
     "letter": "P",
+    "fondateur1": "DIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -4511,21 +5265,20 @@
               "phrase": "Marie persuade Pierre d'aller avec elle.",
               "ea": "Marie dit des choses à Pierre, du fait de quoi il va avec elle."
             }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "PERSUADER est plus général que CONVAINCRE. CONVAINCRE : DIRE DC PENSER. PERSUADER : DIRE DC FAIRE.",
     "template_syntaxique": "Z PERSUADER X DE Y"
   },
   {
     "headword": "PORTE",
     "letter": "P",
+    "fondateur1": "SÉPARER",
+    "fondateur2": "UNIR",
     "signification": {
       "interne": [
         {
@@ -4535,20 +5288,19 @@
               "phrase": "La Vierge est notre porte vers le ciel.",
               "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
             }
-          ],
-          "fondateur1": "SÉPARER",
-          "fondateur2": "UNIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UNE PORTE"
   },
   {
     "headword": "POSER UNE QUESTION",
     "letter": "P",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -4563,11 +5315,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "POSSIBLE",
     "letter": "P",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "POUVOIR SE PASSER",
     "template_syntaxique": "*Y* ÊTRE POSSIBLE",
     "signification": {
       "interne": [
@@ -4582,14 +5337,23 @@
               "phrase": "Un accident est possible ici.",
               "ea": "Il n'y a pas eu d'accident, pourtant un accident peut se produire."
             }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "POUVOIR SE PASSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE POSSIBLE (NEG X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre doute de l'honnêteté de Paul.",
+              "ea": "L'honnêteté de Paul est possible, pourtant Pierre n'en est pas sûr."
+            },
+            {
+              "phrase": "Pierre a des doutes s'il doit acheter un appartement.",
+              "ea": "Il y a une possibilité que cet appartement soit un bon achat, pourtant Pierre n'est pas sûr."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE POSSIBLE (X SAVOIR Y)",
           "exemples": [
@@ -4605,21 +5369,27 @@
         }
       ]
     },
+    "criteres": [],
     "nb": ""
   },
   {
     "headword": "POUVOIR",
     "letter": "P",
+    "fondateur1": null,
+    "fondateur2": null,
     "template_syntaxique": "X POUVOIR Y",
     "signification": {
       "interne": [],
       "externe": []
     },
+    "criteres": [],
     "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "PRENDRE",
     "letter": "P",
+    "fondateur1": "FAIRE",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -4629,11 +5399,7 @@
               "phrase": "Pierre prend la pomme.",
               "ea": "Pierre fait quelque chose, donc Pierre a la pomme."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -4643,6 +5409,15 @@
             {
               "phrase": "Avec le temps, j'ai moins d'énergie.",
               "ea": "Le temps passe, donc il me prend de l'énergie."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X PAYER À Z (X PRENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Il a volé les pommes.",
+              "ea": "Il n'a pas payé, pourtant il a pris les pommes."
             }
           ]
         },
@@ -4657,12 +5432,15 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X PRENDRE Y",
     "nb": "FACILE et PRENDRE partagent le même aspect (X FAIRE DC X AVOIR Y) mais diffèrent par l'application : FACILE porte l'accent sur Y (l'objet est aisé à obtenir), PRENDRE sur X (l'agent s'empare). Cette parenté se voit dans les locutions du type « il suffit de prendre » : il n'y a qu'à faire le geste pour l'avoir."
   },
   {
     "headword": "PREUVE",
     "letter": "P",
+    "fondateur1": "MONTRER",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -4672,20 +5450,19 @@
               "phrase": "Cette rose est la preuve de mes sentiments.",
               "ea": "Je vous montre la rose, donc vous savez que j'ai des sentiments pour vous."
             }
-          ],
-          "fondateur1": "MONTRER",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE LA PREUVE DE W"
   },
   {
     "headword": "PRIX",
     "letter": "P",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "DEVOIR PAYER",
     "signification": {
       "interne": [
         {
@@ -4695,21 +5472,20 @@
               "phrase": "Le prix de ce manteau est 200 euros.",
               "ea": "Tu veux avoir ce manteau, donc tu dois payer 200 euros."
             }
-          ],
-          "fondateur1": "VOULOIR AVOIR",
-          "fondateur2": "DEVOIR PAYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "PRIX et COÛTER ont le même aspect différencié par l'application : Y (ce qui coûte), W (le prix).",
     "template_syntaxique": "W ÊTRE LE PRIX DE Y"
   },
   {
     "headword": "PROBABLE",
     "letter": "P",
+    "fondateur1": "SE PASSER",
+    "fondateur2": "DEVOIR SE PASSER",
     "template_syntaxique": "*Y* ÊTRE PROBABLE",
     "signification": {
       "interne": [
@@ -4724,41 +5500,40 @@
               "phrase": "Une crise est probable.",
               "ea": "La crise n'a pas eu lieu, pourtant elle devrait avoir lieu."
             }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "DEVOIR SE PASSER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Échelle argumentative : « c'est possible, voire probable » fonctionne, jamais l'inverse. PROBABLE est argumentativement plus fort que POSSIBLE. La différence structurelle POUVOIR vs DEVOIR explique cette échelle."
-            },
-            {
-              "type": 4,
-              "texte": "Test avec mais : « c'est possible mais pas probable » fonctionne. « C'est probable mais pas possible » est contradictoire. DEVOIR présuppose POUVOIR."
-            },
-            {
-              "type": 4,
-              "texte": "Test avec seulement : « c'est seulement possible » sous-entend « pas encore probable ». « C'est seulement probable » est étrange. Seulement marque le degré inférieur."
-            },
-            {
-              "type": 4,
-              "texte": "Gradabilité : « très probable » est naturel, « très possible » est rare. DEVOIR est gradable, POUVOIR est plus binaire."
-            },
-            {
-              "type": 4,
-              "texte": "Enchaînement discursif : « c'est probable, donc prépare-toi » oriente vers l'action (DEVOIR FAIRE). « C'est possible, donc fais attention » oriente vers la précaution (POUVOIR SE PASSER)."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Échelle argumentative : « c'est possible, voire probable » fonctionne, jamais l'inverse. PROBABLE est argumentativement plus fort que POSSIBLE. La différence structurelle POUVOIR vs DEVOIR explique cette échelle."
+      },
+      {
+        "type": 4,
+        "texte": "Test avec mais : « c'est possible mais pas probable » fonctionne. « C'est probable mais pas possible » est contradictoire. DEVOIR présuppose POUVOIR."
+      },
+      {
+        "type": 4,
+        "texte": "Test avec seulement : « c'est seulement possible » sous-entend « pas encore probable ». « C'est seulement probable » est étrange. Seulement marque le degré inférieur."
+      },
+      {
+        "type": 4,
+        "texte": "Gradabilité : « très probable » est naturel, « très possible » est rare. DEVOIR est gradable, POUVOIR est plus binaire."
+      },
+      {
+        "type": 4,
+        "texte": "Enchaînement discursif : « c'est probable, donc prépare-toi » oriente vers l'action (DEVOIR FAIRE). « C'est possible, donc fais attention » oriente vers la précaution (POUVOIR SE PASSER)."
+      }
+    ],
     "nb": "POSSIBLE et PROBABLE se ressemblent mais ne partagent pas le même bloc. Ils diffèrent par POUVOIR vs DEVOIR. Le quasi-bloc POUVOIR(DEVOIR) prédit leur relation scalaire."
   },
   {
     "headword": "PROUVER",
     "letter": "P",
+    "fondateur1": "MONTRER",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -4768,20 +5543,19 @@
               "phrase": "Pierre a prouvé qu'il n'était pas ici hier.",
               "ea": "Pierre a montré un ticket de bus de l'autre station, donc nous savons qu'il n'était pas ici hier."
             }
-          ],
-          "fondateur1": "MONTRER",
-          "fondateur2": "SAVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X PROUVER W À Z"
   },
   {
     "headword": "PRUDENT",
     "letter": "P",
+    "fondateur1": "DANGER",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -4795,20 +5569,19 @@
               "phrase": "Une conduite prudente.",
               "ea": "Il y a du danger, donc on ne fait pas certaines choses."
             }
-          ],
-          "fondateur1": "DANGER",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE PRUDENT"
   },
   {
     "headword": "PRÉCIS",
     "letter": "P",
+    "fondateur1": "VISER",
+    "fondateur2": "ATTEINDRE",
     "signification": {
       "interne": [
         {
@@ -4826,20 +5599,32 @@
               "phrase": "Le mot précis.",
               "ea": "En ayant ce mot, tu diras ce que tu veux."
             }
-          ],
-          "fondateur1": "VISER",
-          "fondateur2": "ATTEINDRE",
-          "criteres": [],
-          "square_value": null
+          ]
+        },
+        {
+          "aspect": "X VISER Y PT NEG X ATTEINDRE Y",
+          "exemples": [
+            {
+              "phrase": "Une réponse imprécise.",
+              "ea": "On visait à exprimer quelque chose, pourtant on ne l'a pas atteint."
+            },
+            {
+              "phrase": "Dire des choses imprécises.",
+              "ea": "Elle voulait dire quelque chose, pourtant elle n'a pas réussi à le transmettre."
+            }
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE PRÉCIS"
   },
   {
     "headword": "PRÊTER",
     "letter": "P",
+    "fondateur1": "DONNER",
+    "fondateur2": "DEVOIR RENDRE",
     "signification": {
       "interne": [
         {
@@ -4849,11 +5634,7 @@
               "phrase": "Pierre prête son vélo à Marie.",
               "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
             }
-          ],
-          "fondateur1": "DONNER",
-          "fondateur2": "DEVOIR RENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -4868,12 +5649,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
     "template_syntaxique": "X PRÊTER Y À Z"
   },
   {
     "headword": "PSYCHOSOMATIQUE",
     "letter": "P",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -4887,20 +5671,19 @@
               "phrase": "Un trouble psychosomatique.",
               "ea": "Il n'est pas malade organiquement, pourtant il y a des signes."
             }
-          ],
-          "fondateur1": "ÊTRE MALADE",
-          "fondateur2": "SIGNES",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE PSYCHOSOMATIQUE"
   },
   {
     "headword": "PÉRIR",
     "letter": "P",
+    "fondateur1": "ACCIDENT",
+    "fondateur2": "MOURIR",
     "signification": {
       "interne": [
         {
@@ -4910,21 +5693,20 @@
               "phrase": "Les civils ont péri dans un raid.",
               "ea": "Les raids sont survenus, donc les civils sont morts."
             }
-          ],
-          "fondateur1": "ACCIDENT",
-          "fondateur2": "MOURIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent.",
     "template_syntaxique": "X PÉRIR"
   },
   {
     "headword": "RADIN",
     "letter": "R",
+    "fondateur1": "COÛTER",
+    "fondateur2": "VOULOIR DÉPENSER",
     "signification": {
       "interne": [
         {
@@ -4942,21 +5724,20 @@
               "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
               "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
             }
-          ],
-          "fondateur1": "COÛTER",
-          "fondateur2": "VOULOIR DÉPENSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes ».",
     "template_syntaxique": "X ÊTRE RADIN"
   },
   {
     "headword": "REMBOURSER",
     "letter": "R",
+    "fondateur1": "DETTE",
+    "fondateur2": "PAYER",
     "signification": {
       "interne": [
         {
@@ -4966,21 +5747,20 @@
               "phrase": "Pierre rembourse Marie.",
               "ea": "Pierre a une dette envers Marie, donc Pierre paye."
             }
-          ],
-          "fondateur1": "DETTE",
-          "fondateur2": "PAYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "Z REMBOURSER X"
   },
   {
     "headword": "RENDRE",
     "letter": "R",
+    "fondateur1": "DONNER",
+    "fondateur2": "DONNER",
     "template_syntaxique": "X RENDRE Y À Z",
     "signification": {
       "interne": [
@@ -4991,11 +5771,7 @@
               "phrase": "Pierre rend le vélo à Marie.",
               "ea": "Marie avait donné le vélo à Pierre, donc Pierre donne le vélo à Marie."
             }
-          ],
-          "fondateur1": "DONNER",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -5010,11 +5786,14 @@
         }
       ]
     },
+    "criteres": [],
     "nb": ""
   },
   {
     "headword": "RESPONSABLE",
     "letter": "R",
+    "fondateur1": "DEVOIR FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -5028,11 +5807,7 @@
               "phrase": "Adeline est responsable des financements.",
               "ea": "Adeline doit gérer les financements, donc elle va gérer les financements."
             }
-          ],
-          "fondateur1": "DEVOIR FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "Y ÊTRE FAUTE DC X DEVOIR RÉPONDRE DE Y",
@@ -5049,21 +5824,20 @@
               "phrase": "Le tabac est responsable de nombreux cancers du poumon.",
               "ea": "Le cancer du poumon se produit, donc le tabac doit en répondre."
             }
-          ],
-          "fondateur1": "ÊTRE FAUTE",
-          "fondateur2": "DEVOIR RÉPONDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Deux sens : (1) être chargé de quelque chose (DEVOIR FAIRE DC FAIRE), (2) être la cause d'une faute (FAUTE DC DEVOIR RÉPONDRE).",
     "template_syntaxique": "X ÊTRE RESPONSABLE DE Y"
   },
   {
     "headword": "RESSUSCITER",
     "letter": "R",
+    "fondateur1": "MOURIR",
+    "fondateur2": "VIVRE",
     "signification": {
       "interne": [
         {
@@ -5073,20 +5847,19 @@
               "phrase": "Pierre a ressuscité.",
               "ea": "Pierre a été mort, pourtant Pierre est vivant."
             }
-          ],
-          "fondateur1": "MOURIR",
-          "fondateur2": "VIVRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X RESSUSCITER"
   },
   {
     "headword": "RESTER",
     "letter": "R",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5097,6 +5870,19 @@
             {
               "phrase": "Pierre attend le bus.",
               "ea": "Le bus devrait arriver, donc Pierre reste là."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y DEVOIR SE PASSER (X RESTER)",
+          "exemples": [
+            {
+              "phrase": "Pierre traîne au café.",
+              "ea": "Rien ne doit se passer, pourtant Pierre reste là."
+            },
+            {
+              "phrase": "Ne traîne pas en route.",
+              "ea": "Rien ne devrait t'y retenir, pourtant tu restes."
             }
           ]
         },
@@ -5114,11 +5900,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "REVENIR",
     "letter": "R",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5133,11 +5922,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "RICHE",
     "letter": "R",
+    "fondateur1": "CHER",
+    "fondateur2": "AVOIR",
     "template_syntaxique": "X ÊTRE RICHE",
     "signification": {
       "interne": [
@@ -5152,24 +5944,40 @@
               "phrase": "Un pays riche.",
               "ea": "Ces ressources coûtent cher, pourtant le pays les a."
             }
-          ],
-          "fondateur1": "CHER",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": ""
   },
   {
     "headword": "RÉAGIR",
     "letter": "R",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y SE PRODUIRE (NEG X RÉAGIR À Y)",
+          "exemples": [
+            {
+              "phrase": "Cet événement est tout à fait normal.",
+              "ea": "Quand ceci se produit, personne ne réagit."
+            },
+            {
+              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
+              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
+            },
+            {
+              "phrase": "Ses résultats d'examen sont normaux.",
+              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
+            }
+          ]
+        },
         {
           "quasibloc": "Y SE PRODUIRE (X RÉAGIR À Y)",
           "exemples": [
@@ -5188,11 +5996,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "RÉPONDRE",
     "letter": "R",
+    "fondateur1": "POSER UNE QUESTION",
+    "fondateur2": "DIRE",
     "signification": {
       "interne": [
         {
@@ -5202,11 +6013,7 @@
               "phrase": "Pierre répond à Marie.",
               "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
             }
-          ],
-          "fondateur1": "POSER UNE QUESTION",
-          "fondateur2": "DIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -5229,11 +6036,14 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X RÉPONDRE À Z"
   },
   {
     "headword": "RÉSILIENCE",
     "letter": "R",
+    "fondateur1": "ÊTRE TRAUMATIQUE",
+    "fondateur2": "SE RELEVER",
     "paradoxal": false,
     "signification": {
       "interne": [
@@ -5252,24 +6062,32 @@
               "phrase": "C'est sa résilience qui lui a permis de rebondir.",
               "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
             }
-          ],
-          "fondateur1": "ÊTRE TRAUMATIQUE",
-          "fondateur2": "SE RELEVER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X AVOIR DE LA RÉSILIENCE"
   },
   {
     "headword": "S'EMPÊCHER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG X VOULOIR FAIRE Y (NEG X POUVOIR S'EMPÊCHER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre achète compulsivement.",
+              "ea": "Pierre ne veut pas acheter, pourtant il ne peut pas s'empêcher d'acheter."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG X VOULOIR FAIRE Y (X POUVOIR S'EMPÊCHER Y)",
           "exemples": [
@@ -5280,11 +6098,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "S'ENNUYER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5299,15 +6120,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "S'INQUIÉTER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "NEG Y ÊTRE GRAVE (X S'INQUIÉTER DE Y)",
+          "exemples": [
+            {
+              "phrase": "Vous êtes anxieux.",
+              "ea": "Ce n'est pas grave, pourtant vous vous en inquiétez."
+            }
+          ]
+        },
         {
           "quasibloc": "NEG Y ÊTRE GRAVE (NEG X S'INQUIÉTER DE Y)",
           "exemples": [
@@ -5322,6 +6155,15 @@
           ]
         },
         {
+          "quasibloc": "Y ÊTRE GRAVE (NEG X S'INQUIÉTER DE Y)",
+          "exemples": [
+            {
+              "phrase": "Il est inconscient du danger.",
+              "ea": "C'est grave, pourtant il ne s'en inquiète pas."
+            }
+          ]
+        },
+        {
           "quasibloc": "Y ÊTRE GRAVE (X S'INQUIÉTER DE Y)",
           "exemples": [
             {
@@ -5331,11 +6173,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SACRIFIER",
     "letter": "S",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -5345,20 +6190,19 @@
               "phrase": "Elle a sacrifié son écharpe pour toi.",
               "ea": "Elle avait besoin de l'écharpe elle-même, pourtant elle te l'a donnée."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Z SACRIFIER Y POUR X"
   },
   {
     "headword": "SATISFAIRE",
     "letter": "S",
+    "fondateur1": "VOULOIR",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -5372,21 +6216,20 @@
               "phrase": "Pierre a satisfait sa curiosité.",
               "ea": "Il voulait savoir, donc il a su."
             }
-          ],
-          "fondateur1": "VOULOIR",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE).",
     "template_syntaxique": "Y SATISFAIRE X"
   },
   {
     "headword": "SATISFAIT",
     "letter": "S",
+    "fondateur1": "VOULOIR",
+    "fondateur2": "AVOIR",
     "signification": {
       "interne": [
         {
@@ -5400,25 +6243,33 @@
               "phrase": "Marie est satisfaite de son repas.",
               "ea": "Elle voulait un bon repas, donc elle l'a eu."
             }
-          ],
-          "fondateur1": "VOULOIR",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE SATISFAIT",
     "nb": "Forme adjectivale de SATISFAIRE : caractérise un sujet dont le désir est comblé."
   },
   {
     "headword": "SAVOIR",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "PERF (NEG X SAVOIR Y) (X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai appris que ton père est Niels Bohr.",
+              "ea": "Je ne savais pas que ton père était Niels Bohr, pourtant je le sais maintenant."
+            }
+          ]
+        },
         {
           "quasibloc": "Z DIRE Y (X SAVOIR Y)",
           "exemples": [
@@ -5429,6 +6280,45 @@
             {
               "phrase": "Je me suis réveillé et j'ai compris qu'il faisait déjà nuit, parce qu'il faisait noir.",
               "ea": "La noirceur à l'extérieur dit qu'il est déjà nuit, donc je le sais."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE POSSIBLE (NEG X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre doute de l'honnêteté de Paul.",
+              "ea": "L'honnêteté de Paul est possible, pourtant Pierre n'en est pas sûr."
+            },
+            {
+              "phrase": "Pierre a des doutes s'il doit acheter un appartement.",
+              "ea": "Il y a une possibilité que cet appartement soit un bon achat, pourtant Pierre n'est pas sûr."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Z DIRE Y (X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Marie lit dans les pensées de Pierre.",
+              "ea": "Pierre n'a rien dit, pourtant Marie sait ce qu'il pense."
+            },
+            {
+              "phrase": "Tu lis dans mes pensées.",
+              "ea": "Je n'ai rien dit, pourtant tu sais ce que je pense."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (X SAVOIR Y) (NEG X SAVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai oublié son nom.",
+              "ea": "Je savais son nom, pourtant je ne le sais plus."
+            },
+            {
+              "phrase": "Pierre a oublié la réunion.",
+              "ea": "Pierre savait qu'il y avait une réunion, pourtant il ne le sait plus."
             }
           ]
         },
@@ -5451,6 +6341,15 @@
             {
               "phrase": "Cette rose est la preuve de mes sentiments.",
               "ea": "Je vous montre la rose, donc vous savez que j'ai des sentiments pour vous."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X SAVOIR Y (X PENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Je soupçonne Pierre d'avoir menti.",
+              "ea": "Je ne sais pas si Pierre a menti, pourtant je pense qu'il a menti."
             }
           ]
         },
@@ -5499,11 +6398,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SE PASSER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5536,6 +6438,72 @@
             {
               "phrase": "L'effet de cette politique se fait sentir.",
               "ea": "On applique cette politique, donc quelque chose se passe."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X ATTENDRE Y (Y SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "La réponse est immédiate.",
+              "ea": "On n'a pas attendu, pourtant la réponse arrive."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (W SE PASSER) (Y SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "J'ai acheté un nouveau livre sur la linguistique.",
+              "ea": "J'avais déjà un livre sur la linguistique, pourtant j'ai acheté un autre livre sur la linguistique."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y SE PASSER (Y POUVOIR SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "C'est possible qu'il vienne.",
+              "ea": "Il n'est pas venu, pourtant il peut venir."
+            },
+            {
+              "phrase": "Un accident est possible ici.",
+              "ea": "Il n'y a pas eu d'accident, pourtant un accident peut se produire."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y SE PASSER (Y DEVOIR SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "C'est probable qu'il vienne.",
+              "ea": "Il n'est pas venu, pourtant il devrait venir."
+            },
+            {
+              "phrase": "Une crise est probable.",
+              "ea": "La crise n'a pas eu lieu, pourtant elle devrait avoir lieu."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X DEVOIR SE PASSER (X SE PASSER)",
+          "exemples": [
+            {
+              "phrase": "Il est survenu quelque chose.",
+              "ea": "Cela ne devait pas se passer, pourtant ça s'est passé."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y DEVOIR SE PASSER (X RESTER)",
+          "exemples": [
+            {
+              "phrase": "Pierre traîne au café.",
+              "ea": "Rien ne doit se passer, pourtant Pierre reste là."
+            },
+            {
+              "phrase": "Ne traîne pas en route.",
+              "ea": "Rien ne devrait t'y retenir, pourtant tu restes."
             }
           ]
         },
@@ -5606,15 +6574,35 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SE PRODUIRE",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y SE PRODUIRE (NEG X RÉAGIR À Y)",
+          "exemples": [
+            {
+              "phrase": "Cet événement est tout à fait normal.",
+              "ea": "Quand ceci se produit, personne ne réagit."
+            },
+            {
+              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
+              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
+            },
+            {
+              "phrase": "Ses résultats d'examen sont normaux.",
+              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
+            }
+          ]
+        },
         {
           "quasibloc": "Y SE PRODUIRE (X RÉAGIR À Y)",
           "exemples": [
@@ -5633,15 +6621,35 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SE RELEVER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE TRAUMATIQUE (X SE RELEVER)",
+          "exemples": [
+            {
+              "phrase": "Elle a fait preuve d'une grande résilience après son accident.",
+              "ea": "L'accident était traumatique, pourtant elle s'est relevée."
+            },
+            {
+              "phrase": "La résilience de ce peuple est admirable.",
+              "ea": "Ce que ce peuple a vécu était traumatique, pourtant il s'est relevé."
+            },
+            {
+              "phrase": "C'est sa résilience qui lui a permis de rebondir.",
+              "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE TRAUMATIQUE (NEG X SE RELEVER)",
           "exemples": [
@@ -5660,11 +6668,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SE RÉPÉTER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5679,11 +6690,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SE SUICIDER",
     "letter": "S",
+    "fondateur1": "FAIRE",
+    "fondateur2": "ÊTRE MORT",
     "signification": {
       "interne": [
         {
@@ -5693,20 +6707,19 @@
               "phrase": "Marie s'est suicidée.",
               "ea": "Marie a fait quelque chose, des suites de quoi elle est morte."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE MORT",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X SE SUICIDER"
   },
   {
     "headword": "SERVIR",
     "letter": "S",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "FAIRE POUR",
     "signification": {
       "interne": [
         {
@@ -5716,20 +6729,20 @@
               "phrase": "Le serveur sert les clients.",
               "ea": "Les clients ont besoin de quelque chose, donc le serveur le fait pour eux."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "FAIRE POUR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X SERVIR Z"
   },
   {
     "headword": "SOUCIEUX",
     "letter": "S",
+    "fondateur1": "ÊTRE GRAVE",
+    "fondateur2": "S'INQUIÉTER",
+    "square_value": 3,
     "signification": {
       "interne": [
         {
@@ -5739,26 +6752,25 @@
               "phrase": "Pierre est soucieux de la situation.",
               "ea": "La situation est grave, donc Pierre s'en inquiète."
             }
-          ],
-          "fondateur1": "ÊTRE GRAVE",
-          "fondateur2": "S'INQUIÉTER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : ce qui est grave suscite l'inquiétude."
-            }
-          ],
-          "square_value": 3
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qui est grave suscite l'inquiétude."
+      }
+    ],
     "template_syntaxique": "X ÊTRE SOUCIEUX DE Y",
     "nb": "SOUCIEUX est la doxa du bloc ÊTRE GRAVE — S'INQUIÉTER : coin (1) du carré, face à ANXIEUX (3), COOL (2) et INCONSCIENT (4)."
   },
   {
     "headword": "SOUPÇONNER",
     "letter": "S",
+    "fondateur1": "SAVOIR",
+    "fondateur2": "PENSER",
     "signification": {
       "interne": [
         {
@@ -5768,20 +6780,19 @@
               "phrase": "Je soupçonne Pierre d'avoir menti.",
               "ea": "Je ne sais pas si Pierre a menti, pourtant je pense qu'il a menti."
             }
-          ],
-          "fondateur1": "SAVOIR",
-          "fondateur2": "PENSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X SOUPÇONNER Y"
   },
   {
     "headword": "SUBIR",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -5796,11 +6807,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SUCCOMBER",
     "letter": "S",
+    "fondateur1": "SUBIR",
+    "fondateur2": "MOURIR",
     "signification": {
       "interne": [
         {
@@ -5810,20 +6824,19 @@
               "phrase": "Pierre a succombé à ses blessures.",
               "ea": "Pierre a subi des blessures, donc il en est mort."
             }
-          ],
-          "fondateur1": "SUBIR",
-          "fondateur2": "MOURIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X SUCCOMBER À Y"
   },
   {
     "headword": "SURVENIR",
     "letter": "S",
+    "fondateur1": "DEVOIR SE PASSER",
+    "fondateur2": "SE PASSER",
     "signification": {
       "interne": [
         {
@@ -5833,20 +6846,19 @@
               "phrase": "Il est survenu quelque chose.",
               "ea": "Cela ne devait pas se passer, pourtant ça s'est passé."
             }
-          ],
-          "fondateur1": "DEVOIR SE PASSER",
-          "fondateur2": "SE PASSER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X SURVENIR"
   },
   {
     "headword": "SYMPTOMATIQUE",
     "letter": "S",
+    "fondateur1": "ÊTRE MALADE",
+    "fondateur2": "SIGNES",
     "signification": {
       "interne": [
         {
@@ -5860,29 +6872,37 @@
               "phrase": "Une phase symptomatique de la maladie.",
               "ea": "Il est malade, donc les signes apparaissent."
             }
-          ],
-          "fondateur1": "ÊTRE MALADE",
-          "fondateur2": "SIGNES",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : être malade implique des signes."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : être malade implique des signes."
+      }
+    ],
     "template_syntaxique": "X ÊTRE SYMPTOMATIQUE"
   },
   {
     "headword": "SÉPARER",
     "letter": "S",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X SÉPARER DE Y (W UNIR X ET Y)",
+          "exemples": [
+            {
+              "phrase": "La Vierge est notre porte vers le ciel.",
+              "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
+            }
+          ]
+        },
         {
           "quasibloc": "X SÉPARER DE Y (NEG W UNIR X ET Y)",
           "exemples": [
@@ -5893,11 +6913,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "SÛR",
     "letter": "S",
+    "fondateur1": "ÊTRE POSSIBLE",
+    "fondateur2": "SAVOIR",
     "signification": {
       "interne": [
         {
@@ -5911,26 +6934,25 @@
               "phrase": "Je suis sûr qu'il viendra.",
               "ea": "Sa venue est possible, donc je le sais."
             }
-          ],
-          "fondateur1": "ÊTRE POSSIBLE",
-          "fondateur2": "SAVOIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : quand quelque chose est possible et qu'on a les éléments, on sait."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : quand quelque chose est possible et qu'on a les éléments, on sait."
+      }
+    ],
     "nb": "SÛR et DOUTER partagent le même bloc POSSIBLE — SAVOIR : SÛR en est l'aspect normatif (DC), DOUTER en est l'aspect transgressif (PT).",
     "template_syntaxique": "X ÊTRE SÛR DE Y"
   },
   {
     "headword": "TEMPS",
     "letter": "T",
+    "fondateur1": "AVOIR",
+    "fondateur2": "POUVOIR FAIRE",
     "signification": {
       "interne": [
         {
@@ -5940,11 +6962,7 @@
               "phrase": "Pierre a le temps pour préparer le dîner.",
               "ea": "Pierre a ceci, donc il peut préparer le dîner."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "POUVOIR FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "X PASSER DC X DONNER À Z",
@@ -5953,11 +6971,7 @@
               "phrase": "Laisse passer du temps, tu verras, cela ira mieux.",
               "ea": "Le temps passe, donc il te donne quelque chose."
             }
-          ],
-          "fondateur1": "PASSER",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "X PASSER DC X PRENDRE À Z",
@@ -5966,11 +6980,7 @@
               "phrase": "Avec le temps, j'ai moins d'énergie.",
               "ea": "Le temps passe, donc il me prend de l'énergie."
             }
-          ],
-          "fondateur1": "PASSER",
-          "fondateur2": "PRENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "X PASSER DC NEG X REVENIR",
@@ -5979,11 +6989,7 @@
               "phrase": "Le temps perdu ne se rattrape pas.",
               "ea": "Le temps passe, donc il ne revient pas."
             }
-          ],
-          "fondateur1": "PASSER",
-          "fondateur2": "REVENIR",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "X PASSER DC Y CHANGER",
@@ -5992,11 +6998,7 @@
               "phrase": "Les temps changent.",
               "ea": "Le temps passe, donc les choses changent."
             }
-          ],
-          "fondateur1": "PASSER",
-          "fondateur2": "CHANGER",
-          "criteres": [],
-          "square_value": null
+          ]
         },
         {
           "aspect": "X AVOIR Y DC Y DEVOIR FAIRE",
@@ -6005,21 +7007,20 @@
               "phrase": "C'est le bon moment pour agir.",
               "ea": "On a ce moment, donc on doit agir."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "DEVOIR FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "PRENDRE et DONNER ont AVOIR en eux. Syntagmes usuels : prendre du temps, donner du temps, perdre le temps.",
     "template_syntaxique": "X AVOIR DU TEMPS"
   },
   {
     "headword": "TENTER",
     "letter": "T",
+    "fondateur1": "VOULOIR AVOIR",
+    "fondateur2": "ESSAYER",
     "signification": {
       "interne": [
         {
@@ -6029,25 +7030,33 @@
               "phrase": "Pierre tente sa chance.",
               "ea": "Il est possible que Pierre gagne, donc Pierre l'essaye."
             }
-          ],
-          "fondateur1": "VOULOIR AVOIR",
-          "fondateur2": "ESSAYER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "Dans d'autres langues, les mêmes paires : essayer/tenter, try/attempt, пробовать/пытаться.",
     "template_syntaxique": "X TENTER Y"
   },
   {
     "headword": "TERMINER",
     "letter": "T",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X TERMINER Y (X POUVOIR AMÉLIORER Y)",
+          "exemples": [
+            {
+              "phrase": "Ce travail est imparfait.",
+              "ea": "On a terminé le travail, pourtant on peut l'améliorer."
+            }
+          ]
+        },
         {
           "quasibloc": "X TERMINER Y (NEG X POUVOIR AMÉLIORER Y)",
           "exemples": [
@@ -6058,15 +7067,35 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "TRAUMATIQUE",
     "letter": "T",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE TRAUMATIQUE (X SE RELEVER)",
+          "exemples": [
+            {
+              "phrase": "Elle a fait preuve d'une grande résilience après son accident.",
+              "ea": "L'accident était traumatique, pourtant elle s'est relevée."
+            },
+            {
+              "phrase": "La résilience de ce peuple est admirable.",
+              "ea": "Ce que ce peuple a vécu était traumatique, pourtant il s'est relevé."
+            },
+            {
+              "phrase": "C'est sa résilience qui lui a permis de rebondir.",
+              "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE TRAUMATIQUE (NEG X SE RELEVER)",
           "exemples": [
@@ -6085,11 +7114,15 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "TRAÎNER",
     "letter": "T",
+    "fondateur1": "DEVOIR SE PASSER",
+    "fondateur2": "RESTER",
+    "square_value": 2,
     "signification": {
       "interne": [
         {
@@ -6103,21 +7136,20 @@
               "phrase": "Ne traîne pas en route.",
               "ea": "Rien ne devrait t'y retenir, pourtant tu restes."
             }
-          ],
-          "fondateur1": "DEVOIR SE PASSER",
-          "fondateur2": "RESTER",
-          "criteres": [],
-          "square_value": 2
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X TRAÎNER",
     "nb": "TRAÎNER partage le bloc DEVOIR SE PASSER — RESTER avec ATTENDRE : ATTENDRE est le normatif (quelque chose doit se passer, donc on reste) ; TRAÎNER est le transposé (rien ne doit se passer, pourtant on reste)."
   },
   {
     "headword": "TUER",
     "letter": "T",
+    "fondateur1": "FAIRE",
+    "fondateur2": "MOURIR",
     "signification": {
       "interne": [
         {
@@ -6127,20 +7159,19 @@
               "phrase": "Marie a tué l'espoir.",
               "ea": "Marie a fait quelque chose, des suites de quoi l'espoir est mort."
             }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "MOURIR",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X TUER Z"
   },
   {
     "headword": "UNIFORME",
     "letter": "U",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -6155,15 +7186,27 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "UNIR",
     "letter": "U",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "X SÉPARER DE Y (W UNIR X ET Y)",
+          "exemples": [
+            {
+              "phrase": "La Vierge est notre porte vers le ciel.",
+              "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
+            }
+          ]
+        },
         {
           "quasibloc": "X SÉPARER DE Y (NEG W UNIR X ET Y)",
           "exemples": [
@@ -6174,11 +7217,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "UTILE",
     "letter": "U",
+    "fondateur1": "AVOIR BESOIN",
+    "fondateur2": "UTILISER",
     "signification": {
       "interne": [
         {
@@ -6192,20 +7238,19 @@
               "phrase": "La voiture est utile pour Pierre.",
               "ea": "Pierre a besoin de se déplacer loin, donc il utilise la voiture."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "UTILISER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "Y ÊTRE UTILE À X"
   },
   {
     "headword": "UTILISER",
     "letter": "U",
+    "fondateur1": "AVOIR",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -6215,11 +7260,7 @@
               "phrase": "Pierre utilise le marteau pour enfoncer le clou.",
               "ea": "Pierre a un marteau, donc il enfonce le clou."
             }
-          ],
-          "fondateur1": "AVOIR",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
@@ -6247,11 +7288,14 @@
         }
       ]
     },
+    "criteres": [],
     "template_syntaxique": "X UTILISER Y"
   },
   {
     "headword": "VACANT",
     "letter": "V",
+    "fondateur1": "OCCUPER",
+    "fondateur2": "POUVOIR OCCUPER",
     "signification": {
       "interne": [
         {
@@ -6261,25 +7305,37 @@
               "phrase": "Cet appartement est vacant.",
               "ea": "Personne n'occupe cet appartement, donc tu peux l'occuper."
             }
-          ],
-          "fondateur1": "OCCUPER",
-          "fondateur2": "POUVOIR OCCUPER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE.",
     "template_syntaxique": "Y ÊTRE VACANT"
   },
   {
     "headword": "VALORISER",
     "letter": "V",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE VIEUX (X VALORISER Y)",
+          "exemples": [
+            {
+              "phrase": "Un meuble ancien.",
+              "ea": "Ce meuble est vieux, pourtant on le valorise."
+            },
+            {
+              "phrase": "Les temps anciens.",
+              "ea": "Ces temps sont vieux, pourtant on les valorise."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE VIEUX (NEG X VALORISER Y)",
           "exemples": [
@@ -6290,11 +7346,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "VENDRE",
     "letter": "V",
+    "fondateur1": "PAYER",
+    "fondateur2": "DONNER",
     "signification": {
       "interne": [
         {
@@ -6304,21 +7363,21 @@
               "phrase": "Marie vend des pommes à Pierre.",
               "ea": "Pierre paye à Marie, donc Marie donne les pommes à Pierre."
             }
-          ],
-          "fondateur1": "PAYER",
-          "fondateur2": "DONNER",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "X VENDRE Y À Z"
   },
   {
     "headword": "VIEILLOT",
     "letter": "V",
+    "fondateur1": "ÊTRE VIEUX",
+    "fondateur2": "VALORISER",
+    "square_value": 3,
     "signification": {
       "interne": [
         {
@@ -6328,29 +7387,41 @@
               "phrase": "Un style vieillot.",
               "ea": "C'est vieux, donc on ne le valorise pas."
             }
-          ],
-          "fondateur1": "ÊTRE VIEUX",
-          "fondateur2": "VALORISER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : ce qui est vieux n'est pas valorisé."
-            }
-          ],
-          "square_value": 3
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [
+      {
+        "type": 4,
+        "texte": "Lien doxal : ce qui est vieux n'est pas valorisé."
+      }
+    ],
     "template_syntaxique": "Y ÊTRE VIEILLOT"
   },
   {
     "headword": "VIEUX",
     "letter": "V",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "Y ÊTRE VIEUX (X VALORISER Y)",
+          "exemples": [
+            {
+              "phrase": "Un meuble ancien.",
+              "ea": "Ce meuble est vieux, pourtant on le valorise."
+            },
+            {
+              "phrase": "Les temps anciens.",
+              "ea": "Ces temps sont vieux, pourtant on les valorise."
+            }
+          ]
+        },
         {
           "quasibloc": "Y ÊTRE VIEUX (NEG X VALORISER Y)",
           "exemples": [
@@ -6361,11 +7432,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "VISER",
     "letter": "V",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -6386,13 +7460,29 @@
               "ea": "En ayant ce mot, tu diras ce que tu veux."
             }
           ]
+        },
+        {
+          "quasibloc": "X VISER Y (NEG X ATTEINDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Une réponse imprécise.",
+              "ea": "On visait à exprimer quelque chose, pourtant on ne l'a pas atteint."
+            },
+            {
+              "phrase": "Dire des choses imprécises.",
+              "ea": "Elle voulait dire quelque chose, pourtant elle n'a pas réussi à le transmettre."
+            }
+          ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "VIVRE",
     "letter": "V",
+    "fondateur1": "ÊTRE",
+    "fondateur2": "ÊTRE",
     "signification": {
       "interne": [
         {
@@ -6402,14 +7492,19 @@
               "phrase": "Il vit à Paris.",
               "ea": "Il a été à Paris, donc il est à Paris."
             }
-          ],
-          "fondateur1": "ÊTRE",
-          "fondateur2": "ÊTRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": [
+        {
+          "quasibloc": "PERF (X MOURIR) (X VIVRE)",
+          "exemples": [
+            {
+              "phrase": "Pierre a ressuscité.",
+              "ea": "Pierre a été mort, pourtant Pierre est vivant."
+            }
+          ]
+        },
         {
           "quasibloc": "PERF (X MOURIR) (NEG X VIVRE)",
           "exemples": [
@@ -6421,12 +7516,15 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "VIVRE implique une continuité de l'être : ce qui a été continue d'être.",
     "template_syntaxique": "X VIVRE"
   },
   {
     "headword": "VOIR",
     "letter": "V",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
@@ -6454,11 +7552,14 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   },
   {
     "headword": "VOLER",
     "letter": "V",
+    "fondateur1": "PAYER",
+    "fondateur2": "PRENDRE",
     "signification": {
       "interne": [
         {
@@ -6468,21 +7569,20 @@
               "phrase": "Il a volé les pommes.",
               "ea": "Il n'a pas payé, pourtant il a pris les pommes."
             }
-          ],
-          "fondateur1": "PAYER",
-          "fondateur2": "PRENDRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "nb": "",
     "template_syntaxique": "X VOLER Y À Z"
   },
   {
     "headword": "VOLONTAIRE",
     "letter": "V",
+    "fondateur1": "DEVOIR FAIRE",
+    "fondateur2": "FAIRE",
     "signification": {
       "interne": [
         {
@@ -6496,20 +7596,19 @@
               "phrase": "Un engagement volontaire.",
               "ea": "Personne ne le force, pourtant il s'engage."
             }
-          ],
-          "fondateur1": "DEVOIR FAIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
+    "criteres": [],
     "template_syntaxique": "X ÊTRE VOLONTAIRE"
   },
   {
     "headword": "VOULOIR",
     "letter": "V",
+    "fondateur1": null,
+    "fondateur2": null,
     "template_syntaxique": "X VOULOIR Y",
     "signification": {
       "interne": [],
@@ -6529,15 +7628,40 @@
         }
       ]
     },
+    "criteres": [],
     "nb": "Primitif sémantique. Non décomposable."
   },
   {
     "headword": "ÊTRE",
     "letter": "Ê",
+    "fondateur1": "",
+    "fondateur2": "",
     "template_syntaxique": "",
     "signification": {
       "interne": [],
       "externe": [
+        {
+          "quasibloc": "PERF (NEG X ÊTRE) (X ÊTRE)",
+          "exemples": [
+            {
+              "phrase": "Une tendance est apparue.",
+              "ea": "Il n'y a pas eu cette tendance, pourtant il y a cette tendance maintenant."
+            },
+            {
+              "phrase": "Le soleil apparaît.",
+              "ea": "Le soleil n'était pas là, pourtant il est là maintenant."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (X ÊTRE) (NEG X ÊTRE)",
+          "exemples": [
+            {
+              "phrase": "Le soleil a disparu.",
+              "ea": "Le soleil était là, pourtant il n'est plus là."
+            }
+          ]
+        },
         {
           "quasibloc": "PERF (X ÊTRE) (X ÊTRE)",
           "exemples": [
@@ -6561,6 +7685,7 @@
           ]
         }
       ]
-    }
+    },
+    "criteres": []
   }
 ]
