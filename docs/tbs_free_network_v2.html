@@ -376,6 +376,26 @@ canvas.addEventListener('mouseup', () => { dragging = false; });
 canvas.addEventListener('mouseleave', () => { dragging = false; tooltip.style.display = 'none'; });
 canvas.addEventListener('wheel', e => { e.preventDefault(); zoom = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, zoom - e.deltaY * 0.002)); draw(); });
 
+// Touch events pour mobile
+canvas.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    dragging = true;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+  }
+}, { passive: true });
+canvas.addEventListener('touchmove', e => {
+  if (dragging && e.touches.length === 1) {
+    e.preventDefault();
+    rotY += (e.touches[0].clientX - lastX) * 0.006;
+    rotX += (e.touches[0].clientY - lastY) * 0.006;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+    draw();
+  }
+}, { passive: false });
+canvas.addEventListener('touchend', () => { dragging = false; });
+
 function setZoom(z) { zoom = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, z)); draw(); }
 document.getElementById('zoom-plus').addEventListener('click', e => { e.stopPropagation(); setZoom(zoom + ZOOM_STEP); });
 document.getElementById('zoom-minus').addEventListener('click', e => { e.stopPropagation(); setZoom(zoom - ZOOM_STEP); });
