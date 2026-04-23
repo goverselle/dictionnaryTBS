@@ -6793,32 +6793,32 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X EN AVOIR VU) DC X NEG VOULOIR Y",
-          "fondateur1": "EN AVOIR VU",
+          "aspect": "PERF (X RÉPÉTER Y) DC X NEG VOULOIR Y",
+          "fondateur1": "RÉPÉTER",
           "fondateur2": "VOULOIR",
           "criteres": [
             {
               "type": 4,
-              "texte": "Lien doxal : si on en a déjà vu, on n'en veut plus."
+              "texte": "Lien doxal : si on a déjà répété quelque chose, on n'en veut plus."
             }
           ],
           "square_value": null,
           "exemples": [
             {
               "phrase": "Je suis lassé de cette routine.",
-              "ea": "J'en ai vu de cette routine, donc je n'en veux plus."
+              "ea": "J'ai répété cette routine, donc je n'en veux plus."
             },
             {
               "phrase": "Il est lassé des réunions.",
-              "ea": "Il en a vu des réunions, donc il n'en veut plus."
+              "ea": "Il a répété les réunions, donc il n'en veut plus."
             },
             {
               "phrase": "On est lassé de ses excuses.",
-              "ea": "On en a vu des excuses, donc on n'en veut plus."
+              "ea": "On a répété les excuses, donc on n'en veut plus."
             },
             {
               "phrase": "Elle est lassée de toujours répéter.",
-              "ea": "Elle en a vu, donc elle ne veut plus répéter."
+              "ea": "Elle a répété, donc elle ne veut plus."
             }
           ]
         }
