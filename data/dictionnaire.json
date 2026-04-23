@@ -6545,5 +6545,45 @@
         }
       ]
     }
+  },
+  {
+    "headword": "BLASÉ",
+    "letter": "B",
+    "template_syntaxique": "X ÊTRE BLASÉ DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR VÉCU Y DC X NEG SENTIR Y",
+          "fondateur1": "AVOIR VÉCU",
+          "fondateur2": "SENTIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on a déjà vécu quelque chose, on ne le sent plus."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il a tout vu, rien ne le touche.",
+              "ea": "Il a vécu beaucoup, donc il ne sent plus rien."
+            },
+            {
+              "phrase": "Elle ne réagit plus aux surprises.",
+              "ea": "Elle a déjà vécu ça, donc elle ne sent plus."
+            },
+            {
+              "phrase": "Rien ne les étonne, ils ont tout connu.",
+              "ea": "Ils ont vécu tout, donc ils ne sentent plus rien."
+            },
+            {
+              "phrase": "Il regarde sans émotion.",
+              "ea": "Il a déjà vu, donc il ne sent plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    }
   }
 ]
