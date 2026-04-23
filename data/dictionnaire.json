@@ -6566,19 +6566,19 @@
           "exemples": [
             {
               "phrase": "On est blasé des films de super-héros.",
-              "ea": "On en a déjà vu, donc on ne sent plus rien."
+              "ea": "On en a vu des films de super-héros, donc on ne sent plus rien."
             },
             {
               "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
-              "ea": "J'en ai déjà vu, donc je ne sens plus rien."
+              "ea": "J'en ai vu des séries Netflix, donc je ne sens plus rien."
             },
             {
               "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
-              "ea": "On en a trop vu, donc on ne sent plus rien."
+              "ea": "On en a vu grâce à internet, donc on ne sent plus rien."
             },
             {
               "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
-              "ea": "Ils en ont trop vu, donc ils ne sentent plus rien."
+              "ea": "Ils en ont vu, donc ils ne sentent plus rien."
             }
           ]
         }
