@@ -59,6 +59,7 @@
     <div class="zoom-bar">
         <button class="btn-pill btn-pill--dim" id="zoom-out">A−</button>
         <button class="btn-pill btn-pill--mint" id="zoom-in">A+</button>
+        <button class="btn-pill btn-pill--dim" id="cache-clear" title="Vider le cache">↻</button>
     </div>
 
     <footer class="app-footer">
@@ -388,6 +389,16 @@
                 }
             });
         }
+
+        // Cache clear
+        document.getElementById('cache-clear').addEventListener('click', function () {
+            if ('caches' in window) {
+                caches.keys().then(function (names) {
+                    names.forEach(function (name) { caches.delete(name); });
+                });
+            }
+            location.reload(true);
+        });
 
         // Zoom A+ / A−
         var rootSize = 18;
