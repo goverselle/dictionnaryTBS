@@ -6565,20 +6565,20 @@
           "square_value": null,
           "exemples": [
             {
-              "phrase": "Il a tout vu, rien ne le touche.",
-              "ea": "Il a vécu beaucoup, donc il ne sent plus rien."
+              "phrase": "On est blasé des films de super-héros.",
+              "ea": "On a déjà vu beaucoup de films de super-héros, donc on ne sent plus rien."
             },
             {
-              "phrase": "Elle ne réagit plus aux surprises.",
-              "ea": "Elle a déjà vécu ça, donc elle ne sent plus."
+              "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
+              "ea": "J'ai déjà vécu toutes ces séries, donc je ne sens plus rien."
             },
             {
-              "phrase": "Rien ne les étonne, ils ont tout connu.",
-              "ea": "Ils ont vécu tout, donc ils ne sentent plus rien."
+              "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
+              "ea": "On a vécu tout trop vite, donc on ne sent plus."
             },
             {
-              "phrase": "Il regarde sans émotion.",
-              "ea": "Il a déjà vu, donc il ne sent plus."
+              "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
+              "ea": "Ils ont tout vécu, donc ils ne sentent plus rien."
             }
           ]
         }
