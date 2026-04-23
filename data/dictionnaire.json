@@ -6805,20 +6805,8 @@
           "square_value": null,
           "exemples": [
             {
-              "phrase": "Je suis lassé de cette routine.",
-              "ea": "J'ai répété cette routine, donc je n'en veux plus."
-            },
-            {
-              "phrase": "Il est lassé des réunions.",
-              "ea": "Il a répété les réunions, donc il n'en veut plus."
-            },
-            {
-              "phrase": "On est lassé de ses excuses.",
-              "ea": "On a répété les excuses, donc on n'en veut plus."
-            },
-            {
-              "phrase": "Elle est lassée de toujours répéter.",
-              "ea": "Elle a répété, donc elle ne veut plus."
+              "phrase": "Il est lassé de ce plat.",
+              "ea": "Il a répété ce plat, donc il n'en veut plus."
             }
           ]
         }
