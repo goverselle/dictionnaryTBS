@@ -6553,32 +6553,32 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X VOIR Y) DC X NEG AVOIR ENTHOUSIASME",
+          "aspect": "PERF (X VOIR Y) DC X NEG SENTIR Y",
           "fondateur1": "VOIR",
-          "fondateur2": "AVOIR ENTHOUSIASME",
+          "fondateur2": "SENTIR",
           "criteres": [
             {
               "type": 4,
-              "texte": "Lien doxal : si on a déjà vu quelque chose, on n'a plus d'enthousiasme pour ça."
+              "texte": "Lien doxal : si on a déjà vu quelque chose, on ne le sent plus."
             }
           ],
           "square_value": null,
           "exemples": [
             {
               "phrase": "On est blasé des films de super-héros.",
-              "ea": "On a déjà vu ces films, donc on n'a plus d'enthousiasme."
+              "ea": "On a déjà vu ces films, donc on ne sent plus rien."
             },
             {
               "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
-              "ea": "J'ai déjà vu ces séries, donc je n'ai plus d'enthousiasme."
+              "ea": "J'ai déjà vu ces séries, donc je ne sens plus rien."
             },
             {
               "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
-              "ea": "On a déjà tout vu, donc on n'a plus d'enthousiasme."
+              "ea": "On a déjà tout vu, donc on ne sent plus rien."
             },
             {
               "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
-              "ea": "Ils ont déjà tout vu, donc ils n'ont plus d'enthousiasme."
+              "ea": "Ils ont déjà tout vu, donc ils ne sentent plus rien."
             }
           ]
         }
