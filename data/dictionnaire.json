@@ -6586,5 +6586,46 @@
       "externe": []
     },
     "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X EN AVOIR VU), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir."
+  },
+  {
+    "headword": "LASSÉ",
+    "letter": "L",
+    "template_syntaxique": "X ÊTRE LASSÉ DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X EN AVOIR VU) DC X NEG VOULOIR Y",
+          "fondateur1": "EN AVOIR VU",
+          "fondateur2": "VOULOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on en a déjà vu, on n'en veut plus."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Je suis lassé de cette routine.",
+              "ea": "J'en ai vu de cette routine, donc je n'en veux plus."
+            },
+            {
+              "phrase": "Il est lassé des réunions.",
+              "ea": "Il en a vu des réunions, donc il n'en veut plus."
+            },
+            {
+              "phrase": "On est lassé de ses excuses.",
+              "ea": "On en a vu des excuses, donc on n'en veut plus."
+            },
+            {
+              "phrase": "Elle est lassée de toujours répéter.",
+              "ea": "Elle en a vu, donc elle ne veut plus répéter."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Même structure que BLASÉ (PERF X EN AVOIR VU), mais le résultat est NEG VOULOIR (on ne veut plus) au lieu de NEG SENTIR (on ne sent plus)."
   }
 ]
