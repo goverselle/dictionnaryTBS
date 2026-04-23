@@ -549,6 +549,7 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                     <button class="btn-net" data-hw="{headword}">◉ Réseau</button>
                 </div>
                 <div class="headword">{headword}{paradox_badge}</div>
+                <div class="entry-updated">MAJ : {entry.get("updated", "")}</div>
             '''
             if entry.get("template_syntaxique"):
                 html += (
@@ -675,6 +676,8 @@ def generate_html(entries, types_criteres, template):
     
     # Remplacements
     html = template
+    last_updated = max((e.get("updated", "") for e in entries), default="")
+    html = html.replace("{{LAST_UPDATED}}", last_updated)
     html = html.replace("{{ENTRIES_COUNT}}", str(len(entries)))
     html = html.replace("{{LETTERS_COUNT}}", str(len(by_letter)))
     html = html.replace("{{BLOCS_COUNT}}", str(len(by_bloc)))

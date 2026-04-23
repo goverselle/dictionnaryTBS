@@ -919,6 +919,13 @@ html, body {
     border-color: #333;
 }
 
+.entry-updated {
+    font-size: 0.55rem;
+    color: var(--fg-faint);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
 .fondateur-de {
     display: flex;
     flex-wrap: wrap;

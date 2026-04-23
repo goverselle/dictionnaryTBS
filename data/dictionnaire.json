@@ -16,7 +16,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ACHETER",
@@ -40,7 +41,8 @@
       ],
       "externe": []
     },
-    "nb": "Exemple de négation métalinguistique : « Pierre n'a pas acheté les pommes, on les lui a donné. »"
+    "nb": "Exemple de négation métalinguistique : « Pierre n'a pas acheté les pommes, on les lui a donné. »",
+    "updated": "2026-04-23"
   },
   {
     "headword": "AIMER",
@@ -68,7 +70,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "AMÉLIORER",
@@ -114,7 +117,8 @@
         }
       ]
     },
-    "template_syntaxique": "X AMÉLIORER Y"
+    "template_syntaxique": "X AMÉLIORER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ANCIEN",
@@ -146,7 +150,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE ANCIEN"
+    "template_syntaxique": "Y ÊTRE ANCIEN",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ANXIEUX",
@@ -169,7 +174,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE ANXIEUX"
+    "template_syntaxique": "X ÊTRE ANXIEUX",
+    "updated": "2026-04-23"
   },
   {
     "headword": "APPARAÎTRE",
@@ -196,7 +202,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X APPARAÎTRE"
+    "template_syntaxique": "X APPARAÎTRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "APPRENDRE",
@@ -230,7 +237,8 @@
       ]
     },
     "nb": "Négation métalinguistique : « Tu ne m'as rien appris, je le savais déjà. »",
-    "template_syntaxique": "X APPRENDRE Y"
+    "template_syntaxique": "X APPRENDRE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "APPUYER",
@@ -249,7 +257,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ARGENT",
@@ -291,7 +300,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ARRIVER",
@@ -314,7 +324,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ASYMPTOMATIQUE",
@@ -342,7 +353,8 @@
       "externe": []
     },
     "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES.",
-    "template_syntaxique": "X ÊTRE ASYMPTOMATIQUE"
+    "template_syntaxique": "X ÊTRE ASYMPTOMATIQUE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ATTEINDRE",
@@ -387,7 +399,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ATTENDRE",
@@ -425,7 +438,8 @@
         }
       ]
     },
-    "template_syntaxique": "X ATTENDRE Y"
+    "template_syntaxique": "X ATTENDRE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "AVARE",
@@ -457,7 +471,8 @@
       "externe": []
     },
     "nb": "AVARE se combine naturellement avec « avare de Y » car DONNER exige un complément d'objet. Les noms sujets de DONNER (Dieu, mère, père, gouvernement, ciel, lune) se combinent avec AVARE : « un gouvernement avare de mesures », « une lune avare de lumière ». L'hypallage « lumière avare » se comprend par transfert : c'est la source (lune, ciel) qui est avare, non la lumière. « Cadeau avare » est contradictoire : un cadeau est un don accompli, or AVARE signifie l'absence de don.",
-    "template_syntaxique": "X ÊTRE AVARE DE Y AVEC Z"
+    "template_syntaxique": "X ÊTRE AVARE DE Y AVEC Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "AVOIR",
@@ -684,7 +699,8 @@
         }
       ]
     },
-    "nb": "Primitif sémantique. Non décomposable."
+    "nb": "Primitif sémantique. Non décomposable.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "BESOIN",
@@ -739,7 +755,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "CHANCE",
@@ -771,7 +788,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X AVOIR LA CHANCE DE Y"
+    "template_syntaxique": "X AVOIR LA CHANCE DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "AVOIR PEUR",
@@ -794,7 +812,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE VOIR",
@@ -830,7 +849,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "BAS",
@@ -853,7 +873,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE BAS"
+    "template_syntaxique": "Y ÊTRE BAS",
+    "updated": "2026-04-23"
   },
   {
     "headword": "BEAU",
@@ -886,7 +907,8 @@
         }
       ]
     },
-    "template_syntaxique": "Y ÊTRE BEAU"
+    "template_syntaxique": "Y ÊTRE BEAU",
+    "updated": "2026-04-23"
   },
   {
     "headword": "BEAUCOUP",
@@ -905,7 +927,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "BON MARCHÉ",
@@ -929,7 +952,8 @@
       "externe": []
     },
     "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP.",
-    "template_syntaxique": "Y ÊTRE BON MARCHÉ"
+    "template_syntaxique": "Y ÊTRE BON MARCHÉ",
+    "updated": "2026-04-23"
   },
   {
     "headword": "BOUTON",
@@ -952,7 +976,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UN BOUTON"
+    "template_syntaxique": "Y ÊTRE UN BOUTON",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CAUSER",
@@ -975,7 +1000,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X CAUSER Y"
+    "template_syntaxique": "X CAUSER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CESSER",
@@ -999,7 +1025,8 @@
       "externe": []
     },
     "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus.",
-    "template_syntaxique": "X CESSER DE Y"
+    "template_syntaxique": "X CESSER DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CHANGER",
@@ -1018,7 +1045,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "CHER",
@@ -1056,7 +1084,8 @@
       ]
     },
     "nb": "CHER et BON MARCHÉ partagent le même bloc COÛTER — ÊTRE BEAUCOUP. La règle « ce qui coûte ne se donne pas » est portée par COÛTER (quasi-bloc externe), dont CHER hérite par décomposition.",
-    "template_syntaxique": "Y ÊTRE CHER"
+    "template_syntaxique": "Y ÊTRE CHER",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CHERCHER",
@@ -1083,7 +1112,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X CHERCHER Y"
+    "template_syntaxique": "X CHERCHER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "COMMENCER",
@@ -1111,7 +1141,8 @@
       "externe": []
     },
     "template_syntaxique": "X COMMENCER À Y",
-    "nb": "COMMENCER partage le bloc FAIRE — FAIRE avec CESSER et CONTINUER. C'est le transposé de CESSER et le converse de CONTINUER."
+    "nb": "COMMENCER partage le bloc FAIRE — FAIRE avec CESSER et CONTINUER. C'est le transposé de CESSER et le converse de CONTINUER.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "COMPRENDRE",
@@ -1158,7 +1189,8 @@
       ]
     },
     "nb": "Ce qui explique pourquoi les deux sont possibles : Z comprend X et Z comprend Y, c'est-à-dire comprendre quelqu'un et comprendre quelque chose.",
-    "template_syntaxique": "X COMPRENDRE Y"
+    "template_syntaxique": "X COMPRENDRE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "COMPULSIF",
@@ -1182,7 +1214,8 @@
       "externe": []
     },
     "nb": "Différence avec IMPULSIF : à analyser.",
-    "template_syntaxique": "X ÊTRE COMPULSIF"
+    "template_syntaxique": "X ÊTRE COMPULSIF",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CONTINUER",
@@ -1215,7 +1248,8 @@
       "externe": []
     },
     "template_syntaxique": "X CONTINUER DE Y",
-    "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y)."
+    "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y).",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CONVAINCRE",
@@ -1239,7 +1273,8 @@
       "externe": []
     },
     "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général.",
-    "template_syntaxique": "Z CONVAINCRE X DE Y"
+    "template_syntaxique": "Z CONVAINCRE X DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "COOL",
@@ -1272,7 +1307,8 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE COOL",
-    "nb": "Anglicisme. COOL est le converse d'ANXIEUX dans le carré argumentatif du bloc ÊTRE GRAVE — S'INQUIÉTER."
+    "nb": "Anglicisme. COOL est le converse d'ANXIEUX dans le carré argumentatif du bloc ÊTRE GRAVE — S'INQUIÉTER.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "CORRESPONDRE",
@@ -1299,7 +1335,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "COURAGEUX",
@@ -1326,7 +1363,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE COURAGEUX"
+    "template_syntaxique": "X ÊTRE COURAGEUX",
+    "updated": "2026-04-23"
   },
   {
     "headword": "COÛTER",
@@ -1390,7 +1428,8 @@
       ]
     },
     "nb": "Le quasi-bloc externe code le corollaire pragmatique : ce qui coûte n'est pas à donner gratuitement. Base de la nuance GÉNÉREUX (donne malgré le coût). CHER et BON MARCHÉ héritent de cette règle via la décomposition du bloc COÛTER — ÊTRE BEAUCOUP.",
-    "template_syntaxique": "Y COÛTER W à X"
+    "template_syntaxique": "Y COÛTER W à X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DANGER",
@@ -1440,7 +1479,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "DENTS",
@@ -1463,7 +1503,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X AVOIR DES DENTS"
+    "template_syntaxique": "X AVOIR DES DENTS",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DIFFICILE",
@@ -1505,7 +1546,8 @@
         }
       ]
     },
-    "template_syntaxique": "Y ÊTRE DIFFICILE"
+    "template_syntaxique": "Y ÊTRE DIFFICILE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DIRE",
@@ -1628,7 +1670,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "DISPARAÎTRE",
@@ -1652,7 +1695,8 @@
       "externe": []
     },
     "nb": "Apparenté à PARTIR et MOURIR par la structure. PARTIR : PERF (X ÊTRE LÀ) PT NEG (X ÊTRE LÀ) — se rapporte au lieu. MOURIR : PERF (X VIVRE) PT NEG (X VIVRE) — se rapporte à la vie.",
-    "template_syntaxique": "X DISPARAÎTRE"
+    "template_syntaxique": "X DISPARAÎTRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DISTRAIRE",
@@ -1675,7 +1719,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X DISTRAIRE Z"
+    "template_syntaxique": "X DISTRAIRE Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DONNER",
@@ -1793,7 +1838,8 @@
       ]
     },
     "nb": "Les deux fondateurs sont AVOIR : X AVOIR (passé) et Z AVOIR (présent). Le transfert de possession est au cœur du mot.",
-    "template_syntaxique": "X DONNER Y À Z"
+    "template_syntaxique": "X DONNER Y À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DOULOUREUX",
@@ -1816,7 +1862,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "DOUTER",
@@ -1844,7 +1891,8 @@
       "externe": []
     },
     "nb": "L'incohérence de « un doute possible », « je doute possiblement » remonte à l'impossibilité de « je sais possiblement ». SAVOIR suppose la clôture de la modalité (on sait ou on ne sait pas). « Doute possible » se rencontre dans des phrases négatives (« aucun doute possible », « sans l'ombre d'un doute possible ») où POSSIBLE sert d'intensif rhétorique : on nie la possibilité même qu'un doute surgisse.",
-    "template_syntaxique": "X DOUTER DE Y"
+    "template_syntaxique": "X DOUTER DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DÉLICIEUX",
@@ -1868,7 +1916,8 @@
       "externe": []
     },
     "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative.",
-    "template_syntaxique": "Y ÊTRE DÉLICIEUX"
+    "template_syntaxique": "Y ÊTRE DÉLICIEUX",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DÉPENSER",
@@ -1928,7 +1977,8 @@
       ]
     },
     "nb": "",
-    "template_syntaxique": "X DÉPENSER"
+    "template_syntaxique": "X DÉPENSER",
+    "updated": "2026-04-23"
   },
   {
     "headword": "DÉRANGER",
@@ -1947,7 +1997,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "DÉTAIL",
@@ -1966,7 +2017,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "EFFET",
@@ -1999,7 +2051,8 @@
       "externe": []
     },
     "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas.",
-    "template_syntaxique": "Y AVOIR UN EFFET"
+    "template_syntaxique": "Y AVOIR UN EFFET",
+    "updated": "2026-04-23"
   },
   {
     "headword": "EMBELLIR",
@@ -2022,7 +2075,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X EMBELLIR Y"
+    "template_syntaxique": "X EMBELLIR Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "EMPRUNTER",
@@ -2046,7 +2100,8 @@
       "externe": []
     },
     "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
-    "template_syntaxique": "Z EMPRUNTER Y À X"
+    "template_syntaxique": "Z EMPRUNTER Y À X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "EN BONNE SANTÉ",
@@ -2078,7 +2133,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE EN BONNE SANTÉ"
+    "template_syntaxique": "X ÊTRE EN BONNE SANTÉ",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ESPÉRER",
@@ -2097,7 +2153,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ESSAYER",
@@ -2116,7 +2173,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÉCHOUER",
@@ -2139,7 +2197,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÉCHOUER À Z"
+    "template_syntaxique": "X ÉCHOUER À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÉCONOME",
@@ -2168,7 +2227,8 @@
       "externe": []
     },
     "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
-    "template_syntaxique": "X ÊTRE ÉCONOME"
+    "template_syntaxique": "X ÊTRE ÉCONOME",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÉCONOMISER",
@@ -2192,7 +2252,8 @@
       "externe": []
     },
     "nb": "",
-    "template_syntaxique": "X ÉCONOMISER"
+    "template_syntaxique": "X ÉCONOMISER",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÉNERVER",
@@ -2215,7 +2276,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÉNERVER X"
+    "template_syntaxique": "Y ÉNERVER X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÉTONNER",
@@ -2238,7 +2300,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÉTONNER X"
+    "template_syntaxique": "Y ÉTONNER X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "FACILE",
@@ -2270,7 +2333,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE FACILE"
+    "template_syntaxique": "Y ÊTRE FACILE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE",
@@ -2584,7 +2648,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE ATTENTION",
@@ -2616,7 +2681,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE PENSER",
@@ -2635,7 +2701,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE PEUR",
@@ -2658,7 +2725,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE UN EFFORT",
@@ -2690,7 +2758,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAUTE",
@@ -2717,7 +2786,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FONCTIONNER",
@@ -2736,7 +2806,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "GENRER",
@@ -2790,7 +2861,8 @@
         }
       ]
     },
-    "template_syntaxique": "X GENRER Z"
+    "template_syntaxique": "X GENRER Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "GOÛTER",
@@ -2809,7 +2881,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "GRATUIT",
@@ -2837,7 +2910,8 @@
       "externe": []
     },
     "nb": "GRATUIT est la converse de COÛTER : aspect nié des deux côtés (NEG … DC NEG …). L'application porte sur l'objet Y, comme pour COÛTER.",
-    "template_syntaxique": "Y ÊTRE GRATUIT"
+    "template_syntaxique": "Y ÊTRE GRATUIT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "GRAVE",
@@ -2869,7 +2943,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "GÉNÉREUX",
@@ -2893,7 +2968,8 @@
       "externe": []
     },
     "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
-    "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z"
+    "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "HABITUEL",
@@ -2917,7 +2993,8 @@
       "externe": []
     },
     "nb": "HABITUEL est moins général que NORMAL : on dit « les pluies sont normales » mais pas « les pluies sont habituelles ». On a envie de recourir à « souvent » pour le décrire, mais en décrivant l'habituel comme quelque chose qui, quand cela se fait, est normal, on obtient le même effet. SOUVENT est un opérateur argumentatif, non un adverbe de temps.",
-    "template_syntaxique": "Y ÊTRE HABITUEL POUR X"
+    "template_syntaxique": "Y ÊTRE HABITUEL POUR X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "HAUT",
@@ -2949,7 +3026,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE HAUT"
+    "template_syntaxique": "Y ÊTRE HAUT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "HORIZON",
@@ -2976,7 +3054,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE À L'HORIZON"
+    "template_syntaxique": "Y ÊTRE À L'HORIZON",
+    "updated": "2026-04-23"
   },
   {
     "headword": "IDENTIFIER",
@@ -3007,7 +3086,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "IMMÉDIAT",
@@ -3030,7 +3110,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE IMMÉDIAT"
+    "template_syntaxique": "Y ÊTRE IMMÉDIAT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "IMPARFAIT",
@@ -3053,7 +3134,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE IMPARFAIT"
+    "template_syntaxique": "Y ÊTRE IMPARFAIT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "IMPORTANT",
@@ -3093,7 +3175,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "IMPÉRATIF",
@@ -3117,7 +3200,8 @@
       "externe": []
     },
     "template_syntaxique": "",
-    "nb": "Cas spécial : signification d'une forme grammaticale."
+    "nb": "Cas spécial : signification d'une forme grammaticale.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "INCONSCIENT",
@@ -3141,7 +3225,8 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE INCONSCIENT",
-    "nb": "INCONSCIENT est le converse de COOL et le transposé d'ANXIEUX dans le carré du bloc ÊTRE GRAVE — S'INQUIÉTER."
+    "nb": "INCONSCIENT est le converse de COOL et le transposé d'ANXIEUX dans le carré du bloc ÊTRE GRAVE — S'INQUIÉTER.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "INHABITUEL",
@@ -3164,7 +3249,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE INHABITUEL POUR X"
+    "template_syntaxique": "Y ÊTRE INHABITUEL POUR X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "INSTRUMENT",
@@ -3187,7 +3273,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UN INSTRUMENT"
+    "template_syntaxique": "Y ÊTRE UN INSTRUMENT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "INTELLIGENT",
@@ -3210,7 +3297,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE INTELLIGENT"
+    "template_syntaxique": "X ÊTRE INTELLIGENT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "IRRESPONSABLE",
@@ -3237,7 +3325,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE IRRESPONSABLE"
+    "template_syntaxique": "X ÊTRE IRRESPONSABLE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "JOUER",
@@ -3256,7 +3345,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "JOUET",
@@ -3279,7 +3369,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UN JOUET"
+    "template_syntaxique": "Y ÊTRE UN JOUET",
+    "updated": "2026-04-23"
   },
   {
     "headword": "JOUIR",
@@ -3302,7 +3393,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "LANGUE",
@@ -3325,7 +3417,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UNE LANGUE"
+    "template_syntaxique": "Y ÊTRE UNE LANGUE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "LIBRE",
@@ -3348,7 +3441,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE LIBRE"
+    "template_syntaxique": "Y ÊTRE LIBRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "LIRE DANS LES PENSÉES",
@@ -3376,7 +3470,8 @@
       "externe": []
     },
     "template_syntaxique": "X LIRE DANS LES PENSÉES DE Z",
-    "nb": "LIRE DANS LES PENSÉES est le transposé de COMPRENDRE dans le bloc DIRE — SAVOIR : rien n'a été dit, pourtant X sait."
+    "nb": "LIRE DANS LES PENSÉES est le transposé de COMPRENDRE dans le bloc DIRE — SAVOIR : rien n'a été dit, pourtant X sait.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "LOUER",
@@ -3399,7 +3494,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Z LOUER Y À X"
+    "template_syntaxique": "Z LOUER Y À X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MAIN",
@@ -3432,7 +3528,8 @@
       "externe": []
     },
     "nb": "MAIN renvoie à l'action concrète, au travail, au faire. Le sens de l'aide émotionnelle n'appartient pas à MAIN mais aux expressions lexicalisées (tendre la main, main sur l'épaule). « Quand je suis triste, elle est une main » n'évoque pas la consolation mais l'accomplissement de tâches. « Avoir la main sur quelque chose » (avoir accès, donc pouvoir intervenir), « prêter la main » (aider à faire) exploitent cet aspect.",
-    "template_syntaxique": "X AVOIR UNE MAIN"
+    "template_syntaxique": "X AVOIR UNE MAIN",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MALADE",
@@ -3468,7 +3565,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MASOCHISTE",
@@ -3497,7 +3595,8 @@
       "externe": []
     },
     "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y).",
-    "template_syntaxique": "X ÊTRE MASOCHISTE"
+    "template_syntaxique": "X ÊTRE MASOCHISTE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MESQUIN",
@@ -3529,7 +3628,8 @@
       "externe": []
     },
     "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes.",
-    "template_syntaxique": "X ÊTRE MESQUIN"
+    "template_syntaxique": "X ÊTRE MESQUIN",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MIEUX",
@@ -3552,7 +3652,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MONOTONE",
@@ -3575,7 +3676,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE MONOTONE"
+    "template_syntaxique": "Y ÊTRE MONOTONE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MONTRER",
@@ -3594,7 +3696,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MORDRE",
@@ -3613,7 +3716,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MORT",
@@ -3632,7 +3736,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MORT NATURELLE",
@@ -3660,7 +3765,8 @@
       ],
       "externe": []
     },
-    "nb": "Transgressif du bloc ACCIDENT — MOURIR. Même bloc que PÉRIR mais aspect PT : la mort survient sans accident (vieillesse, maladie)."
+    "nb": "Transgressif du bloc ACCIDENT — MOURIR. Même bloc que PÉRIR mais aspect PT : la mort survient sans accident (vieillesse, maladie).",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MOT",
@@ -3704,7 +3810,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X AVOIR LE MOT Y"
+    "template_syntaxique": "X AVOIR LE MOT Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MOURIR",
@@ -3763,7 +3870,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "MÉGENRER",
@@ -3796,7 +3904,8 @@
       "externe": []
     },
     "nb": "",
-    "template_syntaxique": "X MÉGENRER Z"
+    "template_syntaxique": "X MÉGENRER Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "MÉTICULEUX",
@@ -3819,7 +3928,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE MÉTICULEUX"
+    "template_syntaxique": "X ÊTRE MÉTICULEUX",
+    "updated": "2026-04-23"
   },
   {
     "headword": "NORMAL",
@@ -3860,7 +3970,8 @@
         }
       ]
     },
-    "template_syntaxique": "Y ÊTRE NORMAL"
+    "template_syntaxique": "Y ÊTRE NORMAL",
+    "updated": "2026-04-23"
   },
   {
     "headword": "NOUVEAU",
@@ -3883,7 +3994,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE NOUVEAU"
+    "template_syntaxique": "Y ÊTRE NOUVEAU",
+    "updated": "2026-04-23"
   },
   {
     "headword": "NÉCESSAIRE",
@@ -3926,7 +4038,8 @@
       ]
     },
     "nb": "Quasi-bloc externe doxal : ce qui est nécessaire ne coûte pas beaucoup (NEG Z COÛTER BEAUCOUP). C'est le chaînon manquant pour l'échelle PAUVRE/CHER/GRATUIT : si X NEG POUVOIR AVOIR le nécessaire — et que le nécessaire NEG COÛTER BEAUCOUP —, alors a fortiori NEG POUVOIR AVOIR ce qui COÛTE BEAUCOUP (CHER). GRATUIT (NEG COÛTER) reste en dessous du nécessaire, donc non bloqué. Échelle : GRATUIT < NÉCESSAIRE/BON MARCHÉ < CHER.",
-    "template_syntaxique": "Z ÊTRE NÉCESSAIRE POUR Y"
+    "template_syntaxique": "Z ÊTRE NÉCESSAIRE POUR Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "NÉGLIGER",
@@ -3953,7 +4066,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X NÉGLIGER Y"
+    "template_syntaxique": "X NÉGLIGER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "OBTENIR",
@@ -3976,7 +4090,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X OBTENIR Y"
+    "template_syntaxique": "X OBTENIR Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "OBÉIR",
@@ -4003,7 +4118,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Z OBÉIR À X"
+    "template_syntaxique": "Z OBÉIR À X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "OCCUPER",
@@ -4022,7 +4138,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "OPTIMISTE",
@@ -4045,7 +4162,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE OPTIMISTE"
+    "template_syntaxique": "X ÊTRE OPTIMISTE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "OUBLIER",
@@ -4073,7 +4191,8 @@
       "externe": []
     },
     "template_syntaxique": "X OUBLIER Y",
-    "nb": "OUBLIER est le transposé d'APPRENDRE dans le carré du bloc SAVOIR — SAVOIR : APPRENDRE = PERF (NEG X SAVOIR Y) PT X SAVOIR Y ; OUBLIER = PERF (X SAVOIR Y) PT NEG X SAVOIR Y."
+    "nb": "OUBLIER est le transposé d'APPRENDRE dans le carré du bloc SAVOIR — SAVOIR : APPRENDRE = PERF (NEG X SAVOIR Y) PT X SAVOIR Y ; OUBLIER = PERF (X SAVOIR Y) PT NEG X SAVOIR Y.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PARANOÏAQUE",
@@ -4101,7 +4220,8 @@
       "externe": []
     },
     "nb": "À la différence d'anxieux (NEG Y SE PASSER PT X S'INQUIÉTER), où la peur est sans objet, paranoïaque nie un danger spécifique : le sujet construit une menace là où il n'y en a pas. Syntaxiquement, anxieux fonctionne comme état transitoire (Il est anxieux ce matin, Elle a été anxieuse toute la journée), tandis que paranoïaque décrit un trait permanent (Il est paranoïaque ; ?Il est paranoïaque ce matin est bizarre, sauf emploi hyperbolique). Cette différence syntaxique rejoint la différence aspectuelle : anxieux décrit un état lié à un moment (il faut un moment où rien ne se passe), paranoïaque décrit un trait permanent.",
-    "template_syntaxique": "X ÊTRE PARANOÏAQUE"
+    "template_syntaxique": "X ÊTRE PARANOÏAQUE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PARFAIT",
@@ -4124,7 +4244,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE PARFAIT"
+    "template_syntaxique": "Y ÊTRE PARFAIT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PARTAGER",
@@ -4157,7 +4278,8 @@
         }
       ]
     },
-    "template_syntaxique": "X PARTAGER Y AVEC Z"
+    "template_syntaxique": "X PARTAGER Y AVEC Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PASSER",
@@ -4203,7 +4325,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "PASSER SOUS SILENCE",
@@ -4236,7 +4359,8 @@
       "externe": []
     },
     "template_syntaxique": "X PASSER SOUS SILENCE Y",
-    "nb": "PASSER SOUS SILENCE est le réciproque de COMPRENDRE dans le bloc DIRE — SAVOIR : c'est la doxa contrapositive (NEG A DC NEG B). Face à LIRE DANS LES PENSÉES (converse)."
+    "nb": "PASSER SOUS SILENCE est le réciproque de COMPRENDRE dans le bloc DIRE — SAVOIR : c'est la doxa contrapositive (NEG A DC NEG B). Face à LIRE DANS LES PENSÉES (converse).",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PAUVRE",
@@ -4260,7 +4384,8 @@
       "externe": []
     },
     "nb": "« Une main pauvre » se comprend comme la personne qui demande quelque chose. C'est le mot MAIN qui signifie une action, or dans PAUVRE l'action est dans le quasi-bloc.",
-    "template_syntaxique": "X ÊTRE PAUVRE"
+    "template_syntaxique": "X ÊTRE PAUVRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PAYER",
@@ -4351,7 +4476,8 @@
         }
       ]
     },
-    "template_syntaxique": "X PAYER Y À Z"
+    "template_syntaxique": "X PAYER Y À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PENSER",
@@ -4405,7 +4531,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "PERSUADER",
@@ -4429,7 +4556,8 @@
       "externe": []
     },
     "nb": "PERSUADER est plus général que CONVAINCRE. CONVAINCRE : DIRE DC PENSER. PERSUADER : DIRE DC FAIRE.",
-    "template_syntaxique": "Z PERSUADER X DE Y"
+    "template_syntaxique": "Z PERSUADER X DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PORTE",
@@ -4452,7 +4580,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UNE PORTE"
+    "template_syntaxique": "Y ÊTRE UNE PORTE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "POSER UNE QUESTION",
@@ -4471,7 +4600,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "POSSIBLE",
@@ -4513,7 +4643,8 @@
         }
       ]
     },
-    "nb": ""
+    "nb": "",
+    "updated": "2026-04-23"
   },
   {
     "headword": "POUVOIR",
@@ -4542,7 +4673,8 @@
         }
       ]
     },
-    "nb": "Primitif sémantique. Non décomposable."
+    "nb": "Primitif sémantique. Non décomposable.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PRENDRE",
@@ -4585,7 +4717,8 @@
       ]
     },
     "template_syntaxique": "X PRENDRE Y",
-    "nb": "FACILE et PRENDRE partagent le même aspect (X FAIRE DC X AVOIR Y) mais diffèrent par l'application : FACILE porte l'accent sur Y (l'objet est aisé à obtenir), PRENDRE sur X (l'agent s'empare). Cette parenté se voit dans les locutions du type « il suffit de prendre » : il n'y a qu'à faire le geste pour l'avoir."
+    "nb": "FACILE et PRENDRE partagent le même aspect (X FAIRE DC X AVOIR Y) mais diffèrent par l'application : FACILE porte l'accent sur Y (l'objet est aisé à obtenir), PRENDRE sur X (l'agent s'empare). Cette parenté se voit dans les locutions du type « il suffit de prendre » : il n'y a qu'à faire le geste pour l'avoir.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PREUVE",
@@ -4608,7 +4741,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE LA PREUVE DE W"
+    "template_syntaxique": "Y ÊTRE LA PREUVE DE W",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PRIX",
@@ -4632,7 +4766,8 @@
       "externe": []
     },
     "nb": "PRIX et COÛTER ont le même aspect différencié par l'application : Y (ce qui coûte), W (le prix).",
-    "template_syntaxique": "W ÊTRE LE PRIX DE Y"
+    "template_syntaxique": "W ÊTRE LE PRIX DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PROBABLE",
@@ -4681,7 +4816,8 @@
       ],
       "externe": []
     },
-    "nb": "POSSIBLE et PROBABLE se ressemblent mais ne partagent pas le même bloc. Ils diffèrent par POUVOIR vs DEVOIR. Le quasi-bloc POUVOIR(DEVOIR) prédit leur relation scalaire."
+    "nb": "POSSIBLE et PROBABLE se ressemblent mais ne partagent pas le même bloc. Ils diffèrent par POUVOIR vs DEVOIR. Le quasi-bloc POUVOIR(DEVOIR) prédit leur relation scalaire.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PROUVER",
@@ -4704,7 +4840,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X PROUVER W À Z"
+    "template_syntaxique": "X PROUVER W À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PRUDENT",
@@ -4731,7 +4868,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE PRUDENT"
+    "template_syntaxique": "X ÊTRE PRUDENT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PRÉCIS",
@@ -4762,7 +4900,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE PRÉCIS"
+    "template_syntaxique": "Y ÊTRE PRÉCIS",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PRÊTER",
@@ -4796,7 +4935,8 @@
       ]
     },
     "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
-    "template_syntaxique": "X PRÊTER Y À Z"
+    "template_syntaxique": "X PRÊTER Y À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PSYCHOSOMATIQUE",
@@ -4823,7 +4963,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE PSYCHOSOMATIQUE"
+    "template_syntaxique": "Y ÊTRE PSYCHOSOMATIQUE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "PÉRIR",
@@ -4847,7 +4988,8 @@
       "externe": []
     },
     "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent.",
-    "template_syntaxique": "X PÉRIR"
+    "template_syntaxique": "X PÉRIR",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RADIN",
@@ -4879,7 +5021,8 @@
       "externe": []
     },
     "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes ».",
-    "template_syntaxique": "X ÊTRE RADIN"
+    "template_syntaxique": "X ÊTRE RADIN",
+    "updated": "2026-04-23"
   },
   {
     "headword": "REMBOURSER",
@@ -4903,7 +5046,8 @@
       "externe": []
     },
     "nb": "",
-    "template_syntaxique": "Z REMBOURSER X"
+    "template_syntaxique": "Z REMBOURSER X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RENDRE",
@@ -4937,7 +5081,8 @@
         }
       ]
     },
-    "nb": ""
+    "nb": "",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RESPONSABLE",
@@ -4986,7 +5131,8 @@
       "externe": []
     },
     "nb": "Deux sens : (1) être chargé de quelque chose (DEVOIR FAIRE DC FAIRE), (2) être la cause d'une faute (FAUTE DC DEVOIR RÉPONDRE).",
-    "template_syntaxique": "X ÊTRE RESPONSABLE DE Y"
+    "template_syntaxique": "X ÊTRE RESPONSABLE DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RESSUSCITER",
@@ -5009,7 +5155,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X RESSUSCITER"
+    "template_syntaxique": "X RESSUSCITER",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RESTER",
@@ -5041,7 +5188,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "REVENIR",
@@ -5060,7 +5208,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "RICHE",
@@ -5088,7 +5237,8 @@
       ],
       "externe": []
     },
-    "nb": ""
+    "nb": "",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RÉAGIR",
@@ -5115,7 +5265,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "RÉPONDRE",
@@ -5156,7 +5307,8 @@
         }
       ]
     },
-    "template_syntaxique": "X RÉPONDRE À Z"
+    "template_syntaxique": "X RÉPONDRE À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "RÉSILIENCE",
@@ -5188,7 +5340,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X AVOIR DE LA RÉSILIENCE"
+    "template_syntaxique": "X AVOIR DE LA RÉSILIENCE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "S'EMPÊCHER",
@@ -5207,7 +5360,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "S'ENNUYER",
@@ -5226,7 +5380,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "S'INQUIÉTER",
@@ -5258,7 +5413,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SACRIFIER",
@@ -5281,7 +5437,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Z SACRIFIER Y POUR X"
+    "template_syntaxique": "Z SACRIFIER Y POUR X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SATISFAIRE",
@@ -5309,7 +5466,8 @@
       "externe": []
     },
     "nb": "Se distingue d'OBTENIR (X FAIRE Y DC X AVOIR Y) par le premier terme : SATISFAIRE insiste sur le désir comblé (VOULOIR), OBTENIR sur l'action accomplie (FAIRE).",
-    "template_syntaxique": "Y SATISFAIRE X"
+    "template_syntaxique": "Y SATISFAIRE X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SATISFAIT",
@@ -5337,7 +5495,8 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE SATISFAIT",
-    "nb": "Forme adjectivale de SATISFAIRE : caractérise un sujet dont le désir est comblé."
+    "nb": "Forme adjectivale de SATISFAIRE : caractérise un sujet dont le désir est comblé.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SAVOIR",
@@ -5426,7 +5585,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE PASSER",
@@ -5533,7 +5693,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE PRODUIRE",
@@ -5560,7 +5721,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE RELEVER",
@@ -5587,7 +5749,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE RÉPÉTER",
@@ -5606,7 +5769,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SE SUICIDER",
@@ -5629,7 +5793,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X SE SUICIDER"
+    "template_syntaxique": "X SE SUICIDER",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SERVIR",
@@ -5652,7 +5817,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X SERVIR Z"
+    "template_syntaxique": "X SERVIR Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SOUCIEUX",
@@ -5681,7 +5847,8 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE SOUCIEUX DE Y",
-    "nb": "SOUCIEUX est la doxa du bloc ÊTRE GRAVE — S'INQUIÉTER : coin (1) du carré, face à ANXIEUX (3), COOL (2) et INCONSCIENT (4)."
+    "nb": "SOUCIEUX est la doxa du bloc ÊTRE GRAVE — S'INQUIÉTER : coin (1) du carré, face à ANXIEUX (3), COOL (2) et INCONSCIENT (4).",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SOUPÇONNER",
@@ -5704,7 +5871,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X SOUPÇONNER Y"
+    "template_syntaxique": "X SOUPÇONNER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SUBIR",
@@ -5723,7 +5891,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SUCCOMBER",
@@ -5746,7 +5915,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X SUCCOMBER À Y"
+    "template_syntaxique": "X SUCCOMBER À Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SURVENIR",
@@ -5769,7 +5939,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X SURVENIR"
+    "template_syntaxique": "X SURVENIR",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SYMPTOMATIQUE",
@@ -5801,7 +5972,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE SYMPTOMATIQUE"
+    "template_syntaxique": "X ÊTRE SYMPTOMATIQUE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "SÉPARER",
@@ -5820,7 +5992,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "SÛR",
@@ -5853,7 +6026,8 @@
       "externe": []
     },
     "nb": "SÛR et DOUTER partagent le même bloc POSSIBLE — SAVOIR : SÛR en est l'aspect normatif (DC), DOUTER en est l'aspect transgressif (PT).",
-    "template_syntaxique": "X ÊTRE SÛR DE Y"
+    "template_syntaxique": "X ÊTRE SÛR DE Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "TEMPS",
@@ -5942,7 +6116,8 @@
       "externe": []
     },
     "nb": "PRENDRE et DONNER ont AVOIR en eux. Syntagmes usuels : prendre du temps, donner du temps, perdre le temps.",
-    "template_syntaxique": "X AVOIR DU TEMPS"
+    "template_syntaxique": "X AVOIR DU TEMPS",
+    "updated": "2026-04-23"
   },
   {
     "headword": "TENTER",
@@ -5966,7 +6141,8 @@
       "externe": []
     },
     "nb": "Dans d'autres langues, les mêmes paires : essayer/tenter, try/attempt, пробовать/пытаться.",
-    "template_syntaxique": "X TENTER Y"
+    "template_syntaxique": "X TENTER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "TERMINER",
@@ -5985,7 +6161,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "TRAUMATIQUE",
@@ -6012,7 +6189,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "TRAÎNER",
@@ -6040,7 +6218,8 @@
       "externe": []
     },
     "template_syntaxique": "X TRAÎNER",
-    "nb": "TRAÎNER partage le bloc DEVOIR SE PASSER — RESTER avec ATTENDRE : ATTENDRE est le normatif (quelque chose doit se passer, donc on reste) ; TRAÎNER est le transposé (rien ne doit se passer, pourtant on reste)."
+    "nb": "TRAÎNER partage le bloc DEVOIR SE PASSER — RESTER avec ATTENDRE : ATTENDRE est le normatif (quelque chose doit se passer, donc on reste) ; TRAÎNER est le transposé (rien ne doit se passer, pourtant on reste).",
+    "updated": "2026-04-23"
   },
   {
     "headword": "TUER",
@@ -6063,7 +6242,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X TUER Z"
+    "template_syntaxique": "X TUER Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "UNIFORME",
@@ -6082,7 +6262,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "UNIR",
@@ -6101,7 +6282,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "UTILE",
@@ -6128,7 +6310,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE UTILE À X"
+    "template_syntaxique": "Y ÊTRE UTILE À X",
+    "updated": "2026-04-23"
   },
   {
     "headword": "UTILISER",
@@ -6174,7 +6357,8 @@
         }
       ]
     },
-    "template_syntaxique": "X UTILISER Y"
+    "template_syntaxique": "X UTILISER Y",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VACANT",
@@ -6198,7 +6382,8 @@
       "externe": []
     },
     "nb": "LIBRE est l'équivalent plus général, du fait que OCCUPER est plus spécifique que FAIRE.",
-    "template_syntaxique": "Y ÊTRE VACANT"
+    "template_syntaxique": "Y ÊTRE VACANT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VALORISER",
@@ -6217,7 +6402,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "VENDRE",
@@ -6241,7 +6427,8 @@
       "externe": []
     },
     "nb": "",
-    "template_syntaxique": "X VENDRE Y À Z"
+    "template_syntaxique": "X VENDRE Y À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VIEILLOT",
@@ -6269,7 +6456,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "Y ÊTRE VIEILLOT"
+    "template_syntaxique": "Y ÊTRE VIEILLOT",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VIEUX",
@@ -6288,7 +6476,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "VISER",
@@ -6315,7 +6504,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "VIVRE",
@@ -6349,7 +6539,8 @@
       ]
     },
     "nb": "VIVRE implique une continuité de l'être : ce qui a été continue d'être.",
-    "template_syntaxique": "X VIVRE"
+    "template_syntaxique": "X VIVRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VOIR",
@@ -6381,7 +6572,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "VOLER",
@@ -6405,7 +6597,8 @@
       "externe": []
     },
     "nb": "",
-    "template_syntaxique": "X VOLER Y À Z"
+    "template_syntaxique": "X VOLER Y À Z",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VOLONTAIRE",
@@ -6432,7 +6625,8 @@
       ],
       "externe": []
     },
-    "template_syntaxique": "X ÊTRE VOLONTAIRE"
+    "template_syntaxique": "X ÊTRE VOLONTAIRE",
+    "updated": "2026-04-23"
   },
   {
     "headword": "VOULOIR",
@@ -6465,7 +6659,8 @@
         }
       ]
     },
-    "nb": "Primitif sémantique. Non décomposable."
+    "nb": "Primitif sémantique. Non décomposable.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "ÊTRE",
@@ -6497,7 +6692,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "DEVOIR",
@@ -6525,7 +6721,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "FAIRE À",
@@ -6544,7 +6741,8 @@
           ]
         }
       ]
-    }
+    },
+    "updated": "2026-04-23"
   },
   {
     "headword": "BLASÉ",
@@ -6585,7 +6783,8 @@
       ],
       "externe": []
     },
-    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X EN AVOIR VU), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir."
+    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X EN AVOIR VU), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir.",
+    "updated": "2026-04-23"
   },
   {
     "headword": "LASSÉ",
@@ -6625,6 +6824,7 @@
         }
       ],
       "externe": []
-    }
+    },
+    "updated": "2026-04-23"
   }
 ]
