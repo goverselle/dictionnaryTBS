@@ -6553,38 +6553,38 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X VOIR Y) DC X NEG SENTIR Y",
-          "fondateur1": "VOIR",
+          "aspect": "PERF (X AVOIR EXPÉRIENCE Y) DC X NEG SENTIR Y",
+          "fondateur1": "AVOIR EXPÉRIENCE",
           "fondateur2": "SENTIR",
           "criteres": [
             {
               "type": 4,
-              "texte": "Lien doxal : si on a déjà vu quelque chose, on ne le sent plus."
+              "texte": "Lien doxal : si on a déjà l'expérience de quelque chose, on ne le sent plus."
             }
           ],
           "square_value": null,
           "exemples": [
             {
               "phrase": "On est blasé des films de super-héros.",
-              "ea": "On a déjà vu ces films, donc on ne sent plus rien."
+              "ea": "On a déjà l'expérience de ces films, donc on ne sent plus rien."
             },
             {
               "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
-              "ea": "J'ai déjà vu ces séries, donc je ne sens plus rien."
+              "ea": "J'ai déjà l'expérience de ces séries, donc je ne sens plus rien."
             },
             {
               "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
-              "ea": "On a déjà tout vu, donc on ne sent plus rien."
+              "ea": "On a déjà l'expérience de tout, donc on ne sent plus rien."
             },
             {
               "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
-              "ea": "Ils ont déjà tout vu, donc ils ne sentent plus rien."
+              "ea": "Ils ont déjà l'expérience de tout, donc ils ne sentent plus rien."
             }
           ]
         }
       ],
       "externe": []
     },
-    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X VOIR Y), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir."
+    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X AVOIR EXPÉRIENCE Y), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir."
   }
 ]
