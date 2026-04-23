@@ -348,6 +348,8 @@ def _split_primitive(word):
         return [stripped]
     if stripped.startswith("ÊTRE ") or stripped == "ÊTRE":
         return [stripped]
+    if stripped.startswith("AVOIR ") or stripped == "AVOIR":
+        return [stripped]
     m = re.match(r"^(\w+)\s+(SE\s+.+|S'.+)$", stripped)
     if m:
         return [m.group(1), m.group(2)]
