@@ -6553,8 +6553,8 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X AVOIR VÉCU Y DC X NEG SENTIR Y",
-          "fondateur1": "AVOIR VÉCU",
+          "aspect": "X AVOIR VU Y DC X NEG SENTIR Y",
+          "fondateur1": "AVOIR VU",
           "fondateur2": "SENTIR",
           "criteres": [
             {
@@ -6570,15 +6570,15 @@
             },
             {
               "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
-              "ea": "J'ai déjà vécu toutes ces séries, donc je ne sens plus rien."
+              "ea": "J'ai déjà vu toutes ces séries, donc je ne sens plus rien."
             },
             {
               "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
-              "ea": "On a vécu tout trop vite, donc on ne sent plus."
+              "ea": "On a vu tout trop vite, donc on ne sent plus."
             },
             {
               "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
-              "ea": "Ils ont tout vécu, donc ils ne sentent plus rien."
+              "ea": "Ils ont tout vu, donc ils ne sentent plus rien."
             }
           ]
         }
