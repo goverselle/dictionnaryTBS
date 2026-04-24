@@ -1344,18 +1344,18 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y FAIRE PEUR PT X FAIRE Y",
+          "aspect": "X AVOIR PEUR DE Y PT X FAIRE Y",
           "exemples": [
             {
               "phrase": "Pierre est courageux.",
-              "ea": "La situation fait peur, pourtant Pierre agit."
+              "ea": "Pierre a peur, pourtant il fait."
             },
             {
               "phrase": "Une décision courageuse.",
-              "ea": "Cette décision fait peur, pourtant on la prend."
+              "ea": "On a peur de cette décision, pourtant on la prend."
             }
           ],
-          "fondateur1": "FAIRE PEUR",
+          "fondateur1": "AVOIR PEUR",
           "fondateur2": "FAIRE",
           "criteres": [],
           "square_value": null
@@ -1364,7 +1364,7 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE COURAGEUX",
-    "updated": "2026-04-23"
+    "updated": "2026-04-24"
   },
   {
     "headword": "COÛTER",
