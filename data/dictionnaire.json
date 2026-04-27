@@ -3588,19 +3588,19 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y ÊTRE DOULOUREUX DC X JOUIR Y",
+          "aspect": "X AVOIR MAL DC X AIMER",
           "exemples": [
             {
               "phrase": "Pierre est un vrai masochiste.",
-              "ea": "C'est douloureux, donc il en jouit."
+              "ea": "Il a mal, donc il aime."
             },
             {
               "phrase": "Elle est masochiste dans ses relations.",
-              "ea": "Ses relations sont douloureuses, donc elle en jouit."
+              "ea": "Ses relations lui font mal, donc elle aime."
             }
           ],
-          "fondateur1": "ÊTRE DOULOUREUX",
-          "fondateur2": "JOUIR",
+          "fondateur1": "AVOIR MAL",
+          "fondateur2": "AIMER",
           "criteres": [],
           "square_value": null
         }
@@ -3609,7 +3609,7 @@
     },
     "nb": "Mot paradoxal. La doxa serait Y ÊTRE DOULOUREUX DC NEG X JOUIR Y. La négation de masochiste (Pierre n'est pas masochiste) exprime un retour à la doxa, Y ÊTRE DOULOUREUX DC NEG X JOUIR Y).",
     "template_syntaxique": "X ÊTRE MASOCHISTE",
-    "updated": "2026-04-23"
+    "updated": "2026-04-27"
   },
   {
     "headword": "MESQUIN",
