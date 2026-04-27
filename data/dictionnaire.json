@@ -68,10 +68,23 @@
               "ea": "Si tu goûtes, tu vas aimer."
             }
           ]
+        },
+        {
+          "quasibloc": "X AIMER Y (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "J'aime le chocolat donc je le mange assez souvent.",
+              "ea": "Je l'aime, donc je le fais."
+            },
+            {
+              "phrase": "J'aime le chocolat pourtant je le mange très souvent.",
+              "ea": "Je l'aime, pourtant je le fais quand même."
+            }
+          ]
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-04-27"
   },
   {
     "headword": "AMÉLIORER",
