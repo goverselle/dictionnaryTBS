@@ -3101,10 +3101,6 @@
               "ea": "La police a examiné les indices, donc elle a reconnu le suspect."
             },
             {
-              "phrase": "Pierre a eu beau examiner l'objet, il n'a pas réussi à l'identifier.",
-              "ea": "Il a examiné, pourtant il n'a pas reconnu."
-            },
-            {
               "phrase": "On l'a identifié grâce aux empreintes.",
               "ea": "On a examiné les empreintes, donc on l'a reconnu."
             }
@@ -6864,5 +6860,45 @@
     },
     "updated": "2026-04-23",
     "nb": "Différence avec blasé : si Pierre est lassé d'un plat, il peut encore aimer le souvenir du plat ou sa saveur en soi, mais il n'en veut plus maintenant. La lassitude porte sur le vouloir actuel, pas sur l'évaluation affective. Si Pierre est blasé d'un plat, il ne sent plus rien — pas d'envie, mais pas de dégoût non plus, pas de souvenir ému. Atonie affective totale."
+  },
+  {
+    "headword": "EXAMINER",
+    "letter": "E",
+    "template_syntaxique": "X EXAMINER Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
+          "exemples": [
+            {
+              "phrase": "La police a identifié le suspect.",
+              "ea": "Elle a examiné les indices, donc elle a reconnu le suspect."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-05-02"
+  },
+  {
+    "headword": "RECONNAÎTRE",
+    "letter": "R",
+    "template_syntaxique": "X RECONNAÎTRE Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
+          "exemples": [
+            {
+              "phrase": "La police a identifié le suspect.",
+              "ea": "Elle a examiné les indices, donc elle a reconnu le suspect."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-05-02"
   }
 ]
