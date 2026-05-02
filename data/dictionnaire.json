@@ -6868,15 +6868,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X REGARDER Y DC X POUVOIR SAVOIR",
+          "aspect": "X REGARDER Y DC X DEVOIR SAVOIR",
           "fondateur1": "REGARDER",
-          "fondateur2": "POUVOIR SAVOIR",
+          "fondateur2": "DEVOIR SAVOIR",
           "criteres": [],
           "square_value": null,
           "exemples": [
             {
               "phrase": "Le médecin examine le patient.",
-              "ea": "Il regarde, donc il peut savoir."
+              "ea": "Il regarde, donc il doit savoir."
             }
           ]
         }
