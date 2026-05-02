@@ -6866,7 +6866,21 @@
     "letter": "E",
     "template_syntaxique": "X EXAMINER Y",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "X REGARDER Y DC X POUVOIR SAVOIR",
+          "fondateur1": "REGARDER",
+          "fondateur2": "POUVOIR SAVOIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Le médecin examine le patient.",
+              "ea": "Il regarde, donc il peut savoir."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
