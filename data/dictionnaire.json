@@ -6876,10 +6876,6 @@
             {
               "phrase": "Tu sais ce qu'elle a ? — Le docteur l'a examinée.",
               "ea": "Il a regardé, donc il doit savoir."
-            },
-            {
-              "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
-              "ea": "Il a regardé, pourtant il ne sait pas."
             }
           ]
         }
@@ -6889,8 +6885,12 @@
           "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
           "exemples": [
             {
-              "phrase": "La police a identifié le suspect.",
-              "ea": "Elle a examiné les indices, donc elle a reconnu le suspect."
+              "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
+              "ea": "Il a examiné, donc il reconnaît."
+            },
+            {
+              "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
+              "ea": "Il a examiné, pourtant il ne reconnaît pas."
             }
           ]
         }
@@ -6909,8 +6909,12 @@
           "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
           "exemples": [
             {
-              "phrase": "La police a identifié le suspect.",
-              "ea": "Elle a examiné les indices, donc elle a reconnu le suspect."
+              "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
+              "ea": "Il a examiné, donc il reconnaît."
+            },
+            {
+              "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
+              "ea": "Il a examiné, pourtant il ne reconnaît pas."
             }
           ]
         }
