@@ -6874,8 +6874,8 @@
           "square_value": null,
           "exemples": [
             {
-              "phrase": "Tu sais ce qu'elle a ? — Le docteur l'a examinée.",
-              "ea": "Il a regardé, donc il doit savoir."
+              "phrase": "Le médecin examine le patient.",
+              "ea": "Il regarde, donc il doit savoir."
             }
           ]
         }
