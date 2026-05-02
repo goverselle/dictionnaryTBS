@@ -3073,9 +3073,44 @@
   {
     "headword": "IDENTIFIER",
     "letter": "I",
-    "template_syntaxique": "",
+    "template_syntaxique": "X IDENTIFIER Y",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "X EXAMINER Y DC X RECONNAÎTRE Y",
+          "fondateur1": "EXAMINER",
+          "fondateur2": "RECONNAÎTRE",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau examiner l'objet, il n'a pas réussi à l'identifier. »"
+            },
+            {
+              "type": 5,
+              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'examen est inscrit dans le verbe."
+            },
+            {
+              "type": 1,
+              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'examen ou de la reconnaissance."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "La police a identifié le suspect.",
+              "ea": "La police a examiné les indices, donc elle a reconnu le suspect."
+            },
+            {
+              "phrase": "Pierre a eu beau examiner l'objet, il n'a pas réussi à l'identifier.",
+              "ea": "Il a examiné, pourtant il n'a pas reconnu."
+            },
+            {
+              "phrase": "On l'a identifié grâce aux empreintes.",
+              "ea": "On a examiné les empreintes, donc on l'a reconnu."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "X IDENTIFIER Z COMME Y (X DIRE Y)",
@@ -3100,7 +3135,8 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-05-02",
+    "nb": "L'aspect examiner DC reconnaître structure l'ensemble des emplois classiques d'identifier. Les co-occurrences naturelles (formellement, avec certitude, après analyse, grâce aux empreintes) appartiennent toutes au champ de l'examen méthodique et de la reconnaissance assurée."
   },
   {
     "headword": "IMMÉDIAT",
