@@ -6945,5 +6945,30 @@
       "externe": []
     },
     "updated": "2026-05-02"
+  },
+  {
+    "headword": "REGARDER",
+    "letter": "R",
+    "template_syntaxique": "X REGARDER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE ATTENTION DC X VOIR",
+          "fondateur1": "FAIRE ATTENTION",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Regarde !",
+              "ea": "Fais attention, donc tu vas voir."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Le préfixe re- — invisible synchroniquement — laisse deviner que le verbe a été fabriqué historiquement par condensation d'une argumentation qui circulait à l'état de quasi-bloc. Le français médiéval a senti le besoin d'avoir un mot pour dire « tenir l'attention sur, en vue de voir », et a construit re-garder à cet effet. Sept siècles plus tard, le préfixe a été oublié, mais le quasi-bloc cristallisé reste actif.",
+    "updated": "2026-05-02"
   }
 ]
