@@ -6967,15 +6967,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X VOULOIR DC X VOIR",
-          "fondateur1": "VOULOIR",
+          "aspect": "X VOULOIR SAVOIR Y DC X VOIR Y",
+          "fondateur1": "VOULOIR SAVOIR",
           "fondateur2": "VOIR",
           "criteres": [],
           "square_value": null,
           "exemples": [
             {
-              "phrase": "Regarde !",
-              "ea": "Tu veux, donc tu vois."
+              "phrase": "Marie a regardé les emplois de ce mot.",
+              "ea": "Marie voulait savoir ces emplois, donc elle les a vus."
             }
           ]
         }
