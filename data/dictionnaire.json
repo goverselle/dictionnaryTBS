@@ -6967,15 +6967,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X FAIRE ATTENTION DC X VOIR",
-          "fondateur1": "FAIRE ATTENTION",
+          "aspect": "X VOULOIR DC X VOIR",
+          "fondateur1": "VOULOIR",
           "fondateur2": "VOIR",
           "criteres": [],
           "square_value": null,
           "exemples": [
             {
               "phrase": "Regarde !",
-              "ea": "Fais attention, donc tu vas voir."
+              "ea": "Tu veux, donc tu vois."
             }
           ]
         }
