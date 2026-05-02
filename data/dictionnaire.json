@@ -6903,7 +6903,21 @@
     "letter": "R",
     "template_syntaxique": "X RECONNAÎTRE Y",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "X REVOIR Y DC X SE SOUVENIR DE Y",
+          "fondateur1": "REVOIR",
+          "fondateur2": "SE SOUVENIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Je l'ai reconnu dans la rue.",
+              "ea": "Je l'ai revu, donc je me suis souvenu de lui."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
