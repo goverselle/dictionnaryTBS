@@ -6914,5 +6914,29 @@
       ]
     },
     "updated": "2026-05-02"
+  },
+  {
+    "headword": "OBSERVER",
+    "letter": "O",
+    "template_syntaxique": "X OBSERVER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X REGARDER Y DC X DEVOIR APPRENDRE",
+          "fondateur1": "REGARDER",
+          "fondateur2": "DEVOIR APPRENDRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "L'enfant observe les oiseaux.",
+              "ea": "Il regarde, donc il doit apprendre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-02"
   }
 ]
