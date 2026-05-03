@@ -6995,5 +6995,29 @@
       "externe": []
     },
     "updated": "2026-05-02"
+  },
+  {
+    "headword": "CISGENRE",
+    "letter": "C",
+    "template_syntaxique": "X ÊTRE CISGENRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z ASSIGNER X DE Y DC X S'IDENTIFIER COMME Y",
+          "fondateur1": "ASSIGNER",
+          "fondateur2": "S'IDENTIFIER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Pierre est cisgenre.",
+              "ea": "On l'a assigné homme à la naissance, donc il s'identifie comme homme."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-03"
   }
 ]
