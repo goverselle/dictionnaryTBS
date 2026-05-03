@@ -3105,6 +3105,19 @@
               "ea": "On a regardé les empreintes, donc on l'a reconnu."
             }
           ]
+        },
+        {
+          "aspect": "Y SE DISTINGUER DE W PT X UNIR Y ET W",
+          "fondateur1": "SE DISTINGUER",
+          "fondateur2": "UNIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Spinoza identifie Dieu à la nature.",
+              "ea": "Dieu se distingue de la nature, pourtant Spinoza les unit."
+            }
+          ]
         }
       ],
       "externe": [
