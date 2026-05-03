@@ -3111,7 +3111,12 @@
           "aspect": "X REGARDER Y DC X CLASSER Y",
           "fondateur1": "REGARDER",
           "fondateur2": "CLASSER",
-          "criteres": [],
+          "criteres": [
+            {
+              "type": 7,
+              "texte": "Correspond au sens 2 du Larousse : « Préciser la nature de quelque chose, son type, sa catégorie, pouvoir dire ce que c'est : Identifier une plante. Synonymes : assimiler, reconnaître. »"
+            }
+          ],
           "square_value": null,
           "exemples": [
             {
@@ -3126,7 +3131,7 @@
           "fondateur2": "TROUVER",
           "criteres": [
             {
-              "type": 3,
+              "type": 7,
               "texte": "Correspond au sens 1 du Larousse : « Établir, au moyen de déclarations, témoignages, constatations, éléments d'état-civil, l'identité d'une personne vivante ou décédée : Identifier les victimes d'une catastrophe. »"
             }
           ],
