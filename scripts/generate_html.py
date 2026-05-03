@@ -14,6 +14,22 @@ from pathlib import Path
 from datetime import datetime
 
 
+MOIS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+           'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+
+def format_date_fr(date_str):
+    """Convertit '2026-05-03' en '3 mai 2026' et ajoute l'heure courante."""
+    if not date_str:
+        return ""
+    try:
+        from datetime import datetime
+        d = datetime.strptime(date_str, "%Y-%m-%d")
+        now = datetime.now()
+        return f"{d.day} {MOIS_FR[d.month-1]} {d.year} à {now.hour}h{now.minute:02d}"
+    except:
+        return date_str
+
+
 def colorize_formula(text):
     """Colore X/Z en rouge, Y/W en vert, DC/PT/NEG en gras."""
     def _repl(m):
@@ -549,7 +565,7 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                     <button class="btn-net" data-hw="{headword}">◉ Réseau</button>
                 </div>
                 <div class="headword">{headword}{paradox_badge}</div>
-                <div class="entry-updated">MAJ : {entry.get("updated", "")}</div>
+                <div class="entry-updated">MAJ : {format_date_fr(entry.get("updated", ""))}</div>
             '''
             if entry.get("template_syntaxique"):
                 html += (
@@ -677,7 +693,7 @@ def generate_html(entries, types_criteres, template):
     # Remplacements
     html = template
     last_updated = max((e.get("updated", "") for e in entries), default="")
-    html = html.replace("{{LAST_UPDATED}}", last_updated)
+    html = html.replace("{{LAST_UPDATED}}", format_date_fr(last_updated))
     html = html.replace("{{ENTRIES_COUNT}}", str(len(entries)))
     html = html.replace("{{LETTERS_COUNT}}", str(len(by_letter)))
     html = html.replace("{{BLOCS_COUNT}}", str(len(by_bloc)))
