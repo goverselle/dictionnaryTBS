@@ -3077,9 +3077,9 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X REGARDER Y DC X RECONNAÎTRE Y",
-          "fondateur1": "REGARDER",
-          "fondateur2": "RECONNAÎTRE",
+          "aspect": "Z AVOIR IDENTITÉ DC X TROUVER Z",
+          "fondateur1": "AVOIR IDENTITÉ",
+          "fondateur2": "TROUVER",
           "criteres": [
             {
               "type": 4,
@@ -3098,11 +3098,7 @@
           "exemples": [
             {
               "phrase": "La police a identifié le suspect.",
-              "ea": "La police a regardé les indices, donc elle a reconnu le suspect."
-            },
-            {
-              "phrase": "On l'a identifié grâce aux empreintes.",
-              "ea": "On a regardé les empreintes, donc on l'a reconnu."
+              "ea": "Le suspect a une identité, donc la police l'a trouvé."
             }
           ]
         },
