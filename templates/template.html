@@ -51,6 +51,10 @@
                     <p class="welcome-title">Dictionnaire TBS</p>
                     <p class="welcome-sub">Sélectionnez un mot dans la liste.</p>
                     <p class="welcome-hint">{{ENTRIES_COUNT}} entrées · {{BLOCS_COUNT}} blocs sémantiques</p>
+                    <div class="recent-banner">
+                        <span class="recent-label">Dernières modifications</span>
+                        <div class="recent-words">{{RECENT_WORDS}}</div>
+                    </div>
                 </div>
             </div>
             {{ENTRIES}}
@@ -598,6 +602,14 @@
             var decompBtn = e.target.closest('.btn-decomp-info');
             if (decompBtn) {
                 document.getElementById('decomp-ref-overlay').classList.add('modal-overlay--open');
+                return;
+            }
+            var recentWord = e.target.closest('.recent-word');
+            if (recentWord && recentWord.dataset.entry) {
+                var hw = recentWord.dataset.entry;
+                var sbItem = document.querySelector('.sb-word[data-entry="' + hw + '"]');
+                showEntry(hw, sbItem);
+                if (sbItem) sbItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 return;
             }
             var node = e.target.closest('.tree-label--entry, .carre-word');

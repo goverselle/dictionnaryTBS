@@ -694,6 +694,24 @@ def generate_html(entries, types_criteres, template):
     html = template
     last_updated = max((e.get("updated", "") for e in entries), default="")
     html = html.replace("{{LAST_UPDATED}}", format_date_fr(last_updated))
+
+    # 5 derniers mots modifiés
+    with_dates = [(e["headword"], e.get("updated", "")) for e in entries if e.get("updated")]
+    with_dates.sort(key=lambda x: x[1], reverse=True)
+    recent_html = ""
+    seen = set()
+    for hw, d in with_dates:
+        if hw in seen:
+            continue
+        seen.add(hw)
+        if len(seen) > 5:
+            break
+        date_fr = format_date_fr(d).split(" à ")[0] if d else ""
+        recent_html += (
+            f'<span class="recent-word" data-entry="{hw}">'
+            f'{hw}<span class="recent-date">{date_fr}</span></span>\n'
+        )
+    html = html.replace("{{RECENT_WORDS}}", recent_html)
     html = html.replace("{{ENTRIES_COUNT}}", str(len(entries)))
     html = html.replace("{{LETTERS_COUNT}}", str(len(by_letter)))
     html = html.replace("{{BLOCS_COUNT}}", str(len(by_bloc)))

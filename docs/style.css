@@ -919,6 +919,56 @@ html, body {
     border-color: #333;
 }
 
+.recent-banner {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.recent-label {
+    display: block;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--fg-faint);
+    margin-bottom: 0.75rem;
+}
+
+.recent-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.recent-word {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #2a7a2a;
+    border-radius: 4px;
+    background: rgba(184, 230, 163, 0.15);
+    color: #2a7a2a;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.recent-word:hover {
+    background: var(--mint);
+    color: #111;
+}
+
+.recent-date {
+    display: block;
+    font-size: 0.45rem;
+    font-weight: 400;
+    color: var(--fg-faint);
+    margin-top: 0.15rem;
+    letter-spacing: 0;
+}
+
 .entry-updated {
     font-size: 0.55rem;
     color: var(--fg-faint);
