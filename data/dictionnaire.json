@@ -3077,32 +3077,32 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X EXAMINER Y DC X RECONNAÎTRE Y",
-          "fondateur1": "EXAMINER",
+          "aspect": "X REGARDER Y DC X RECONNAÎTRE Y",
+          "fondateur1": "REGARDER",
           "fondateur2": "RECONNAÎTRE",
           "criteres": [
             {
               "type": 4,
-              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau examiner l'objet, il n'a pas réussi à l'identifier. »"
+              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau regarder l'objet, il n'a pas réussi à l'identifier. »"
             },
             {
               "type": 5,
-              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'examen est inscrit dans le verbe."
+              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'regard est inscrit dans le verbe."
             },
             {
               "type": 1,
-              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'examen ou de la reconnaissance."
+              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'regard ou de la reconnaissance."
             }
           ],
           "square_value": null,
           "exemples": [
             {
               "phrase": "La police a identifié le suspect.",
-              "ea": "La police a examiné les indices, donc elle a reconnu le suspect."
+              "ea": "La police a regardé les indices, donc elle a reconnu le suspect."
             },
             {
               "phrase": "On l'a identifié grâce aux empreintes.",
-              "ea": "On a examiné les empreintes, donc on l'a reconnu."
+              "ea": "On a regardé les empreintes, donc on l'a reconnu."
             }
           ]
         }
@@ -3131,7 +3131,7 @@
         }
       ]
     },
-    "updated": "2026-05-02"
+    "updated": "2026-05-03"
   },
   {
     "headword": "IMMÉDIAT",
@@ -6882,21 +6882,21 @@
       ],
       "externe": [
         {
-          "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
+          "quasibloc": "X REGARDER Y (X RECONNAÎTRE Y)",
           "exemples": [
             {
               "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
-              "ea": "Il a examiné, donc il reconnaît."
+              "ea": "Il a regardé, donc il reconnaît."
             },
             {
               "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
-              "ea": "Il a examiné, pourtant il ne reconnaît pas."
+              "ea": "Il a regardé, pourtant il ne reconnaît pas."
             }
           ]
         }
       ]
     },
-    "updated": "2026-05-02"
+    "updated": "2026-05-03"
   },
   {
     "headword": "RECONNAÎTRE",
@@ -6920,21 +6920,21 @@
       ],
       "externe": [
         {
-          "quasibloc": "X EXAMINER Y (X RECONNAÎTRE Y)",
+          "quasibloc": "X REGARDER Y (X RECONNAÎTRE Y)",
           "exemples": [
             {
               "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
-              "ea": "Il a examiné, donc il reconnaît."
+              "ea": "Il a regardé, donc il reconnaît."
             },
             {
               "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
-              "ea": "Il a examiné, pourtant il ne reconnaît pas."
+              "ea": "Il a regardé, pourtant il ne reconnaît pas."
             }
           ]
         }
       ]
     },
-    "updated": "2026-05-02"
+    "updated": "2026-05-03"
   },
   {
     "headword": "OBSERVER",
