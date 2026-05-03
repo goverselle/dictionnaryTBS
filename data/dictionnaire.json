@@ -3136,6 +3136,19 @@
               "ea": "Marie se reconnaît dans l'héroïne, donc elle est l'héroïne."
             }
           ]
+        },
+        {
+          "aspect": "X REGARDER Y DC X CLASSER Y",
+          "fondateur1": "REGARDER",
+          "fondateur2": "CLASSER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "J'ai identifié la fleur, c'est un pissenlit.",
+              "ea": "J'ai regardé la fleur, donc je l'ai classée."
+            }
+          ]
         }
       ],
       "externe": [
