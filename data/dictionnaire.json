@@ -7019,5 +7019,29 @@
       "externe": []
     },
     "updated": "2026-05-03"
+  },
+  {
+    "headword": "QUEER",
+    "letter": "Q",
+    "template_syntaxique": "X ÊTRE QUEER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z ASSIGNER X DE Y PT NEG X S'IDENTIFIER COMME Y",
+          "fondateur1": "ASSIGNER",
+          "fondateur2": "S'IDENTIFIER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie est queer.",
+              "ea": "On l'a assignée d'un genre, pourtant elle ne s'identifie pas comme tel."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-03"
   }
 ]
