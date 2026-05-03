@@ -3080,7 +3080,12 @@
           "aspect": "Y SE DISTINGUER DE W PT X UNIR Y ET W",
           "fondateur1": "SE DISTINGUER",
           "fondateur2": "UNIR",
-          "criteres": [],
+          "criteres": [
+            {
+              "type": 7,
+              "texte": "Correspond au sens 4 du Larousse : « Considérer que quelqu'un, quelque chose a des caractères identiques et comparables à quelqu'un, quelque chose d'autre, et les assimiler l'un à l'autre : Identifier un homme politique à un régime. »"
+            }
+          ],
           "square_value": null,
           "exemples": [
             {
