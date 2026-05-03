@@ -3077,32 +3077,6 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Z AVOIR IDENTITÉ DC X TROUVER Z",
-          "fondateur1": "AVOIR IDENTITÉ",
-          "fondateur2": "TROUVER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau regarder l'objet, il n'a pas réussi à l'identifier. »"
-            },
-            {
-              "type": 5,
-              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'regard est inscrit dans le verbe."
-            },
-            {
-              "type": 1,
-              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'regard ou de la reconnaissance."
-            }
-          ],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "La police a identifié le suspect.",
-              "ea": "Le suspect a une identité, donc la police l'a trouvé."
-            }
-          ]
-        },
-        {
           "aspect": "Y SE DISTINGUER DE W PT X UNIR Y ET W",
           "fondateur1": "SE DISTINGUER",
           "fondateur2": "UNIR",
@@ -3143,6 +3117,32 @@
             {
               "phrase": "J'ai identifié la fleur, c'est un pissenlit.",
               "ea": "J'ai regardé la fleur, donc je l'ai classée."
+            }
+          ]
+        },
+        {
+          "aspect": "Z AVOIR IDENTITÉ DC X TROUVER Z",
+          "fondateur1": "AVOIR IDENTITÉ",
+          "fondateur2": "TROUVER",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau regarder l'objet, il n'a pas réussi à l'identifier. »"
+            },
+            {
+              "type": 5,
+              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'regard est inscrit dans le verbe."
+            },
+            {
+              "type": 1,
+              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'regard ou de la reconnaissance."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "La police a identifié le suspect.",
+              "ea": "Le suspect a une identité, donc la police l'a trouvé."
             }
           ]
         }
