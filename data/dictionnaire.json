@@ -3123,7 +3123,12 @@
           "aspect": "X SE RECONNAÎTRE DC X ÊTRE Y",
           "fondateur1": "SE RECONNAÎTRE",
           "fondateur2": "ÊTRE",
-          "criteres": [],
+          "criteres": [
+            {
+              "type": 6,
+              "texte": "Gradualité : identifier est plus complexe que se reconnaître. « Marie se reconnaît en Jeanne » et « Marie s'identifie à Jeanne » sont dans un rapport graduel. Cas fréquent quand le terme fondateur est internalisé par l'autre terme."
+            }
+          ],
           "square_value": null,
           "exemples": [
             {
