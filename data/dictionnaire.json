@@ -3126,16 +3126,8 @@
           "fondateur2": "TROUVER",
           "criteres": [
             {
-              "type": 4,
-              "texte": "Lien doxal : si on examine, on reconnaît. La converse transgressive est attestée : « Pierre a eu beau regarder l'objet, il n'a pas réussi à l'identifier. »"
-            },
-            {
-              "type": 5,
-              "texte": "Transgression : « ?? Sans même y prêter attention, Pierre a identifié l'objet » provoque une gêne sémantique — l'regard est inscrit dans le verbe."
-            },
-            {
-              "type": 1,
-              "texte": "Renforcement : identifier formellement, identifier avec certitude, identifier après analyse, identifier grâce aux empreintes — tous les modificateurs relèvent de l'regard ou de la reconnaissance."
+              "type": 3,
+              "texte": "Correspond au sens 1 du Larousse : « Établir, au moyen de déclarations, témoignages, constatations, éléments d'état-civil, l'identité d'une personne vivante ou décédée : Identifier les victimes d'une catastrophe. »"
             }
           ],
           "square_value": null,
