@@ -17,7 +17,7 @@
         <!-- SIDEBAR GAUCHE -->
         <aside class="sidebar" id="sidebar">
             <div class="sb-header">
-                <h1>Dictionnaire TBS</h1>
+                <h1 style="cursor:pointer;" id="title-home">Dictionnaire TBS</h1>
                 <div class="sb-stats">
                     <span>{{ENTRIES_COUNT}} entrées</span>
                     <span>MAJ : {{LAST_UPDATED}}</span>
@@ -394,6 +394,17 @@
                 }
             });
         }
+
+        // Title click → retour accueil
+        document.getElementById('title-home').addEventListener('click', function () {
+            entries.forEach(function (e) { e.style.display = 'none'; });
+            letterHeaders.forEach(function (e) { e.style.display = 'none'; });
+            welcome.style.display = '';
+            if (active) active.classList.remove('sb-word--active');
+            active = null;
+            content.scrollTop = 0;
+            history.pushState(null, '', location.pathname);
+        });
 
         // Cache clear
         document.getElementById('cache-clear').addEventListener('click', function () {
