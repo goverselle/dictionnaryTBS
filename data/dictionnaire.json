@@ -6880,21 +6880,7 @@
           ]
         }
       ],
-      "externe": [
-        {
-          "quasibloc": "X REGARDER Y (X RECONNAÎTRE Y)",
-          "exemples": [
-            {
-              "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
-              "ea": "Il a regardé, donc il reconnaît."
-            },
-            {
-              "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
-              "ea": "Il a regardé, pourtant il ne reconnaît pas."
-            }
-          ]
-        }
-      ]
+      "externe": []
     },
     "updated": "2026-05-03"
   },
@@ -6918,21 +6904,7 @@
           ]
         }
       ],
-      "externe": [
-        {
-          "quasibloc": "X REGARDER Y (X RECONNAÎTRE Y)",
-          "exemples": [
-            {
-              "phrase": "Le docteur l'a examinée, il sait ce qu'elle a.",
-              "ea": "Il a regardé, donc il reconnaît."
-            },
-            {
-              "phrase": "Il l'a examinée pourtant il ne sait pas ce qu'elle a.",
-              "ea": "Il a regardé, pourtant il ne reconnaît pas."
-            }
-          ]
-        }
-      ]
+      "externe": []
     },
     "updated": "2026-05-03"
   },
