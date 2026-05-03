@@ -3118,6 +3118,19 @@
               "ea": "Dieu se distingue de la nature, pourtant Spinoza les unit."
             }
           ]
+        },
+        {
+          "aspect": "X SE RECONNAÎTRE DC X ÊTRE Y",
+          "fondateur1": "SE RECONNAÎTRE",
+          "fondateur2": "ÊTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie s'identifie à l'héroïne.",
+              "ea": "Marie se reconnaît dans l'héroïne, donc elle est l'héroïne."
+            }
+          ]
         }
       ],
       "externe": [
