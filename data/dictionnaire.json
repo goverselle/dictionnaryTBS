@@ -3120,6 +3120,10 @@
             {
               "type": 7,
               "texte": "Correspond au sens 2 du Larousse : « Préciser la nature de quelque chose, son type, sa catégorie, pouvoir dire ce que c'est : Identifier une plante. Synonymes : assimiler, reconnaître. »"
+            },
+            {
+              "type": 7,
+              "texte": "Correspond aussi au sens 3 du Larousse : « Découvrir l'origine d'un objet, son appartenance, grâce à une marque, un signe caractéristique et, en particulier, pour un véhicule, à l'aide de son numéro d'immatriculation : Identifier un véhicule. »"
             }
           ],
           "square_value": null,
