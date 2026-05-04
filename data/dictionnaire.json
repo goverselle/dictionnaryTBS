@@ -7037,9 +7037,9 @@
     "updated": "2026-05-04"
   },
   {
-    "headword": "QUEER",
-    "letter": "Q",
-    "template_syntaxique": "X ÊTRE QUEER",
+    "headword": "TRANSGENRE",
+    "letter": "T",
+    "template_syntaxique": "X ÊTRE TRANSGENRE",
     "signification": {
       "interne": [
         {
@@ -7050,7 +7050,7 @@
           "square_value": null,
           "exemples": [
             {
-              "phrase": "Marie est queer.",
+              "phrase": "Marie est transgenre.",
               "ea": "On l'a assignée d'un genre, pourtant elle ne s'identifie pas comme tel."
             }
           ]
@@ -7058,6 +7058,6 @@
       ],
       "externe": []
     },
-    "updated": "2026-05-03"
+    "updated": "2026-05-04"
   }
 ]
