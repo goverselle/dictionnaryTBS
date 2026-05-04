@@ -7107,5 +7107,101 @@
       "externe": []
     },
     "updated": "2026-05-04"
+  },
+  {
+    "headword": "SE TAIRE",
+    "letter": "S",
+    "template_syntaxique": "X SE TAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X PARLER) PT NEG X PARLER",
+          "fondateur1": "PARLER",
+          "fondateur2": "PARLER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est tu.",
+              "ea": "Il a parlé, mais maintenant il ne parle plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "S'ARRÊTER",
+    "letter": "S",
+    "template_syntaxique": "X S'ARRÊTER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X MARCHER) PT NEG X MARCHER",
+          "fondateur1": "MARCHER",
+          "fondateur2": "MARCHER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est arrêté.",
+              "ea": "Il a marché, mais maintenant il ne marche plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "S'ÉTEINDRE",
+    "letter": "S",
+    "template_syntaxique": "X S'ÉTEINDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X BRÛLER) PT NEG X BRÛLER",
+          "fondateur1": "BRÛLER",
+          "fondateur2": "BRÛLER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Le feu s'est éteint.",
+              "ea": "Il a brûlé, mais maintenant il ne brûle plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "SE RÉTABLIR",
+    "letter": "S",
+    "template_syntaxique": "X SE RÉTABLIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X ÊTRE MALADE) PT NEG X ÊTRE MALADE",
+          "fondateur1": "ÊTRE MALADE",
+          "fondateur2": "ÊTRE MALADE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est rétabli.",
+              "ea": "Il était malade, mais maintenant il n'est plus malade."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   }
 ]
