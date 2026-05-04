@@ -612,6 +612,8 @@
             }
             var decompFsBtn = e.target.closest('.btn-decomp-fs');
             if (decompFsBtn) {
+                e.preventDefault();
+                e.stopPropagation();
                 var details = decompFsBtn.closest('details');
                 if (!details) return;
                 details.open = true;
