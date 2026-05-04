@@ -1022,11 +1022,11 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X FAIRE Y) PT NEG X FAIRE Y",
+          "aspect": "PERF (X FAIRE) PT NEG X FAIRE",
           "exemples": [
             {
-              "phrase": "Pierre a cessé de fumer.",
-              "ea": "Pierre a fumé, pourtant Pierre ne fume plus."
+              "phrase": "Il a cessé.",
+              "ea": "Il faisait, pourtant il ne fait plus."
             }
           ],
           "fondateur1": "FAIRE",
@@ -1039,7 +1039,7 @@
     },
     "nb": "Apparenté à MOURIR, défini par le CNRTL comme « cesser de vivre ». MOURIR précise le moule de CESSER avec le verbe d'action le plus général (FAIRE) : a vécu, pourtant ne vit plus.",
     "template_syntaxique": "X CESSER DE Y",
-    "updated": "2026-04-23"
+    "updated": "2026-05-04"
   },
   {
     "headword": "CHANGER",
@@ -1232,15 +1232,11 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X FAIRE Y) DC X FAIRE Y",
+          "aspect": "PERF (X FAIRE) DC X FAIRE",
           "exemples": [
             {
-              "phrase": "Pierre continue de fumer.",
-              "ea": "Pierre a fumé, donc Pierre fume encore."
-            },
-            {
-              "phrase": "Il continue ses études.",
-              "ea": "Il a fait ses études, donc il les fait encore."
+              "phrase": "Il continue.",
+              "ea": "Il faisait, donc il fait encore."
             }
           ],
           "fondateur1": "FAIRE",
@@ -1258,7 +1254,7 @@
     },
     "template_syntaxique": "X CONTINUER DE Y",
     "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y).",
-    "updated": "2026-04-23"
+    "updated": "2026-05-04"
   },
   {
     "headword": "CONVAINCRE",
@@ -3810,7 +3806,21 @@
     "letter": "M",
     "template_syntaxique": "",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "PERF (X VIVRE) PT NEG X VIVRE",
+          "fondateur1": "VIVRE",
+          "fondateur2": "VIVRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est mort.",
+              "ea": "Il a vécu, pourtant il ne vit plus."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "X FAIRE Y (X ÊTRE MORT)",
@@ -3823,7 +3833,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-05-04"
   },
   {
     "headword": "MORT NATURELLE",
@@ -3904,7 +3914,21 @@
     "letter": "M",
     "template_syntaxique": "",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "PERF (X VIVRE) PT NEG X VIVRE",
+          "fondateur1": "VIVRE",
+          "fondateur2": "VIVRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est mort.",
+              "ea": "Il a vécu, pourtant il ne vit plus."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "Y ÊTRE ACCIDENT (X MOURIR DE Y)",
@@ -3957,7 +3981,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-05-04"
   },
   {
     "headword": "MÉGENRER",
@@ -7192,6 +7216,30 @@
             {
               "phrase": "Il s'est rétabli.",
               "ea": "Il était malade, mais maintenant il n'est plus malade."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "NAÎTRE",
+    "letter": "N",
+    "template_syntaxique": "X NAÎTRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG PERF (X VIVRE) PT X VIVRE",
+          "fondateur1": "VIVRE",
+          "fondateur2": "VIVRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est né.",
+              "ea": "Il n'avait pas vécu, pourtant il vit."
             }
           ]
         }
