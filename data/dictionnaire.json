@@ -7059,5 +7059,29 @@
       "externe": []
     },
     "updated": "2026-05-04"
+  },
+  {
+    "headword": "ASSIGNER",
+    "letter": "A",
+    "template_syntaxique": "X ASSIGNER Z DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z NAÎTRE DC X GENRER Z",
+          "fondateur1": "NAÎTRE",
+          "fondateur2": "GENRER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "On lui a assigné le genre féminin à la naissance.",
+              "ea": "Elle est née, donc on l'a genrée."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   }
 ]
