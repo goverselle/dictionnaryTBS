@@ -7247,5 +7247,29 @@
       "externe": []
     },
     "updated": "2026-05-04"
+  },
+  {
+    "headword": "CLASSER",
+    "letter": "C",
+    "template_syntaxique": "X CLASSER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y RESSEMBLER W DC X UNIR Y ET W",
+          "fondateur1": "RESSEMBLER",
+          "fondateur2": "UNIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "J'ai classé cette fleur parmi les astéracées.",
+              "ea": "Elle ressemble aux autres astéracées, donc je les unis."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   }
 ]
