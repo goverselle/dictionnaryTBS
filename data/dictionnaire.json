@@ -7083,5 +7083,29 @@
       "externe": []
     },
     "updated": "2026-05-04"
+  },
+  {
+    "headword": "S'IDENTIFIER",
+    "letter": "S",
+    "template_syntaxique": "X S'IDENTIFIER COMME Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SE SENTIR Y DC X SE DÉCLARER Y",
+          "fondateur1": "SE SENTIR",
+          "fondateur2": "SE DÉCLARER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie s'identifie comme femme.",
+              "ea": "Marie se sent femme, donc elle se déclare femme."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   }
 ]
