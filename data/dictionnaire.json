@@ -7022,9 +7022,19 @@
           ]
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "X ÊTRE CISGENRE (X AVOIR PRIVILÈGE)",
+          "exemples": [
+            {
+              "phrase": "Il ne se rend pas compte de son privilège cisgenre.",
+              "ea": "Il est cisgenre, donc il a un privilège."
+            }
+          ]
+        }
+      ]
     },
-    "updated": "2026-05-03"
+    "updated": "2026-05-04"
   },
   {
     "headword": "QUEER",
