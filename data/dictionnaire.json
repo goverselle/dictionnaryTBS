@@ -3077,6 +3077,28 @@
     "signification": {
       "interne": [
         {
+          "aspect": "X REGARDER Y DC X CLASSER Y",
+          "fondateur1": "REGARDER",
+          "fondateur2": "CLASSER",
+          "criteres": [
+            {
+              "type": 7,
+              "texte": "Correspond au sens 2 du Larousse : « Préciser la nature de quelque chose, son type, sa catégorie, pouvoir dire ce que c'est : Identifier une plante. Synonymes : assimiler, reconnaître. »"
+            },
+            {
+              "type": 7,
+              "texte": "Correspond aussi au sens 3 du Larousse : « Découvrir l'origine d'un objet, son appartenance, grâce à une marque, un signe caractéristique et, en particulier, pour un véhicule, à l'aide de son numéro d'immatriculation : Identifier un véhicule. »"
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "J'ai identifié la fleur, c'est un pissenlit.",
+              "ea": "J'ai regardé la fleur, donc je l'ai classée."
+            }
+          ]
+        },
+        {
           "aspect": "Y SE DISTINGUER DE W PT X UNIR Y ET W",
           "fondateur1": "SE DISTINGUER",
           "fondateur2": "UNIR",
@@ -3109,28 +3131,6 @@
             {
               "phrase": "Marie s'identifie à l'héroïne.",
               "ea": "Marie se reconnaît dans l'héroïne, donc elle est l'héroïne."
-            }
-          ]
-        },
-        {
-          "aspect": "X REGARDER Y DC X CLASSER Y",
-          "fondateur1": "REGARDER",
-          "fondateur2": "CLASSER",
-          "criteres": [
-            {
-              "type": 7,
-              "texte": "Correspond au sens 2 du Larousse : « Préciser la nature de quelque chose, son type, sa catégorie, pouvoir dire ce que c'est : Identifier une plante. Synonymes : assimiler, reconnaître. »"
-            },
-            {
-              "type": 7,
-              "texte": "Correspond aussi au sens 3 du Larousse : « Découvrir l'origine d'un objet, son appartenance, grâce à une marque, un signe caractéristique et, en particulier, pour un véhicule, à l'aide de son numéro d'immatriculation : Identifier un véhicule. »"
-            }
-          ],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "J'ai identifié la fleur, c'est un pissenlit.",
-              "ea": "J'ai regardé la fleur, donc je l'ai classée."
             }
           ]
         },
@@ -3177,7 +3177,7 @@
         }
       ]
     },
-    "updated": "2026-05-03"
+    "updated": "2026-05-04"
   },
   {
     "headword": "IMMÉDIAT",
