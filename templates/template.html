@@ -610,6 +610,28 @@
                 document.getElementById('carre-ref-overlay').classList.add('modal-overlay--open');
                 return;
             }
+            var decompFsBtn = e.target.closest('.btn-decomp-fs');
+            if (decompFsBtn) {
+                var details = decompFsBtn.closest('details');
+                if (!details) return;
+                details.open = true;
+                var tree = details.querySelector('.decomp-tree');
+                if (!tree) return;
+                var overlay = document.createElement('div');
+                overlay.className = 'decomp-fullscreen';
+                var closeBtn = document.createElement('button');
+                closeBtn.className = 'decomp-fs-close';
+                closeBtn.textContent = '×';
+                closeBtn.onclick = function() { overlay.remove(); };
+                overlay.appendChild(closeBtn);
+                var clone = tree.cloneNode(true);
+                overlay.appendChild(clone);
+                document.body.appendChild(overlay);
+                document.addEventListener('keydown', function esc(ev) {
+                    if (ev.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', esc); }
+                });
+                return;
+            }
             var decompBtn = e.target.closest('.btn-decomp-info');
             if (decompBtn) {
                 document.getElementById('decomp-ref-overlay').classList.add('modal-overlay--open');

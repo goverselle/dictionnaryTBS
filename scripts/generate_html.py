@@ -632,6 +632,8 @@ def generate_entries(by_letter, types_criteres, decomp_map, op_map, aspect_index
                             '<summary class="collapsible-toggle">Décomposition en fondateurs'
                             '<button class="section-info btn-decomp-info" '
                             'title="Approximation">?</button>'
+                            '<button class="section-info btn-decomp-fs" '
+                            'title="Plein écran">⛶</button>'
                             '</summary>\n'
                         )
                         html += decomp_html
