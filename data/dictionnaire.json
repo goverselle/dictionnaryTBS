@@ -7271,5 +7271,29 @@
       "externe": []
     },
     "updated": "2026-05-04"
+  },
+  {
+    "headword": "DÉCLARER",
+    "letter": "D",
+    "template_syntaxique": "X DÉCLARER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE Y DC X FAIRE CONNAÎTRE Y",
+          "fondateur1": "DIRE",
+          "fondateur2": "FAIRE CONNAÎTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il a déclaré sa candidature.",
+              "ea": "Il l'a dit, donc il l'a fait connaître."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-05"
   }
 ]
