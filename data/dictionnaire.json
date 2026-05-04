@@ -1134,15 +1134,11 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (NEG X FAIRE Y) PT X FAIRE Y",
+          "aspect": "NEG PERF (X FAIRE) PT X FAIRE",
           "exemples": [
             {
-              "phrase": "Pierre a commencé à fumer.",
-              "ea": "Pierre ne fumait pas, pourtant il fume maintenant."
-            },
-            {
-              "phrase": "Il commence ses études.",
-              "ea": "Il ne faisait pas d'études, pourtant il en fait maintenant."
+              "phrase": "Il a commencé.",
+              "ea": "Il ne faisait pas, maintenant il fait."
             }
           ],
           "fondateur1": "FAIRE",
@@ -1155,7 +1151,7 @@
     },
     "template_syntaxique": "X COMMENCER À Y",
     "nb": "COMMENCER partage le bloc FAIRE — FAIRE avec CESSER et CONTINUER. C'est le transposé de CESSER et le converse de CONTINUER.",
-    "updated": "2026-04-23"
+    "updated": "2026-05-04"
   },
   {
     "headword": "COMPRENDRE",
