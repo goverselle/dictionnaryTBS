@@ -851,7 +851,21 @@
           "square_value": 1
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "X TOUCHER Y (Z ATTEINDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Le feu a touché la maison, elle est détruite.",
+              "ea": "Le feu touche la maison, donc il l'atteint."
+            },
+            {
+              "phrase": "Le temps ne l'a pas touchée, sa beauté est intacte.",
+              "ea": "Le temps ne touche pas sa beauté, donc il ne l'atteint pas."
+            }
+          ]
+        }
+      ]
     },
     "template_syntaxique": "Y ÊTRE INTACT",
     "updated": "2026-06-01",
