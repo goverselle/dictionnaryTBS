@@ -829,6 +829,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "INTACT",
+    "letter": "I",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z ATTEINDRE Y PT Y ENTIER",
+          "exemples": [
+            {
+              "phrase": "À 64 ans, sa passion pour la musique est intacte.",
+              "ea": "Le temps aurait pu atteindre sa passion, pourtant elle est entière."
+            },
+            {
+              "phrase": "Ma maison est intacte.",
+              "ea": "Le feu aurait pu atteindre la maison, pourtant elle est entière."
+            }
+          ],
+          "fondateur1": "ATTEINDRE",
+          "fondateur2": "ENTIER",
+          "criteres": [],
+          "square_value": 2
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE INTACT",
+    "updated": "2026-06-01",
+    "nb": "Intact lexicalise la face transgressive de l'aspect Z ATTEINDRE Y DC NEG Y ENTIER. La doxa présupposée est : ce qui est atteint ne peut plus être entier. Intact dit le contraire : malgré l'atteinte possible, l'intégrité est maintenue. Le présupposé d'intact est une atteinte possible, dont la nature varie selon la situation (le temps, le feu, la violence, l'usure...). Deux choses sont communiquées indissociablement : une atteinte possible et une intégrité maintenue. La configuration syntaxique porte la structure argumentative : ATTEINDRE est transitif (Z atteint Y), et c'est son complément Y qui devient le sujet de ENTIER (Y est entier). La chose menacée par l'atteinte est la chose même dont on prédique l'intégrité."
+  },
+  {
     "headword": "SE VOIR",
     "letter": "S",
     "template_syntaxique": "",
@@ -2024,6 +2053,30 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "DEVENIR",
+    "letter": "D",
+    "template_syntaxique": "X DEVENIR Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF(NEG ÊTRE) PT ÊTRE",
+          "fondateur1": "ÊTRE",
+          "fondateur2": "ÊTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Pierre est devenu médecin.",
+              "ea": "Pierre n'était pas médecin, pourtant il est médecin."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-11"
   },
   {
     "headword": "EFFET",
@@ -7111,15 +7164,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X SE SENTIR Y DC X DÉCLARER Y",
+          "aspect": "X SE SENTIR Y DC X SE REVENDIQUER COMME Y",
           "fondateur1": "SE SENTIR",
-          "fondateur2": "DÉCLARER",
+          "fondateur2": "SE REVENDIQUER",
           "criteres": [],
           "square_value": null,
           "exemples": [
             {
               "phrase": "Marie s'identifie comme femme.",
-              "ea": "Marie se sent femme, donc elle le déclare."
+              "ea": "Marie se sent femme, donc elle se revendique comme femme."
             }
           ]
         }
