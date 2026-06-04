@@ -872,6 +872,35 @@
     "nb": "Intact lexicalise la face transgressive de l'aspect Z ATTEINDRE Y DC NEG Y ENTIER. La doxa présupposée est : ce qui est atteint ne peut plus être entier. Intact dit le contraire : malgré l'atteinte possible, l'intégrité est maintenue. Le présupposé d'intact est une atteinte possible, dont la nature varie selon la situation (le temps, le feu, la violence, l'usure...). Deux choses sont communiquées indissociablement : une atteinte possible et une intégrité maintenue. La configuration syntaxique porte la structure argumentative : ATTEINDRE est transitif (Z atteint Y), et c'est son complément Y qui devient le sujet de ENTIER (Y est entier). La chose menacée par l'atteinte est la chose même dont on prédique l'intégrité."
   },
   {
+    "headword": "REFUSER",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z PROPOSER Y À X PT NEG X ACCEPTER Y",
+          "exemples": [
+            {
+              "phrase": "Il a refusé le poste.",
+              "ea": "On lui a proposé le poste, pourtant il ne l'a pas accepté."
+            },
+            {
+              "phrase": "Elle refuse de partir.",
+              "ea": "On lui demande de partir, pourtant elle ne part pas."
+            }
+          ],
+          "fondateur1": "PROPOSER",
+          "fondateur2": "ACCEPTER",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X REFUSER Y",
+    "updated": "2026-06-04",
+    "nb": "Refuser lexicalise la face transgressive de Z PROPOSER Y À X DC X ACCEPTER Y. La doxa présupposée est : ce qui est proposé est accepté. Refuser dit le contraire : malgré la proposition, le sujet n'accepte pas. Le présupposé de refuser est qu'il y a eu proposition ou demande — on ne peut refuser que ce qui a été offert."
+  },
+  {
     "headword": "SE VOIR",
     "letter": "S",
     "template_syntaxique": "",
