@@ -829,6 +829,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "CONVERSATION",
+    "letter": "C",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SE PARLER DC X SE COMPRENDRE",
+          "exemples": [
+            {
+              "phrase": "On a eu une conversation avec elle.",
+              "ea": "On s'est parlé, on s'est compris."
+            },
+            {
+              "phrase": "On n'arrive pas à avoir une conversation.",
+              "ea": "On se parle, mais on ne se comprend pas."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "COMPRENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR UNE CONVERSATION AVEC Z",
+    "updated": "2026-06-05",
+    "nb": "Conversation lexicalise le bloc doxal X SE PARLER DC X SE COMPRENDRE, en configuration réciproque. Les fondateurs PARLER et COMPRENDRE sont symétriques : chacun parle et chacun comprend. La face transgressive (SE PARLER PT NEG SE COMPRENDRE) décrit l'échec de la conversation — on se parle sans se comprendre."
+  },
+  {
     "headword": "DIALOGUE",
     "letter": "D",
     "signification": {
