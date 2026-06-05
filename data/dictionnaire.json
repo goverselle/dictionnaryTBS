@@ -901,6 +901,35 @@
     "nb": "Refuser lexicalise la face transgressive de Z PROPOSER Y À X DC X ACCEPTER Y. La doxa présupposée est : ce qui est proposé est accepté. Refuser dit le contraire : malgré la proposition, le sujet n'accepte pas. Le présupposé de refuser est qu'il y a eu proposition ou demande — on ne peut refuser que ce qui a été offert."
   },
   {
+    "headword": "RÊVER",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DORMIR PT X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai rêvé de toi cette nuit.",
+              "ea": "Je dormais, pourtant je t'ai vu."
+            },
+            {
+              "phrase": "Elle rêve d'un monde meilleur.",
+              "ea": "Elle dort (ou se retire), pourtant elle voit un monde meilleur."
+            }
+          ],
+          "fondateur1": "DORMIR",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X RÊVER DE Y",
+    "updated": "2026-06-05",
+    "nb": "Rêver lexicalise la face transgressive de X DORMIR DC NEG X VOIR Y. La doxa est : qui dort ne voit pas. Rêver dit le contraire : on dort, pourtant on voit."
+  },
+  {
     "headword": "SE VOIR",
     "letter": "S",
     "template_syntaxique": "",
