@@ -2394,6 +2394,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "SURFACE",
+    "letter": "S",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z NEG CACHER Y DC X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "Le problème est en surface.",
+              "ea": "Le problème n'est pas caché, donc on le voit."
+            },
+            {
+              "phrase": "Rester en surface.",
+              "ea": "On ne cache rien, donc on voit, mais seulement ce qui est visible."
+            }
+          ],
+          "fondateur1": "CACHER",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE EN SURFACE",
+    "updated": "2026-06-05",
+    "nb": "Surface lexicalise le bloc normatif Z NEG CACHER Y DC X VOIR Y. Ce qui n'est pas caché est vu. Le converse (Z CACHER Y DC NEG X VOIR Y) correspond à la profondeur : ce qui est caché n'est pas vu. Surface présuppose l'existence d'une profondeur — il n'y a de surface que là où quelque chose pourrait être enfoui."
+  },
+  {
     "headword": "ÉCHOUER",
     "letter": "E",
     "signification": {
