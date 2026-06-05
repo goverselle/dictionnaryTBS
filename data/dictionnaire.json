@@ -959,6 +959,35 @@
     "nb": "Monologue lexicalise la face converse du bloc de dialogue : X PARLER À Z DC NEG Z RÉPONDRE À X. Si le dialogue suppose que la parole appelle la réponse, le monologue suppose que la parole exclut la réponse — on parle précisément parce que personne ne répondra."
   },
   {
+    "headword": "PROFONDEUR",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z CACHER Y DC NEG X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "La profondeur de son regard.",
+              "ea": "Quelque chose est caché dans son regard, donc on ne le voit pas."
+            },
+            {
+              "phrase": "En profondeur, les choses sont différentes.",
+              "ea": "Les choses sont cachées, donc on ne les voit pas en surface."
+            }
+          ],
+          "fondateur1": "CACHER",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE EN PROFONDEUR",
+    "updated": "2026-06-05",
+    "nb": "Profondeur lexicalise le bloc doxal Z CACHER Y DC NEG X VOIR Y. Ce qui est caché n'est pas vu. C'est la face normative dont surface est la converse (NEG Z CACHER Y DC X VOIR Y). Surface et profondeur partagent les mêmes fondateurs (CACHER, VOIR) mais en configuration inversée."
+  },
+  {
     "headword": "REFUSER",
     "letter": "R",
     "signification": {
