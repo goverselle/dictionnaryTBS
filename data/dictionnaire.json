@@ -829,6 +829,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "DIALOGUE",
+    "letter": "D",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARLER À Z DC Z RÉPONDRE À X",
+          "exemples": [
+            {
+              "phrase": "Ils ont eu un vrai dialogue.",
+              "ea": "L'un a parlé à l'autre, donc l'autre a répondu."
+            },
+            {
+              "phrase": "Le dialogue est rompu.",
+              "ea": "L'un parle, pourtant l'autre ne répond plus."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "RÉPONDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR UN DIALOGUE AVEC Z",
+    "updated": "2026-06-05",
+    "nb": "Dialogue lexicalise le bloc normatif X PARLER À Z DC Z RÉPONDRE À X. La parole appelle la réponse. Le converse (X PARLER À Z DC NEG Z RÉPONDRE À X) correspond au monologue : on parle, donc personne ne répond."
+  },
+  {
     "headword": "INTACT",
     "letter": "I",
     "signification": {
@@ -870,6 +899,35 @@
     "template_syntaxique": "Y ÊTRE INTACT",
     "updated": "2026-06-01",
     "nb": "Intact lexicalise la face transgressive de l'aspect Z ATTEINDRE Y DC NEG Y ENTIER. La doxa présupposée est : ce qui est atteint ne peut plus être entier. Intact dit le contraire : malgré l'atteinte possible, l'intégrité est maintenue. Le présupposé d'intact est une atteinte possible, dont la nature varie selon la situation (le temps, le feu, la violence, l'usure...). Deux choses sont communiquées indissociablement : une atteinte possible et une intégrité maintenue. La configuration syntaxique porte la structure argumentative : ATTEINDRE est transitif (Z atteint Y), et c'est son complément Y qui devient le sujet de ENTIER (Y est entier). La chose menacée par l'atteinte est la chose même dont on prédique l'intégrité."
+  },
+  {
+    "headword": "MONOLOGUE",
+    "letter": "M",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARLER À Z DC NEG Z RÉPONDRE À X",
+          "exemples": [
+            {
+              "phrase": "Il monologue depuis une heure.",
+              "ea": "Il parle, donc personne ne lui répond."
+            },
+            {
+              "phrase": "Un long monologue intérieur.",
+              "ea": "On parle à soi-même, donc il n'y a pas de réponse."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "RÉPONDRE",
+          "criteres": [],
+          "square_value": 3
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X FAIRE UN MONOLOGUE",
+    "updated": "2026-06-05",
+    "nb": "Monologue lexicalise la face converse du bloc de dialogue : X PARLER À Z DC NEG Z RÉPONDRE À X. Si le dialogue suppose que la parole appelle la réponse, le monologue suppose que la parole exclut la réponse — on parle précisément parce que personne ne répondra."
   },
   {
     "headword": "REFUSER",
