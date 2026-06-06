@@ -188,6 +188,23 @@
           "fondateur2": "SIGNER",
           "criteres": [],
           "square_value": null
+        },
+        {
+          "aspect": "Y ÊTRE NOMBREUX DC X NEG DISTINGUER Y",
+          "exemples": [
+            {
+              "phrase": "Une foule anonyme.",
+              "ea": "Ils sont nombreux, donc on ne les distingue pas."
+            },
+            {
+              "phrase": "Des visages anonymes.",
+              "ea": "Ils sont nombreux, donc on ne les distingue pas."
+            }
+          ],
+          "fondateur1": "ÊTRE NOMBREUX",
+          "fondateur2": "DISTINGUER",
+          "criteres": [],
+          "square_value": null
         }
       ],
       "externe": []
