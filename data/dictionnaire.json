@@ -2098,6 +2098,47 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "DÉBITEUR",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X RECEVOIR Y DC X DEVOIR RENDRE Y",
+          "exemples": [
+            {
+              "phrase": "Vous avez emprunté cette somme, donc vous devez la rembourser.",
+              "ea": "X a reçu, donc X doit rendre."
+            },
+            {
+              "phrase": "Ce débiteur n'a toujours pas payé.",
+              "ea": "X a reçu, pourtant X ne rend pas — la transgression rappelle l'obligation."
+            },
+            {
+              "phrase": "Je reste votre débiteur.",
+              "ea": "Emploi moral : on a reçu un service, donc on doit le rendre (gratitude). Rendre = rendre la pareille."
+            },
+            {
+              "phrase": "Un solde débiteur.",
+              "ea": "Emploi comptable : la colonne qui doit, le côté en négatif. Même bloc."
+            }
+          ],
+          "fondateur1": "RECEVOIR",
+          "fondateur2": "RENDRE",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Négation : « il n'est pas mon débiteur » = il a reçu pourtant il ne me doit rien (RECEVOIR PT NEG DEVOIR RENDRE). C'est la structure du don — ce qui confirme que le bloc opposé au débiteur n'est pas l'oubli de la dette mais la gratuité."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
     "headword": "DÉCLARER",
     "letter": "D",
     "template_syntaxique": "X DÉCLARER Y",
