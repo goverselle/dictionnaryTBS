@@ -5798,6 +5798,47 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "RÉCALCITRANT",
+    "letter": "R",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X POUSSER Y PT Y NEG CÉDER",
+          "exemples": [
+            {
+              "phrase": "On a eu beau insister, le témoin récalcitrant n'a rien lâché.",
+              "ea": "On pousse (on insiste), pourtant il ne cède pas."
+            },
+            {
+              "phrase": "Une mule récalcitrante.",
+              "ea": "On l'éperonne, pourtant elle refuse d'avancer."
+            },
+            {
+              "phrase": "Un élève récalcitrant.",
+              "ea": "On lui demande/ordonne, pourtant il n'obéit pas."
+            },
+            {
+              "phrase": "Des taches récalcitrantes, une serrure récalcitrante.",
+              "ea": "On agit dessus pour les faire céder, pourtant elles résistent."
+            }
+          ],
+          "fondateur1": "POUSSER",
+          "fondateur2": "CÉDER",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Négation : « il n'est pas récalcitrant » → il cède dès qu'on le pousse (POUSSER DC CÉDER). Retour à la doxa, comportement attendu d'un mot paradoxal."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
     "headword": "RÉPONDRE",
     "letter": "R",
     "signification": {
