@@ -6693,6 +6693,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "STABLE",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y TENIR DC Y NEG POUVOIR TOMBER",
+          "exemples": [
+            {
+              "phrase": "Une situation stable.",
+              "ea": "Ça tient, donc ça ne peut pas tomber."
+            }
+          ],
+          "fondateur1": "TENIR",
+          "fondateur2": "TOMBER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
     "headword": "SUBIR",
     "letter": "S",
     "template_syntaxique": "",
