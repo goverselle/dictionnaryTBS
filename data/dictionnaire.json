@@ -2107,10 +2107,6 @@
           "aspect": "X RECEVOIR Y DC X DEVOIR RENDRE Y",
           "exemples": [
             {
-              "phrase": "Vous avez emprunté cette somme, donc vous devez la rembourser.",
-              "ea": "X a reçu, donc X doit rendre."
-            },
-            {
               "phrase": "Ce débiteur n'a toujours pas payé.",
               "ea": "X a reçu, pourtant X ne rend pas — la transgression rappelle l'obligation."
             },
