@@ -5377,7 +5377,7 @@
           "fondateur1": "TENIR",
           "fondateur2": "TOMBER",
           "criteres": [],
-          "square_value": null
+          "square_value": 1
         }
       ],
       "externe": []
@@ -6709,7 +6709,7 @@
           "fondateur1": "TENIR",
           "fondateur2": "TOMBER",
           "criteres": [],
-          "square_value": null
+          "square_value": 3
         }
       ],
       "externe": []
