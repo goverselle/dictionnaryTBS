@@ -167,6 +167,34 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "ANONYME",
+    "letter": "A",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X ÉCRIRE PT X NEG SIGNER",
+          "exemples": [
+            {
+              "phrase": "Une lettre anonyme.",
+              "ea": "Quelqu'un a écrit, pourtant il n'a pas signé."
+            },
+            {
+              "phrase": "Un don anonyme.",
+              "ea": "Quelqu'un a donné, pourtant il n'a pas signé."
+            }
+          ],
+          "fondateur1": "ÉCRIRE",
+          "fondateur2": "SIGNER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
     "headword": "ANXIEUX",
     "letter": "A",
     "signification": {
