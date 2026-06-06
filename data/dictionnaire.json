@@ -341,6 +341,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "ASSIGNER",
+    "letter": "A",
+    "template_syntaxique": "X ASSIGNER Z DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z NAÎTRE DC X GENRER Z",
+          "fondateur1": "NAÎTRE",
+          "fondateur2": "GENRER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "On lui a assigné le genre féminin à la naissance.",
+              "ea": "Elle est née, donc on l'a genrée."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "ASYMPTOMATIQUE",
     "letter": "A",
     "signification": {
@@ -716,95 +740,6 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "BESOIN",
-    "letter": "B",
-    "template_syntaxique": "X AVOIR BESOIN DE Y",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "NEG X AVOIR BESOIN DE Y (NEG X DÉPENSER Y)",
-          "exemples": [
-            {
-              "phrase": "Tu n'as pas besoin d'une nouvelle voiture.",
-              "ea": "Tu n'en as pas besoin, donc tu ne vas pas dépenser pour ça."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X AVOIR BESOIN Y (X DEVOIR AVOIR Z)",
-          "exemples": [
-            {
-              "phrase": "Tu as besoin de finir ce projet avant lundi.",
-              "ea": "Tu en as besoin, donc tu dois avoir le temps."
-            }
-          ]
-        },
-        {
-          "quasibloc": "Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)",
-          "exemples": [
-            {
-              "phrase": "Les clients ont besoin d'aide.",
-              "ea": "Ils ont besoin, donc quelqu'un fait ça pour eux."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X AVOIR BESOIN Y (X UTILISER Y)",
-          "exemples": [
-            {
-              "phrase": "J'ai besoin de me déplacer loin.",
-              "ea": "J'en ai besoin, donc j'utilise la voiture."
-            }
-          ]
-        },
-        {
-          "quasibloc": "Z AVOIR BESOIN DE Y (NEG Z DONNER Y À X)",
-          "exemples": [
-            {
-              "phrase": "Elle a besoin de cette écharpe.",
-              "ea": "Elle en a besoin, donc elle ne va pas la donner."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "CHANCE",
-    "letter": "C",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG X FAIRE PT X AVOIR Y",
-          "exemples": [
-            {
-              "phrase": "Il a eu la chance de le rencontrer.",
-              "ea": "Il n'a pas fait d'effort, pourtant il l'a rencontré."
-            },
-            {
-              "phrase": "Quelle chance !",
-              "ea": "Tu n'as rien fait, pourtant tu as obtenu."
-            }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
-            }
-          ],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X AVOIR LA CHANCE DE Y",
-    "updated": "2026-04-23"
-  },
-  {
     "headword": "AVOIR PEUR",
     "letter": "A",
     "template_syntaxique": "",
@@ -821,260 +756,6 @@
             {
               "phrase": "Personne ne le menace, pourtant il a peur.",
               "ea": "Personne ne le menace, pourtant il a peur."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "CONVERSATION",
-    "letter": "C",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X SE PARLER DC X SE COMPRENDRE",
-          "exemples": [
-            {
-              "phrase": "On a eu une conversation avec elle.",
-              "ea": "On s'est parlé, on s'est compris."
-            },
-            {
-              "phrase": "On n'arrive pas à avoir une conversation.",
-              "ea": "On se parle, mais on ne se comprend pas."
-            }
-          ],
-          "fondateur1": "PARLER",
-          "fondateur2": "COMPRENDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X AVOIR UNE CONVERSATION AVEC Z",
-    "updated": "2026-06-05",
-    "nb": "Conversation lexicalise le bloc doxal X SE PARLER DC X SE COMPRENDRE, en configuration réciproque. Les fondateurs PARLER et COMPRENDRE sont symétriques : chacun parle et chacun comprend. La face transgressive (SE PARLER PT NEG SE COMPRENDRE) décrit l'échec de la conversation — on se parle sans se comprendre."
-  },
-  {
-    "headword": "DIALOGUE",
-    "letter": "D",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X PARLER À Z DC Z RÉPONDRE À X",
-          "exemples": [
-            {
-              "phrase": "Ils ont eu un vrai dialogue.",
-              "ea": "L'un a parlé à l'autre, donc l'autre a répondu."
-            },
-            {
-              "phrase": "Le dialogue est rompu.",
-              "ea": "L'un parle, pourtant l'autre ne répond plus."
-            }
-          ],
-          "fondateur1": "PARLER",
-          "fondateur2": "RÉPONDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X AVOIR UN DIALOGUE AVEC Z",
-    "updated": "2026-06-05",
-    "nb": "Dialogue lexicalise le bloc normatif X PARLER À Z DC Z RÉPONDRE À X. La parole appelle la réponse. Le converse (X PARLER À Z DC NEG Z RÉPONDRE À X) correspond au monologue : on parle, donc personne ne répond."
-  },
-  {
-    "headword": "INTACT",
-    "letter": "I",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z POUVOIR ATTEINDRE Y PT Y ENTIER",
-          "exemples": [
-            {
-              "phrase": "À 64 ans, sa passion pour la musique est intacte.",
-              "ea": "Le temps aurait pu atteindre sa passion, pourtant elle est entière."
-            },
-            {
-              "phrase": "Ma maison est intacte.",
-              "ea": "Le feu aurait pu atteindre la maison, pourtant elle est entière."
-            }
-          ],
-          "fondateur1": "ATTEINDRE",
-          "fondateur2": "ENTIER",
-          "criteres": [],
-          "square_value": 1
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "X TOUCHER Y (Z ATTEINDRE Y)",
-          "exemples": [
-            {
-              "phrase": "Le feu a touché la maison, elle est détruite.",
-              "ea": "Le feu touche la maison, donc il l'atteint."
-            },
-            {
-              "phrase": "Le temps ne l'a pas touchée, sa beauté est intacte.",
-              "ea": "Le temps ne touche pas sa beauté, donc il ne l'atteint pas."
-            }
-          ]
-        }
-      ]
-    },
-    "template_syntaxique": "Y ÊTRE INTACT",
-    "updated": "2026-06-01",
-    "nb": "Intact lexicalise la face transgressive de l'aspect Z ATTEINDRE Y DC NEG Y ENTIER. La doxa présupposée est : ce qui est atteint ne peut plus être entier. Intact dit le contraire : malgré l'atteinte possible, l'intégrité est maintenue. Le présupposé d'intact est une atteinte possible, dont la nature varie selon la situation (le temps, le feu, la violence, l'usure...). Deux choses sont communiquées indissociablement : une atteinte possible et une intégrité maintenue. La configuration syntaxique porte la structure argumentative : ATTEINDRE est transitif (Z atteint Y), et c'est son complément Y qui devient le sujet de ENTIER (Y est entier). La chose menacée par l'atteinte est la chose même dont on prédique l'intégrité."
-  },
-  {
-    "headword": "MONOLOGUE",
-    "letter": "M",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X PARLER À Z DC NEG Z RÉPONDRE À X",
-          "exemples": [
-            {
-              "phrase": "Il monologue depuis une heure.",
-              "ea": "Il parle, donc personne ne lui répond."
-            },
-            {
-              "phrase": "Un long monologue intérieur.",
-              "ea": "On parle à soi-même, donc il n'y a pas de réponse."
-            }
-          ],
-          "fondateur1": "PARLER",
-          "fondateur2": "RÉPONDRE",
-          "criteres": [],
-          "square_value": 3
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X FAIRE UN MONOLOGUE",
-    "updated": "2026-06-05",
-    "nb": "Monologue lexicalise la face converse du bloc de dialogue : X PARLER À Z DC NEG Z RÉPONDRE À X. Si le dialogue suppose que la parole appelle la réponse, le monologue suppose que la parole exclut la réponse — on parle précisément parce que personne ne répondra."
-  },
-  {
-    "headword": "PROFONDEUR",
-    "letter": "P",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z CACHER Y DC NEG X VOIR Y",
-          "exemples": [
-            {
-              "phrase": "La profondeur de son regard.",
-              "ea": "Quelque chose est caché dans son regard, donc on ne le voit pas."
-            },
-            {
-              "phrase": "En profondeur, les choses sont différentes.",
-              "ea": "Les choses sont cachées, donc on ne les voit pas en surface."
-            }
-          ],
-          "fondateur1": "CACHER",
-          "fondateur2": "VOIR",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÊTRE EN PROFONDEUR",
-    "updated": "2026-06-05",
-    "nb": "Profondeur lexicalise le bloc doxal Z CACHER Y DC NEG X VOIR Y. Ce qui est caché n'est pas vu. C'est la face normative dont surface est la converse (NEG Z CACHER Y DC X VOIR Y). Surface et profondeur partagent les mêmes fondateurs (CACHER, VOIR) mais en configuration inversée."
-  },
-  {
-    "headword": "REFUSER",
-    "letter": "R",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z PROPOSER Y À X PT NEG X ACCEPTER Y",
-          "exemples": [
-            {
-              "phrase": "Il a refusé le poste.",
-              "ea": "On lui a proposé le poste, pourtant il ne l'a pas accepté."
-            },
-            {
-              "phrase": "Elle refuse de partir.",
-              "ea": "On lui demande de partir, pourtant elle ne part pas."
-            }
-          ],
-          "fondateur1": "PROPOSER",
-          "fondateur2": "ACCEPTER",
-          "criteres": [],
-          "square_value": 1
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X REFUSER Y",
-    "updated": "2026-06-04",
-    "nb": "Refuser lexicalise la face transgressive de Z PROPOSER Y À X DC X ACCEPTER Y. La doxa présupposée est : ce qui est proposé est accepté. Refuser dit le contraire : malgré la proposition, le sujet n'accepte pas. Le présupposé de refuser est qu'il y a eu proposition ou demande — on ne peut refuser que ce qui a été offert."
-  },
-  {
-    "headword": "RÊVER",
-    "letter": "R",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DORMIR PT X VOIR Y",
-          "exemples": [
-            {
-              "phrase": "J'ai rêvé de toi cette nuit.",
-              "ea": "Je dormais, pourtant je t'ai vu."
-            },
-            {
-              "phrase": "Elle rêve d'un monde meilleur.",
-              "ea": "Elle dort (ou se retire), pourtant elle voit un monde meilleur."
-            }
-          ],
-          "fondateur1": "DORMIR",
-          "fondateur2": "VOIR",
-          "criteres": [],
-          "square_value": 1
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X RÊVER DE Y",
-    "updated": "2026-06-05",
-    "nb": "Rêver lexicalise la face transgressive de X DORMIR DC NEG X VOIR Y. La doxa est : qui dort ne voit pas. Rêver dit le contraire : on dort, pourtant on voit."
-  },
-  {
-    "headword": "SE VOIR",
-    "letter": "S",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "NEG X ÊTRE MALADE (NEG X SE VOIR)",
-          "exemples": [
-            {
-              "phrase": "Pierre est en bonne santé.",
-              "ea": "Il n'est pas malade, donc il n'a pas de signes."
-            },
-            {
-              "phrase": "Les résultats montrent qu'il est en bonne santé.",
-              "ea": "Il n'est pas malade, donc il n'a pas de signes."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X ÊTRE MALADE (X SE VOIR)",
-          "exemples": [
-            {
-              "phrase": "Le patient est symptomatique.",
-              "ea": "Il est malade, donc il a des signes."
-            },
-            {
-              "phrase": "Une phase symptomatique de la maladie.",
-              "ea": "Il est malade, donc les signes apparaissent."
             }
           ]
         }
@@ -1158,6 +839,104 @@
         }
       ]
     },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "BESOIN",
+    "letter": "B",
+    "template_syntaxique": "X AVOIR BESOIN DE Y",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "NEG X AVOIR BESOIN DE Y (NEG X DÉPENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Tu n'as pas besoin d'une nouvelle voiture.",
+              "ea": "Tu n'en as pas besoin, donc tu ne vas pas dépenser pour ça."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X AVOIR BESOIN Y (X DEVOIR AVOIR Z)",
+          "exemples": [
+            {
+              "phrase": "Tu as besoin de finir ce projet avant lundi.",
+              "ea": "Tu en as besoin, donc tu dois avoir le temps."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)",
+          "exemples": [
+            {
+              "phrase": "Les clients ont besoin d'aide.",
+              "ea": "Ils ont besoin, donc quelqu'un fait ça pour eux."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X AVOIR BESOIN Y (X UTILISER Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai besoin de me déplacer loin.",
+              "ea": "J'en ai besoin, donc j'utilise la voiture."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Z AVOIR BESOIN DE Y (NEG Z DONNER Y À X)",
+          "exemples": [
+            {
+              "phrase": "Elle a besoin de cette écharpe.",
+              "ea": "Elle en a besoin, donc elle ne va pas la donner."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "BLASÉ",
+    "letter": "B",
+    "template_syntaxique": "X ÊTRE BLASÉ DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X EN AVOIR VU) DC X NEG SENTIR Y",
+          "fondateur1": "EN AVOIR VU",
+          "fondateur2": "SENTIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on en a déjà vu, on ne sent plus."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "On est blasé des films de super-héros.",
+              "ea": "On en a vu des films de super-héros, donc on ne sent plus rien."
+            },
+            {
+              "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
+              "ea": "J'en ai vu des séries Netflix, donc je ne sens plus rien."
+            },
+            {
+              "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
+              "ea": "On en a vu grâce à internet, donc on ne sent plus rien."
+            },
+            {
+              "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
+              "ea": "Ils en ont vu, donc ils ne sentent plus rien."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X EN AVOIR VU), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir.",
     "updated": "2026-04-23"
   },
   {
@@ -1259,6 +1038,39 @@
     "updated": "2026-05-04"
   },
   {
+    "headword": "CHANCE",
+    "letter": "C",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X FAIRE PT X AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Il a eu la chance de le rencontrer.",
+              "ea": "Il n'a pas fait d'effort, pourtant il l'a rencontré."
+            },
+            {
+              "phrase": "Quelle chance !",
+              "ea": "Tu n'as rien fait, pourtant tu as obtenu."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "AVOIR",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Aspect transgressif du bloc FAIRE — AVOIR."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR LA CHANCE DE Y",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "CHANGER",
     "letter": "C",
     "template_syntaxique": "",
@@ -1344,6 +1156,64 @@
     },
     "template_syntaxique": "X CHERCHER Y",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "CISGENRE",
+    "letter": "C",
+    "template_syntaxique": "X ÊTRE CISGENRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z ASSIGNER X DE Y DC X S'IDENTIFIER COMME Y",
+          "fondateur1": "ASSIGNER",
+          "fondateur2": "S'IDENTIFIER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Pierre est cisgenre.",
+              "ea": "On l'a assigné homme à la naissance, donc il s'identifie comme homme."
+            }
+          ]
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X ÊTRE CISGENRE (X AVOIR PRIVILÈGE)",
+          "exemples": [
+            {
+              "phrase": "Il ne se rend pas compte de son privilège cisgenre.",
+              "ea": "Il est cisgenre, donc il a un privilège."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "CLASSER",
+    "letter": "C",
+    "template_syntaxique": "X CLASSER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y RESSEMBLER W DC X UNIR Y ET W",
+          "fondateur1": "RESSEMBLER",
+          "fondateur2": "UNIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "J'ai classé cette fleur parmi les astéracées.",
+              "ea": "Elle ressemble aux autres astéracées, donc je les unis."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   },
   {
     "headword": "COMMENCER",
@@ -1497,6 +1367,35 @@
     "nb": "CONVAINCRE est en relation de précision avec PERSUADER : « Marie m'a convaincu, elle m'a même persuadé » n'est pas possible, car PERSUADER est plus général.",
     "template_syntaxique": "Z CONVAINCRE X DE Y",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "CONVERSATION",
+    "letter": "C",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SE PARLER DC X SE COMPRENDRE",
+          "exemples": [
+            {
+              "phrase": "On a eu une conversation avec elle.",
+              "ea": "On s'est parlé, on s'est compris."
+            },
+            {
+              "phrase": "On n'arrive pas à avoir une conversation.",
+              "ea": "On se parle, mais on ne se comprend pas."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "COMPRENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR UNE CONVERSATION AVEC Z",
+    "updated": "2026-06-05",
+    "nb": "Conversation lexicalise le bloc doxal X SE PARLER DC X SE COMPRENDRE, en configuration réciproque. Les fondateurs PARLER et COMPRENDRE sont symétriques : chacun parle et chacun comprend. La face transgressive (SE PARLER PT NEG SE COMPRENDRE) décrit l'échec de la conversation — on se parle sans se comprendre."
   },
   {
     "headword": "COOL",
@@ -1727,6 +1626,88 @@
     },
     "template_syntaxique": "X AVOIR DES DENTS",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "DEVENIR",
+    "letter": "D",
+    "template_syntaxique": "X DEVENIR Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF(NEG ÊTRE) PT ÊTRE",
+          "fondateur1": "ÊTRE",
+          "fondateur2": "ÊTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Pierre est devenu médecin.",
+              "ea": "Pierre n'était pas médecin, pourtant il est médecin."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-11"
+  },
+  {
+    "headword": "DEVOIR",
+    "letter": "D",
+    "template_syntaxique": "X DEVOIR Y À Z",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X DEVOIR À Z (X PAYER)",
+          "exemples": [
+            {
+              "phrase": "Pierre rembourse Marie.",
+              "ea": "Pierre doit à Marie, donc Pierre paye."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X POUVOIR (X DEVOIR)",
+          "exemples": [
+            {
+              "phrase": "Tu peux le faire, donc tu dois le faire.",
+              "ea": "Si tu peux, tu dois."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "DIALOGUE",
+    "letter": "D",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARLER À Z DC Z RÉPONDRE À X",
+          "exemples": [
+            {
+              "phrase": "Ils ont eu un vrai dialogue.",
+              "ea": "L'un a parlé à l'autre, donc l'autre a répondu."
+            },
+            {
+              "phrase": "Le dialogue est rompu.",
+              "ea": "L'un parle, pourtant l'autre ne répond plus."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "RÉPONDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR UN DIALOGUE AVEC Z",
+    "updated": "2026-06-05",
+    "nb": "Dialogue lexicalise le bloc normatif X PARLER À Z DC Z RÉPONDRE À X. La parole appelle la réponse. Le converse (X PARLER À Z DC NEG Z RÉPONDRE À X) correspond au monologue : on parle, donc personne ne répond."
   },
   {
     "headword": "DIFFICILE",
@@ -2117,6 +2098,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "DÉCLARER",
+    "letter": "D",
+    "template_syntaxique": "X DÉCLARER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE Y DC X FAIRE CONNAÎTRE Y",
+          "fondateur1": "DIRE",
+          "fondateur2": "FAIRE CONNAÎTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il a déclaré sa candidature.",
+              "ea": "Il l'a dit, donc il l'a fait connaître."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-05"
+  },
+  {
     "headword": "DÉLICIEUX",
     "letter": "D",
     "signification": {
@@ -2241,30 +2246,6 @@
       ]
     },
     "updated": "2026-04-23"
-  },
-  {
-    "headword": "DEVENIR",
-    "letter": "D",
-    "template_syntaxique": "X DEVENIR Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF(NEG ÊTRE) PT ÊTRE",
-          "fondateur1": "ÊTRE",
-          "fondateur2": "ÊTRE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Pierre est devenu médecin.",
-              "ea": "Pierre n'était pas médecin, pourtant il est médecin."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-11"
   },
   {
     "headword": "EFFET",
@@ -2423,160 +2404,28 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "SURFACE",
-    "letter": "S",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z NEG CACHER Y DC X VOIR Y",
-          "exemples": [
-            {
-              "phrase": "Le problème est en surface.",
-              "ea": "Le problème n'est pas caché, donc on le voit."
-            },
-            {
-              "phrase": "Rester en surface.",
-              "ea": "On ne cache rien, donc on voit, mais seulement ce qui est visible."
-            }
-          ],
-          "fondateur1": "CACHER",
-          "fondateur2": "VOIR",
-          "criteres": [],
-          "square_value": 3
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÊTRE EN SURFACE",
-    "updated": "2026-06-05",
-    "nb": "Surface lexicalise le bloc normatif Z NEG CACHER Y DC X VOIR Y. Ce qui n'est pas caché est vu. Le converse (Z CACHER Y DC NEG X VOIR Y) correspond à la profondeur : ce qui est caché n'est pas vu. Surface présuppose l'existence d'une profondeur — il n'y a de surface que là où quelque chose pourrait être enfoui."
-  },
-  {
-    "headword": "ÉCHOUER",
+    "headword": "EXAMINER",
     "letter": "E",
+    "template_syntaxique": "X EXAMINER Y",
     "signification": {
       "interne": [
         {
-          "aspect": "X FAIRE Y PT NEG X AVOIR Z",
-          "exemples": [
-            {
-              "phrase": "J'ai échoué à l'examen.",
-              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
-            }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
+          "aspect": "X REGARDER Y DC X DEVOIR SAVOIR",
+          "fondateur1": "REGARDER",
+          "fondateur2": "DEVOIR SAVOIR",
           "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X ÉCHOUER À Z",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉCONOME",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG X AVOIR BESOIN DE Y DC NEG X DÉPENSER Y",
+          "square_value": null,
           "exemples": [
             {
-              "phrase": "Pierre est économe.",
-              "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
+              "phrase": "Le médecin examine le patient.",
+              "ea": "Il regarde, donc il doit savoir."
             }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DÉPENSER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
-            }
-          ],
-          "square_value": null
+          ]
         }
       ],
       "externe": []
     },
-    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
-    "template_syntaxique": "X ÊTRE ÉCONOME",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉCONOMISER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
-          "exemples": [
-            {
-              "phrase": "Pierre économise pour les vacances.",
-              "ea": "Pierre ne dépense pas, donc il a de l'argent."
-            }
-          ],
-          "fondateur1": "DÉPENSER",
-          "fondateur2": "AVOIR ARGENT",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "",
-    "template_syntaxique": "X ÉCONOMISER",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉNERVER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y SE RÉPÉTER DC Y DÉRANGER X",
-          "exemples": [
-            {
-              "phrase": "Le bruit de l'horloge m'énerve.",
-              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
-            }
-          ],
-          "fondateur1": "SE RÉPÉTER",
-          "fondateur2": "DÉRANGER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÉNERVER X",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉTONNER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X APPRENDRE Y PT PERF (NEG X ATTENDRE Y)",
-          "exemples": [
-            {
-              "phrase": "Son comportement m'étonne.",
-              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
-            }
-          ],
-          "fondateur1": "APPRENDRE",
-          "fondateur2": "ATTENDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÉTONNER X",
-    "updated": "2026-04-23"
+    "updated": "2026-05-03"
   },
   {
     "headword": "FACILE",
@@ -3029,6 +2878,26 @@
             {
               "phrase": "A2 est un bas niveau de la connaissance d'une langue.",
               "ea": "Vous pouvez atteindre le niveau A2 sans faire trop d'effort."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "FAIRE À",
+    "letter": "F",
+    "template_syntaxique": "X FAIRE Y À Z",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X FAIRE Y À Z (Z MOURIR)",
+          "exemples": [
+            {
+              "phrase": "Qu'as-tu fait à lui ?",
+              "ea": "Tu lui as fait quelque chose, donc il en subit les conséquences."
             }
           ]
         }
@@ -3629,6 +3498,49 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "INTACT",
+    "letter": "I",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z POUVOIR ATTEINDRE Y PT Y ENTIER",
+          "exemples": [
+            {
+              "phrase": "À 64 ans, sa passion pour la musique est intacte.",
+              "ea": "Le temps aurait pu atteindre sa passion, pourtant elle est entière."
+            },
+            {
+              "phrase": "Ma maison est intacte.",
+              "ea": "Le feu aurait pu atteindre la maison, pourtant elle est entière."
+            }
+          ],
+          "fondateur1": "ATTEINDRE",
+          "fondateur2": "ENTIER",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X TOUCHER Y (Z ATTEINDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Le feu a touché la maison, elle est détruite.",
+              "ea": "Le feu touche la maison, donc il l'atteint."
+            },
+            {
+              "phrase": "Le temps ne l'a pas touchée, sa beauté est intacte.",
+              "ea": "Le temps ne touche pas sa beauté, donc il ne l'atteint pas."
+            }
+          ]
+        }
+      ]
+    },
+    "template_syntaxique": "Y ÊTRE INTACT",
+    "updated": "2026-06-01",
+    "nb": "Intact lexicalise la face transgressive de l'aspect Z ATTEINDRE Y DC NEG Y ENTIER. La doxa présupposée est : ce qui est atteint ne peut plus être entier. Intact dit le contraire : malgré l'atteinte possible, l'intégrité est maintenue. Le présupposé d'intact est une atteinte possible, dont la nature varie selon la situation (le temps, le feu, la violence, l'usure...). Deux choses sont communiquées indissociablement : une atteinte possible et une intégrité maintenue. La configuration syntaxique porte la structure argumentative : ATTEINDRE est transitif (Z atteint Y), et c'est son complément Y qui devient le sujet de ENTIER (Y est entier). La chose menacée par l'atteinte est la chose même dont on prédique l'intégrité."
+  },
+  {
     "headword": "INTELLIGENT",
     "letter": "I",
     "signification": {
@@ -3771,6 +3683,36 @@
     },
     "template_syntaxique": "Y ÊTRE UNE LANGUE",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "LASSÉ",
+    "letter": "L",
+    "template_syntaxique": "X ÊTRE LASSÉ DE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X RÉPÉTER Y) DC X NEG VOULOIR Y",
+          "fondateur1": "RÉPÉTER",
+          "fondateur2": "VOULOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : si on a déjà répété quelque chose, on n'en veut plus."
+            }
+          ],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est lassé de ce plat.",
+              "ea": "Il a mangé ce plat à répétition, donc il n'en veut pas."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-04-23",
+    "nb": "Différence avec blasé : si Pierre est lassé d'un plat, il peut encore aimer le souvenir du plat ou sa saveur en soi, mais il n'en veut plus maintenant. La lassitude porte sur le vouloir actuel, pas sur l'évaluation affective. Si Pierre est blasé d'un plat, il ne sent plus rien — pas d'envie, mais pas de dégoût non plus, pas de souvenir ému. Atonie affective totale."
   },
   {
     "headword": "LIBRE",
@@ -4006,6 +3948,35 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "MONOLOGUE",
+    "letter": "M",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARLER À Z DC NEG Z RÉPONDRE À X",
+          "exemples": [
+            {
+              "phrase": "Il monologue depuis une heure.",
+              "ea": "Il parle, donc personne ne lui répond."
+            },
+            {
+              "phrase": "Un long monologue intérieur.",
+              "ea": "On parle à soi-même, donc il n'y a pas de réponse."
+            }
+          ],
+          "fondateur1": "PARLER",
+          "fondateur2": "RÉPONDRE",
+          "criteres": [],
+          "square_value": 3
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X FAIRE UN MONOLOGUE",
+    "updated": "2026-06-05",
+    "nb": "Monologue lexicalise la face converse du bloc de dialogue : X PARLER À Z DC NEG Z RÉPONDRE À X. Si le dialogue suppose que la parole appelle la réponse, le monologue suppose que la parole exclut la réponse — on parle précisément parce que personne ne répondra."
   },
   {
     "headword": "MONOTONE",
@@ -4312,6 +4283,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "NAÎTRE",
+    "letter": "N",
+    "template_syntaxique": "X NAÎTRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG PERF (X VIVRE) PT X VIVRE",
+          "fondateur1": "VIVRE",
+          "fondateur2": "VIVRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est né.",
+              "ea": "Il n'avait pas vécu, pourtant il vit."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "NORMAL",
     "letter": "N",
     "signification": {
@@ -4450,6 +4445,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "OBSERVER",
+    "letter": "O",
+    "template_syntaxique": "X OBSERVER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X REGARDER Y DC X DEVOIR APPRENDRE",
+          "fondateur1": "REGARDER",
+          "fondateur2": "DEVOIR APPRENDRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "L'enfant observe les oiseaux.",
+              "ea": "Il regarde, donc il doit apprendre."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-02"
+  },
+  {
     "headword": "OBTENIR",
     "letter": "O",
     "signification": {
@@ -4573,6 +4592,30 @@
     "template_syntaxique": "X OUBLIER Y",
     "nb": "OUBLIER est le transposé d'APPRENDRE dans le carré du bloc SAVOIR — SAVOIR : APPRENDRE = PERF (NEG X SAVOIR Y) PT X SAVOIR Y ; OUBLIER = PERF (X SAVOIR Y) PT NEG X SAVOIR Y.",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "PARALLÈLE",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SUIVRE Z PT X NEG REJOINDRE Z",
+          "exemples": [
+            {
+              "phrase": "Nos parcours sont restés parallèles : on a fait la même route, mais nos chemins ne se sont jamais croisés.",
+              "ea": "X suit Z, pourtant X ne rejoint pas Z — le pourtant est explicité."
+            }
+          ],
+          "fondateur1": "SUIVRE",
+          "fondateur2": "NEG REJOINDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
   },
   {
     "headword": "PARANOÏAQUE",
@@ -5200,6 +5243,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "PROFONDEUR",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z CACHER Y DC NEG X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "La profondeur de son regard.",
+              "ea": "Quelque chose est caché dans son regard, donc on ne le voit pas."
+            },
+            {
+              "phrase": "En profondeur, les choses sont différentes.",
+              "ea": "Les choses sont cachées, donc on ne les voit pas en surface."
+            }
+          ],
+          "fondateur1": "CACHER",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE EN PROFONDEUR",
+    "updated": "2026-06-05",
+    "nb": "Profondeur lexicalise le bloc doxal Z CACHER Y DC NEG X VOIR Y. Ce qui est caché n'est pas vu. C'est la face normative dont surface est la converse (NEG Z CACHER Y DC X VOIR Y). Surface et profondeur partagent les mêmes fondateurs (CACHER, VOIR) mais en configuration inversée."
+  },
+  {
     "headword": "PROUVER",
     "letter": "P",
     "signification": {
@@ -5403,6 +5475,83 @@
     "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes ».",
     "template_syntaxique": "X ÊTRE RADIN",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "RECONNAÎTRE",
+    "letter": "R",
+    "template_syntaxique": "X RECONNAÎTRE Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X REVOIR Y DC X SE SOUVENIR DE Y",
+          "fondateur1": "REVOIR",
+          "fondateur2": "SE SOUVENIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Je l'ai reconnu dans la rue.",
+              "ea": "Je l'ai revu, donc je me suis souvenu de lui."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-03"
+  },
+  {
+    "headword": "REFUSER",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z PROPOSER Y À X PT NEG X ACCEPTER Y",
+          "exemples": [
+            {
+              "phrase": "Il a refusé le poste.",
+              "ea": "On lui a proposé le poste, pourtant il ne l'a pas accepté."
+            },
+            {
+              "phrase": "Elle refuse de partir.",
+              "ea": "On lui demande de partir, pourtant elle ne part pas."
+            }
+          ],
+          "fondateur1": "PROPOSER",
+          "fondateur2": "ACCEPTER",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X REFUSER Y",
+    "updated": "2026-06-04",
+    "nb": "Refuser lexicalise la face transgressive de Z PROPOSER Y À X DC X ACCEPTER Y. La doxa présupposée est : ce qui est proposé est accepté. Refuser dit le contraire : malgré la proposition, le sujet n'accepte pas. Le présupposé de refuser est qu'il y a eu proposition ou demande — on ne peut refuser que ce qui a été offert."
+  },
+  {
+    "headword": "REGARDER",
+    "letter": "R",
+    "template_syntaxique": "X REGARDER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOULOIR SAVOIR Y DC X VOIR Y",
+          "fondateur1": "VOULOIR SAVOIR",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie a regardé les emplois de ce mot.",
+              "ea": "Marie voulait savoir ces emplois, donc elle les a vus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-02"
   },
   {
     "headword": "REMBOURSER",
@@ -5724,6 +5873,59 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "RÊVER",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DORMIR PT X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai rêvé de toi cette nuit.",
+              "ea": "Je dormais, pourtant je t'ai vu."
+            },
+            {
+              "phrase": "Elle rêve d'un monde meilleur.",
+              "ea": "Elle dort (ou se retire), pourtant elle voit un monde meilleur."
+            }
+          ],
+          "fondateur1": "DORMIR",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X RÊVER DE Y",
+    "updated": "2026-06-05",
+    "nb": "Rêver lexicalise la face transgressive de X DORMIR DC NEG X VOIR Y. La doxa est : qui dort ne voit pas. Rêver dit le contraire : on dort, pourtant on voit."
+  },
+  {
+    "headword": "S'ARRÊTER",
+    "letter": "S",
+    "template_syntaxique": "X S'ARRÊTER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X MARCHER) PT NEG X MARCHER",
+          "fondateur1": "MARCHER",
+          "fondateur2": "MARCHER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est arrêté.",
+              "ea": "Il a marché, mais maintenant il ne marche plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "S'EMPÊCHER",
     "letter": "S",
     "template_syntaxique": "",
@@ -5764,6 +5966,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "S'IDENTIFIER",
+    "letter": "S",
+    "template_syntaxique": "X S'IDENTIFIER COMME Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SE SENTIR Y DC X SE REVENDIQUER COMME Y",
+          "fondateur1": "SE SENTIR",
+          "fondateur2": "SE REVENDIQUER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie s'identifie comme femme.",
+              "ea": "Marie se sent femme, donc elle se revendique comme femme."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "S'INQUIÉTER",
     "letter": "S",
     "template_syntaxique": "",
@@ -5795,6 +6021,30 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "S'ÉTEINDRE",
+    "letter": "S",
+    "template_syntaxique": "X S'ÉTEINDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X BRÛLER) PT NEG X BRÛLER",
+          "fondateur1": "BRÛLER",
+          "fondateur2": "BRÛLER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Le feu s'est éteint.",
+              "ea": "Il a brûlé, mais maintenant il ne brûle plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   },
   {
     "headword": "SACRIFIER",
@@ -6153,6 +6403,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "SE RÉTABLIR",
+    "letter": "S",
+    "template_syntaxique": "X SE RÉTABLIR",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X ÊTRE MALADE) PT NEG X ÊTRE MALADE",
+          "fondateur1": "ÊTRE MALADE",
+          "fondateur2": "ÊTRE MALADE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est rétabli.",
+              "ea": "Il était malade, mais maintenant il n'est plus malade."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "SE SUICIDER",
     "letter": "S",
     "signification": {
@@ -6174,6 +6448,67 @@
       "externe": []
     },
     "template_syntaxique": "X SE SUICIDER",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "SE TAIRE",
+    "letter": "S",
+    "template_syntaxique": "X SE TAIRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X PARLER) PT NEG X PARLER",
+          "fondateur1": "PARLER",
+          "fondateur2": "PARLER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il s'est tu.",
+              "ea": "Il a parlé, mais maintenant il ne parle plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
+    "headword": "SE VOIR",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "NEG X ÊTRE MALADE (NEG X SE VOIR)",
+          "exemples": [
+            {
+              "phrase": "Pierre est en bonne santé.",
+              "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            },
+            {
+              "phrase": "Les résultats montrent qu'il est en bonne santé.",
+              "ea": "Il n'est pas malade, donc il n'a pas de signes."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X ÊTRE MALADE (X SE VOIR)",
+          "exemples": [
+            {
+              "phrase": "Le patient est symptomatique.",
+              "ea": "Il est malade, donc il a des signes."
+            },
+            {
+              "phrase": "Une phase symptomatique de la maladie.",
+              "ea": "Il est malade, donc les signes apparaissent."
+            }
+          ]
+        }
+      ]
+    },
     "updated": "2026-04-23"
   },
   {
@@ -6297,6 +6632,35 @@
     },
     "template_syntaxique": "X SUCCOMBER À Y",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "SURFACE",
+    "letter": "S",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z NEG CACHER Y DC X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "Le problème est en surface.",
+              "ea": "Le problème n'est pas caché, donc on le voit."
+            },
+            {
+              "phrase": "Rester en surface.",
+              "ea": "On ne cache rien, donc on voit, mais seulement ce qui est visible."
+            }
+          ],
+          "fondateur1": "CACHER",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": 3
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE EN SURFACE",
+    "updated": "2026-06-05",
+    "nb": "Surface lexicalise le bloc normatif Z NEG CACHER Y DC X VOIR Y. Ce qui n'est pas caché est vu. Le converse (Z CACHER Y DC NEG X VOIR Y) correspond à la profondeur : ce qui est caché n'est pas vu. Surface présuppose l'existence d'une profondeur — il n'y a de surface que là où quelque chose pourrait être enfoui."
   },
   {
     "headword": "SURVENIR",
@@ -6543,6 +6907,30 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "TRANSGENRE",
+    "letter": "T",
+    "template_syntaxique": "X ÊTRE TRANSGENRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z ASSIGNER X DE Y PT NEG X S'IDENTIFIER COMME Y",
+          "fondateur1": "ASSIGNER",
+          "fondateur2": "S'IDENTIFIER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Marie est transgenre.",
+              "ea": "On l'a assignée d'un genre, pourtant elle ne s'identifie pas comme tel."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
   },
   {
     "headword": "TRAUMATIQUE",
@@ -7043,6 +7431,133 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "ÉCHOUER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y PT NEG X AVOIR Z",
+          "exemples": [
+            {
+              "phrase": "J'ai échoué à l'examen.",
+              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "AVOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X ÉCHOUER À Z",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉCONOME",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG X AVOIR BESOIN DE Y DC NEG X DÉPENSER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est économe.",
+              "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
+            }
+          ],
+          "fondateur1": "AVOIR BESOIN",
+          "fondateur2": "DÉPENSER",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
+    "template_syntaxique": "X ÊTRE ÉCONOME",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉCONOMISER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
+          "exemples": [
+            {
+              "phrase": "Pierre économise pour les vacances.",
+              "ea": "Pierre ne dépense pas, donc il a de l'argent."
+            }
+          ],
+          "fondateur1": "DÉPENSER",
+          "fondateur2": "AVOIR ARGENT",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "",
+    "template_syntaxique": "X ÉCONOMISER",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉNERVER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE RÉPÉTER DC Y DÉRANGER X",
+          "exemples": [
+            {
+              "phrase": "Le bruit de l'horloge m'énerve.",
+              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
+            }
+          ],
+          "fondateur1": "SE RÉPÉTER",
+          "fondateur2": "DÉRANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÉNERVER X",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉTONNER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X APPRENDRE Y PT PERF (NEG X ATTENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Son comportement m'étonne.",
+              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
+            }
+          ],
+          "fondateur1": "APPRENDRE",
+          "fondateur2": "ATTENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÉTONNER X",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "ÊTRE",
     "letter": "E",
     "template_syntaxique": "",
@@ -7074,496 +7589,5 @@
       ]
     },
     "updated": "2026-04-23"
-  },
-  {
-    "headword": "DEVOIR",
-    "letter": "D",
-    "template_syntaxique": "X DEVOIR Y À Z",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "X DEVOIR À Z (X PAYER)",
-          "exemples": [
-            {
-              "phrase": "Pierre rembourse Marie.",
-              "ea": "Pierre doit à Marie, donc Pierre paye."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X POUVOIR (X DEVOIR)",
-          "exemples": [
-            {
-              "phrase": "Tu peux le faire, donc tu dois le faire.",
-              "ea": "Si tu peux, tu dois."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "FAIRE À",
-    "letter": "F",
-    "template_syntaxique": "X FAIRE Y À Z",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "X FAIRE Y À Z (Z MOURIR)",
-          "exemples": [
-            {
-              "phrase": "Qu'as-tu fait à lui ?",
-              "ea": "Tu lui as fait quelque chose, donc il en subit les conséquences."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "BLASÉ",
-    "letter": "B",
-    "template_syntaxique": "X ÊTRE BLASÉ DE Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X EN AVOIR VU) DC X NEG SENTIR Y",
-          "fondateur1": "EN AVOIR VU",
-          "fondateur2": "SENTIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : si on en a déjà vu, on ne sent plus."
-            }
-          ],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "On est blasé des films de super-héros.",
-              "ea": "On en a vu des films de super-héros, donc on ne sent plus rien."
-            },
-            {
-              "phrase": "Je suis blasé des séries Netflix, elles se ressemblent toutes maintenant.",
-              "ea": "J'en ai vu des séries Netflix, donc je ne sens plus rien."
-            },
-            {
-              "phrase": "Génération blasée, on a tout vu trop vite grâce à internet.",
-              "ea": "On en a vu grâce à internet, donc on ne sent plus rien."
-            },
-            {
-              "phrase": "Les gens sont blasés, ça scroll sans rien ressentir.",
-              "ea": "Ils en ont vu, donc ils ne sentent plus rien."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "nb": "« Ce nouveau-né est blasé » ne fonctionne pas : la formule intègre PERF (X EN AVOIR VU), qui présuppose une expérience passée que le nouveau-né ne peut pas avoir.",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "LASSÉ",
-    "letter": "L",
-    "template_syntaxique": "X ÊTRE LASSÉ DE Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X RÉPÉTER Y) DC X NEG VOULOIR Y",
-          "fondateur1": "RÉPÉTER",
-          "fondateur2": "VOULOIR",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : si on a déjà répété quelque chose, on n'en veut plus."
-            }
-          ],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il est lassé de ce plat.",
-              "ea": "Il a mangé ce plat à répétition, donc il n'en veut pas."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-04-23",
-    "nb": "Différence avec blasé : si Pierre est lassé d'un plat, il peut encore aimer le souvenir du plat ou sa saveur en soi, mais il n'en veut plus maintenant. La lassitude porte sur le vouloir actuel, pas sur l'évaluation affective. Si Pierre est blasé d'un plat, il ne sent plus rien — pas d'envie, mais pas de dégoût non plus, pas de souvenir ému. Atonie affective totale."
-  },
-  {
-    "headword": "EXAMINER",
-    "letter": "E",
-    "template_syntaxique": "X EXAMINER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X REGARDER Y DC X DEVOIR SAVOIR",
-          "fondateur1": "REGARDER",
-          "fondateur2": "DEVOIR SAVOIR",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Le médecin examine le patient.",
-              "ea": "Il regarde, donc il doit savoir."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-03"
-  },
-  {
-    "headword": "RECONNAÎTRE",
-    "letter": "R",
-    "template_syntaxique": "X RECONNAÎTRE Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X REVOIR Y DC X SE SOUVENIR DE Y",
-          "fondateur1": "REVOIR",
-          "fondateur2": "SE SOUVENIR",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Je l'ai reconnu dans la rue.",
-              "ea": "Je l'ai revu, donc je me suis souvenu de lui."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-03"
-  },
-  {
-    "headword": "OBSERVER",
-    "letter": "O",
-    "template_syntaxique": "X OBSERVER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X REGARDER Y DC X DEVOIR APPRENDRE",
-          "fondateur1": "REGARDER",
-          "fondateur2": "DEVOIR APPRENDRE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "L'enfant observe les oiseaux.",
-              "ea": "Il regarde, donc il doit apprendre."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-02"
-  },
-  {
-    "headword": "REGARDER",
-    "letter": "R",
-    "template_syntaxique": "X REGARDER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X VOULOIR SAVOIR Y DC X VOIR Y",
-          "fondateur1": "VOULOIR SAVOIR",
-          "fondateur2": "VOIR",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Marie a regardé les emplois de ce mot.",
-              "ea": "Marie voulait savoir ces emplois, donc elle les a vus."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-02"
-  },
-  {
-    "headword": "CISGENRE",
-    "letter": "C",
-    "template_syntaxique": "X ÊTRE CISGENRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z ASSIGNER X DE Y DC X S'IDENTIFIER COMME Y",
-          "fondateur1": "ASSIGNER",
-          "fondateur2": "S'IDENTIFIER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Pierre est cisgenre.",
-              "ea": "On l'a assigné homme à la naissance, donc il s'identifie comme homme."
-            }
-          ]
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "X ÊTRE CISGENRE (X AVOIR PRIVILÈGE)",
-          "exemples": [
-            {
-              "phrase": "Il ne se rend pas compte de son privilège cisgenre.",
-              "ea": "Il est cisgenre, donc il a un privilège."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "TRANSGENRE",
-    "letter": "T",
-    "template_syntaxique": "X ÊTRE TRANSGENRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z ASSIGNER X DE Y PT NEG X S'IDENTIFIER COMME Y",
-          "fondateur1": "ASSIGNER",
-          "fondateur2": "S'IDENTIFIER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Marie est transgenre.",
-              "ea": "On l'a assignée d'un genre, pourtant elle ne s'identifie pas comme tel."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "ASSIGNER",
-    "letter": "A",
-    "template_syntaxique": "X ASSIGNER Z DE Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z NAÎTRE DC X GENRER Z",
-          "fondateur1": "NAÎTRE",
-          "fondateur2": "GENRER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "On lui a assigné le genre féminin à la naissance.",
-              "ea": "Elle est née, donc on l'a genrée."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "S'IDENTIFIER",
-    "letter": "S",
-    "template_syntaxique": "X S'IDENTIFIER COMME Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X SE SENTIR Y DC X SE REVENDIQUER COMME Y",
-          "fondateur1": "SE SENTIR",
-          "fondateur2": "SE REVENDIQUER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Marie s'identifie comme femme.",
-              "ea": "Marie se sent femme, donc elle se revendique comme femme."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "SE TAIRE",
-    "letter": "S",
-    "template_syntaxique": "X SE TAIRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X PARLER) PT NEG X PARLER",
-          "fondateur1": "PARLER",
-          "fondateur2": "PARLER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il s'est tu.",
-              "ea": "Il a parlé, mais maintenant il ne parle plus."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "S'ARRÊTER",
-    "letter": "S",
-    "template_syntaxique": "X S'ARRÊTER",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X MARCHER) PT NEG X MARCHER",
-          "fondateur1": "MARCHER",
-          "fondateur2": "MARCHER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il s'est arrêté.",
-              "ea": "Il a marché, mais maintenant il ne marche plus."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "S'ÉTEINDRE",
-    "letter": "S",
-    "template_syntaxique": "X S'ÉTEINDRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X BRÛLER) PT NEG X BRÛLER",
-          "fondateur1": "BRÛLER",
-          "fondateur2": "BRÛLER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Le feu s'est éteint.",
-              "ea": "Il a brûlé, mais maintenant il ne brûle plus."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "SE RÉTABLIR",
-    "letter": "S",
-    "template_syntaxique": "X SE RÉTABLIR",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X ÊTRE MALADE) PT NEG X ÊTRE MALADE",
-          "fondateur1": "ÊTRE MALADE",
-          "fondateur2": "ÊTRE MALADE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il s'est rétabli.",
-              "ea": "Il était malade, mais maintenant il n'est plus malade."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "NAÎTRE",
-    "letter": "N",
-    "template_syntaxique": "X NAÎTRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG PERF (X VIVRE) PT X VIVRE",
-          "fondateur1": "VIVRE",
-          "fondateur2": "VIVRE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il est né.",
-              "ea": "Il n'avait pas vécu, pourtant il vit."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "CLASSER",
-    "letter": "C",
-    "template_syntaxique": "X CLASSER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y RESSEMBLER W DC X UNIR Y ET W",
-          "fondateur1": "RESSEMBLER",
-          "fondateur2": "UNIR",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "J'ai classé cette fleur parmi les astéracées.",
-              "ea": "Elle ressemble aux autres astéracées, donc je les unis."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
-  },
-  {
-    "headword": "DÉCLARER",
-    "letter": "D",
-    "template_syntaxique": "X DÉCLARER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DIRE Y DC X FAIRE CONNAÎTRE Y",
-          "fondateur1": "DIRE",
-          "fondateur2": "FAIRE CONNAÎTRE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il a déclaré sa candidature.",
-              "ea": "Il l'a dit, donc il l'a fait connaître."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-05"
   }
 ]
