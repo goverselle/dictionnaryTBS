@@ -2107,16 +2107,12 @@
           "aspect": "X RECEVOIR Y DC X DEVOIR RENDRE Y",
           "exemples": [
             {
-              "phrase": "Ce débiteur n'a toujours pas payé.",
-              "ea": "X a reçu, pourtant X ne rend pas — la transgression rappelle l'obligation."
+              "phrase": "Votre compte est débiteur.",
+              "ea": "Vous avez reçu de l'argent, donc vous devez le rendre."
             },
             {
-              "phrase": "Je reste votre débiteur.",
-              "ea": "Emploi moral : on a reçu un service, donc on doit le rendre (gratitude). Rendre = rendre la pareille."
-            },
-            {
-              "phrase": "Un solde débiteur.",
-              "ea": "Emploi comptable : la colonne qui doit, le côté en négatif. Même bloc."
+              "phrase": "Vous êtes débiteur à cette personne.",
+              "ea": "Vous avez reçu une faveur de sa part, donc vous lui êtes redevable."
             }
           ],
           "fondateur1": "RECEVOIR",
