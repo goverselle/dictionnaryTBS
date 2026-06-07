@@ -410,6 +410,25 @@
     "updated": "2026-05-04"
   },
   {
+    "headword": "ASTRE",
+    "letter": "A",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y BRILLER PT NEG X POUVOIR ATTEINDRE Y",
+          "exemples": [],
+          "fondateur1": "BRILLER",
+          "fondateur2": "ATTEINDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "ASYMPTOMATIQUE",
     "letter": "A",
     "signification": {
