@@ -3971,6 +3971,30 @@
     "updated": "2026-04-27"
   },
   {
+    "headword": "MER",
+    "letter": "M",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARCOURIR Y PT NEG X FINIR Y",
+          "exemples": [
+            {
+              "phrase": "La mer s'étend devant nous.",
+              "ea": "On la parcourt, pourtant on ne la finit pas."
+            }
+          ],
+          "fondateur1": "PARCOURIR",
+          "fondateur2": "FINIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "MESQUIN",
     "letter": "M",
     "signification": {
@@ -7369,6 +7393,30 @@
     "nb": "",
     "template_syntaxique": "X VENDRE Y À Z",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "VENT",
+    "letter": "V",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SOUFFLER PT NEG X SAISIR Y",
+          "exemples": [
+            {
+              "phrase": "Le vent souffle.",
+              "ea": "Ça souffle, pourtant on ne le saisit pas."
+            }
+          ],
+          "fondateur1": "SOUFFLER",
+          "fondateur2": "SAISIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
   },
   {
     "headword": "VIEILLOT",
