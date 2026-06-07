@@ -1600,6 +1600,30 @@
     "updated": "2026-04-24"
   },
   {
+    "headword": "COURANT",
+    "letter": "C",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y COULER DC Y NEG SE CORROMPRE",
+          "exemples": [
+            {
+              "phrase": "De l'eau courante.",
+              "ea": "Elle coule, donc elle ne se corrompt pas."
+            }
+          ],
+          "fondateur1": "COULER",
+          "fondateur2": "SE CORROMPRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "COÛTER",
     "letter": "C",
     "signification": {
