@@ -828,6 +828,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "BANAL",
+    "letter": "B",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG DÉTAILS DIFFÉRENTS PT NEG HARMONIE",
+          "exemples": [
+            {
+              "phrase": "Un repas banal.",
+              "ea": "Les détails ne sont pas différents, pourtant ce n'est pas harmonieux non plus."
+            }
+          ],
+          "fondateur1": "DÉTAILS DIFFÉRENTS",
+          "fondateur2": "HARMONIE",
+          "criteres": [],
+          "square_value": 2
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "BAS",
     "letter": "B",
     "signification": {
@@ -2547,6 +2571,42 @@
       "externe": []
     },
     "updated": "2026-05-03"
+  },
+  {
+    "headword": "EXQUIS",
+    "letter": "E",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "DES DÉTAILS DIFFÉRENTS PT HARMONIE",
+          "exemples": [
+            {
+              "phrase": "Un enclos exquis, où nous trouvons des allées d'orangers en fleurs, des plates-bandes de roses, des bassins et de frais jets d'eau.",
+              "ea": "Les détails sont différents (orangers, roses, bassins, jets d'eau), pourtant tout y est harmonieux."
+            },
+            {
+              "phrase": "Voici une façon exquise d'apprêter le poisson : braisé avec les épices de la chef, accompagné de bananes plantains frites, une sauce épicée et une salade végétarienne.",
+              "ea": "Les détails sont différents (épices, bananes frites, sauce, salade), pourtant l'ensemble est harmonieux."
+            },
+            {
+              "phrase": "Le vieux jardin à l'abandon est exquis, avec ses rosiers en broussailles, ses allées d'abricotiers et ses herbes folles.",
+              "ea": "Les détails sont différents et même disparates (broussailles, abricotiers, herbes folles), pourtant tout est harmonieux."
+            },
+            {
+              "phrase": "On respire un air à la fois tiède et vivifiant, d'une suavité exquise.",
+              "ea": "Tiède et vivifiant sont contraires, pourtant leur alliance est harmonieuse."
+            }
+          ],
+          "fondateur1": "DÉTAILS DIFFÉRENTS",
+          "fondateur2": "HARMONIE",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
   },
   {
     "headword": "FACILE",
@@ -7694,6 +7754,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "VULGAIRE",
+    "letter": "V",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "DÉTAILS DIFFÉRENTS DC NEG HARMONIE",
+          "exemples": [
+            {
+              "phrase": "Une décoration vulgaire.",
+              "ea": "Les détails sont différents, donc ce n'est pas harmonieux."
+            }
+          ],
+          "fondateur1": "DÉTAILS DIFFÉRENTS",
+          "fondateur2": "HARMONIE",
+          "criteres": [],
+          "square_value": 3
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "ÉCHOUER",
     "letter": "E",
     "signification": {
@@ -7771,6 +7855,30 @@
     "nb": "",
     "template_syntaxique": "X ÉCONOMISER",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉLÉGANT",
+    "letter": "É",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG DÉTAILS DIFFÉRENTS DC HARMONIE",
+          "exemples": [
+            {
+              "phrase": "Une tenue élégante.",
+              "ea": "Les détails ne sont pas différents, donc c'est harmonieux."
+            }
+          ],
+          "fondateur1": "DÉTAILS DIFFÉRENTS",
+          "fondateur2": "HARMONIE",
+          "criteres": [],
+          "square_value": 4
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
   },
   {
     "headword": "ÉNERVER",
