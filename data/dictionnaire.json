@@ -6899,7 +6899,15 @@
           "exemples": [
             {
               "phrase": "Une eau stagnante.",
-              "ea": "L'eau ne coule pas, donc elle se corrompt."
+              "ea": "Elle ne coule pas, donc elle croupit, devient putride."
+            },
+            {
+              "phrase": "Une économie stagnante.",
+              "ea": "Ça ne progresse pas, donc ça décline."
+            },
+            {
+              "phrase": "Un air stagnant.",
+              "ea": "Il ne circule pas, donc il devient vicié, irrespirable."
             }
           ],
           "fondateur1": "COULER",
