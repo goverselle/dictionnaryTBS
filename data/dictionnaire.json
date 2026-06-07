@@ -6889,6 +6889,30 @@
     "updated": "2026-06-06"
   },
   {
+    "headword": "STAGNANT",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y NEG COULER DC Y SE CORROMPRE",
+          "exemples": [
+            {
+              "phrase": "Une eau stagnante.",
+              "ea": "L'eau ne coule pas, donc elle se corrompt."
+            }
+          ],
+          "fondateur1": "COULER",
+          "fondateur2": "SE CORROMPRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "SUBIR",
     "letter": "S",
     "template_syntaxique": "",
