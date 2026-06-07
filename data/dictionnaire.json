@@ -1010,6 +1010,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "BOUCLE",
+    "letter": "B",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVANCER PT X REVENIR",
+          "exemples": [
+            {
+              "phrase": "La route fait une boucle.",
+              "ea": "On avance, pourtant on revient au point de départ."
+            }
+          ],
+          "fondateur1": "AVANCER",
+          "fondateur2": "REVENIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
+  },
+  {
     "headword": "BOUTON",
     "letter": "B",
     "signification": {
