@@ -3516,6 +3516,25 @@
     "updated": "2026-05-04"
   },
   {
+    "headword": "IMMUABLE",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE À Y PT Y ÊTRE MÊME",
+          "exemples": [],
+          "fondateur1": "FAIRE",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-09"
+  },
+  {
     "headword": "IMMÉDIAT",
     "letter": "I",
     "signification": {
