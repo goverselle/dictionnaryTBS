@@ -3789,6 +3789,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "INTERMINABLE",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE LENT DC X NEG SUPPORTER Y",
+          "exemples": [],
+          "fondateur1": "ÊTRE LENT",
+          "fondateur2": "SUPPORTER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-10"
+  },
+  {
     "headword": "IRRESPONSABLE",
     "letter": "I",
     "signification": {
