@@ -3958,6 +3958,39 @@
     "nb": "Différence avec blasé : si Pierre est lassé d'un plat, il peut encore aimer le souvenir du plat ou sa saveur en soi, mais il n'en veut plus maintenant. La lassitude porte sur le vouloir actuel, pas sur l'évaluation affective. Si Pierre est blasé d'un plat, il ne sent plus rien — pas d'envie, mais pas de dégoût non plus, pas de souvenir ému. Atonie affective totale."
   },
   {
+    "headword": "LENT",
+    "letter": "L",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "W PASSER PT NEG X AVANCER",
+          "exemples": [
+            {
+              "phrase": "Les études lentes.",
+              "ea": "Le temps passe, pourtant la personne n'avance pas dans ses études."
+            },
+            {
+              "phrase": "Elle cuisine lentement.",
+              "ea": "Le temps de cuisson dure, pourtant ça n'avance pas."
+            }
+          ],
+          "fondateur1": "PASSER",
+          "fondateur2": "AVANCER",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "L'emploi du mot lent déclenche une recherche du processus. « Le temps passe, pourtant ça n'avance pas » — mais qu'est-ce qui n'avance pas ? On cherche le processus, quelque chose qui se déroule dans le temps et dans l'espace."
+            }
+          ],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-10"
+  },
+  {
     "headword": "LIBRE",
     "letter": "L",
     "signification": {
