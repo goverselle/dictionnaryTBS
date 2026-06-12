@@ -7464,7 +7464,16 @@
     "letter": "U",
     "template_syntaxique": "",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "X FAIRE DC Y ET W ÊTRE ENSEMBLE",
+          "exemples": [],
+          "fondateur1": "FAIRE",
+          "fondateur2": "ÊTRE ENSEMBLE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
       "externe": [
         {
           "quasibloc": "X SÉPARER DE Y (NEG W UNIR X ET Y)",
