@@ -4158,6 +4158,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "MARCHER",
+    "letter": "M",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE DES PAS DC X AVANCER",
+          "exemples": [],
+          "fondateur1": "FAIRE",
+          "fondateur2": "AVANCER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X MARCHER (X ARRIVER)",
+          "exemples": [
+            {
+              "phrase": "Il marche depuis une heure.",
+              "ea": "Il fait des pas, donc il avance — et il va arriver quelque part."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-06-13"
+  },
+  {
     "headword": "MASOCHISTE",
     "letter": "M",
     "paradoxal": true,
