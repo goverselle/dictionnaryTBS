@@ -543,6 +543,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "AVANCER",
+    "letter": "A",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y DC X S'APPROCHER DE W",
+          "exemples": [],
+          "fondateur1": "FAIRE",
+          "fondateur2": "S'APPROCHER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-13"
+  },
+  {
     "headword": "AVARE",
     "letter": "A",
     "signification": {
