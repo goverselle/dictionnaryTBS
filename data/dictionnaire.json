@@ -1708,6 +1708,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "CUIRE",
+    "letter": "C",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X CHAUFFER Y DC X POUVOIR MANGER Y",
+          "exemples": [],
+          "fondateur1": "CHAUFFER",
+          "fondateur2": "POUVOIR MANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-15"
+  },
+  {
     "headword": "DANGER",
     "letter": "D",
     "template_syntaxique": "",
