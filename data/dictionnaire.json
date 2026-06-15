@@ -6912,6 +6912,25 @@
     "updated": "2026-05-04"
   },
   {
+    "headword": "SE TROMPER",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X CROIRE Y PT NEG Y ÊTRE VRAI",
+          "exemples": [],
+          "fondateur1": "CROIRE",
+          "fondateur2": "ÊTRE VRAI",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-15"
+  },
+  {
     "headword": "SE VOIR",
     "letter": "S",
     "template_syntaxique": "",
