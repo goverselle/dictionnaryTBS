@@ -4927,6 +4927,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "OPPORTUNITÉ",
+    "letter": "O",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE FAVORABLE DC X POUVOIR AVOIR Y",
+          "exemples": [],
+          "fondateur1": "ÊTRE FAVORABLE",
+          "fondateur2": "POUVOIR AVOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-17"
+  },
+  {
     "headword": "OPTIMISTE",
     "letter": "O",
     "signification": {
