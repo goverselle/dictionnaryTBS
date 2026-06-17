@@ -4934,7 +4934,12 @@
       "interne": [
         {
           "aspect": "Y ÊTRE BON DC X POUVOIR AVOIR Y",
-          "exemples": [],
+          "exemples": [
+            {
+              "phrase": "Ce travail est une opportunité pour toi.",
+              "ea": "Ce travail est bon, donc tu peux avoir des avancées dans ta carrière."
+            }
+          ],
           "fondateur1": "ÊTRE BON",
           "fondateur2": "POUVOIR AVOIR",
           "criteres": [],
