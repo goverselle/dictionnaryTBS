@@ -3681,6 +3681,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "IMPOSSIBLE",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG *Y* SE PASSER DC NEG *Y* POUVOIR SE PASSER",
+          "exemples": [],
+          "fondateur1": "SE PASSER",
+          "fondateur2": "POUVOIR SE PASSER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-17"
+  },
+  {
     "headword": "IMPÉRATIF",
     "letter": "I",
     "signification": {
