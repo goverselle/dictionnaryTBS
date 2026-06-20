@@ -4945,6 +4945,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "OCCASION",
+    "letter": "O",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE CIRCONSTANCE DC X POUVOIR FAIRE",
+          "exemples": [],
+          "fondateur1": "CIRCONSTANCE",
+          "fondateur2": "POUVOIR FAIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-20"
+  },
+  {
     "headword": "OCCUPER",
     "letter": "O",
     "template_syntaxique": "",
@@ -4971,15 +4990,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y ÊTRE BON DC X POUVOIR AVOIR Y",
+          "aspect": "Y ÊTRE OCCASION DC X PROFITER DE Y",
           "exemples": [
             {
               "phrase": "Ce travail est une opportunité pour toi.",
               "ea": "Ce travail est bon, donc tu peux avoir des avancées dans ta carrière."
             }
           ],
-          "fondateur1": "ÊTRE BON",
-          "fondateur2": "POUVOIR AVOIR",
+          "fondateur1": "OCCASION",
+          "fondateur2": "PROFITER",
           "criteres": [],
           "square_value": null
         }
