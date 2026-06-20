@@ -1289,6 +1289,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "CIRCONSTANCE",
+    "letter": "C",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PASSER DC Y COMPTER",
+          "exemples": [],
+          "fondateur1": "SE PASSER",
+          "fondateur2": "COMPTER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-20"
+  },
+  {
     "headword": "CISGENRE",
     "letter": "C",
     "template_syntaxique": "X ÊTRE CISGENRE",
