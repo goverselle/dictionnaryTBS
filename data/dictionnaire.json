@@ -5691,6 +5691,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "PROFITER",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE BON DC X AVOIR Y",
+          "exemples": [],
+          "fondateur1": "ÊTRE BON",
+          "fondateur2": "AVOIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-20"
+  },
+  {
     "headword": "PROFONDEUR",
     "letter": "P",
     "signification": {
