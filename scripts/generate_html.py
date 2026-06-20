@@ -401,7 +401,10 @@ def _render_decomp_node(word, decomp_map, op_map, visited, depth, max_depth=6):
         return label + children
 
     # Primitive composée : décomposer en tokens (feuilles)
-    if not is_entry and depth < max_depth:
+    # SAUF si c'est un fondateur modalisé (POUVOIR X, DEVOIR X, VOULOIR X) → garder tel quel
+    _MODAL_PREFIXES = ('POUVOIR ', 'DEVOIR ', 'VOULOIR ')
+    is_modalized = any(word.startswith(p) for p in _MODAL_PREFIXES)
+    if not is_entry and depth < max_depth and not is_modalized:
         tokens = _split_primitive(word)
         if len(tokens) >= 2:
             parts = []
