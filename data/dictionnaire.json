@@ -4984,6 +4984,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "OPINION",
+    "letter": "O",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X NEG SAVOIR Y PT Y SEMBLER À X W",
+          "exemples": [],
+          "fondateur1": "SAVOIR",
+          "fondateur2": "SEMBLER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
+  },
+  {
     "headword": "OPPORTUNITÉ",
     "letter": "O",
     "template_syntaxique": "",
@@ -7085,6 +7104,30 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "SEMBLER",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X REGARDER Y DC Y POUVOIR ÊTRE W",
+          "exemples": [
+            {
+              "phrase": "Il semble fatigué.",
+              "ea": "Je le regarde, donc il pourrait être fatigué."
+            }
+          ],
+          "fondateur1": "REGARDER",
+          "fondateur2": "POUVOIR ÊTRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
   },
   {
     "headword": "SERVIR",
