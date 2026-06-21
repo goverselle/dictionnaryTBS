@@ -3908,6 +3908,30 @@
     "updated": "2026-06-10"
   },
   {
+    "headword": "INÉGAL",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARTAGER Y AVEC Z PT NEG X ÊTRE MÊME QUE Z",
+          "exemples": [
+            {
+              "phrase": "Le traitement est inégal.",
+              "ea": "On partage les ressources, pourtant on n'est pas les mêmes."
+            }
+          ],
+          "fondateur1": "PARTAGER",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
+  },
+  {
     "headword": "IRRESPONSABLE",
     "letter": "I",
     "signification": {
@@ -8253,6 +8277,30 @@
     "nb": "",
     "template_syntaxique": "X ÉCONOMISER",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉGAL",
+    "letter": "É",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARTAGER Y AVEC Z DC X ÊTRE MÊME QUE Z",
+          "exemples": [
+            {
+              "phrase": "Nous sommes égaux en droit.",
+              "ea": "Nous partageons la citoyenneté, donc nous sommes les mêmes."
+            }
+          ],
+          "fondateur1": "PARTAGER",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
   },
   {
     "headword": "ÉLÉGANT",
