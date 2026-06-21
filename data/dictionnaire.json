@@ -2597,7 +2597,12 @@
       "interne": [
         {
           "aspect": "X FAIRE *Y* PT NEG *Y* ÊTRE BON",
-          "exemples": [],
+          "exemples": [
+            {
+              "phrase": "C'est une erreur de calcul.",
+              "ea": "Il a fait un calcul, pourtant le résultat n'est pas bon."
+            }
+          ],
           "fondateur1": "FAIRE",
           "fondateur2": "ÊTRE BON",
           "criteres": [],
