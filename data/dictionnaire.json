@@ -4991,7 +4991,12 @@
       "interne": [
         {
           "aspect": "X NEG SAVOIR Y PT Y SEMBLER À X W",
-          "exemples": [],
+          "exemples": [
+            {
+              "phrase": "Mon opinion est qu'il a tort.",
+              "ea": "Je ne sais pas s'il a tort, pourtant il me semble qu'il a tort."
+            }
+          ],
           "fondateur1": "SAVOIR",
           "fondateur2": "SEMBLER",
           "criteres": [],
@@ -7117,6 +7122,10 @@
             {
               "phrase": "Il semble fatigué.",
               "ea": "Je le regarde, donc il pourrait être fatigué."
+            },
+            {
+              "phrase": "Il me semble que c'est vrai.",
+              "ea": "Je regarde la situation, donc elle pourrait être vraie."
             }
           ],
           "fondateur1": "REGARDER",
