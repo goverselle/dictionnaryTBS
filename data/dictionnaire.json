@@ -269,14 +269,14 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (NEG X SAVOIR Y) PT X SAVOIR Y",
+          "aspect": "X FAIRE Y DC X SAVOIR W",
           "exemples": [
             {
               "phrase": "J'ai appris que ton père est Niels Bohr.",
-              "ea": "Je ne savais pas que ton père était Niels Bohr, pourtant je le sais maintenant."
+              "ea": "J'ai fait quelque chose, donc je sais que ton père est Niels Bohr."
             }
           ],
-          "fondateur1": "SAVOIR",
+          "fondateur1": "FAIRE",
           "fondateur2": "SAVOIR",
           "criteres": [],
           "square_value": null
