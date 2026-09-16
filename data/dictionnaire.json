@@ -2492,6 +2492,37 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "DÉTRUIRE",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est la guerre.",
+              "ea": "Ce qui a du prix, pourtant on le détruit."
+            },
+            {
+              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
+              "ea": "C'était précieux, pourtant on l'a détruit."
+            },
+            {
+              "phrase": "Ils ont brûlé la bibliothèque.",
+              "ea": "C'était précieux, pourtant ils l'ont détruit."
+            },
+            {
+              "phrase": "On envoie mourir des garçons de vingt ans.",
+              "ea": "Une vie a du prix, pourtant on la détruit."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "EFFET",
     "letter": "E",
     "signification": {
@@ -3410,6 +3441,55 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "GUERRE",
+    "letter": "G",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE PRÉCIEUX PT X DÉTRUIRE Y",
+          "exemples": [
+            {
+              "phrase": "C'est la guerre.",
+              "ea": "Ce qui a du prix, pourtant on le détruit."
+            },
+            {
+              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
+              "ea": "C'était précieux, pourtant on l'a détruit."
+            },
+            {
+              "phrase": "Ils ont brûlé la bibliothèque.",
+              "ea": "C'était précieux, pourtant ils l'ont détruit."
+            },
+            {
+              "phrase": "On envoie mourir des garçons de vingt ans.",
+              "ea": "Une vie a du prix, pourtant on la détruit."
+            }
+          ],
+          "fondateur1": "ÊTRE PRÉCIEUX",
+          "fondateur2": "DÉTRUIRE",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Le PT porte toute la signification. Ce n'est pas la destruction qui fait la guerre, c'est que ce qui est détruit avait du prix : la doxa transgressée est qu'on préserve ce à quoi on tient. Détruire ce qui ne vaut rien n'est pas faire la guerre, c'est faire le ménage."
+            },
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas la guerre » ne nie pas la destruction, il nie qu'elle atteigne ce qui compte — on peut continuer à vivre, les choses précieuses tiennent. Retour au normatif, comportement attendu de la négation d'un transgressif."
+            },
+            {
+              "type": 3,
+              "texte": "Deux candidats écartés. Par l'affrontement de deux camps : un duel oppose deux camps sans être une guerre, et l'on parle de guerre là où un seul camp frappe. Par la violence : une rixe est violente sans être une guerre. Ce qui manque dans les deux cas est le prix de ce qui se perd."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-09-16"
   },
   {
     "headword": "GÉNÉREUX",
@@ -5996,6 +6076,37 @@
       "externe": []
     },
     "updated": "2026-06-06"
+  },
+  {
+    "headword": "PRÉCIEUX",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est la guerre.",
+              "ea": "Ce qui a du prix, pourtant on le détruit."
+            },
+            {
+              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
+              "ea": "C'était précieux, pourtant on l'a détruit."
+            },
+            {
+              "phrase": "Ils ont brûlé la bibliothèque.",
+              "ea": "C'était précieux, pourtant ils l'ont détruit."
+            },
+            {
+              "phrase": "On envoie mourir des garçons de vingt ans.",
+              "ea": "Une vie a du prix, pourtant on la détruit."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "headword": "PRÉCIS",
