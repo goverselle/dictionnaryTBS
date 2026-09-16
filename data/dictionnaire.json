@@ -1487,7 +1487,25 @@
           "square_value": 3
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "PERF (X FAIRE Y) (X POUVOIR CONTINUER Y)",
+          "exemples": [
+            {
+              "phrase": "Il y a un problème.",
+              "ea": "On avait commencé quelque chose, pourtant on ne peut pas le poursuivre."
+            },
+            {
+              "phrase": "On verse l'eau, et elle coule à côté : le verre est fêlé.",
+              "ea": "On a commencé à verser, pourtant on ne peut pas continuer."
+            },
+            {
+              "phrase": "Un bras reste coincé dans la manche.",
+              "ea": "On a commencé à s'habiller, pourtant on ne peut pas continuer."
+            }
+          ]
+        }
+      ]
     },
     "template_syntaxique": "X CONTINUER DE Y",
     "nb": "CONTINUER est la doxa du bloc FAIRE — FAIRE : inverse normatif de CESSER (PERF X FAIRE Y PT NEG X FAIRE Y).",
@@ -3054,6 +3072,23 @@
             {
               "phrase": "Un engagement volontaire.",
               "ea": "Personne ne le force, pourtant il s'engage."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (X FAIRE Y) (X POUVOIR CONTINUER Y)",
+          "exemples": [
+            {
+              "phrase": "Il y a un problème.",
+              "ea": "On avait commencé quelque chose, pourtant on ne peut pas le poursuivre."
+            },
+            {
+              "phrase": "On verse l'eau, et elle coule à côté : le verre est fêlé.",
+              "ea": "On a commencé à verser, pourtant on ne peut pas continuer."
+            },
+            {
+              "phrase": "Un bras reste coincé dans la manche.",
+              "ea": "On a commencé à s'habiller, pourtant on ne peut pas continuer."
             }
           ]
         }
@@ -5763,6 +5798,78 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "PROBLÈME",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X FAIRE Y) PT NEG X POUVOIR CONTINUER Y",
+          "exemples": [
+            {
+              "phrase": "Il y a un problème.",
+              "ea": "On avait commencé quelque chose, pourtant on ne peut pas le poursuivre."
+            },
+            {
+              "phrase": "On verse l'eau, et elle coule à côté : le verre est fêlé.",
+              "ea": "On a commencé à verser, pourtant on ne peut pas continuer."
+            },
+            {
+              "phrase": "Un bras reste coincé dans la manche.",
+              "ea": "On a commencé à s'habiller, pourtant on ne peut pas continuer."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "POUVOIR CONTINUER",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Le PERF marque que l'action est engagée : le problème ne surgit pas devant l'action mais dedans, et ce qui est bloqué n'est pas le commencer mais le continuer. La doxa transgressée est qu'une action commencée se poursuit."
+            },
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas un problème » ne dit pas que ce n'est pas difficile, mais qu'on peut continuer malgré tout — retour au normatif, comportement attendu de la négation d'un transgressif."
+            },
+            {
+              "type": 3,
+              "texte": "Deux candidats écartés. Par la difficulté : on peut avoir un problème avec une tâche facile, et « c'est difficile, mais ce n'est pas un problème » se dit sans peine. Par l'imprévu : « un problème de dos » connu depuis dix ans reste un problème — ce n'est pas la surprise qui fait le mot, c'est l'interruption. Restent ouverts : CONTINUER introduit une notion de temps qu'aucun autre fondateur ne porte, et les emplois sans action engagée comme « le problème, c'est que je n'ai pas le temps »."
+            }
+          ],
+          "square_value": 1
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PROBLÈME (X RÉSOUDRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est un problème, on va trouver.",
+              "ea": "C'est un problème, donc on va le résoudre."
+            }
+          ]
+        },
+        {
+          "quasibloc": "Y ÊTRE PROBLÈME (X POUVOIR RÉSOUDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Voilà la solution.",
+              "ea": "Il y a un problème, donc on peut le résoudre."
+            },
+            {
+              "phrase": "La tour s'effondre : on glisse un cube plus large en dessous.",
+              "ea": "La tour ne tient pas, donc on peut y remédier."
+            },
+            {
+              "phrase": "Quatre enfants et trois parts de gâteau : on coupe une part en deux.",
+              "ea": "Il manque une part, donc on peut arranger le partage."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-09-16"
+  },
+  {
     "headword": "PROFITER",
     "letter": "P",
     "template_syntaxique": "",
@@ -6482,6 +6589,33 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "RÉSOUDRE",
+    "letter": "R",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PROBLÈME (X POUVOIR RÉSOUDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Voilà la solution.",
+              "ea": "Il y a un problème, donc on peut le résoudre."
+            },
+            {
+              "phrase": "La tour s'effondre : on glisse un cube plus large en dessous.",
+              "ea": "La tour ne tient pas, donc on peut y remédier."
+            },
+            {
+              "phrase": "Quatre enfants et trois parts de gâteau : on coupe une part en deux.",
+              "ea": "Il manque une part, donc on peut arranger le partage."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "RÊVER",
     "letter": "R",
     "signification": {
@@ -7190,6 +7324,47 @@
     },
     "template_syntaxique": "X SERVIR Z",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "SOLUTION",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE PROBLÈME DC X POUVOIR RÉSOUDRE Y",
+          "exemples": [
+            {
+              "phrase": "Voilà la solution.",
+              "ea": "Il y a un problème, donc on peut le résoudre."
+            },
+            {
+              "phrase": "La tour s'effondre : on glisse un cube plus large en dessous.",
+              "ea": "La tour ne tient pas, donc on peut y remédier."
+            },
+            {
+              "phrase": "Quatre enfants et trois parts de gâteau : on coupe une part en deux.",
+              "ea": "Il manque une part, donc on peut arranger le partage."
+            }
+          ],
+          "fondateur1": "PROBLÈME",
+          "fondateur2": "POUVOIR RÉSOUDRE",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Doxalité : l'aspect reproduit le quasi-bloc de PROBLÈME, Y ÊTRE PROBLÈME (X RÉSOUDRE Y). La signification de solution ne fait que dérouler ce que l'argumentation externe de problème contenait déjà."
+            },
+            {
+              "type": 3,
+              "texte": "Pourquoi POUVOIR RÉSOUDRE et non RÉSOUDRE : dire « j'ai une solution » n'affirme pas que le problème est résolu, on avance un moyen et l'on verra s'il fonctionne. C'est pourquoi « ce n'était pas la bonne solution » ne se contredit pas, ce qui serait impossible si le mot portait la résolution effective."
+            }
+          ],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-09-16"
   },
   {
     "headword": "SOUCIEUX",
