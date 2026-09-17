@@ -3209,6 +3209,27 @@
               "ea": "Fais, puisque tu veux l'avoir."
             }
           ]
+        },
+        {
+          "quasibloc": "X FAIRE Y (X SAVOIR W DE Z)",
+          "exemples": [
+            {
+              "phrase": "C'est un test.",
+              "ea": "On le fait, donc on saura ce qu'il en est."
+            },
+            {
+              "phrase": "Un test de grossesse.",
+              "ea": "On fait le test, donc on sait son état."
+            },
+            {
+              "phrase": "Ils ont passé la voiture au crash-test.",
+              "ea": "On l'a fait, donc on sait ce que vaut la carrosserie."
+            },
+            {
+              "phrase": "Je lui ai dit ça, c'était un test.",
+              "ea": "Je l'ai fait, donc je sais ce qu'il pense."
+            }
+          ]
         }
       ]
     },
@@ -7154,6 +7175,27 @@
               "ea": "Je ne sais pas si Pierre a menti, pourtant je pense qu'il a menti."
             }
           ]
+        },
+        {
+          "quasibloc": "X FAIRE Y (X SAVOIR W DE Z)",
+          "exemples": [
+            {
+              "phrase": "C'est un test.",
+              "ea": "On le fait, donc on saura ce qu'il en est."
+            },
+            {
+              "phrase": "Un test de grossesse.",
+              "ea": "On fait le test, donc on sait son état."
+            },
+            {
+              "phrase": "Ils ont passé la voiture au crash-test.",
+              "ea": "On l'a fait, donc on sait ce que vaut la carrosserie."
+            },
+            {
+              "phrase": "Je lui ai dit ça, c'était un test.",
+              "ea": "Je l'ai fait, donc je sais ce qu'il pense."
+            }
+          ]
         }
       ]
     },
@@ -7992,6 +8034,65 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "TEST",
+    "letter": "T",
+    "template_syntaxique": "Y ÊTRE UN TEST",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE *Y* DC X SAVOIR W DE Z",
+          "exemples": [
+            {
+              "phrase": "C'est un test.",
+              "ea": "On le fait, donc on saura ce qu'il en est."
+            },
+            {
+              "phrase": "Un test de grossesse.",
+              "ea": "On fait le test, donc on sait son état."
+            },
+            {
+              "phrase": "Ils ont passé la voiture au crash-test.",
+              "ea": "On l'a fait, donc on sait ce que vaut la carrosserie."
+            },
+            {
+              "phrase": "Je lui ai dit ça, c'était un test.",
+              "ea": "Je l'ai fait, donc je sais ce qu'il pense."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "SAVOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas un test » ne dit pas qu'on ne fait rien, mais que ce qu'on fait vaut pour soi et non pour ce qu'il révèle. Retour au normatif, comportement attendu de la négation d'un normatif nié."
+            },
+            {
+              "type": 3,
+              "texte": "Un candidat écarté : l'épreuve. Une épreuve met en difficulté, un test renseigne, et l'on teste des choses qui ne subissent rien — un test de grossesse n'éprouve personne. Ce qui fait le mot est le savoir obtenu, non la peine imposée. À noter que Z, ce sur quoi l'on apprend, n'est pas Y, ce qu'on fait : c'est ce dédoublement qui distingue le test de la simple observation."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X TESTER (X DÉCIDER)",
+          "exemples": [
+            {
+              "phrase": "On a testé, on peut lancer la production.",
+              "ea": "On a testé, donc on peut décider."
+            },
+            {
+              "phrase": "Testez-le avant de signer.",
+              "ea": "Vous l'aurez testé, donc vous pourrez décider."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-09-17"
   },
   {
     "headword": "TRANSGENRE",
