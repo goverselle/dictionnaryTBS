@@ -2363,6 +2363,34 @@
     "updated": "2026-06-06"
   },
   {
+    "headword": "DÉCIDER",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X SAVOIR Y (X DÉCIDER)",
+          "exemples": [
+            {
+              "phrase": "Maintenant je sais, je peux trancher.",
+              "ea": "Je sais, donc je peux décider."
+            },
+            {
+              "phrase": "Attends de savoir avant de choisir.",
+              "ea": "Tu sauras, donc tu pourras décider."
+            },
+            {
+              "phrase": "On saura demain, on verra à ce moment-là.",
+              "ea": "On saura, donc on décidera."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-09-17"
+  },
+  {
     "headword": "DÉCLARER",
     "letter": "D",
     "template_syntaxique": "X DÉCLARER Y",
@@ -7098,6 +7126,23 @@
       "interne": [],
       "externe": [
         {
+          "quasibloc": "X SAVOIR Y (X DÉCIDER)",
+          "exemples": [
+            {
+              "phrase": "Maintenant je sais, je peux trancher.",
+              "ea": "Je sais, donc je peux décider."
+            },
+            {
+              "phrase": "Attends de savoir avant de choisir.",
+              "ea": "Tu sauras, donc tu pourras décider."
+            },
+            {
+              "phrase": "On saura demain, on verra à ce moment-là.",
+              "ea": "On saura, donc on décidera."
+            }
+          ]
+        },
+        {
           "quasibloc": "Z DIRE Y (X SAVOIR Y)",
           "exemples": [
             {
@@ -7199,7 +7244,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-09-17"
   },
   {
     "headword": "SE PASSER",
