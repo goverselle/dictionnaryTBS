@@ -1310,6 +1310,37 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "CHOISIR",
+    "letter": "C",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X CHOISIR Y (NEG X PERDRE W)",
+          "exemples": [
+            {
+              "phrase": "C'est un dilemme.",
+              "ea": "On choisit, pourtant on y perd."
+            },
+            {
+              "phrase": "Rester auprès de sa mère ou partir au front.",
+              "ea": "Il choisit, pourtant il perd l'autre."
+            },
+            {
+              "phrase": "Il fallait sauver l'un des deux.",
+              "ea": "On en sauve un, pourtant on perd l'autre."
+            },
+            {
+              "phrase": "Quoi qu'elle décide, elle y laisse quelque chose.",
+              "ea": "Elle décide, pourtant elle perd."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "CIRCONSTANCE",
     "letter": "C",
     "template_syntaxique": "",
@@ -1983,6 +2014,55 @@
     },
     "template_syntaxique": "Y ÊTRE DIFFICILE",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "DILEMME",
+    "letter": "D",
+    "template_syntaxique": "Y ÊTRE UN DILEMME",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X CHOISIR Y PT X PERDRE W",
+          "exemples": [
+            {
+              "phrase": "C'est un dilemme.",
+              "ea": "On choisit, pourtant on y perd."
+            },
+            {
+              "phrase": "Rester auprès de sa mère ou partir au front.",
+              "ea": "Il choisit, pourtant il perd l'autre."
+            },
+            {
+              "phrase": "Il fallait sauver l'un des deux.",
+              "ea": "On en sauve un, pourtant on perd l'autre."
+            },
+            {
+              "phrase": "Quoi qu'elle décide, elle y laisse quelque chose.",
+              "ea": "Elle décide, pourtant elle perd."
+            }
+          ],
+          "fondateur1": "CHOISIR",
+          "fondateur2": "PERDRE",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Le PT transgresse la doxa du choix : qui choisit prend ce qu'il préfère, donc y gagne. Le dilemme retourne cela — on exerce le choix et l'on sort appauvri. Ce n'est pas que le choix soit empêché, c'est qu'il coûte."
+            },
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas un dilemme » ne dit pas qu'il n'y a rien à choisir, mais qu'on peut choisir sans rien perdre. Retour au normatif, comportement attendu de la négation d'un transgressif."
+            },
+            {
+              "type": 3,
+              "texte": "Deux candidats écartés. Par la difficulté : un choix difficile où l'on ne perd rien n'est pas un dilemme, et l'on parle de dilemme là où la décision est immédiate. Par le nombre des termes : malgré l'étymologie, rien n'exige qu'ils soient deux — c'est la perte qui fait le mot, non le compte des branches."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-09-17"
   },
   {
     "headword": "DIRE",
@@ -5797,6 +5877,37 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "PERDRE",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X CHOISIR Y (NEG X PERDRE W)",
+          "exemples": [
+            {
+              "phrase": "C'est un dilemme.",
+              "ea": "On choisit, pourtant on y perd."
+            },
+            {
+              "phrase": "Rester auprès de sa mère ou partir au front.",
+              "ea": "Il choisit, pourtant il perd l'autre."
+            },
+            {
+              "phrase": "Il fallait sauver l'un des deux.",
+              "ea": "On en sauve un, pourtant on perd l'autre."
+            },
+            {
+              "phrase": "Quoi qu'elle décide, elle y laisse quelque chose.",
+              "ea": "Elle décide, pourtant elle perd."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "headword": "PERSUADER",
