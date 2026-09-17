@@ -816,6 +816,27 @@
               "ea": "Ces ressources coûtent cher, pourtant le pays les a."
             }
           ]
+        },
+        {
+          "quasibloc": "X FAIRE (X VOULOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il travaille.",
+              "ea": "Il fait quelque chose, donc c'est qu'il veut l'avoir."
+            },
+            {
+              "phrase": "Personne ne travaille pour rien.",
+              "ea": "On fait, donc on veut avoir."
+            },
+            {
+              "phrase": "Elle a travaillé son concours toute l'année.",
+              "ea": "Elle a fait, donc elle voulait l'avoir."
+            },
+            {
+              "phrase": "Arrête de jouer et travaille.",
+              "ea": "Fais, puisque tu veux l'avoir."
+            }
+          ]
         }
       ]
     },
@@ -3120,6 +3141,27 @@
             {
               "phrase": "Un bras reste coincé dans la manche.",
               "ea": "On a commencé à s'habiller, pourtant on ne peut pas continuer."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X FAIRE (X VOULOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il travaille.",
+              "ea": "Il fait quelque chose, donc c'est qu'il veut l'avoir."
+            },
+            {
+              "phrase": "Personne ne travaille pour rien.",
+              "ea": "On fait, donc on veut avoir."
+            },
+            {
+              "phrase": "Elle a travaillé son concours toute l'année.",
+              "ea": "Elle a fait, donc elle voulait l'avoir."
+            },
+            {
+              "phrase": "Arrête de jouer et travaille.",
+              "ea": "Fais, puisque tu veux l'avoir."
             }
           ]
         }
@@ -7957,6 +7999,78 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "TRAVAILLER",
+    "letter": "T",
+    "template_syntaxique": "X TRAVAILLER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE DC X VOULOIR AVOIR Y",
+          "exemples": [
+            {
+              "phrase": "Il travaille.",
+              "ea": "Il fait quelque chose, donc c'est qu'il veut l'avoir."
+            },
+            {
+              "phrase": "Personne ne travaille pour rien.",
+              "ea": "On fait, donc on veut avoir."
+            },
+            {
+              "phrase": "Elle a travaillé son concours toute l'année.",
+              "ea": "Elle a fait, donc elle voulait l'avoir."
+            },
+            {
+              "phrase": "Arrête de jouer et travaille.",
+              "ea": "Fais, puisque tu veux l'avoir."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "VOULOIR AVOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « il ne travaille pas » ne dit pas qu'il ne fait rien, mais qu'il ne fait rien dont il veuille le fruit. On travaille son jardin sans en vivre, on ne travaille pas en se promenant dedans."
+            },
+            {
+              "type": 3,
+              "texte": "Un candidat écarté : la peine. On peut travailler sans peiner, et peiner sans travailler. Ce qui fait le mot n'est pas ce que l'action coûte mais ce vers quoi elle est tendue — d'où l'ordre des termes, le faire d'abord, l'obtention voulue ensuite."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X TRAVAILLER (X RÉUSSIR)",
+          "exemples": [
+            {
+              "phrase": "Il travaille, il y arrivera.",
+              "ea": "Il travaille, donc il réussira."
+            },
+            {
+              "phrase": "Travaille, et tu l'auras.",
+              "ea": "Tu travailles, donc tu l'obtiendras."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X TRAVAILLER (X ÊTRE FATIGUÉ)",
+          "exemples": [
+            {
+              "phrase": "J'ai travaillé toute la journée.",
+              "ea": "J'ai travaillé, donc je suis fatigué."
+            },
+            {
+              "phrase": "Il rentre du travail, laisse-le tranquille.",
+              "ea": "Il a travaillé, donc il est fatigué."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-09-17"
   },
   {
     "headword": "TRAÎNER",
