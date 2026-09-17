@@ -3258,6 +3258,27 @@
               "ea": "Je l'ai fait, donc je sais ce qu'il pense."
             }
           ]
+        },
+        {
+          "quasibloc": "Z DEVOIR FAIRE Y (X SE FIER À Z)",
+          "exemples": [
+            {
+              "phrase": "C'est une voiture fiable.",
+              "ea": "Elle doit rouler, donc on compte dessus."
+            },
+            {
+              "phrase": "Un témoin fiable.",
+              "ea": "Il doit dire ce qu'il a vu, donc on le croit."
+            },
+            {
+              "phrase": "Confie-lui les clés, il est fiable.",
+              "ea": "Il doit t'ouvrir, donc tu peux t'en remettre à lui."
+            },
+            {
+              "phrase": "Ce n'est pas une source fiable.",
+              "ea": "Elle devrait informer, pourtant on ne s'y fie pas."
+            }
+          ]
         }
       ]
     },
@@ -3420,6 +3441,55 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "FIABLE",
+    "letter": "F",
+    "template_syntaxique": "Z ÊTRE FIABLE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z DEVOIR FAIRE Y DC X SE FIER À Z",
+          "exemples": [
+            {
+              "phrase": "C'est une voiture fiable.",
+              "ea": "Elle doit rouler, donc on compte dessus."
+            },
+            {
+              "phrase": "Un témoin fiable.",
+              "ea": "Il doit dire ce qu'il a vu, donc on le croit."
+            },
+            {
+              "phrase": "Confie-lui les clés, il est fiable.",
+              "ea": "Il doit t'ouvrir, donc tu peux t'en remettre à lui."
+            },
+            {
+              "phrase": "Ce n'est pas une source fiable.",
+              "ea": "Elle devrait informer, pourtant on ne s'y fie pas."
+            }
+          ],
+          "fondateur1": "DEVOIR FAIRE",
+          "fondateur2": "SE FIER",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas fiable » ne nie pas que la chose doive faire ce qu'on attend d'elle — elle le doit toujours — mais nie qu'on puisse s'y remettre. La négation frappe le conséquent seul, comportement attendu de la négation d'un normatif."
+            },
+            {
+              "type": 3,
+              "texte": "Deux candidats écartés. Par la réussite effective : un appareil fiable peut tomber en panne sans cesser d'être fiable, ce n'est donc pas qu'il fait mais qu'il doit faire. Par la solidité : la solidité est une propriété de la chose, la fiabilité un rapport entre elle et qui s'y remet — d'où la présence de X dans le conséquent, absent de l'antécédent."
+            },
+            {
+              "type": 7,
+              "texte": "Voisinage à noter : RESPONSABLE porte X DEVOIR FAIRE Y DC X FAIRE Y, même antécédent mais même agent des deux côtés. Le responsable fait ce qu'il doit, le fiable est celui à qui l'on s'en remet. L'un se décrit du côté de l'obligé, l'autre du côté de qui attend."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-09-17"
   },
   {
     "headword": "FONCTIONNER",
@@ -7245,6 +7315,37 @@
       ]
     },
     "updated": "2026-09-17"
+  },
+  {
+    "headword": "SE FIER",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Z DEVOIR FAIRE Y (X SE FIER À Z)",
+          "exemples": [
+            {
+              "phrase": "C'est une voiture fiable.",
+              "ea": "Elle doit rouler, donc on compte dessus."
+            },
+            {
+              "phrase": "Un témoin fiable.",
+              "ea": "Il doit dire ce qu'il a vu, donc on le croit."
+            },
+            {
+              "phrase": "Confie-lui les clés, il est fiable.",
+              "ea": "Il doit t'ouvrir, donc tu peux t'en remettre à lui."
+            },
+            {
+              "phrase": "Ce n'est pas une source fiable.",
+              "ea": "Elle devrait informer, pourtant on ne s'y fie pas."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "headword": "SE PASSER",
