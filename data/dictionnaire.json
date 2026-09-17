@@ -2748,6 +2748,55 @@
     "updated": "2026-05-03"
   },
   {
+    "headword": "EXERCICE",
+    "letter": "E",
+    "template_syntaxique": "Y ÊTRE UN EXERCICE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y PT NEG Y ÊTRE VRAI",
+          "exemples": [
+            {
+              "phrase": "Ce n'est qu'un exercice.",
+              "ea": "On le fait, pourtant ce n'est pas pour de vrai."
+            },
+            {
+              "phrase": "Les pompiers font un exercice d'évacuation.",
+              "ea": "On évacue le bâtiment, pourtant ce n'est pas une évacuation."
+            },
+            {
+              "phrase": "Un exercice de style.",
+              "ea": "On écrit, pourtant ce n'est pas un texte."
+            },
+            {
+              "phrase": "Rassurez-vous, c'était un exercice.",
+              "ea": "On a fait la chose, pourtant elle n'a pas eu lieu."
+            }
+          ],
+          "fondateur1": "FAIRE",
+          "fondateur2": "ÊTRE VRAI",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Le PT ne porte pas sur l'accomplissement mais sur le compte. Un exercice d'évacuation évacue réellement le bâtiment : l'action est menée jusqu'au bout, et pourtant elle ne compte pas pour ce qu'elle est. On fait, et ce qu'on fait n'a pas eu lieu."
+            },
+            {
+              "type": 4,
+              "texte": "Effet de la négation : « ce n'est pas un exercice » ne dit pas qu'on ne fait rien, mais que cette fois cela compte. Retour au normatif, comportement attendu de la négation d'un transgressif."
+            },
+            {
+              "type": 3,
+              "texte": "Deux candidats écartés. Par l'entraînement : un exercice d'évacuation ne rend personne meilleur, et l'exercice de style n'est pas un brouillon. Par la répétition : on ne répète pas un exercice d'alerte, on le fait une fois. Ce qui fait le mot est la suspension du compte, non la préparation ni la fréquence."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-09-17"
+  },
+  {
     "headword": "EXQUIS",
     "letter": "E",
     "template_syntaxique": "",
@@ -8036,40 +8085,6 @@
             {
               "type": 3,
               "texte": "Un candidat écarté : la peine. On peut travailler sans peiner, et peiner sans travailler. Ce qui fait le mot n'est pas ce que l'action coûte mais ce vers quoi elle est tendue — d'où l'ordre des termes, le faire d'abord, l'obtention voulue ensuite."
-            }
-          ],
-          "square_value": null
-        },
-        {
-          "aspect": "X FAIRE Y PT NEG Y ÊTRE VRAI",
-          "exemples": [
-            {
-              "phrase": "Il travaille son piano.",
-              "ea": "Il joue, pourtant ce n'est pas encore jouer."
-            },
-            {
-              "phrase": "Elle travaille sa voix tous les matins.",
-              "ea": "Elle chante, pourtant ce n'est pas un chant."
-            },
-            {
-              "phrase": "Je travaille mon rôle depuis trois semaines.",
-              "ea": "Je le joue, pourtant ce n'est pas la représentation."
-            },
-            {
-              "phrase": "Ce passage n'est pas prêt, il faut le travailler.",
-              "ea": "On le fait, pourtant ce n'est pas encore le faire."
-            }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE VRAI",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Sens 3 du CNRTL : entraînement régulier à une activité spécifique, dans le domaine intellectuel ou artistique. Le PT tient à ceci que l'action est complète en tant qu'action — travailler un rôle, c'est le jouer — et pourtant ne compte pas pour la chose même. On fait, et ce qu'on fait n'est pas ce qu'on fait."
-            },
-            {
-              "type": 3,
-              "texte": "Un candidat écarté : la répétition. La régularité que note le CNRTL accompagne l'emploi sans le fonder, car on travaille un passage une fois, le temps d'une soirée, et c'est bien travailler. Ce qui fait le sens est la suspension du compte, non la fréquence."
             }
           ],
           "square_value": null
