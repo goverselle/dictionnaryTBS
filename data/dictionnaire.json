@@ -6977,11 +6977,28 @@
               "ea": "Le cancer du poumon se produit, donc le tabac doit en répondre."
             }
           ]
+        },
+        {
+          "quasibloc": "X SAVOIR Y (X RÉPONDRE)",
+          "exemples": [
+            {
+              "phrase": "Il savait, il a répondu tout de suite.",
+              "ea": "Il savait, donc il a répondu."
+            },
+            {
+              "phrase": "Demande-lui, il saura te répondre.",
+              "ea": "Il sait, donc il peut répondre."
+            },
+            {
+              "phrase": "Je ne sais pas quoi te répondre.",
+              "ea": "Je ne sais pas, donc je ne réponds pas."
+            }
+          ]
         }
       ]
     },
     "template_syntaxique": "X RÉPONDRE À Z",
-    "updated": "2026-04-23"
+    "updated": "2026-09-21"
   },
   {
     "headword": "RÉSILIENCE",
@@ -7307,6 +7324,23 @@
       "interne": [],
       "externe": [
         {
+          "quasibloc": "X SAVOIR Y (X RÉPONDRE)",
+          "exemples": [
+            {
+              "phrase": "Il savait, il a répondu tout de suite.",
+              "ea": "Il savait, donc il a répondu."
+            },
+            {
+              "phrase": "Demande-lui, il saura te répondre.",
+              "ea": "Il sait, donc il peut répondre."
+            },
+            {
+              "phrase": "Je ne sais pas quoi te répondre.",
+              "ea": "Je ne sais pas, donc je ne réponds pas."
+            }
+          ]
+        },
+        {
           "quasibloc": "X SAVOIR Y (X DÉCIDER)",
           "exemples": [
             {
@@ -7425,7 +7459,7 @@
         }
       ]
     },
-    "updated": "2026-09-17"
+    "updated": "2026-09-21"
   },
   {
     "headword": "SE FIER",
