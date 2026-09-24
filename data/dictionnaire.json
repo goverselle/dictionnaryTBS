@@ -837,6 +837,23 @@
               "ea": "Fais, puisque tu veux l'avoir."
             }
           ]
+        },
+        {
+          "quasibloc": "X SE SERVIR DE Y (X AVOIR W)",
+          "exemples": [
+            {
+              "phrase": "Ce manteau est utile en hiver.",
+              "ea": "On s'en sert, donc on a chaud."
+            },
+            {
+              "phrase": "La voiture est utile pour Pierre.",
+              "ea": "Il s'en sert, donc il arrive loin."
+            },
+            {
+              "phrase": "Ce dictionnaire m'est utile.",
+              "ea": "Je m'en sers, donc j'ai la réponse."
+            }
+          ]
         }
       ]
     },
@@ -4309,6 +4326,46 @@
     "updated": "2026-06-10"
   },
   {
+    "headword": "INUTILE",
+    "letter": "I",
+    "template_syntaxique": "Y ÊTRE INUTILE (À X)",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X SE SERVIR DE Y PT NEG X AVOIR W",
+          "exemples": [
+            {
+              "phrase": "Ce parapluie est inutile.",
+              "ea": "On s'en sert, pourtant on est mouillé."
+            },
+            {
+              "phrase": "Il est inutile de crier.",
+              "ea": "Tu cries, pourtant tu n'obtiens rien."
+            },
+            {
+              "phrase": "Cette clé est inutile.",
+              "ea": "Je m'en sers, pourtant la porte ne s'ouvre pas."
+            }
+          ],
+          "fondateur1": "SE SERVIR DE",
+          "fondateur2": "AVOIR",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Aspect transgressif : la doxa veut que celui qui se sert d'une chose en tire quelque chose, et INUTILE dit qu'il n'en tire rien. C'est la transgression de UTILE, non sa négation — d'où le PT et non le NEG sur le premier terme : on s'en sert bel et bien."
+            },
+            {
+              "type": 7,
+              "texte": "INUTILE n'est pas « dont on n'a pas besoin » : une chose peut être inutile alors qu'on en a grand besoin, et c'est même le cas le plus fréquent — on s'en sert faute de mieux, et l'on n'obtient rien."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    }
+  },
+  {
     "headword": "INÉGAL",
     "letter": "I",
     "template_syntaxique": "",
@@ -7701,6 +7758,33 @@
     "updated": "2026-05-04"
   },
   {
+    "headword": "SE SERVIR",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X SE SERVIR DE Y (X AVOIR W)",
+          "exemples": [
+            {
+              "phrase": "Ce manteau est utile en hiver.",
+              "ea": "On s'en sert, donc on a chaud."
+            },
+            {
+              "phrase": "La voiture est utile pour Pierre.",
+              "ea": "Il s'en sert, donc il arrive loin."
+            },
+            {
+              "phrase": "Ce dictionnaire m'est utile.",
+              "ea": "Je m'en sers, donc j'ai la réponse."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "SE SUICIDER",
     "letter": "S",
     "signification": {
@@ -8614,30 +8698,38 @@
   {
     "headword": "UTILE",
     "letter": "U",
+    "template_syntaxique": "Y ÊTRE UTILE À X",
     "signification": {
       "interne": [
         {
-          "aspect": "X AVOIR BESOIN Y DC X UTILISER Y",
+          "aspect": "X SE SERVIR DE Y DC X AVOIR W",
           "exemples": [
             {
               "phrase": "Ce manteau est utile en hiver.",
-              "ea": "En hiver on a besoin de se réchauffer, donc le manteau nous aide à nous réchauffer."
+              "ea": "On s'en sert, donc on a chaud."
             },
             {
               "phrase": "La voiture est utile pour Pierre.",
-              "ea": "Pierre a besoin de se déplacer loin, donc il utilise la voiture."
+              "ea": "Il s'en sert, donc il arrive loin."
+            },
+            {
+              "phrase": "Ce dictionnaire m'est utile.",
+              "ea": "Je m'en sers, donc j'ai la réponse."
             }
           ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "UTILISER",
-          "criteres": [],
+          "fondateur1": "SE SERVIR DE",
+          "fondateur2": "AVOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Aspect doxal : qui se sert d'une chose en tire quelque chose. C'est ce W obtenu qui fait l'utilité — non le besoin qu'on en a. Un objet dont on se sert sans rien obtenir n'est pas utile, quel que soit le besoin."
+            }
+          ],
           "square_value": null
         }
       ],
       "externe": []
-    },
-    "template_syntaxique": "Y ÊTRE UTILE À X",
-    "updated": "2026-04-23"
+    }
   },
   {
     "headword": "UTILISER",
@@ -8672,12 +8764,12 @@
           "quasibloc": "X AVOIR BESOIN Y (X UTILISER Y)",
           "exemples": [
             {
-              "phrase": "Ce manteau est utile en hiver.",
-              "ea": "En hiver on a besoin de se réchauffer, donc le manteau nous aide à nous réchauffer."
+              "phrase": "J'ai besoin d'enfoncer ce clou.",
+              "ea": "J'en ai besoin, donc j'utilise le marteau."
             },
             {
-              "phrase": "La voiture est utile pour Pierre.",
-              "ea": "Pierre a besoin de se déplacer loin, donc il utilise la voiture."
+              "phrase": "Elle a besoin de traduire cette phrase.",
+              "ea": "Elle en a besoin, donc elle utilise le dictionnaire."
             }
           ]
         }
