@@ -567,24 +567,33 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X DEVOIR DONNER Y À Z PT NEG X DONNER Y À Z",
+          "aspect": "Z AVOIR BESOIN DE Y PT NEG X DONNER Y À Z",
           "exemples": [
             {
               "phrase": "Mon mari est avare avec moi depuis notre mariage.",
-              "ea": "Il devrait me donner de l'argent, pourtant il ne m'en donne pas."
+              "ea": "J'en ai besoin, pourtant il ne m'en donne pas."
             },
             {
               "phrase": "Notre chef est avare de compliments.",
-              "ea": "Le chef devrait nous donner des compliments, pourtant il ne nous en donne pas."
+              "ea": "Nous en avons besoin, pourtant il ne nous en donne pas."
             },
             {
               "phrase": "La nature est avare des joies qu'elle nous donne.",
-              "ea": "La nature devrait nous donner de la joie, pourtant elle ne nous en donne pas."
+              "ea": "Nous en avons besoin, pourtant elle ne nous en donne pas."
             }
           ],
-          "fondateur1": "DEVOIR DONNER",
+          "fondateur1": "AVOIR BESOIN",
           "fondateur2": "DONNER",
-          "criteres": [],
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Aspect transgressif : la doxa veut qu'on donne à qui en a besoin, et avare dit qu'on ne donne pas. L'avare ne doit rien à personne — c'est même ce qui le distingue du débiteur, et ce que la description par DEVOIR manquait."
+            },
+            {
+              "type": 7,
+              "texte": "Aspect repris : la première description était bâtie sur DEVOIR — « il n'est pas obligé de donner, pourtant il donne » pour généreux, « il devrait donner, pourtant il ne donne pas » pour avare. Avec un devoir en antécédent, aucun des deux ne pouvait être en DC : donner quand on le doit n'appelle pas d'adjectif, et il ne restait que les deux manquements, tous deux transgressifs. Le PT était une conséquence du cadre, non une observation.\n\nLe test du croisement le dément : « C'est un partage, et même un partage généreux » se dit, et partage est en DC ; généreux l'est donc aussi. Les deux aspects sont refaits sur un antécédent qui mène normalement au don — le besoin de l'autre —, doxa que le dictionnaire portait déjà en quasi-bloc : Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)."
+            }
+          ],
           "square_value": 1
         }
       ],
@@ -3800,16 +3809,29 @@
     "signification": {
       "interne": [
         {
-          "aspect": "NEG X DEVOIR DONNER Y À Z PT X DONNER Y À Z",
+          "aspect": "Z AVOIR BESOIN DE Y DC X DONNER Y À Z",
           "exemples": [
             {
               "phrase": "Il est généreux avec ses amis.",
-              "ea": "Il n'est pas obligé de leur donner, pourtant il leur donne."
+              "ea": "Ses amis en ont besoin, donc il leur donne."
+            },
+            {
+              "phrase": "C'est un partage, et même un partage généreux.",
+              "ea": "Il a de quoi, et ceux qui en ont besoin en reçoivent."
             }
           ],
-          "fondateur1": "DEVOIR DONNER",
+          "fondateur1": "AVOIR BESOIN",
           "fondateur2": "DONNER",
-          "criteres": [],
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Aspect doxal : on donne à qui en a besoin. C'est ce qui fait de généreux un DC, et ce qui lui permet de renforcer un nom en DC — un partage, un paiement, un don."
+            },
+            {
+              "type": 7,
+              "texte": "Aspect repris : la première description était bâtie sur DEVOIR — « il n'est pas obligé de donner, pourtant il donne » pour généreux, « il devrait donner, pourtant il ne donne pas » pour avare. Avec un devoir en antécédent, aucun des deux ne pouvait être en DC : donner quand on le doit n'appelle pas d'adjectif, et il ne restait que les deux manquements, tous deux transgressifs. Le PT était une conséquence du cadre, non une observation.\n\nLe test du croisement le dément : « C'est un partage, et même un partage généreux » se dit, et partage est en DC ; généreux l'est donc aussi. Les deux aspects sont refaits sur un antécédent qui mène normalement au don — le besoin de l'autre —, doxa que le dictionnaire portait déjà en quasi-bloc : Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)."
+            }
+          ],
           "square_value": null
         }
       ],
