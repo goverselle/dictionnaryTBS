@@ -863,6 +863,23 @@
               "ea": "Je m'en sers, donc j'ai la réponse."
             }
           ]
+        },
+        {
+          "quasibloc": "NEG X AVOIR Y (X VOULOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai besoin d'une voiture.",
+              "ea": "Je n'ai pas de voiture, donc je veux une voiture."
+            },
+            {
+              "phrase": "Tu as besoin d'aide ?",
+              "ea": "Tu n'as pas d'aide, donc tu veux de l'aide."
+            },
+            {
+              "phrase": "Il a besoin d'argent.",
+              "ea": "Il n'a pas d'argent, donc il veut de l'argent."
+            }
+          ]
         }
       ]
     },
@@ -1000,7 +1017,34 @@
     "letter": "B",
     "template_syntaxique": "X AVOIR BESOIN DE Y",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "NEG X AVOIR Y DC X VOULOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai besoin d'une voiture.",
+              "ea": "Je n'ai pas de voiture, donc je veux une voiture."
+            },
+            {
+              "phrase": "Tu as besoin d'aide ?",
+              "ea": "Tu n'as pas d'aide, donc tu veux de l'aide."
+            },
+            {
+              "phrase": "Il a besoin d'argent.",
+              "ea": "Il n'a pas d'argent, donc il veut de l'argent."
+            }
+          ],
+          "fondateur1": "AVOIR",
+          "fondateur2": "VOULOIR",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : ce qu'on n'a pas, on le veut."
+            }
+          ],
+          "square_value": null
+        }
+      ],
       "externe": [
         {
           "quasibloc": "NEG X AVOIR BESOIN DE Y (NEG X DÉPENSER Y)",
@@ -1049,7 +1093,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-09-30"
   },
   {
     "headword": "BLASÉ",
@@ -9118,6 +9162,23 @@
             {
               "phrase": "Quand on veut, on peut.",
               "ea": "Si tu veux, tu peux."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X AVOIR Y (X VOULOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai besoin d'une voiture.",
+              "ea": "Je n'ai pas de voiture, donc je veux une voiture."
+            },
+            {
+              "phrase": "Tu as besoin d'aide ?",
+              "ea": "Tu n'as pas d'aide, donc tu veux de l'aide."
+            },
+            {
+              "phrase": "Il a besoin d'argent.",
+              "ea": "Il n'a pas d'argent, donc il veut de l'argent."
             }
           ]
         }
