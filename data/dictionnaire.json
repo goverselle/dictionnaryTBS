@@ -9418,5 +9418,92 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "JALOUX",
+    "letter": "J",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AIMER Z DC NEG X VOULOIR PARTAGER Z",
+          "exemples": [
+            {
+              "phrase": "Il est jaloux de sa femme.",
+              "ea": "Il aime sa femme, donc il ne veut pas la partager."
+            },
+            {
+              "phrase": "Un amant jaloux.",
+              "ea": "Il aime, donc il ne veut pas partager celle qu’il aime."
+            }
+          ],
+          "fondateur1": "AIMER",
+          "fondateur2": "VOULOIR PARTAGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il était jaloux, pourtant il voulait bien la partager. » (B nié) et « ?Il ne l’aimait pas, pourtant il était jaloux. » (A nié) sont contradictoires — A et B sont internes.",
+    "template_syntaxique": "X ÊTRE JALOUX DE Z",
+    "updated": "2026-10-20"
+  },
+  {
+    "headword": "PATIENT",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE LONG PT X SUPPORTER Y",
+          "exemples": [
+            {
+              "phrase": "Sois patient !",
+              "ea": "C’est long, pourtant supporte-le."
+            },
+            {
+              "phrase": "Une attente patiente.",
+              "ea": "C’est long, pourtant on le supporte."
+            }
+          ],
+          "fondateur1": "ÊTRE LONG",
+          "fondateur2": "SUPPORTER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il a été patient, pourtant il ne l’a pas supporté. » (B nié) et « ?Ce n’était pas long du tout, pourtant il a été patient. » (A nié) sont contradictoires — A et B sont internes.",
+    "template_syntaxique": "X ÊTRE PATIENT",
+    "updated": "2026-10-20"
+  },
+  {
+    "headword": "ÉTRANGE",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOIR Y PT NEG X COMPRENDRE Y",
+          "exemples": [
+            {
+              "phrase": "C’est étrange.",
+              "ea": "Je le vois, pourtant je ne le comprends pas."
+            },
+            {
+              "phrase": "Un bruit étrange.",
+              "ea": "On l’entend, pourtant on ne le comprend pas."
+            }
+          ],
+          "fondateur1": "VOIR",
+          "fondateur2": "COMPRENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?C’était étrange, pourtant je comprenais très bien. » (B nié) et « ?Je ne l’avais pas vu, pourtant il était étrange. » (A nié) sont contradictoires — A et B sont internes. Voir le chapitre 3.4 de la thèse.",
+    "template_syntaxique": "Y ÊTRE ÉTRANGE",
+    "updated": "2026-10-20"
   }
 ]
