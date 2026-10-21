@@ -1892,15 +1892,15 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y S'APPROCHER DC Y POUVOIR FAIRE MAL",
-          "fondateur1": "S'APPROCHER",
+          "aspect": "X ÊTRE LÀ DC Y POUVOIR FAIRE MAL À X",
+          "fondateur1": "ÊTRE LÀ",
           "fondateur2": "POUVOIR FAIRE MAL",
           "criteres": [],
           "square_value": null,
           "exemples": [
             {
               "phrase": "Attention, il y a un danger.",
-              "ea": "Ça s'approche, donc ça peut faire mal."
+              "ea": "Tu es là, donc ça peut te faire mal."
             }
           ]
         }
@@ -1934,7 +1934,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-10-21"
   },
   {
     "headword": "DENTS",
