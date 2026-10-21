@@ -9505,5 +9505,34 @@
     "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?C’était étrange, pourtant je comprenais très bien. » (B nié) et « ?Je ne l’avais pas vu, pourtant il était étrange. » (A nié) sont contradictoires — A et B sont internes. Voir le chapitre 3.4 de la thèse.",
     "template_syntaxique": "Y ÊTRE ÉTRANGE",
     "updated": "2026-10-20"
+  },
+  {
+    "headword": "RISQUE",
+    "letter": "R",
+    "template_syntaxique": "X PRENDRE UN RISQUE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG ÊTRE SÛR DC X POUVOIR PERDRE",
+          "exemples": [
+            {
+              "phrase": "Il a pris un risque en quittant son travail.",
+              "ea": "Ce n'était pas sûr, donc il pouvait perdre."
+            },
+            {
+              "phrase": "Investir en bourse, c'est un risque.",
+              "ea": "Ce n'est pas sûr, donc on peut perdre."
+            }
+          ],
+          "fondateur1": "ÊTRE SÛR",
+          "fondateur2": "POUVOIR PERDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Proposition.",
+    "updated": "2026-10-21"
   }
 ]
