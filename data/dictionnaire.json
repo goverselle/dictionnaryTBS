@@ -9534,5 +9534,33 @@
     },
     "nb": "Proposition.",
     "updated": "2026-10-21"
+  },
+  {
+    "headword": "MENACE",
+    "letter": "M",
+    "template_syntaxique": "Y ÊTRE UNE MENACE POUR X",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PASSER DC Y POUVOIR FAIRE MAL",
+          "exemples": [
+            {
+              "phrase": "La sécheresse menace la récolte.",
+              "ea": "Il y a une sécheresse, donc elle peut faire mal à la récolte."
+            },
+            {
+              "phrase": "Il y a une menace de guerre.",
+              "ea": "Quelque chose se passe, donc la guerre peut faire mal."
+            }
+          ],
+          "fondateur1": "SE PASSER",
+          "fondateur2": "POUVOIR FAIRE MAL",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-21"
   }
 ]
