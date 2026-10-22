@@ -9541,25 +9541,25 @@
     "signification": {
       "interne": [
         {
-          "aspect": "Y SE PASSER DC Y POUVOIR FAIRE MAL",
+          "aspect": "Y SE PASSER DC UN MAL POUVOIR ARRIVER",
           "exemples": [
             {
               "phrase": "La sécheresse menace la récolte.",
-              "ea": "Il y a une sécheresse, donc elle peut faire mal à la récolte."
+              "ea": "Il y a une sécheresse, donc un mal peut arriver à la récolte."
             },
             {
-              "phrase": "Il y a une menace de guerre.",
-              "ea": "Quelque chose se passe, donc la guerre peut faire mal."
+              "phrase": "Des nuages noirs approchent : l’orage menace.",
+              "ea": "Les nuages approchent, donc un orage peut arriver."
             }
           ],
           "fondateur1": "SE PASSER",
-          "fondateur2": "POUVOIR FAIRE MAL",
+          "fondateur2": "POUVOIR ARRIVER",
           "criteres": [],
           "square_value": null
         }
       ],
       "externe": []
     },
-    "updated": "2026-10-21"
+    "updated": "2026-10-22"
   }
 ]
