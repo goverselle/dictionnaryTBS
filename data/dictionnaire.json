@@ -9513,27 +9513,27 @@
     "signification": {
       "interne": [
         {
-          "aspect": "NEG ÊTRE SÛR DC X POUVOIR PERDRE",
+          "aspect": "X FAIRE DC X POUVOIR ÊTRE MAL",
           "exemples": [
             {
-              "phrase": "Il a pris un risque en quittant son travail.",
-              "ea": "Ce n'était pas sûr, donc il pouvait perdre."
+              "phrase": "Tu veux grimper tout en haut de l'arbre ? C'est un risque.",
+              "ea": "Tu grimpes, donc tu peux tomber."
             },
             {
-              "phrase": "Investir en bourse, c'est un risque.",
-              "ea": "Ce n'est pas sûr, donc on peut perdre."
+              "phrase": "Il y a un risque à prêter de l'argent à quelqu'un.",
+              "ea": "Tu prêtes, donc tu peux perdre ton argent."
             }
           ],
-          "fondateur1": "ÊTRE SÛR",
-          "fondateur2": "POUVOIR PERDRE",
+          "fondateur1": "FAIRE",
+          "fondateur2": "POUVOIR ÊTRE MAL",
           "criteres": [],
           "square_value": null
         }
       ],
       "externe": []
     },
-    "nb": "Proposition.",
-    "updated": "2026-10-21"
+    "nb": "On prend un risque, alors qu'on court un danger : le risque appartient à celui qui agit.",
+    "updated": "2026-10-22"
   },
   {
     "headword": "MENACE",
