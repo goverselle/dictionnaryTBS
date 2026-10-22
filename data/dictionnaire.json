@@ -9513,7 +9513,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X FAIRE DC X POUVOIR ÊTRE MAL",
+          "aspect": "X FAIRE Y DC Y POUVOIR MAL TOURNER",
           "exemples": [
             {
               "phrase": "Tu veux grimper tout en haut de l'arbre ? C'est un risque.",
@@ -9525,7 +9525,7 @@
             }
           ],
           "fondateur1": "FAIRE",
-          "fondateur2": "POUVOIR ÊTRE MAL",
+          "fondateur2": "POUVOIR MAL TOURNER",
           "criteres": [],
           "square_value": null
         }
