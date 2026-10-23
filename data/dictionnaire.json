@@ -5229,11 +5229,11 @@
   {
     "headword": "MENACER",
     "letter": "M",
-    "template_syntaxique": "X MENACER Y",
+    "template_syntaxique": "X MENACER Z",
     "signification": {
       "interne": [
         {
-          "aspect": "X DIRE DC X ALLER FAIRE MAL À Y",
+          "aspect": "X DIRE DC X ALLER FAIRE MAL À Z",
           "exemples": [
             {
               "phrase": "Il m'a menacée.",
