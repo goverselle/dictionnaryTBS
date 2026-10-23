@@ -3168,6 +3168,23 @@
           "fondateur2": "FAIRE",
           "criteres": [],
           "square_value": null
+        },
+        {
+          "aspect": "Y ÊTRE MAL PT NEG Y ARRIVER",
+          "exemples": [
+            {
+              "phrase": "Nous avons évité la catastrophe.",
+              "ea": "C'était un mal, pourtant ça n'est pas arrivé."
+            },
+            {
+              "phrase": "Il a évité l'accident de justesse.",
+              "ea": "L'accident était un mal, pourtant il n'est pas arrivé."
+            }
+          ],
+          "fondateur1": "ÊTRE MAL",
+          "fondateur2": "ARRIVER",
+          "criteres": [],
+          "square_value": null
         }
       ],
       "externe": []
