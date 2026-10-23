@@ -1937,6 +1937,116 @@
     "updated": "2026-10-21"
   },
   {
+    "headword": "DÉBITEUR",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X RECEVOIR Y DC X DEVOIR RENDRE Y",
+          "exemples": [
+            {
+              "phrase": "Votre compte est débiteur.",
+              "ea": "Vous avez reçu de l'argent, donc vous devez le rendre."
+            },
+            {
+              "phrase": "Vous êtes débiteur à cette personne.",
+              "ea": "Vous avez reçu une faveur de sa part, donc vous lui êtes redevable."
+            }
+          ],
+          "fondateur1": "RECEVOIR",
+          "fondateur2": "RENDRE",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Négation : « il n'est pas mon débiteur » = il a reçu pourtant il ne me doit rien (RECEVOIR PT NEG DEVOIR RENDRE). C'est la structure du don — ce qui confirme que le bloc opposé au débiteur n'est pas l'oubli de la dette mais la gratuité."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
+    "headword": "DÉCIDER",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X SAVOIR Y (X DÉCIDER)",
+          "exemples": [
+            {
+              "phrase": "Maintenant je sais, je peux trancher.",
+              "ea": "Je sais, donc je peux décider."
+            },
+            {
+              "phrase": "Attends de savoir avant de choisir.",
+              "ea": "Tu sauras, donc tu pourras décider."
+            },
+            {
+              "phrase": "On saura demain, on verra à ce moment-là.",
+              "ea": "On saura, donc on décidera."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-09-17"
+  },
+  {
+    "headword": "DÉCLARER",
+    "letter": "D",
+    "template_syntaxique": "X DÉCLARER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE Y DC X FAIRE CONNAÎTRE Y",
+          "fondateur1": "DIRE",
+          "fondateur2": "FAIRE CONNAÎTRE",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il a déclaré sa candidature.",
+              "ea": "Il l'a dit, donc il l'a fait connaître."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-05"
+  },
+  {
+    "headword": "DÉLICIEUX",
+    "letter": "D",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X GOÛTER Y DC X AIMER Y",
+          "exemples": [
+            {
+              "phrase": "Ce repas est délicieux.",
+              "ea": "J'ai goûté le repas, donc je l'ai aimé."
+            }
+          ],
+          "fondateur1": "GOÛTER",
+          "fondateur2": "AIMER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative.",
+    "template_syntaxique": "Y ÊTRE DÉLICIEUX",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "DENTS",
     "letter": "D",
     "signification": {
@@ -1959,6 +2069,138 @@
     },
     "template_syntaxique": "X AVOIR DES DENTS",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "DÉPENSER",
+    "letter": "D",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*X* AVOIR ARGENT DC *X* ACHETER Y",
+          "exemples": [
+            {
+              "phrase": "Pierre dépense beaucoup.",
+              "ea": "Pierre a de l'argent, donc il achète."
+            }
+          ],
+          "fondateur1": "AVOIR ARGENT",
+          "fondateur2": "ACHETER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "NEG X AVOIR BESOIN DE Y (NEG X DÉPENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est économe.",
+              "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X DÉPENSER (X AVOIR ARGENT)",
+          "exemples": [
+            {
+              "phrase": "Pierre économise pour les vacances.",
+              "ea": "Pierre ne dépense pas, donc il a de l'argent."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG Y COÛTER (X VOULOIR DÉPENSER Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est radin : il n'a jamais offert un café à personne sur son lieu de travail.",
+              "ea": "Le café ne coûte pas cher, pourtant Pierre ne veut pas dépenser pour l'offrir."
+            },
+            {
+              "phrase": "Pierre est radin : il refuse de dépanner des amis de quelques dizaines de centimes.",
+              "ea": "Quelques centimes ne coûtent rien, pourtant il ne veut pas les dépenser."
+            },
+            {
+              "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
+              "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
+            }
+          ]
+        }
+      ]
+    },
+    "nb": "",
+    "template_syntaxique": "X DÉPENSER",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "DÉRANGER",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y SE RÉPÉTER (Y DÉRANGER X)",
+          "exemples": [
+            {
+              "phrase": "Le bruit de l'horloge m'énerve.",
+              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "DÉTAIL",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE DÉTAIL (NEG X FAIRE ATTENTION À Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre est méticuleux.",
+              "ea": "Même si c'est un détail, Pierre y fera attention."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "DÉTRUIRE",
+    "letter": "D",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est la guerre.",
+              "ea": "Ce qui a du prix, pourtant on le détruit."
+            },
+            {
+              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
+              "ea": "C'était précieux, pourtant on l'a détruit."
+            },
+            {
+              "phrase": "Ils ont brûlé la bibliothèque.",
+              "ea": "C'était précieux, pourtant ils l'ont détruit."
+            },
+            {
+              "phrase": "On envoie mourir des garçons de vingt ans.",
+              "ea": "Une vie a du prix, pourtant on la détruit."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "headword": "DEVENIR",
@@ -2480,246 +2722,83 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "DÉBITEUR",
-    "letter": "D",
-    "template_syntaxique": "",
+    "headword": "ÉCHOUER",
+    "letter": "E",
     "signification": {
       "interne": [
         {
-          "aspect": "X RECEVOIR Y DC X DEVOIR RENDRE Y",
+          "aspect": "X FAIRE Y PT NEG X AVOIR Z",
           "exemples": [
             {
-              "phrase": "Votre compte est débiteur.",
-              "ea": "Vous avez reçu de l'argent, donc vous devez le rendre."
-            },
-            {
-              "phrase": "Vous êtes débiteur à cette personne.",
-              "ea": "Vous avez reçu une faveur de sa part, donc vous lui êtes redevable."
+              "phrase": "J'ai échoué à l'examen.",
+              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
             }
           ],
-          "fondateur1": "RECEVOIR",
-          "fondateur2": "RENDRE",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Négation : « il n'est pas mon débiteur » = il a reçu pourtant il ne me doit rien (RECEVOIR PT NEG DEVOIR RENDRE). C'est la structure du don — ce qui confirme que le bloc opposé au débiteur n'est pas l'oubli de la dette mais la gratuité."
-            }
-          ],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-06"
-  },
-  {
-    "headword": "DÉCIDER",
-    "letter": "D",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "X SAVOIR Y (X DÉCIDER)",
-          "exemples": [
-            {
-              "phrase": "Maintenant je sais, je peux trancher.",
-              "ea": "Je sais, donc je peux décider."
-            },
-            {
-              "phrase": "Attends de savoir avant de choisir.",
-              "ea": "Tu sauras, donc tu pourras décider."
-            },
-            {
-              "phrase": "On saura demain, on verra à ce moment-là.",
-              "ea": "On saura, donc on décidera."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-09-17"
-  },
-  {
-    "headword": "DÉCLARER",
-    "letter": "D",
-    "template_syntaxique": "X DÉCLARER Y",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DIRE Y DC X FAIRE CONNAÎTRE Y",
-          "fondateur1": "DIRE",
-          "fondateur2": "FAIRE CONNAÎTRE",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Il a déclaré sa candidature.",
-              "ea": "Il l'a dit, donc il l'a fait connaître."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-05"
-  },
-  {
-    "headword": "DÉLICIEUX",
-    "letter": "D",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X GOÛTER Y DC X AIMER Y",
-          "exemples": [
-            {
-              "phrase": "Ce repas est délicieux.",
-              "ea": "J'ai goûté le repas, donc je l'ai aimé."
-            }
-          ],
-          "fondateur1": "GOÛTER",
-          "fondateur2": "AIMER",
+          "fondateur1": "FAIRE",
+          "fondateur2": "AVOIR",
           "criteres": [],
           "square_value": null
         }
       ],
       "externe": []
     },
-    "nb": "GOÛTER plutôt que MANGER : on peut goûter sans manger, et DÉLICIEUX s'applique dès la première perception gustative.",
-    "template_syntaxique": "Y ÊTRE DÉLICIEUX",
+    "template_syntaxique": "X ÉCHOUER À Z",
     "updated": "2026-04-23"
   },
   {
-    "headword": "DÉPENSER",
-    "letter": "D",
+    "headword": "ÉCONOME",
+    "letter": "E",
     "signification": {
       "interne": [
         {
-          "aspect": "*X* AVOIR ARGENT DC *X* ACHETER Y",
-          "exemples": [
-            {
-              "phrase": "Pierre dépense beaucoup.",
-              "ea": "Pierre a de l'argent, donc il achète."
-            }
-          ],
-          "fondateur1": "AVOIR ARGENT",
-          "fondateur2": "ACHETER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "NEG X AVOIR BESOIN DE Y (NEG X DÉPENSER Y)",
+          "aspect": "NEG X AVOIR BESOIN DE Y DC NEG X DÉPENSER Y",
           "exemples": [
             {
               "phrase": "Pierre est économe.",
               "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
             }
-          ]
-        },
+          ],
+          "fondateur1": "AVOIR BESOIN",
+          "fondateur2": "DÉPENSER",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
+    "template_syntaxique": "X ÊTRE ÉCONOME",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉCONOMISER",
+    "letter": "E",
+    "signification": {
+      "interne": [
         {
-          "quasibloc": "NEG X DÉPENSER (X AVOIR ARGENT)",
+          "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
           "exemples": [
             {
               "phrase": "Pierre économise pour les vacances.",
               "ea": "Pierre ne dépense pas, donc il a de l'argent."
             }
-          ]
-        },
-        {
-          "quasibloc": "NEG Y COÛTER (X VOULOIR DÉPENSER Y)",
-          "exemples": [
-            {
-              "phrase": "Pierre est radin : il n'a jamais offert un café à personne sur son lieu de travail.",
-              "ea": "Le café ne coûte pas cher, pourtant Pierre ne veut pas dépenser pour l'offrir."
-            },
-            {
-              "phrase": "Pierre est radin : il refuse de dépanner des amis de quelques dizaines de centimes.",
-              "ea": "Quelques centimes ne coûtent rien, pourtant il ne veut pas les dépenser."
-            },
-            {
-              "phrase": "Je ne te conseille pas d'être radin de trois euros quand tu choisis un hôtel dans ce pays.",
-              "ea": "Trois euros ne coûtent rien, pourtant tu ne veux pas les dépenser."
-            }
-          ]
+          ],
+          "fondateur1": "DÉPENSER",
+          "fondateur2": "AVOIR ARGENT",
+          "criteres": [],
+          "square_value": null
         }
-      ]
+      ],
+      "externe": []
     },
     "nb": "",
-    "template_syntaxique": "X DÉPENSER",
+    "template_syntaxique": "X ÉCONOMISER",
     "updated": "2026-04-23"
-  },
-  {
-    "headword": "DÉRANGER",
-    "letter": "D",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y SE RÉPÉTER (Y DÉRANGER X)",
-          "exemples": [
-            {
-              "phrase": "Le bruit de l'horloge m'énerve.",
-              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "DÉTAIL",
-    "letter": "D",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y ÊTRE DÉTAIL (NEG X FAIRE ATTENTION À Y)",
-          "exemples": [
-            {
-              "phrase": "Pierre est méticuleux.",
-              "ea": "Même si c'est un détail, Pierre y fera attention."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "DÉTRUIRE",
-    "letter": "D",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
-          "exemples": [
-            {
-              "phrase": "C'est la guerre.",
-              "ea": "Ce qui a du prix, pourtant on le détruit."
-            },
-            {
-              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
-              "ea": "C'était précieux, pourtant on l'a détruit."
-            },
-            {
-              "phrase": "Ils ont brûlé la bibliothèque.",
-              "ea": "C'était précieux, pourtant ils l'ont détruit."
-            },
-            {
-              "phrase": "On envoie mourir des garçons de vingt ans.",
-              "ea": "Une vie a du prix, pourtant on la détruit."
-            }
-          ]
-        }
-      ]
-    }
   },
   {
     "headword": "EFFET",
@@ -2754,6 +2833,54 @@
     "nb": "« Effet pauvre » : PAUVRE s'applique constitutivement. Dans « Un pastel a un effet pauvre sur scène », on comprend que les décorations doivent nécessairement produire un effet, pourtant le pastel n'en produit pas.",
     "template_syntaxique": "Y AVOIR UN EFFET",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉGAL",
+    "letter": "É",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARTAGER Y AVEC Z DC X ÊTRE MÊME QUE Z",
+          "exemples": [
+            {
+              "phrase": "Nous sommes égaux en droit.",
+              "ea": "Nous partageons la citoyenneté, donc nous avons les mêmes droits."
+            }
+          ],
+          "fondateur1": "PARTAGER",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
+  },
+  {
+    "headword": "ÉLÉGANT",
+    "letter": "É",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "NEG DÉTAILS DIFFÉRENTS DC HARMONIE",
+          "exemples": [
+            {
+              "phrase": "Une tenue élégante.",
+              "ea": "Les détails ne sont pas différents, donc c'est harmonieux."
+            }
+          ],
+          "fondateur1": "DÉTAILS DIFFÉRENTS",
+          "fondateur2": "HARMONIE",
+          "criteres": [],
+          "square_value": 4
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-07"
   },
   {
     "headword": "EMBELLIR",
@@ -2838,6 +2965,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "ÉNERVER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE RÉPÉTER DC Y DÉRANGER X",
+          "exemples": [
+            {
+              "phrase": "Le bruit de l'horloge m'énerve.",
+              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
+            }
+          ],
+          "fondateur1": "SE RÉPÉTER",
+          "fondateur2": "DÉRANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÉNERVER X",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "ERREUR",
     "letter": "E",
     "template_syntaxique": "",
@@ -2900,6 +3051,128 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉTONNER",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X APPRENDRE Y PT PERF (NEG X ATTENDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Son comportement m'étonne.",
+              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
+            }
+          ],
+          "fondateur1": "APPRENDRE",
+          "fondateur2": "ATTENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÉTONNER X",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉTRANGE",
+    "letter": "E",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VOIR Y PT NEG X COMPRENDRE Y",
+          "exemples": [
+            {
+              "phrase": "C’est étrange.",
+              "ea": "Je le vois, pourtant je ne le comprends pas."
+            },
+            {
+              "phrase": "Un bruit étrange.",
+              "ea": "On l’entend, pourtant on ne le comprend pas."
+            }
+          ],
+          "fondateur1": "VOIR",
+          "fondateur2": "COMPRENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?C’était étrange, pourtant je comprenais très bien. » (B nié) et « ?Je ne l’avais pas vu, pourtant il était étrange. » (A nié) sont contradictoires — A et B sont internes. Voir le chapitre 3.4 de la thèse.",
+    "template_syntaxique": "Y ÊTRE ÉTRANGE",
+    "updated": "2026-10-20"
+  },
+  {
+    "headword": "ÊTRE",
+    "letter": "E",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "PERF (X ÊTRE) (X ÊTRE)",
+          "exemples": [
+            {
+              "phrase": "Il vit à Paris.",
+              "ea": "Il a été à Paris, donc il est à Paris."
+            }
+          ]
+        },
+        {
+          "quasibloc": "PERF (NEG X ÊTRE) (NEG X ÊTRE)",
+          "exemples": [
+            {
+              "phrase": "Une tendance est apparue.",
+              "ea": "Il n'y a pas eu cette tendance, pourtant il y a cette tendance maintenant."
+            },
+            {
+              "phrase": "Le soleil apparaît.",
+              "ea": "Le soleil n'était pas là, pourtant il est là maintenant."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "ÉVITER",
+    "letter": "E",
+    "template_syntaxique": "X ÉVITER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE MAL DC NEG X FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Il évite les sucreries.",
+              "ea": "C'est mauvais pour lui, donc il n'en mange pas."
+            },
+            {
+              "phrase": "Elle évite son voisin depuis des semaines.",
+              "ea": "Le voir est désagréable, donc elle ne le voit pas."
+            },
+            {
+              "phrase": "Le conducteur a évité l'obstacle.",
+              "ea": "Heurter l'obstacle est mauvais, donc il ne l'a pas heurté."
+            },
+            {
+              "phrase": "Il a été prudent : il a évité la route verglacée.",
+              "ea": "La route verglacée est mauvaise pour lui, donc il ne l'a pas prise."
+            }
+          ],
+          "fondateur1": "ÊTRE MAL",
+          "fondateur2": "FAIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-23"
   },
   {
     "headword": "EXAMINER",
@@ -3662,6 +3935,44 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "GÉNÉREUX",
+    "letter": "G",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z AVOIR BESOIN DE Y DC X DONNER Y À Z",
+          "exemples": [
+            {
+              "phrase": "Il est généreux avec ses amis.",
+              "ea": "Ses amis en ont besoin, donc il leur donne."
+            },
+            {
+              "phrase": "C'est un partage, et même un partage généreux.",
+              "ea": "Il a de quoi, et ceux qui en ont besoin en reçoivent."
+            }
+          ],
+          "fondateur1": "AVOIR BESOIN",
+          "fondateur2": "DONNER",
+          "criteres": [
+            {
+              "type": 4,
+              "texte": "Aspect doxal : on donne à qui en a besoin. C'est ce qui fait de généreux un DC, et ce qui lui permet de renforcer un nom en DC — un partage, un paiement, un don."
+            },
+            {
+              "type": 7,
+              "texte": "Aspect repris : la première description était bâtie sur DEVOIR — « il n'est pas obligé de donner, pourtant il donne » pour généreux, « il devrait donner, pourtant il ne donne pas » pour avare. Avec un devoir en antécédent, aucun des deux ne pouvait être en DC : donner quand on le doit n'appelle pas d'adjectif, et il ne restait que les deux manquements, tous deux transgressifs. Le PT était une conséquence du cadre, non une observation.\n\nLe test du croisement le dément : « C'est un partage, et même un partage généreux » se dit, et partage est en DC ; généreux l'est donc aussi. Les deux aspects sont refaits sur un antécédent qui mène normalement au don — le besoin de l'autre —, doxa que le dictionnaire portait déjà en quasi-bloc : Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
+    "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "GENRER",
     "letter": "G",
     "paradoxal": false,
@@ -3846,44 +4157,6 @@
       "externe": []
     },
     "updated": "2026-09-16"
-  },
-  {
-    "headword": "GÉNÉREUX",
-    "letter": "G",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z AVOIR BESOIN DE Y DC X DONNER Y À Z",
-          "exemples": [
-            {
-              "phrase": "Il est généreux avec ses amis.",
-              "ea": "Ses amis en ont besoin, donc il leur donne."
-            },
-            {
-              "phrase": "C'est un partage, et même un partage généreux.",
-              "ea": "Il a de quoi, et ceux qui en ont besoin en reçoivent."
-            }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DONNER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Aspect doxal : on donne à qui en a besoin. C'est ce qui fait de généreux un DC, et ce qui lui permet de renforcer un nom en DC — un partage, un paiement, un don."
-            },
-            {
-              "type": 7,
-              "texte": "Aspect repris : la première description était bâtie sur DEVOIR — « il n'est pas obligé de donner, pourtant il donne » pour généreux, « il devrait donner, pourtant il ne donne pas » pour avare. Avec un devoir en antécédent, aucun des deux ne pouvait être en DC : donner quand on le doit n'appelle pas d'adjectif, et il ne restait que les deux manquements, tous deux transgressifs. Le PT était une conséquence du cadre, non une observation.\n\nLe test du croisement le dément : « C'est un partage, et même un partage généreux » se dit, et partage est en DC ; généreux l'est donc aussi. Les deux aspects sont refaits sur un antécédent qui mène normalement au don — le besoin de l'autre —, doxa que le dictionnaire portait déjà en quasi-bloc : Z AVOIR BESOIN DE Y (X FAIRE Y POUR Z)."
-            }
-          ],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "GÉNÉREUX est compatible avec RADIN car les deux adjectifs expriment des points de vue différents : RADIN se rapporte à la dépense (sans spécifier pour qui), GÉNÉREUX au don pour autrui. Chez le « saint », la radinerie envers soi-même devient la condition du don aux autres.",
-    "template_syntaxique": "X ÊTRE GÉNÉREUX AVEC Z",
-    "updated": "2026-04-23"
   },
   {
     "headword": "HABITUEL",
@@ -4081,25 +4354,6 @@
     "updated": "2026-05-04"
   },
   {
-    "headword": "IMMUABLE",
-    "letter": "I",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X FAIRE À Y PT Y ÊTRE MÊME",
-          "exemples": [],
-          "fondateur1": "FAIRE",
-          "fondateur2": "ÊTRE MÊME",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-09"
-  },
-  {
     "headword": "IMMÉDIAT",
     "letter": "I",
     "signification": {
@@ -4124,6 +4378,25 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "IMMUABLE",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE À Y PT Y ÊTRE MÊME",
+          "exemples": [],
+          "fondateur1": "FAIRE",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-09"
+  },
+  {
     "headword": "IMPARFAIT",
     "letter": "I",
     "signification": {
@@ -4145,6 +4418,31 @@
       "externe": []
     },
     "template_syntaxique": "Y ÊTRE IMPARFAIT",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "IMPÉRATIF",
+    "letter": "I",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE Y À Z DC Z DEVOIR FAIRE Y",
+          "exemples": [
+            {
+              "phrase": "Fermez la porte.",
+              "ea": "Je vous dis de fermer la porte, donc vous devez fermer la porte."
+            }
+          ],
+          "fondateur1": "DIRE",
+          "fondateur2": "DEVOIR FAIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "",
+    "nb": "Cas spécial : signification d'une forme grammaticale.",
     "updated": "2026-04-23"
   },
   {
@@ -4208,31 +4506,6 @@
     "updated": "2026-06-17"
   },
   {
-    "headword": "IMPÉRATIF",
-    "letter": "I",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DIRE Y À Z DC Z DEVOIR FAIRE Y",
-          "exemples": [
-            {
-              "phrase": "Fermez la porte.",
-              "ea": "Je vous dis de fermer la porte, donc vous devez fermer la porte."
-            }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "DEVOIR FAIRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "",
-    "nb": "Cas spécial : signification d'une forme grammaticale.",
-    "updated": "2026-04-23"
-  },
-  {
     "headword": "INCONSCIENT",
     "letter": "I",
     "signification": {
@@ -4256,6 +4529,30 @@
     "template_syntaxique": "X ÊTRE INCONSCIENT",
     "nb": "INCONSCIENT est le converse de COOL et le transposé d'ANXIEUX dans le carré du bloc ÊTRE GRAVE — S'INQUIÉTER.",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "INÉGAL",
+    "letter": "I",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X PARTAGER Y AVEC Z PT NEG X ÊTRE MÊME QUE Z",
+          "exemples": [
+            {
+              "phrase": "Le traitement est inégal.",
+              "ea": "Nous sommes tous les deux humains, pourtant tu n'es pas traité comme moi."
+            }
+          ],
+          "fondateur1": "PARTAGER",
+          "fondateur2": "ÊTRE MÊME",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-21"
   },
   {
     "headword": "INHABITUEL",
@@ -4432,30 +4729,6 @@
     }
   },
   {
-    "headword": "INÉGAL",
-    "letter": "I",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X PARTAGER Y AVEC Z PT NEG X ÊTRE MÊME QUE Z",
-          "exemples": [
-            {
-              "phrase": "Le traitement est inégal.",
-              "ea": "Nous sommes tous les deux humains, pourtant tu n'es pas traité comme moi."
-            }
-          ],
-          "fondateur1": "PARTAGER",
-          "fondateur2": "ÊTRE MÊME",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-21"
-  },
-  {
     "headword": "IRRESPONSABLE",
     "letter": "I",
     "signification": {
@@ -4482,6 +4755,35 @@
     },
     "template_syntaxique": "X ÊTRE IRRESPONSABLE",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "JALOUX",
+    "letter": "J",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AIMER Z DC NEG X VOULOIR PARTAGER Z",
+          "exemples": [
+            {
+              "phrase": "Il est jaloux de sa femme.",
+              "ea": "Il aime sa femme, donc il ne veut pas la partager."
+            },
+            {
+              "phrase": "Un amant jaloux.",
+              "ea": "Il aime, donc il ne veut pas partager celle qu’il aime."
+            }
+          ],
+          "fondateur1": "AIMER",
+          "fondateur2": "VOULOIR PARTAGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il était jaloux, pourtant il voulait bien la partager. » (B nié) et « ?Il ne l’aimait pas, pourtant il était jaloux. » (A nié) sont contradictoires — A et B sont internes.",
+    "template_syntaxique": "X ÊTRE JALOUX DE Z",
+    "updated": "2026-10-20"
   },
   {
     "headword": "JOUER",
@@ -4846,6 +5148,68 @@
     "updated": "2026-04-27"
   },
   {
+    "headword": "MÉGENRER",
+    "letter": "M",
+    "paradoxal": false,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X GENRER Z DE Y PT NEG Y CORRESPONDRE À Z",
+          "exemples": [
+            {
+              "phrase": "Sa mère continue de le mégenrer.",
+              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
+            },
+            {
+              "phrase": "Je passe mon temps à me demander si je dois reprendre les gens quand ils me mégenrent.",
+              "ea": "Les gens me genrent d'une certaine façon, pourtant elle ne correspond pas à ce que je suis."
+            },
+            {
+              "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
+              "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
+            }
+          ],
+          "fondateur1": "GENRER",
+          "fondateur2": "CORRESPONDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "",
+    "template_syntaxique": "X MÉGENRER Z",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "MENACE",
+    "letter": "M",
+    "template_syntaxique": "Y ÊTRE UNE MENACE POUR X",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PASSER DC UN MAL POUVOIR ARRIVER",
+          "exemples": [
+            {
+              "phrase": "La sécheresse menace la récolte.",
+              "ea": "Il y a une sécheresse, donc un mal peut arriver à la récolte."
+            },
+            {
+              "phrase": "Des nuages noirs approchent : l’orage menace.",
+              "ea": "Les nuages approchent, donc un orage peut arriver."
+            }
+          ],
+          "fondateur1": "SE PASSER",
+          "fondateur2": "POUVOIR ARRIVER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-22"
+  },
+  {
     "headword": "MER",
     "letter": "M",
     "template_syntaxique": "",
@@ -4900,6 +5264,30 @@
     },
     "nb": "MESQUIN se distingue de RADIN : RADIN est lié à la dépense, MESQUIN à la pensée portée sur des choses insignifiantes.",
     "template_syntaxique": "X ÊTRE MESQUIN",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "MÉTICULEUX",
+    "letter": "M",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE DÉTAIL PT X FAIRE ATTENTION À Y",
+          "exemples": [
+            {
+              "phrase": "Pierre est méticuleux.",
+              "ea": "Même si c'est un détail, Pierre y fera attention."
+            }
+          ],
+          "fondateur1": "ÊTRE DÉTAIL",
+          "fondateur2": "FAIRE ATTENTION",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X ÊTRE MÉTICULEUX",
     "updated": "2026-04-23"
   },
   {
@@ -5202,64 +5590,6 @@
     "updated": "2026-05-04"
   },
   {
-    "headword": "MÉGENRER",
-    "letter": "M",
-    "paradoxal": false,
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X GENRER Z DE Y PT NEG Y CORRESPONDRE À Z",
-          "exemples": [
-            {
-              "phrase": "Sa mère continue de le mégenrer.",
-              "ea": "Sa mère le genre au féminin, pourtant le féminin ne correspond pas à son identité."
-            },
-            {
-              "phrase": "Je passe mon temps à me demander si je dois reprendre les gens quand ils me mégenrent.",
-              "ea": "Les gens me genrent d'une certaine façon, pourtant elle ne correspond pas à ce que je suis."
-            },
-            {
-              "phrase": "L'employeuse mégenrait systématiquement son employée en la qualifiant de « jeune homme ».",
-              "ea": "Elle la genrait au masculin, pourtant le masculin ne correspondait pas à cette personne."
-            }
-          ],
-          "fondateur1": "GENRER",
-          "fondateur2": "CORRESPONDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "",
-    "template_syntaxique": "X MÉGENRER Z",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "MÉTICULEUX",
-    "letter": "M",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y ÊTRE DÉTAIL PT X FAIRE ATTENTION À Y",
-          "exemples": [
-            {
-              "phrase": "Pierre est méticuleux.",
-              "ea": "Même si c'est un détail, Pierre y fera attention."
-            }
-          ],
-          "fondateur1": "ÊTRE DÉTAIL",
-          "fondateur2": "FAIRE ATTENTION",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X ÊTRE MÉTICULEUX",
-    "updated": "2026-04-23"
-  },
-  {
     "headword": "NAÎTRE",
     "letter": "N",
     "template_syntaxique": "X NAÎTRE",
@@ -5282,72 +5612,6 @@
       "externe": []
     },
     "updated": "2026-05-04"
-  },
-  {
-    "headword": "NORMAL",
-    "letter": "N",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y SE PRODUIRE PT NEG X RÉAGIR À Y",
-          "exemples": [
-            {
-              "phrase": "Cet événement est tout à fait normal.",
-              "ea": "Quand ceci se produit, personne ne réagit."
-            },
-            {
-              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
-              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
-            },
-            {
-              "phrase": "Ses résultats d'examen sont normaux.",
-              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
-            }
-          ],
-          "fondateur1": "SE PRODUIRE",
-          "fondateur2": "RÉAGIR",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "X FAIRE Y (Y ÊTRE NORMAL)",
-          "exemples": [
-            {
-              "phrase": "C'est habituel pour Pierre.",
-              "ea": "Pierre le fait, donc c'est normal qu'il le fasse."
-            }
-          ]
-        }
-      ]
-    },
-    "template_syntaxique": "Y ÊTRE NORMAL",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "NOUVEAU",
-    "letter": "N",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (W SE PASSER) PT Y SE PASSER",
-          "exemples": [
-            {
-              "phrase": "J'ai acheté un nouveau livre sur la linguistique.",
-              "ea": "J'avais déjà un livre sur la linguistique, pourtant j'ai acheté un autre livre sur la linguistique."
-            }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "SE PASSER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÊTRE NOUVEAU",
-    "updated": "2026-04-23"
   },
   {
     "headword": "NÉCESSAIRE",
@@ -5422,6 +5686,100 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "NORMAL",
+    "letter": "N",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y SE PRODUIRE PT NEG X RÉAGIR À Y",
+          "exemples": [
+            {
+              "phrase": "Cet événement est tout à fait normal.",
+              "ea": "Quand ceci se produit, personne ne réagit."
+            },
+            {
+              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
+              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
+            },
+            {
+              "phrase": "Ses résultats d'examen sont normaux.",
+              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
+            }
+          ],
+          "fondateur1": "SE PRODUIRE",
+          "fondateur2": "RÉAGIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "X FAIRE Y (Y ÊTRE NORMAL)",
+          "exemples": [
+            {
+              "phrase": "C'est habituel pour Pierre.",
+              "ea": "Pierre le fait, donc c'est normal qu'il le fasse."
+            }
+          ]
+        }
+      ]
+    },
+    "template_syntaxique": "Y ÊTRE NORMAL",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "NOUVEAU",
+    "letter": "N",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (W SE PASSER) PT Y SE PASSER",
+          "exemples": [
+            {
+              "phrase": "J'ai acheté un nouveau livre sur la linguistique.",
+              "ea": "J'avais déjà un livre sur la linguistique, pourtant j'ai acheté un autre livre sur la linguistique."
+            }
+          ],
+          "fondateur1": "SE PASSER",
+          "fondateur2": "SE PASSER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE NOUVEAU",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "OBÉIR",
+    "letter": "O",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE DC Z FAIRE",
+          "exemples": [
+            {
+              "phrase": "Il obéit à ses parents.",
+              "ea": "Ses parents disent, donc il fait."
+            },
+            {
+              "phrase": "Obéir aux ordres.",
+              "ea": "On reçoit un ordre, donc on fait."
+            }
+          ],
+          "fondateur1": "DIRE",
+          "fondateur2": "FAIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Z OBÉIR À X",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "OBSERVER",
     "letter": "O",
     "template_syntaxique": "X OBSERVER Y",
@@ -5467,34 +5825,6 @@
       "externe": []
     },
     "template_syntaxique": "X OBTENIR Y",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "OBÉIR",
-    "letter": "O",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DIRE DC Z FAIRE",
-          "exemples": [
-            {
-              "phrase": "Il obéit à ses parents.",
-              "ea": "Ses parents disent, donc il fait."
-            },
-            {
-              "phrase": "Obéir aux ordres.",
-              "ea": "On reçoit un ordre, donc on fait."
-            }
-          ],
-          "fondateur1": "DIRE",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Z OBÉIR À X",
     "updated": "2026-04-23"
   },
   {
@@ -5830,6 +6160,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "PATIENT",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE LONG PT X SUPPORTER Y",
+          "exemples": [
+            {
+              "phrase": "Sois patient !",
+              "ea": "C’est long, pourtant supporte-le."
+            },
+            {
+              "phrase": "Une attente patiente.",
+              "ea": "C’est long, pourtant on le supporte."
+            }
+          ],
+          "fondateur1": "ÊTRE LONG",
+          "fondateur2": "SUPPORTER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il a été patient, pourtant il ne l’a pas supporté. » (B nié) et « ?Ce n’était pas long du tout, pourtant il a été patient. » (A nié) sont contradictoires — A et B sont internes.",
+    "template_syntaxique": "X ÊTRE PATIENT",
+    "updated": "2026-10-20"
+  },
+  {
     "headword": "PAUVRE",
     "letter": "P",
     "signification": {
@@ -6033,6 +6392,31 @@
     }
   },
   {
+    "headword": "PÉRIR",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE ACCIDENT DC *X* MOURIR DE Y",
+          "exemples": [
+            {
+              "phrase": "Les civils ont péri dans un raid.",
+              "ea": "Les raids sont survenus, donc les civils sont morts."
+            }
+          ],
+          "fondateur1": "ACCIDENT",
+          "fondateur2": "MOURIR",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent.",
+    "template_syntaxique": "X PÉRIR",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "PERSUADER",
     "letter": "P",
     "signification": {
@@ -6175,6 +6559,97 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "PRÉCAIRE",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y TENIR PT Y POUVOIR TOMBER",
+          "exemples": [
+            {
+              "phrase": "Sa situation est précaire.",
+              "ea": "Sa situation tient, pourtant elle peut tomber à tout moment."
+            },
+            {
+              "phrase": "Un équilibre précaire.",
+              "ea": "Ça tient debout, pourtant le moindre souffle le ferait tomber."
+            }
+          ],
+          "fondateur1": "TENIR",
+          "fondateur2": "TOMBER",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06"
+  },
+  {
+    "headword": "PRÉCIEUX",
+    "letter": "P",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
+          "exemples": [
+            {
+              "phrase": "C'est la guerre.",
+              "ea": "Ce qui a du prix, pourtant on le détruit."
+            },
+            {
+              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
+              "ea": "C'était précieux, pourtant on l'a détruit."
+            },
+            {
+              "phrase": "Ils ont brûlé la bibliothèque.",
+              "ea": "C'était précieux, pourtant ils l'ont détruit."
+            },
+            {
+              "phrase": "On envoie mourir des garçons de vingt ans.",
+              "ea": "Une vie a du prix, pourtant on la détruit."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "headword": "PRÉCIS",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X VISER Y DC X ATTEINDRE Y",
+          "exemples": [
+            {
+              "phrase": "Un geste précis.",
+              "ea": "Le geste vise quelque chose, donc il l'atteint."
+            },
+            {
+              "phrase": "Un tir précis.",
+              "ea": "Le tir vise la cible, donc il l'atteint."
+            },
+            {
+              "phrase": "Le mot précis.",
+              "ea": "En ayant ce mot, tu diras ce que tu veux."
+            }
+          ],
+          "fondateur1": "VISER",
+          "fondateur2": "ATTEINDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "Y ÊTRE PRÉCIS",
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "PRENDRE",
     "letter": "P",
     "signification": {
@@ -6216,6 +6691,41 @@
     },
     "template_syntaxique": "X PRENDRE Y",
     "nb": "FACILE et PRENDRE partagent le même aspect (X FAIRE DC X AVOIR Y) mais diffèrent par l'application : FACILE porte l'accent sur Y (l'objet est aisé à obtenir), PRENDRE sur X (l'agent s'empare). Cette parenté se voit dans les locutions du type « il suffit de prendre » : il n'y a qu'à faire le geste pour l'avoir.",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "PRÊTER",
+    "letter": "P",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "*X* DONNER Y À Z DC Z DEVOIR RENDRE Y À *X*",
+          "exemples": [
+            {
+              "phrase": "Pierre prête son vélo à Marie.",
+              "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
+            }
+          ],
+          "fondateur1": "DONNER",
+          "fondateur2": "DEVOIR RENDRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "Z PAYER À X (X PRÊTER À Z)",
+          "exemples": [
+            {
+              "phrase": "Pierre loue un appartement.",
+              "ea": "Pierre paye au propriétaire, donc le propriétaire lui prête l'appartement."
+            }
+          ]
+        }
+      ]
+    },
+    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
+    "template_syntaxique": "X PRÊTER Y À Z",
     "updated": "2026-04-23"
   },
   {
@@ -6490,132 +7000,6 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "PRÉCAIRE",
-    "letter": "P",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y TENIR PT Y POUVOIR TOMBER",
-          "exemples": [
-            {
-              "phrase": "Sa situation est précaire.",
-              "ea": "Sa situation tient, pourtant elle peut tomber à tout moment."
-            },
-            {
-              "phrase": "Un équilibre précaire.",
-              "ea": "Ça tient debout, pourtant le moindre souffle le ferait tomber."
-            }
-          ],
-          "fondateur1": "TENIR",
-          "fondateur2": "TOMBER",
-          "criteres": [],
-          "square_value": 1
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-06"
-  },
-  {
-    "headword": "PRÉCIEUX",
-    "letter": "P",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y ÊTRE PRÉCIEUX (NEG X DÉTRUIRE Y)",
-          "exemples": [
-            {
-              "phrase": "C'est la guerre.",
-              "ea": "Ce qui a du prix, pourtant on le détruit."
-            },
-            {
-              "phrase": "Des siècles de cathédrale, trois jours de bombardement.",
-              "ea": "C'était précieux, pourtant on l'a détruit."
-            },
-            {
-              "phrase": "Ils ont brûlé la bibliothèque.",
-              "ea": "C'était précieux, pourtant ils l'ont détruit."
-            },
-            {
-              "phrase": "On envoie mourir des garçons de vingt ans.",
-              "ea": "Une vie a du prix, pourtant on la détruit."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "headword": "PRÉCIS",
-    "letter": "P",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X VISER Y DC X ATTEINDRE Y",
-          "exemples": [
-            {
-              "phrase": "Un geste précis.",
-              "ea": "Le geste vise quelque chose, donc il l'atteint."
-            },
-            {
-              "phrase": "Un tir précis.",
-              "ea": "Le tir vise la cible, donc il l'atteint."
-            },
-            {
-              "phrase": "Le mot précis.",
-              "ea": "En ayant ce mot, tu diras ce que tu veux."
-            }
-          ],
-          "fondateur1": "VISER",
-          "fondateur2": "ATTEINDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÊTRE PRÉCIS",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "PRÊTER",
-    "letter": "P",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "*X* DONNER Y À Z DC Z DEVOIR RENDRE Y À *X*",
-          "exemples": [
-            {
-              "phrase": "Pierre prête son vélo à Marie.",
-              "ea": "Pierre donne son vélo à Marie, donc Marie doit le rendre à Pierre."
-            }
-          ],
-          "fondateur1": "DONNER",
-          "fondateur2": "DEVOIR RENDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "Z PAYER À X (X PRÊTER À Z)",
-          "exemples": [
-            {
-              "phrase": "Pierre loue un appartement.",
-              "ea": "Pierre paye au propriétaire, donc le propriétaire lui prête l'appartement."
-            }
-          ]
-        }
-      ]
-    },
-    "nb": "PRÊTER et EMPRUNTER ont le même aspect différencié par application.",
-    "template_syntaxique": "X PRÊTER Y À Z",
-    "updated": "2026-04-23"
-  },
-  {
     "headword": "PSYCHOSOMATIQUE",
     "letter": "P",
     "signification": {
@@ -6641,31 +7025,6 @@
       "externe": []
     },
     "template_syntaxique": "Y ÊTRE PSYCHOSOMATIQUE",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "PÉRIR",
-    "letter": "P",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y ÊTRE ACCIDENT DC *X* MOURIR DE Y",
-          "exemples": [
-            {
-              "phrase": "Les civils ont péri dans un raid.",
-              "ea": "Les raids sont survenus, donc les civils sont morts."
-            }
-          ],
-          "fondateur1": "ACCIDENT",
-          "fondateur2": "MOURIR",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "On ne dit pas « les militaires ont péri » car les militaires doivent affronter des raids, cela ne leur « survient » pas. Selon Sketch Engine, « civils », « innocents », « empire » sont les sujets les plus communs de PÉRIR. La survenance est effective par rapport à ceux qui subissent, non à ceux qui affrontent.",
-    "template_syntaxique": "X PÉRIR",
     "updated": "2026-04-23"
   },
   {
@@ -6700,6 +7059,76 @@
     "nb": "RADIN se rapporte à la dépense sans spécifier pour qui, ce qui le distingue de GÉNÉREUX (qui concerne le don à autrui). Les deux ne s'excluent pas : « C'était un saint […] Il donnait tout à ses pauvres. Mais, pour pouvoir tout donner, il ne pensait plus qu'à l'argent. Il était radin comme personne » (Duhamel). La structure « radin de Y » résiste car DÉPENSER n'accepte pas de complément d'objet de type Y ; la saturation se fait par une quantité : « radin de trois centimes ».",
     "template_syntaxique": "X ÊTRE RADIN",
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "RÉAGIR",
+    "letter": "R",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y SE PRODUIRE (X RÉAGIR À Y)",
+          "exemples": [
+            {
+              "phrase": "Cet événement est tout à fait normal.",
+              "ea": "Quand ceci se produit, personne ne réagit."
+            },
+            {
+              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
+              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
+            },
+            {
+              "phrase": "Ses résultats d'examen sont normaux.",
+              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "RÉCALCITRANT",
+    "letter": "R",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X POUSSER Y PT Y NEG CÉDER",
+          "exemples": [
+            {
+              "phrase": "On a eu beau insister, le témoin récalcitrant n'a rien lâché.",
+              "ea": "On pousse (on insiste), pourtant il ne cède pas."
+            },
+            {
+              "phrase": "Une mule récalcitrante.",
+              "ea": "On l'éperonne, pourtant elle refuse d'avancer."
+            },
+            {
+              "phrase": "Un élève récalcitrant.",
+              "ea": "On lui demande/ordonne, pourtant il n'obéit pas."
+            },
+            {
+              "phrase": "Des taches récalcitrantes, une serrure récalcitrante.",
+              "ea": "On agit dessus pour les faire céder, pourtant elles résistent."
+            }
+          ],
+          "fondateur1": "POUSSER",
+          "fondateur2": "CÉDER",
+          "criteres": [
+            {
+              "type": 5,
+              "texte": "Négation : « il n'est pas récalcitrant » → il cède dès qu'on le pousse (POUSSER DC CÉDER)."
+            }
+          ],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-06-06",
+    "nb": "Exemple de cancéreux récalcitrant qui fume malgré l'interdit. Le couple demander / obéir (registre d'autorité) est un effet caractérisant marginal ; l'ancrage primitif probant est pousser / céder. La donnée tranche en faveur du physique/processuel."
   },
   {
     "headword": "RECONNAÎTRE",
@@ -6839,6 +7268,125 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "RÉPONDRE",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Z POSER UNE QUESTION À X DC X DIRE Y À Z",
+          "exemples": [
+            {
+              "phrase": "Pierre répond à Marie.",
+              "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
+            }
+          ],
+          "fondateur1": "POSER UNE QUESTION",
+          "fondateur2": "DIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE FAUTE (X DEVOIR RÉPONDRE DE Y)",
+          "exemples": [
+            {
+              "phrase": "Tu es responsable de tes propres malheurs.",
+              "ea": "Tu es la cause de tes malheurs, donc tu dois en répondre."
+            },
+            {
+              "phrase": "Pierre est responsable de ce crime.",
+              "ea": "Le crime est une faute, donc Pierre doit en répondre."
+            },
+            {
+              "phrase": "Le tabac est responsable de nombreux cancers du poumon.",
+              "ea": "Le cancer du poumon se produit, donc le tabac doit en répondre."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X SAVOIR Y (X RÉPONDRE)",
+          "exemples": [
+            {
+              "phrase": "Il savait, il a répondu tout de suite.",
+              "ea": "Il savait, donc il a répondu."
+            },
+            {
+              "phrase": "Demande-lui, il saura te répondre.",
+              "ea": "Il sait, donc il peut répondre."
+            },
+            {
+              "phrase": "Je ne sais pas quoi te répondre.",
+              "ea": "Je ne sais pas, donc je ne réponds pas."
+            }
+          ]
+        }
+      ]
+    },
+    "template_syntaxique": "X RÉPONDRE À Z",
+    "updated": "2026-09-21"
+  },
+  {
+    "headword": "RÉSILIENCE",
+    "letter": "R",
+    "paradoxal": false,
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y ÊTRE TRAUMATIQUE PT X SE RELEVER",
+          "exemples": [
+            {
+              "phrase": "Elle a fait preuve d'une grande résilience après son accident.",
+              "ea": "L'accident était traumatique, pourtant elle s'est relevée."
+            },
+            {
+              "phrase": "La résilience de ce peuple est admirable.",
+              "ea": "Ce que ce peuple a vécu était traumatique, pourtant il s'est relevé."
+            },
+            {
+              "phrase": "C'est sa résilience qui lui a permis de rebondir.",
+              "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
+            }
+          ],
+          "fondateur1": "ÊTRE TRAUMATIQUE",
+          "fondateur2": "SE RELEVER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X AVOIR DE LA RÉSILIENCE",
+    "updated": "2026-04-23"
+  },
+  {
+    "headword": "RÉSOUDRE",
+    "letter": "R",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE PROBLÈME (X POUVOIR RÉSOUDRE Y)",
+          "exemples": [
+            {
+              "phrase": "Voilà la solution.",
+              "ea": "Il y a un problème, donc on peut le résoudre."
+            },
+            {
+              "phrase": "La tour s'effondre : on glisse un cube plus large en dessous.",
+              "ea": "La tour ne tient pas, donc on peut y remédier."
+            },
+            {
+              "phrase": "Quatre enfants et trois parts de gâteau : on coupe une part en deux.",
+              "ea": "Il manque une part, donc on peut arranger le partage."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "RESPONSABLE",
     "letter": "R",
     "signification": {
@@ -6966,6 +7514,35 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "RÊVER",
+    "letter": "R",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DORMIR PT X VOIR Y",
+          "exemples": [
+            {
+              "phrase": "J'ai rêvé de toi cette nuit.",
+              "ea": "Je dormais, pourtant je t'ai vu."
+            },
+            {
+              "phrase": "Elle rêve d'un monde meilleur.",
+              "ea": "Elle dort (ou se retire), pourtant elle voit un monde meilleur."
+            }
+          ],
+          "fondateur1": "DORMIR",
+          "fondateur2": "VOIR",
+          "criteres": [],
+          "square_value": 1
+        }
+      ],
+      "externe": []
+    },
+    "template_syntaxique": "X RÊVER DE Y",
+    "updated": "2026-06-05",
+    "nb": "Rêver lexicalise la face transgressive de X DORMIR DC NEG X VOIR Y. La doxa est : qui dort ne voit pas. Rêver dit le contraire : on dort, pourtant on voit."
+  },
+  {
     "headword": "RICHE",
     "letter": "R",
     "template_syntaxique": "X ÊTRE RICHE",
@@ -6995,222 +7572,32 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "RÉAGIR",
+    "headword": "RISQUE",
     "letter": "R",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y SE PRODUIRE (X RÉAGIR À Y)",
-          "exemples": [
-            {
-              "phrase": "Cet événement est tout à fait normal.",
-              "ea": "Quand ceci se produit, personne ne réagit."
-            },
-            {
-              "phrase": "Il est normal d'être fatigué après une nuit blanche.",
-              "ea": "Si tu es fatigué après une nuit blanche, il ne faut pas s'inquiéter."
-            },
-            {
-              "phrase": "Ses résultats d'examen sont normaux.",
-              "ea": "Tu obtiens ce résultat, donc tu n'as rien à faire."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "RÉCALCITRANT",
-    "letter": "R",
-    "template_syntaxique": "",
+    "template_syntaxique": "X PRENDRE UN RISQUE",
     "signification": {
       "interne": [
         {
-          "aspect": "X POUSSER Y PT Y NEG CÉDER",
+          "aspect": "X FAIRE Y DC Y POUVOIR MAL TOURNER",
           "exemples": [
             {
-              "phrase": "On a eu beau insister, le témoin récalcitrant n'a rien lâché.",
-              "ea": "On pousse (on insiste), pourtant il ne cède pas."
+              "phrase": "Tu veux grimper tout en haut de l'arbre ? C'est un risque.",
+              "ea": "Tu grimpes, donc tu peux tomber."
             },
             {
-              "phrase": "Une mule récalcitrante.",
-              "ea": "On l'éperonne, pourtant elle refuse d'avancer."
-            },
-            {
-              "phrase": "Un élève récalcitrant.",
-              "ea": "On lui demande/ordonne, pourtant il n'obéit pas."
-            },
-            {
-              "phrase": "Des taches récalcitrantes, une serrure récalcitrante.",
-              "ea": "On agit dessus pour les faire céder, pourtant elles résistent."
+              "phrase": "Il y a un risque à prêter de l'argent à quelqu'un.",
+              "ea": "Tu prêtes, donc tu peux perdre ton argent."
             }
           ],
-          "fondateur1": "POUSSER",
-          "fondateur2": "CÉDER",
-          "criteres": [
-            {
-              "type": 5,
-              "texte": "Négation : « il n'est pas récalcitrant » → il cède dès qu'on le pousse (POUSSER DC CÉDER)."
-            }
-          ],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-06",
-    "nb": "Exemple de cancéreux récalcitrant qui fume malgré l'interdit. Le couple demander / obéir (registre d'autorité) est un effet caractérisant marginal ; l'ancrage primitif probant est pousser / céder. La donnée tranche en faveur du physique/processuel."
-  },
-  {
-    "headword": "RÉPONDRE",
-    "letter": "R",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Z POSER UNE QUESTION À X DC X DIRE Y À Z",
-          "exemples": [
-            {
-              "phrase": "Pierre répond à Marie.",
-              "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
-            }
-          ],
-          "fondateur1": "POSER UNE QUESTION",
-          "fondateur2": "DIRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": [
-        {
-          "quasibloc": "Y ÊTRE FAUTE (X DEVOIR RÉPONDRE DE Y)",
-          "exemples": [
-            {
-              "phrase": "Tu es responsable de tes propres malheurs.",
-              "ea": "Tu es la cause de tes malheurs, donc tu dois en répondre."
-            },
-            {
-              "phrase": "Pierre est responsable de ce crime.",
-              "ea": "Le crime est une faute, donc Pierre doit en répondre."
-            },
-            {
-              "phrase": "Le tabac est responsable de nombreux cancers du poumon.",
-              "ea": "Le cancer du poumon se produit, donc le tabac doit en répondre."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X SAVOIR Y (X RÉPONDRE)",
-          "exemples": [
-            {
-              "phrase": "Il savait, il a répondu tout de suite.",
-              "ea": "Il savait, donc il a répondu."
-            },
-            {
-              "phrase": "Demande-lui, il saura te répondre.",
-              "ea": "Il sait, donc il peut répondre."
-            },
-            {
-              "phrase": "Je ne sais pas quoi te répondre.",
-              "ea": "Je ne sais pas, donc je ne réponds pas."
-            }
-          ]
-        }
-      ]
-    },
-    "template_syntaxique": "X RÉPONDRE À Z",
-    "updated": "2026-09-21"
-  },
-  {
-    "headword": "RÉSILIENCE",
-    "letter": "R",
-    "paradoxal": false,
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y ÊTRE TRAUMATIQUE PT X SE RELEVER",
-          "exemples": [
-            {
-              "phrase": "Elle a fait preuve d'une grande résilience après son accident.",
-              "ea": "L'accident était traumatique, pourtant elle s'est relevée."
-            },
-            {
-              "phrase": "La résilience de ce peuple est admirable.",
-              "ea": "Ce que ce peuple a vécu était traumatique, pourtant il s'est relevé."
-            },
-            {
-              "phrase": "C'est sa résilience qui lui a permis de rebondir.",
-              "ea": "Ce qu'il a subi était traumatique, pourtant il s'est relevé."
-            }
-          ],
-          "fondateur1": "ÊTRE TRAUMATIQUE",
-          "fondateur2": "SE RELEVER",
+          "fondateur1": "FAIRE",
+          "fondateur2": "POUVOIR MAL TOURNER",
           "criteres": [],
           "square_value": null
         }
       ],
       "externe": []
     },
-    "template_syntaxique": "X AVOIR DE LA RÉSILIENCE",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "RÉSOUDRE",
-    "letter": "R",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "Y ÊTRE PROBLÈME (X POUVOIR RÉSOUDRE Y)",
-          "exemples": [
-            {
-              "phrase": "Voilà la solution.",
-              "ea": "Il y a un problème, donc on peut le résoudre."
-            },
-            {
-              "phrase": "La tour s'effondre : on glisse un cube plus large en dessous.",
-              "ea": "La tour ne tient pas, donc on peut y remédier."
-            },
-            {
-              "phrase": "Quatre enfants et trois parts de gâteau : on coupe une part en deux.",
-              "ea": "Il manque une part, donc on peut arranger le partage."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "headword": "RÊVER",
-    "letter": "R",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X DORMIR PT X VOIR Y",
-          "exemples": [
-            {
-              "phrase": "J'ai rêvé de toi cette nuit.",
-              "ea": "Je dormais, pourtant je t'ai vu."
-            },
-            {
-              "phrase": "Elle rêve d'un monde meilleur.",
-              "ea": "Elle dort (ou se retire), pourtant elle voit un monde meilleur."
-            }
-          ],
-          "fondateur1": "DORMIR",
-          "fondateur2": "VOIR",
-          "criteres": [],
-          "square_value": 1
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X RÊVER DE Y",
-    "updated": "2026-06-05",
-    "nb": "Rêver lexicalise la face transgressive de X DORMIR DC NEG X VOIR Y. La doxa est : qui dort ne voit pas. Rêver dit le contraire : on dort, pourtant on voit."
+    "updated": "2026-10-22"
   },
   {
     "headword": "S'ARRÊTER",
@@ -7277,6 +7664,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "S'ÉTEINDRE",
+    "letter": "S",
+    "template_syntaxique": "X S'ÉTEINDRE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "PERF (X BRÛLER) PT NEG X BRÛLER",
+          "fondateur1": "BRÛLER",
+          "fondateur2": "BRÛLER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Le feu s'est éteint.",
+              "ea": "Il a brûlé, mais maintenant il ne brûle plus."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-05-04"
+  },
+  {
     "headword": "S'IDENTIFIER",
     "letter": "S",
     "template_syntaxique": "X S'IDENTIFIER COMME Y",
@@ -7332,30 +7743,6 @@
       ]
     },
     "updated": "2026-04-23"
-  },
-  {
-    "headword": "S'ÉTEINDRE",
-    "letter": "S",
-    "template_syntaxique": "X S'ÉTEINDRE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "PERF (X BRÛLER) PT NEG X BRÛLER",
-          "fondateur1": "BRÛLER",
-          "fondateur2": "BRÛLER",
-          "criteres": [],
-          "square_value": null,
-          "exemples": [
-            {
-              "phrase": "Le feu s'est éteint.",
-              "ea": "Il a brûlé, mais maintenant il ne brûle plus."
-            }
-          ]
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-05-04"
   },
   {
     "headword": "SACRIFIER",
@@ -7983,6 +8370,26 @@
     "updated": "2026-06-21"
   },
   {
+    "headword": "SÉPARER",
+    "letter": "S",
+    "template_syntaxique": "",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "X SÉPARER DE Y (NEG W UNIR X ET Y)",
+          "exemples": [
+            {
+              "phrase": "La Vierge est notre porte vers le ciel.",
+              "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
+            }
+          ]
+        }
+      ]
+    },
+    "updated": "2026-04-23"
+  },
+  {
     "headword": "SERVIR",
     "letter": "S",
     "signification": {
@@ -8285,26 +8692,6 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE SYMPTOMATIQUE",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "SÉPARER",
-    "letter": "S",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "X SÉPARER DE Y (NEG W UNIR X ET Y)",
-          "exemples": [
-            {
-              "phrase": "La Vierge est notre porte vers le ciel.",
-              "ea": "Même si nous sommes séparés du Ciel, la Vierge nous permet de communiquer avec lui."
-            }
-          ]
-        }
-      ]
-    },
     "updated": "2026-04-23"
   },
   {
@@ -9210,356 +9597,5 @@
       "externe": []
     },
     "updated": "2026-06-07"
-  },
-  {
-    "headword": "ÉCHOUER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X FAIRE Y PT NEG X AVOIR Z",
-          "exemples": [
-            {
-              "phrase": "J'ai échoué à l'examen.",
-              "ea": "J'ai fait quelque chose, pourtant je n'ai pas eu mon examen."
-            }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "AVOIR",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "X ÉCHOUER À Z",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉCONOME",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG X AVOIR BESOIN DE Y DC NEG X DÉPENSER Y",
-          "exemples": [
-            {
-              "phrase": "Pierre est économe.",
-              "ea": "Il n'a pas besoin de telle chose, donc il ne dépense pas pour elle."
-            }
-          ],
-          "fondateur1": "AVOIR BESOIN",
-          "fondateur2": "DÉPENSER",
-          "criteres": [
-            {
-              "type": 4,
-              "texte": "Lien doxal : quand on n'a pas besoin de quelque chose, on ne dépense pas pour l'avoir."
-            }
-          ],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "ÉCONOME sert souvent de réfutation à l'accusation de RADIN : « Je ne suis pas radin, je suis économe. »",
-    "template_syntaxique": "X ÊTRE ÉCONOME",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉCONOMISER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG *X* DÉPENSER DC *X* AVOIR ARGENT",
-          "exemples": [
-            {
-              "phrase": "Pierre économise pour les vacances.",
-              "ea": "Pierre ne dépense pas, donc il a de l'argent."
-            }
-          ],
-          "fondateur1": "DÉPENSER",
-          "fondateur2": "AVOIR ARGENT",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "",
-    "template_syntaxique": "X ÉCONOMISER",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉGAL",
-    "letter": "É",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X PARTAGER Y AVEC Z DC X ÊTRE MÊME QUE Z",
-          "exemples": [
-            {
-              "phrase": "Nous sommes égaux en droit.",
-              "ea": "Nous partageons la citoyenneté, donc nous avons les mêmes droits."
-            }
-          ],
-          "fondateur1": "PARTAGER",
-          "fondateur2": "ÊTRE MÊME",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-21"
-  },
-  {
-    "headword": "ÉLÉGANT",
-    "letter": "É",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "NEG DÉTAILS DIFFÉRENTS DC HARMONIE",
-          "exemples": [
-            {
-              "phrase": "Une tenue élégante.",
-              "ea": "Les détails ne sont pas différents, donc c'est harmonieux."
-            }
-          ],
-          "fondateur1": "DÉTAILS DIFFÉRENTS",
-          "fondateur2": "HARMONIE",
-          "criteres": [],
-          "square_value": 4
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-06-07"
-  },
-  {
-    "headword": "ÉNERVER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y SE RÉPÉTER DC Y DÉRANGER X",
-          "exemples": [
-            {
-              "phrase": "Le bruit de l'horloge m'énerve.",
-              "ea": "L'horloge fait tic-tac à répétition, donc cette répétition m'irrite."
-            }
-          ],
-          "fondateur1": "SE RÉPÉTER",
-          "fondateur2": "DÉRANGER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÉNERVER X",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÉTONNER",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X APPRENDRE Y PT PERF (NEG X ATTENDRE Y)",
-          "exemples": [
-            {
-              "phrase": "Son comportement m'étonne.",
-              "ea": "J'ai appris comment il se comporte, pourtant je ne m'attendais pas à cela."
-            }
-          ],
-          "fondateur1": "APPRENDRE",
-          "fondateur2": "ATTENDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "template_syntaxique": "Y ÉTONNER X",
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "ÊTRE",
-    "letter": "E",
-    "template_syntaxique": "",
-    "signification": {
-      "interne": [],
-      "externe": [
-        {
-          "quasibloc": "PERF (X ÊTRE) (X ÊTRE)",
-          "exemples": [
-            {
-              "phrase": "Il vit à Paris.",
-              "ea": "Il a été à Paris, donc il est à Paris."
-            }
-          ]
-        },
-        {
-          "quasibloc": "PERF (NEG X ÊTRE) (NEG X ÊTRE)",
-          "exemples": [
-            {
-              "phrase": "Une tendance est apparue.",
-              "ea": "Il n'y a pas eu cette tendance, pourtant il y a cette tendance maintenant."
-            },
-            {
-              "phrase": "Le soleil apparaît.",
-              "ea": "Le soleil n'était pas là, pourtant il est là maintenant."
-            }
-          ]
-        }
-      ]
-    },
-    "updated": "2026-04-23"
-  },
-  {
-    "headword": "JALOUX",
-    "letter": "J",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X AIMER Z DC NEG X VOULOIR PARTAGER Z",
-          "exemples": [
-            {
-              "phrase": "Il est jaloux de sa femme.",
-              "ea": "Il aime sa femme, donc il ne veut pas la partager."
-            },
-            {
-              "phrase": "Un amant jaloux.",
-              "ea": "Il aime, donc il ne veut pas partager celle qu’il aime."
-            }
-          ],
-          "fondateur1": "AIMER",
-          "fondateur2": "VOULOIR PARTAGER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il était jaloux, pourtant il voulait bien la partager. » (B nié) et « ?Il ne l’aimait pas, pourtant il était jaloux. » (A nié) sont contradictoires — A et B sont internes.",
-    "template_syntaxique": "X ÊTRE JALOUX DE Z",
-    "updated": "2026-10-20"
-  },
-  {
-    "headword": "PATIENT",
-    "letter": "P",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y ÊTRE LONG PT X SUPPORTER Y",
-          "exemples": [
-            {
-              "phrase": "Sois patient !",
-              "ea": "C’est long, pourtant supporte-le."
-            },
-            {
-              "phrase": "Une attente patiente.",
-              "ea": "C’est long, pourtant on le supporte."
-            }
-          ],
-          "fondateur1": "ÊTRE LONG",
-          "fondateur2": "SUPPORTER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?Il a été patient, pourtant il ne l’a pas supporté. » (B nié) et « ?Ce n’était pas long du tout, pourtant il a été patient. » (A nié) sont contradictoires — A et B sont internes.",
-    "template_syntaxique": "X ÊTRE PATIENT",
-    "updated": "2026-10-20"
-  },
-  {
-    "headword": "ÉTRANGE",
-    "letter": "E",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X VOIR Y PT NEG X COMPRENDRE Y",
-          "exemples": [
-            {
-              "phrase": "C’est étrange.",
-              "ea": "Je le vois, pourtant je ne le comprends pas."
-            },
-            {
-              "phrase": "Un bruit étrange.",
-              "ea": "On l’entend, pourtant on ne le comprend pas."
-            }
-          ],
-          "fondateur1": "VOIR",
-          "fondateur2": "COMPRENDRE",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "nb": "Critère d’extériorisation des mots fondateurs (thèse, « Critères », 1.4) : « ?C’était étrange, pourtant je comprenais très bien. » (B nié) et « ?Je ne l’avais pas vu, pourtant il était étrange. » (A nié) sont contradictoires — A et B sont internes. Voir le chapitre 3.4 de la thèse.",
-    "template_syntaxique": "Y ÊTRE ÉTRANGE",
-    "updated": "2026-10-20"
-  },
-  {
-    "headword": "RISQUE",
-    "letter": "R",
-    "template_syntaxique": "X PRENDRE UN RISQUE",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "X FAIRE Y DC Y POUVOIR MAL TOURNER",
-          "exemples": [
-            {
-              "phrase": "Tu veux grimper tout en haut de l'arbre ? C'est un risque.",
-              "ea": "Tu grimpes, donc tu peux tomber."
-            },
-            {
-              "phrase": "Il y a un risque à prêter de l'argent à quelqu'un.",
-              "ea": "Tu prêtes, donc tu peux perdre ton argent."
-            }
-          ],
-          "fondateur1": "FAIRE",
-          "fondateur2": "POUVOIR MAL TOURNER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-10-22"
-  },
-  {
-    "headword": "MENACE",
-    "letter": "M",
-    "template_syntaxique": "Y ÊTRE UNE MENACE POUR X",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y SE PASSER DC UN MAL POUVOIR ARRIVER",
-          "exemples": [
-            {
-              "phrase": "La sécheresse menace la récolte.",
-              "ea": "Il y a une sécheresse, donc un mal peut arriver à la récolte."
-            },
-            {
-              "phrase": "Des nuages noirs approchent : l’orage menace.",
-              "ea": "Les nuages approchent, donc un orage peut arriver."
-            }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "POUVOIR ARRIVER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-10-22"
   }
 ]
