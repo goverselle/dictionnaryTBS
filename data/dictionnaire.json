@@ -5227,6 +5227,38 @@
     "updated": "2026-10-22"
   },
   {
+    "headword": "MENACER",
+    "letter": "M",
+    "template_syntaxique": "X MENACER Y",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X DIRE DC X ALLER FAIRE MAL À Y",
+          "exemples": [
+            {
+              "phrase": "Il m'a menacée.",
+              "ea": "Il a dit quelque chose, donc il allait me faire mal."
+            },
+            {
+              "phrase": "Il menace son voisin.",
+              "ea": "Il dit quelque chose à son voisin, donc il va lui faire mal."
+            },
+            {
+              "phrase": "Je ne t'ai pas menacée.",
+              "ea": "J'ai dit, pourtant je n'allais pas te faire mal."
+            }
+          ],
+          "fondateur1": "DIRE",
+          "fondateur2": "ALLER FAIRE MAL",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-23"
+  },
+  {
     "headword": "MER",
     "letter": "M",
     "template_syntaxique": "",
