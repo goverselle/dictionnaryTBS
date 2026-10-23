@@ -9378,6 +9378,34 @@
     "updated": "2026-06-07"
   },
   {
+    "headword": "VERGLAS",
+    "letter": "V",
+    "template_syntaxique": "IL Y A DU VERGLAS",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "GLISSER DC Y POUVOIR FAIRE MAL",
+          "exemples": [
+            {
+              "phrase": "Attention, il y a du verglas.",
+              "ea": "Ça glisse, donc ça peut faire mal."
+            },
+            {
+              "phrase": "Il y avait du verglas ce matin.",
+              "ea": "Ça glissait, donc on pouvait se faire mal."
+            }
+          ],
+          "fondateur1": "GLISSER",
+          "fondateur2": "POUVOIR FAIRE MAL",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-23"
+  },
+  {
     "headword": "VIEILLOT",
     "letter": "V",
     "signification": {
