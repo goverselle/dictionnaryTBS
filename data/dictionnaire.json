@@ -5243,7 +5243,21 @@
           "square_value": null
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "Y MENACER (Y ARRIVER)",
+          "exemples": [
+            {
+              "phrase": "L'orage menaçait, et il est arrivé.",
+              "ea": "L'orage menaçait, donc il est arrivé."
+            },
+            {
+              "phrase": "La crise menaçait, pourtant elle n'est pas arrivée.",
+              "ea": "La crise menaçait, pourtant elle n'est pas arrivée."
+            }
+          ]
+        }
+      ]
     },
     "updated": "2026-10-23"
   },
