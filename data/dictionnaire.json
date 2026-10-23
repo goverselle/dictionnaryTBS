@@ -5199,34 +5199,6 @@
     "updated": "2026-04-23"
   },
   {
-    "headword": "MENACE",
-    "letter": "M",
-    "template_syntaxique": "Y ÊTRE UNE MENACE POUR X",
-    "signification": {
-      "interne": [
-        {
-          "aspect": "Y SE PASSER DC UN MAL POUVOIR ARRIVER",
-          "exemples": [
-            {
-              "phrase": "La sécheresse menace la récolte.",
-              "ea": "Il y a une sécheresse, donc un mal peut arriver à la récolte."
-            },
-            {
-              "phrase": "Des nuages noirs approchent : l’orage menace.",
-              "ea": "Les nuages approchent, donc un orage peut arriver."
-            }
-          ],
-          "fondateur1": "SE PASSER",
-          "fondateur2": "POUVOIR ARRIVER",
-          "criteres": [],
-          "square_value": null
-        }
-      ],
-      "externe": []
-    },
-    "updated": "2026-10-22"
-  },
-  {
     "headword": "MENACER",
     "letter": "M",
     "template_syntaxique": "X MENACER Z",
@@ -5250,6 +5222,23 @@
           ],
           "fondateur1": "DIRE",
           "fondateur2": "ALLER FAIRE MAL",
+          "criteres": [],
+          "square_value": null
+        },
+        {
+          "aspect": "Y ÊTRE MAL DC Y POUVOIR ARRIVER",
+          "exemples": [
+            {
+              "phrase": "L'orage menace.",
+              "ea": "L'orage est un mal, donc il peut arriver."
+            },
+            {
+              "phrase": "La sécheresse menace la récolte.",
+              "ea": "La sécheresse est un mal pour la récolte, donc elle peut arriver."
+            }
+          ],
+          "fondateur1": "ÊTRE MAL",
+          "fondateur2": "POUVOIR ARRIVER",
           "criteres": [],
           "square_value": null
         }
