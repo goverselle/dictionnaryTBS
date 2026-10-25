@@ -3733,6 +3733,15 @@
               "ea": "Elle devrait informer, pourtant on ne s'y fie pas."
             }
           ]
+        },
+        {
+          "quasibloc": "NEG X POUVOIR FAIRE Y (NEG X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Je ne peux pas venir ce soir.",
+              "ea": "Je ne peux pas venir, donc je ne viens pas."
+            }
+          ]
         }
       ]
     },
@@ -6630,6 +6639,15 @@
             {
               "phrase": "Quand on veut, on peut.",
               "ea": "Si tu veux, tu peux."
+            }
+          ]
+        },
+        {
+          "quasibloc": "NEG X POUVOIR FAIRE Y (NEG X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Je ne peux pas venir ce soir.",
+              "ea": "Je ne peux pas venir, donc je ne viens pas."
             }
           ]
         }
