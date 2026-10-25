@@ -743,19 +743,6 @@
           ]
         },
         {
-          "quasibloc": "X VOULOIR Y (X AVOIR Y)",
-          "exemples": [
-            {
-              "phrase": "Ce repas m'a satisfait.",
-              "ea": "Je voulais un bon repas, donc je l'ai eu."
-            },
-            {
-              "phrase": "Pierre a satisfait sa curiosité.",
-              "ea": "Il voulait savoir, donc il a su."
-            }
-          ]
-        },
-        {
           "quasibloc": "X AVOIR Y (X POUVOIR FAIRE W)",
           "exemples": [
             {
@@ -5892,7 +5879,21 @@
           "square_value": null
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "X VOULOIR Y (X OBTENIR Y)",
+          "exemples": [
+            {
+              "phrase": "Ce repas m'a satisfait.",
+              "ea": "Je voulais un bon repas, donc je l'ai obtenu."
+            },
+            {
+              "phrase": "Pierre a satisfait sa curiosité.",
+              "ea": "Il voulait savoir, donc il a obtenu une réponse."
+            }
+          ]
+        }
+      ]
     },
     "template_syntaxique": "X OBTENIR Y",
     "updated": "2026-04-23"
@@ -9629,15 +9630,15 @@
       "interne": [],
       "externe": [
         {
-          "quasibloc": "X VOULOIR Y (X AVOIR Y)",
+          "quasibloc": "X VOULOIR Y (X OBTENIR Y)",
           "exemples": [
             {
               "phrase": "Ce repas m'a satisfait.",
-              "ea": "Je voulais un bon repas, donc je l'ai eu."
+              "ea": "Je voulais un bon repas, donc je l'ai obtenu."
             },
             {
               "phrase": "Pierre a satisfait sa curiosité.",
-              "ea": "Il voulait savoir, donc il a su."
+              "ea": "Il voulait savoir, donc il a obtenu une réponse."
             }
           ]
         },
