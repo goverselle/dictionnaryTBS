@@ -3456,6 +3456,15 @@
           ]
         },
         {
+          "quasibloc": "X VOULOIR FAIRE Y (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre voulait partir, il est parti.",
+              "ea": "Pierre veut partir, donc il part."
+            }
+          ]
+        },
+        {
           "quasibloc": "X AVOIR Y (X POUVOIR FAIRE)",
           "exemples": [
             {
