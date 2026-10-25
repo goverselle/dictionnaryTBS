@@ -880,6 +880,15 @@
               "ea": "Il n'a pas d'argent, donc il veut de l'argent."
             }
           ]
+        },
+        {
+          "quasibloc": "X AVOIR Y (NEG X VOULOIR AVOIR Y′)",
+          "exemples": [
+            {
+              "phrase": "Il a un croissant, mais il en veut un autre.",
+              "ea": "Il a un croissant, donc il n'en veut pas un autre."
+            }
+          ]
         }
       ]
     },
