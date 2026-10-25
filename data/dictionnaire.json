@@ -9657,6 +9657,15 @@
               "ea": "Il n'a pas d'argent, donc il veut de l'argent."
             }
           ]
+        },
+        {
+          "quasibloc": "X VOULOIR FAIRE Y (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Pierre voulait partir, il est parti.",
+              "ea": "Pierre veut partir, donc il part."
+            }
+          ]
         }
       ]
     },
