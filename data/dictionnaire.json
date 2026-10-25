@@ -2491,6 +2491,15 @@
               "ea": "Marie a posé une question, donc Pierre a dit quelque chose."
             }
           ]
+        },
+        {
+          "quasibloc": "X VOULOIR Y (X DIRE A)",
+          "exemples": [
+            {
+              "phrase": "Je voudrais un café, s'il vous plaît.",
+              "ea": "Je veux un café, donc je dis « je veux un café »."
+            }
+          ]
         }
       ]
     },
@@ -9674,6 +9683,15 @@
             {
               "phrase": "Pierre voulait partir, il est parti.",
               "ea": "Pierre veut partir, donc il part."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X VOULOIR Y (X DIRE A)",
+          "exemples": [
+            {
+              "phrase": "Je voudrais un café, s'il vous plaît.",
+              "ea": "Je veux un café, donc je dis « je veux un café »."
             }
           ]
         }
