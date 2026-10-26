@@ -876,6 +876,15 @@
               "ea": "Il a un croissant, donc il n'en veut pas un autre."
             }
           ]
+        },
+        {
+          "quasibloc": "X VOULOIR AVOIR Y (X POUVOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Anna veut une pomme, mais elle ne peut pas l'avoir.",
+              "ea": "Anna veut (avoir) une pomme, donc elle peut l'avoir."
+            }
+          ]
         }
       ]
     },
@@ -9836,6 +9845,15 @@
             {
               "phrase": "Je voudrais un café, s'il vous plaît.",
               "ea": "Je veux un café, donc je dis « je veux un café »."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X VOULOIR AVOIR Y (X POUVOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Anna veut une pomme, mais elle ne peut pas l'avoir.",
+              "ea": "Anna veut (avoir) une pomme, donc elle peut l'avoir."
             }
           ]
         }
