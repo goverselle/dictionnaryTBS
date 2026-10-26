@@ -6295,7 +6295,7 @@
           ]
         },
         {
-          "quasibloc": "X PASSER (X PRENDRE À Z)",
+          "quasibloc": "*X* PASSER (*X* PRENDRE À Z)",
           "exemples": [
             {
               "phrase": "Avec le temps, j'ai moins d'énergie.",
@@ -6913,7 +6913,7 @@
       ],
       "externe": [
         {
-          "quasibloc": "X PASSER (X PRENDRE À Z)",
+          "quasibloc": "*X* PASSER (*X* PRENDRE À Z)",
           "exemples": [
             {
               "phrase": "Avec le temps, j'ai moins d'énergie.",
