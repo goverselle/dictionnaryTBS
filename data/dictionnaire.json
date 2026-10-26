@@ -876,15 +876,6 @@
               "ea": "Il a un croissant, donc il n'en veut pas un autre."
             }
           ]
-        },
-        {
-          "quasibloc": "X MANGER Y (NEG X AVOIR Y)",
-          "exemples": [
-            {
-              "phrase": "Paul a mangé la pomme.",
-              "ea": "Paul mange la pomme, donc il ne l'a plus."
-            }
-          ]
         }
       ]
     },
@@ -5201,17 +5192,7 @@
     "template_syntaxique": "X MANGER Y",
     "signification": {
       "interne": [],
-      "externe": [
-        {
-          "quasibloc": "X MANGER Y (NEG X AVOIR Y)",
-          "exemples": [
-            {
-              "phrase": "Paul a mangé la pomme.",
-              "ea": "Paul mange la pomme, donc il ne l'a plus."
-            }
-          ]
-        }
-      ]
+      "externe": []
     },
     "updated": "2026-10-26"
   },
