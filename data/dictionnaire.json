@@ -1207,6 +1207,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "CAHIER",
+    "letter": "C",
+    "template_syntaxique": "UN CAHIER",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X POUVOIR ÉCRIRE DANS Y",
+          "exemples": [
+            {
+              "phrase": "Marie a un cahier.",
+              "ea": "Marie a un cahier, donc elle peut écrire dedans."
+            }
+          ],
+          "fondateur1": "AVOIR",
+          "fondateur2": "POUVOIR ÉCRIRE",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-26"
+  },
+  {
     "headword": "CAUSER",
     "letter": "C",
     "signification": {
@@ -3742,6 +3766,15 @@
               "ea": "Je ne peux pas venir, donc je ne viens pas."
             }
           ]
+        },
+        {
+          "quasibloc": "X POUVOIR FAIRE Y (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Anna a une pomme : elle peut la manger.",
+              "ea": "Elle peut manger la pomme, donc elle la mange."
+            }
+          ]
         }
       ]
     },
@@ -3973,6 +4006,31 @@
       ]
     },
     "updated": "2026-04-23"
+  },
+  {
+    "headword": "GÂTEAU",
+    "letter": "G",
+    "template_syntaxique": "UN GÂTEAU",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X POUVOIR MANGER Y",
+          "exemples": [
+            {
+              "phrase": "Paul a un gâteau.",
+              "ea": "Paul a un gâteau, donc il peut le manger (hérité de NOURRITURE)."
+            }
+          ],
+          "fondateur1": "AVOIR",
+          "fondateur2": "POUVOIR MANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-26",
+    "herite": "NOURRITURE"
   },
   {
     "headword": "GÉNÉREUX",
@@ -5803,6 +5861,30 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "NOURRITURE",
+    "letter": "N",
+    "template_syntaxique": "Y ÊTRE NOURRITURE",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X POUVOIR MANGER Y",
+          "exemples": [
+            {
+              "phrase": "Il y a de la nourriture sur la table.",
+              "ea": "Si on l'a, on peut la manger."
+            }
+          ],
+          "fondateur1": "AVOIR",
+          "fondateur2": "POUVOIR MANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-26"
+  },
+  {
     "headword": "NOUVEAU",
     "letter": "N",
     "signification": {
@@ -6531,6 +6613,31 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "POMME",
+    "letter": "P",
+    "template_syntaxique": "UNE POMME",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X AVOIR *Y* DC X POUVOIR MANGER Y",
+          "exemples": [
+            {
+              "phrase": "Anna a une pomme.",
+              "ea": "Anna a une pomme, donc elle peut la manger (hérité de NOURRITURE)."
+            }
+          ],
+          "fondateur1": "AVOIR",
+          "fondateur2": "POUVOIR MANGER",
+          "criteres": [],
+          "square_value": null
+        }
+      ],
+      "externe": []
+    },
+    "updated": "2026-10-26",
+    "herite": "NOURRITURE"
+  },
+  {
     "headword": "PORTE",
     "letter": "P",
     "signification": {
@@ -6648,6 +6755,15 @@
             {
               "phrase": "Je ne peux pas venir ce soir.",
               "ea": "Je ne peux pas venir, donc je ne viens pas."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X POUVOIR FAIRE Y (X FAIRE Y)",
+          "exemples": [
+            {
+              "phrase": "Anna a une pomme : elle peut la manger.",
+              "ea": "Elle peut manger la pomme, donc elle la mange."
             }
           ]
         }
