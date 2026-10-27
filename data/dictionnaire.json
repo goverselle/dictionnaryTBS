@@ -852,7 +852,7 @@
           ]
         },
         {
-          "quasibloc": "NEG X AVOIR Y (X VOULOIR Y)",
+          "quasibloc": "NEG X AVOIR Y (X VOULOIR AVOIR Y)",
           "exemples": [
             {
               "phrase": "J'ai besoin d'une voiture.",
@@ -9823,7 +9823,7 @@
           ]
         },
         {
-          "quasibloc": "NEG X AVOIR Y (X VOULOIR Y)",
+          "quasibloc": "NEG X AVOIR Y (X VOULOIR AVOIR Y)",
           "exemples": [
             {
               "phrase": "J'ai besoin d'une voiture.",
