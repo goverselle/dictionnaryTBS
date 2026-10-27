@@ -885,6 +885,15 @@
               "ea": "Anna veut (avoir) une pomme, donc elle peut l'avoir."
             }
           ]
+        },
+        {
+          "quasibloc": "X VOULOIR AVOIR Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Anna veut une pomme, mais elle n'en a pas.",
+              "ea": "Anna veut (avoir) une pomme, donc elle en a une."
+            }
+          ]
         }
       ]
     },
@@ -9854,6 +9863,15 @@
             {
               "phrase": "Anna veut une pomme, mais elle ne peut pas l'avoir.",
               "ea": "Anna veut (avoir) une pomme, donc elle peut l'avoir."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X VOULOIR AVOIR Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Anna veut une pomme, mais elle n'en a pas.",
+              "ea": "Anna veut (avoir) une pomme, donc elle en a une."
             }
           ]
         }
