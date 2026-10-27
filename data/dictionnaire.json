@@ -2535,11 +2535,20 @@
           ]
         },
         {
-          "quasibloc": "X VOULOIR Y (X DIRE A)",
+          "quasibloc": "X VOULOIR AVOIR Y (X DIRE A)",
           "exemples": [
             {
               "phrase": "Je voudrais un café, s'il vous plaît.",
-              "ea": "Je veux un café, donc je dis « je veux un café »."
+              "ea": "Je veux (avoir) un café, donc je dis « je veux un café »."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X VOULOIR FAIRE Y (X DIRE A)",
+          "exemples": [
+            {
+              "phrase": "Anna veut manger une pomme, mais elle ne le dit pas.",
+              "ea": "Anna veut manger une pomme, donc elle dit qu'elle veut manger une pomme."
             }
           ]
         }
@@ -9849,11 +9858,20 @@
           ]
         },
         {
-          "quasibloc": "X VOULOIR Y (X DIRE A)",
+          "quasibloc": "X VOULOIR AVOIR Y (X DIRE A)",
           "exemples": [
             {
               "phrase": "Je voudrais un café, s'il vous plaît.",
-              "ea": "Je veux un café, donc je dis « je veux un café »."
+              "ea": "Je veux (avoir) un café, donc je dis « je veux un café »."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X VOULOIR FAIRE Y (X DIRE A)",
+          "exemples": [
+            {
+              "phrase": "Anna veut manger une pomme, mais elle ne le dit pas.",
+              "ea": "Anna veut manger une pomme, donc elle dit qu'elle veut manger une pomme."
             }
           ]
         },
