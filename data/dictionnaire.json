@@ -620,19 +620,6 @@
           ]
         },
         {
-          "quasibloc": "X VOULOIR AVOIR Y (X FAIRE)",
-          "exemples": [
-            {
-              "phrase": "Il cherche ses clés.",
-              "ea": "Il veut avoir ses clés, donc il fait quelque chose."
-            },
-            {
-              "phrase": "Chercher un emploi.",
-              "ea": "Il veut avoir un emploi, donc il fait des démarches."
-            }
-          ]
-        },
-        {
           "quasibloc": "X VOULOIR AVOIR Y (X DEVOIR PAYER W)",
           "exemples": [
             {
@@ -892,6 +879,24 @@
             {
               "phrase": "Anna veut une pomme, mais elle n'en a pas.",
               "ea": "Anna veut (avoir) une pomme, donc elle en a une."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X REGARDER (X VOULOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il cherche ses clés.",
+              "ea": "Il regarde, donc il veut avoir ses clés."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X CHERCHER Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai trouvé mes clés.",
+              "ea": "J'ai cherché mes clés, donc je les ai."
             }
           ]
         }
@@ -1392,30 +1397,49 @@
   {
     "headword": "CHERCHER",
     "letter": "C",
+    "template_syntaxique": "X CHERCHER Y",
+    "updated": "2026-11-02",
     "signification": {
       "interne": [
         {
-          "aspect": "X VOULOIR AVOIR Y DC X FAIRE",
+          "aspect": "X REGARDER DC X VOULOIR AVOIR Y",
+          "fondateur1": "REGARDER",
+          "fondateur2": "VOULOIR AVOIR",
+          "criteres": [],
+          "square_value": null,
           "exemples": [
             {
               "phrase": "Il cherche ses clés.",
-              "ea": "Il veut avoir ses clés, donc il fait quelque chose."
-            },
-            {
-              "phrase": "Chercher un emploi.",
-              "ea": "Il veut avoir un emploi, donc il fait des démarches."
+              "ea": "Il regarde, donc il veut avoir ses clés."
             }
-          ],
-          "fondateur1": "VOULOIR AVOIR",
-          "fondateur2": "FAIRE",
-          "criteres": [],
-          "square_value": null
+          ]
         }
       ],
-      "externe": []
-    },
-    "template_syntaxique": "X CHERCHER Y",
-    "updated": "2026-04-23"
+      "externe": [
+        {
+          "quasibloc": "X CHERCHER Y (X TROUVER Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai bien cherché, j'ai fini par trouver un appart.",
+              "ea": "J'ai bien cherché, donc j'ai fini par trouver un appart."
+            },
+            {
+              "phrase": "J'ai cherché mes clés partout.",
+              "ea": "J'ai cherché mes clés partout, pourtant je ne les ai pas trouvées."
+            }
+          ]
+        },
+        {
+          "quasibloc": "X CHERCHER Y (X AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "J'ai trouvé mes clés.",
+              "ea": "J'ai cherché mes clés, donc je les ai."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "headword": "CHOISIR",
@@ -2778,6 +2802,62 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "EN VAIN",
+    "letter": "E",
+    "template_syntaxique": "X FAIRE Y EN VAIN",
+    "updated": "2026-11-02",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X FAIRE Y PT NEG W SE PASSER",
+          "fondateur1": "FAIRE",
+          "fondateur2": "SE PASSER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "C'était en vain.",
+              "ea": "On a fait quelque chose, pourtant rien ne s'est passé."
+            },
+            {
+              "phrase": "Il a cherché en vain.",
+              "ea": "Il a cherché, pourtant il n'a pas trouvé."
+            },
+            {
+              "phrase": "Il a attendu en vain.",
+              "ea": "Il a attendu, pourtant celui qui devait venir n'est pas venu."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    }
+  },
+  {
+    "headword": "TROUVER",
+    "letter": "T",
+    "template_syntaxique": "X TROUVER Y",
+    "updated": "2026-11-02",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "X CHERCHER Y DC X AVOIR Y",
+          "fondateur1": "CHERCHER",
+          "fondateur2": "AVOIR",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "J'ai trouvé mes clés.",
+              "ea": "J'ai cherché mes clés, donc je les ai."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    }
+  },
+  {
     "headword": "ÉCHOUER",
     "letter": "E",
     "signification": {
@@ -3411,19 +3491,6 @@
             {
               "phrase": "Pierre a causé l'effondrement du marché.",
               "ea": "Pierre a fait quelque chose, donc l'effondrement du marché s'est passé."
-            }
-          ]
-        },
-        {
-          "quasibloc": "X VOULOIR AVOIR Y (X FAIRE)",
-          "exemples": [
-            {
-              "phrase": "Il cherche ses clés.",
-              "ea": "Il veut avoir ses clés, donc il fait quelque chose."
-            },
-            {
-              "phrase": "Chercher un emploi.",
-              "ea": "Il veut avoir un emploi, donc il fait des démarches."
             }
           ]
         },
@@ -7454,7 +7521,17 @@
           ]
         }
       ],
-      "externe": []
+      "externe": [
+        {
+          "quasibloc": "X REGARDER (X VOULOIR AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Il cherche ses clés.",
+              "ea": "Il regarde, donc il veut avoir ses clés."
+            }
+          ]
+        }
+      ]
     },
     "updated": "2026-05-02"
   },
