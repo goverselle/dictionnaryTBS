@@ -1673,7 +1673,7 @@
       ],
       "externe": [
         {
-          "quasibloc": "PERF (X FAIRE Y) (X POUVOIR CONTINUER Y)",
+          "quasibloc": "X FAIRE Y (X POUVOIR CONTINUER Y)",
           "exemples": [
             {
               "phrase": "Il y a un problème.",
@@ -3773,7 +3773,7 @@
           ]
         },
         {
-          "quasibloc": "PERF (X FAIRE Y) (X POUVOIR CONTINUER Y)",
+          "quasibloc": "X FAIRE Y (X POUVOIR CONTINUER Y)",
           "exemples": [
             {
               "phrase": "Il y a un problème.",
@@ -7165,7 +7165,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "PERF (X FAIRE Y) PT NEG X POUVOIR CONTINUER Y",
+          "aspect": "X FAIRE Y PT NEG X POUVOIR CONTINUER Y",
           "exemples": [
             {
               "phrase": "Il y a un problème.",
@@ -7228,7 +7228,7 @@
         }
       ]
     },
-    "updated": "2026-09-16"
+    "updated": "2026-11-02"
   },
   {
     "headword": "PROFITER",
