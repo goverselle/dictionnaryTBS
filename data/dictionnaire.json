@@ -6161,7 +6161,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X NEG SAVOIR Y PT Y SEMBLER À X W",
+          "aspect": "NEG X SAVOIR Y PT Y SEMBLER À X W",
           "exemples": [
             {
               "phrase": "Mon opinion est qu'il a tort.",
@@ -6176,7 +6176,7 @@
       ],
       "externe": []
     },
-    "updated": "2026-06-21"
+    "updated": "2026-11-02"
   },
   {
     "headword": "OPPORTUNITÉ",
