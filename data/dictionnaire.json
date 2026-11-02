@@ -5821,10 +5821,23 @@
               "ea": "Pierre a été mort, pourtant Pierre est vivant."
             }
           ]
+        },
+        {
+          "quasibloc": "X MOURIR POUR Y (Z AVOIR Y)",
+          "exemples": [
+            {
+              "phrase": "Ils sont morts pour la liberté de leur pays.",
+              "ea": "Ils sont morts pour la liberté, donc leur pays l'a."
+            },
+            {
+              "phrase": "Ils sont morts en vain.",
+              "ea": "Ils sont morts pour la liberté, pourtant leur pays ne l'a pas."
+            }
+          ]
         }
       ]
     },
-    "updated": "2026-05-04"
+    "updated": "2026-11-02"
   },
   {
     "headword": "NAÎTRE",
