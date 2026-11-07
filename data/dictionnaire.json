@@ -543,6 +543,26 @@
     "updated": "2026-04-23"
   },
   {
+    "headword": "ATTENTIF",
+    "letter": "A",
+    "template_syntaxique": "X ÊTRE ATTENTIF À Y",
+    "updated": "2026-11-07",
+    "signification": {
+      "interne": [],
+      "externe": [
+        {
+          "quasibloc": "Y ÊTRE DANGEREUX (X ÊTRE ATTENTIF À Y)",
+          "exemples": [
+            {
+              "phrase": "Il était attentif à la route.",
+              "ea": "La route était dangereuse, donc il y était attentif."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "headword": "AVANCER",
     "letter": "A",
     "template_syntaxique": "",
@@ -1969,15 +1989,15 @@
       ],
       "externe": [
         {
-          "quasibloc": "DANGER (X ÊTRE ATTENTIF À Y)",
+          "quasibloc": "Y ÊTRE DANGEREUX (X ÊTRE ATTENTIF À Y)",
           "exemples": [
             {
-              "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc sois attentif."
+              "phrase": "J’étais prudent.",
+              "ea": "Il y avait un danger, donc j’étais attentif."
             },
             {
-              "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on est attentif à la route."
+              "phrase": "Il est prudent sur la route.",
+              "ea": "La route est dangereuse, donc il y est attentif."
             }
           ]
         },
@@ -2850,6 +2870,30 @@
             {
               "phrase": "J'ai trouvé mes clés.",
               "ea": "J'ai cherché mes clés, donc je les ai."
+            }
+          ]
+        }
+      ],
+      "externe": []
+    }
+  },
+  {
+    "headword": "VIGILANT",
+    "letter": "V",
+    "template_syntaxique": "X ÊTRE VIGILANT",
+    "updated": "2026-11-07",
+    "signification": {
+      "interne": [
+        {
+          "aspect": "Y NEG (ENCORE) ARRIVER PT X RESTER ATTENTIF",
+          "fondateur1": "ARRIVER",
+          "fondateur2": "RESTER ATTENTIF",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Rien ne se passait depuis des heures, pourtant il restait vigilant.",
+              "ea": "Rien n’arrivait encore, pourtant il restait attentif."
             }
           ]
         }
@@ -7308,18 +7352,18 @@
     "signification": {
       "interne": [
         {
-          "aspect": "DANGER DC X ÊTRE ATTENTIF À Y",
+          "aspect": "Y ÊTRE DANGEREUX DC X ÊTRE ATTENTIF À Y",
           "exemples": [
             {
-              "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc sois attentif."
+              "phrase": "J’étais prudent.",
+              "ea": "Il y avait un danger, donc j’étais attentif."
             },
             {
-              "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on est attentif à la route."
+              "phrase": "Il est prudent sur la route.",
+              "ea": "La route est dangereuse, donc il y est attentif."
             }
           ],
-          "fondateur1": "DANGER",
+          "fondateur1": "ÊTRE DANGEREUX",
           "fondateur2": "ÊTRE ATTENTIF",
           "criteres": [],
           "square_value": null
