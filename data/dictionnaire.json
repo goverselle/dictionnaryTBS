@@ -1969,15 +1969,15 @@
       ],
       "externe": [
         {
-          "quasibloc": "DANGER (NEG FAIRE)",
+          "quasibloc": "DANGER (FAIRE ATTENTION)",
           "exemples": [
             {
               "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc ne fais pas."
+              "ea": "Il y a du danger, donc fais attention."
             },
             {
               "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on ne fait pas certaines choses."
+              "ea": "Il y a du danger, donc on fait attention."
             }
           ]
         },
@@ -1996,7 +1996,7 @@
         }
       ]
     },
-    "updated": "2026-10-21"
+    "updated": "2026-11-07"
   },
   {
     "headword": "DÉBITEUR",
@@ -3902,10 +3902,23 @@
               "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
             }
           ]
+        },
+        {
+          "quasibloc": "DANGER (FAIRE ATTENTION)",
+          "exemples": [
+            {
+              "phrase": "Sois prudent !",
+              "ea": "Il y a du danger, donc fais attention."
+            },
+            {
+              "phrase": "Une conduite prudente.",
+              "ea": "Il y a du danger, donc on fait attention."
+            }
+          ]
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-11-07"
   },
   {
     "headword": "FAIRE PENSER",
@@ -7308,19 +7321,19 @@
     "signification": {
       "interne": [
         {
-          "aspect": "DANGER DC NEG FAIRE",
+          "aspect": "DANGER DC FAIRE ATTENTION",
           "exemples": [
             {
               "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc ne fais pas."
+              "ea": "Il y a du danger, donc fais attention."
             },
             {
               "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on ne fait pas certaines choses."
+              "ea": "Il y a du danger, donc on fait attention."
             }
           ],
           "fondateur1": "DANGER",
-          "fondateur2": "FAIRE",
+          "fondateur2": "FAIRE ATTENTION",
           "criteres": [],
           "square_value": null
         }
@@ -7328,7 +7341,7 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE PRUDENT",
-    "updated": "2026-04-23"
+    "updated": "2026-11-07"
   },
   {
     "headword": "PSYCHOSOMATIQUE",
