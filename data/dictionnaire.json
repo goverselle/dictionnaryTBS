@@ -548,7 +548,38 @@
     "template_syntaxique": "X ÊTRE ATTENTIF À Y",
     "updated": "2026-11-07",
     "signification": {
-      "interne": [],
+      "interne": [
+        {
+          "aspect": "NEG X VOULOIR MANQUER Y DC X ÉCOUTER Y",
+          "fondateur1": "VOULOIR MANQUER",
+          "fondateur2": "ÉCOUTER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Les élèves sont attentifs.",
+              "ea": "Ils ne veulent rien manquer, donc ils écoutent."
+            }
+          ]
+        },
+        {
+          "aspect": "NEG X VOULOIR MANQUER Y DC X REGARDER Y",
+          "fondateur1": "VOULOIR MANQUER",
+          "fondateur2": "REGARDER",
+          "criteres": [],
+          "square_value": null,
+          "exemples": [
+            {
+              "phrase": "Il est attentif à la route.",
+              "ea": "Il ne veut rien manquer, donc il regarde."
+            },
+            {
+              "phrase": "Sois attentif, ne manque rien.",
+              "ea": "Ne veux rien manquer, donc regarde."
+            }
+          ]
+        }
+      ],
       "externe": [
         {
           "quasibloc": "Y ÊTRE DANGEREUX (X ÊTRE ATTENTIF À Y)",
