@@ -1969,15 +1969,15 @@
       ],
       "externe": [
         {
-          "quasibloc": "DANGER (FAIRE ATTENTION)",
+          "quasibloc": "DANGER (X ÊTRE ATTENTIF À Y)",
           "exemples": [
             {
               "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc fais attention."
+              "ea": "Il y a du danger, donc sois attentif."
             },
             {
               "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on fait attention."
+              "ea": "Il y a du danger, donc on est attentif à la route."
             }
           ]
         },
@@ -3900,19 +3900,6 @@
             {
               "phrase": "Il a négligé ce détail.",
               "ea": "Ce détail était important, pourtant il n'y a pas fait attention."
-            }
-          ]
-        },
-        {
-          "quasibloc": "DANGER (FAIRE ATTENTION)",
-          "exemples": [
-            {
-              "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc fais attention."
-            },
-            {
-              "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on fait attention."
             }
           ]
         }
@@ -7321,19 +7308,19 @@
     "signification": {
       "interne": [
         {
-          "aspect": "DANGER DC FAIRE ATTENTION",
+          "aspect": "DANGER DC X ÊTRE ATTENTIF À Y",
           "exemples": [
             {
               "phrase": "Sois prudent !",
-              "ea": "Il y a du danger, donc fais attention."
+              "ea": "Il y a du danger, donc sois attentif."
             },
             {
               "phrase": "Une conduite prudente.",
-              "ea": "Il y a du danger, donc on fait attention."
+              "ea": "Il y a du danger, donc on est attentif à la route."
             }
           ],
           "fondateur1": "DANGER",
-          "fondateur2": "FAIRE ATTENTION",
+          "fondateur2": "ÊTRE ATTENTIF",
           "criteres": [],
           "square_value": null
         }
