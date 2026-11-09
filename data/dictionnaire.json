@@ -434,7 +434,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X ÊTRE MALADE PT NEG X SE VOIR",
+          "aspect": "X ÊTRE MALADE PT NEG Y SE VOIR",
           "exemples": [
             {
               "phrase": "Le patient est asymptomatique.",
@@ -455,7 +455,7 @@
     },
     "nb": "ASYMPTOMATIQUE, PSYCHOSOMATIQUE, SYMPTOMATIQUE et EN BONNE SANTÉ partagent le même bloc ÊTRE MALADE — SIGNES.",
     "template_syntaxique": "X ÊTRE ASYMPTOMATIQUE",
-    "updated": "2026-04-23"
+    "updated": "2026-11-09"
   },
   {
     "headword": "ATTEINDRE",
@@ -5326,7 +5326,7 @@
       "interne": [],
       "externe": [
         {
-          "quasibloc": "NEG X ÊTRE MALADE (NEG X SE VOIR)",
+          "quasibloc": "NEG X ÊTRE MALADE (NEG Y SE VOIR)",
           "exemples": [
             {
               "phrase": "Pierre est en bonne santé.",
@@ -5339,7 +5339,7 @@
           ]
         },
         {
-          "quasibloc": "X ÊTRE MALADE (X SE VOIR)",
+          "quasibloc": "X ÊTRE MALADE (Y SE VOIR)",
           "exemples": [
             {
               "phrase": "Le patient est symptomatique.",
@@ -5353,7 +5353,7 @@
         }
       ]
     },
-    "updated": "2026-04-23"
+    "updated": "2026-11-09"
   },
   {
     "headword": "MANGER",
@@ -9083,7 +9083,7 @@
     "signification": {
       "interne": [
         {
-          "aspect": "X ÊTRE MALADE DC X SE VOIR",
+          "aspect": "X ÊTRE MALADE DC Y SE VOIR",
           "exemples": [
             {
               "phrase": "Le patient est symptomatique.",
@@ -9108,7 +9108,7 @@
       "externe": []
     },
     "template_syntaxique": "X ÊTRE SYMPTOMATIQUE",
-    "updated": "2026-04-23"
+    "updated": "2026-11-09"
   },
   {
     "headword": "SÛR",
